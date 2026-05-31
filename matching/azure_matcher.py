@@ -14,8 +14,6 @@ from config.settings import (
     GlossarConfig,
     ValidationConfig
 )
-from api.auth import TokenManager
-from api.epd_client import EPDAPIClient
 from matching.prompt_builder import PromptBuilder
 from utils.cost_tracker import get_tracker, record_usage
 
@@ -228,7 +226,7 @@ class AzureEPDMatcher:
             raise ValueError("❌ AZURE_OPENAI_API_KEY fehlt in .env")
 
     def _init_clients(self) -> None:
-        """Initialisiert Azure und API Clients."""
+        """Initialisiert Azure-Client und EPD-Datenquelle."""
         self.azure_client = AzureOpenAI(
             azure_endpoint=AzureConfig.ENDPOINT,
             api_key=AzureConfig.API_KEY,
@@ -237,8 +235,8 @@ class AzureEPDMatcher:
             max_retries=AzureConfig.MAX_RETRIES
         )
 
-        token_manager = TokenManager()
-        self.api_client = EPDAPIClient(token_manager)
+        from datasources.factory import create_data_source
+        self.api_client = create_data_source()
 
     def _print_initialization_info(self) -> None:
         """Gibt Initialisierungs-Informationen aus."""
