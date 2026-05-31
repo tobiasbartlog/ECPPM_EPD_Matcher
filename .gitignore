@@ -12,3 +12,4 @@ gen
 src
 /TestInput/id_aufruf_benutzer/output/
 /helper_envextractor.py
+data/

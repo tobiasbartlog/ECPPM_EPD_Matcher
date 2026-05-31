@@ -156,6 +156,33 @@ class ValidationConfig:
 
 
 # =============================================================================
+# DATA SOURCE
+# =============================================================================
+
+class DataSourceConfig:
+    """Konfiguration der EPD-Datenquelle (Stage 1)."""
+
+    # Aktive Datenquelle: online | oekobaudat | local
+    SOURCE = os.getenv("EPD_DATA_SOURCE", "online").strip()
+
+    # Ökobaudat soda4LCA-REST-API
+    OEKOBAUDAT_BASE_URL = os.getenv(
+        "OEKOBAUDAT_BASE_URL",
+        "https://www.oekobaudat.de/OEKOBAU.DAT/resource",
+    ).strip().rstrip("/")
+
+    OEKOBAUDAT_LANG = os.getenv("OEKOBAUDAT_LANG", "de").strip()
+    OEKOBAUDAT_PAGE_SIZE = _parse_int(os.getenv("OEKOBAUDAT_PAGE_SIZE", "500"), 500)
+
+    # Klassifikations-Filter (leer = gesamter Katalog)
+    OEKOBAUDAT_CLASSIFICATION = os.getenv("OEKOBAUDAT_CLASSIFICATION", "").strip()
+    OEKOBAUDAT_CLASS_SYSTEM = os.getenv("OEKOBAUDAT_CLASS_SYSTEM", "oekobau.dat").strip()
+
+    # Lokale SQLite-DB
+    LOCAL_DB_PATH = os.getenv("LOCAL_DB_PATH", "data/oekobaudat.db").strip()
+
+
+# =============================================================================
 # BACKWARDS COMPATIBILITY (Legacy-Namen)
 # =============================================================================
 # Diese Klasse existiert für Kompatibilität mit bestehendem Code
@@ -203,9 +230,16 @@ def print_config_debug():
     print(f"  Deployment: {AzureConfig.DEPLOYMENT}")
     print(f"  Timeout:    {AzureConfig.TIMEOUT}s")
 
-    print("\n[EPD API]")
-    print(f"  Base URL:   {APIConfig.BASE_URL}")
-    print(f"  Username:   {APIConfig.USERNAME}")
+    print("\n[EPD-Datenquelle]")
+    print(f"  SOURCE:     {DataSourceConfig.SOURCE}")
+    if DataSourceConfig.SOURCE == "oekobaudat":
+        print(f"  Base URL:   {DataSourceConfig.OEKOBAUDAT_BASE_URL}")
+        print(f"  ClassFilter:{DataSourceConfig.OEKOBAUDAT_CLASSIFICATION or '(alle)'}")
+    elif DataSourceConfig.SOURCE == "local":
+        print(f"  DB-Pfad:    {DataSourceConfig.LOCAL_DB_PATH}")
+    else:
+        print(f"  API URL:    {APIConfig.BASE_URL}")
+        print(f"  Username:   {APIConfig.USERNAME}")
 
     print("\n[Stage 1: Context Extraction]")
     print(f"  PREFER_NAME_FIELD:  {ContextConfig.PREFER_NAME_FIELD}")
