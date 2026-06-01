@@ -1,0 +1,36 @@
+Wert	Wert
+Asphaltbeton_Deckschicht	SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A
+Asphaltbeton_Binderschicht	AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A
+Asphaltbeton_Tragschicht	AC 32 T S mit Straßenbaubitumen 30/45
+Frostschutzmaterial	Gesteinskörnungsgemisch 0/32
+Offenporiger Asphalt	n/a
+Gussasphalt	n/a
+Gussasphalt	n/a
+Asphalt	n/a
+Asphalt	n/a
+Schotter	n/a
+Asphaltdeckschicht_R1	n/a
+Asphaltbinderschicht_R2	n/a
+Tragschicht_R	n/a
+Frostschutzschicht	n/a
+Splittmastixasphalt	A4-Splitmastixasphalt 0/11 S
+Asphalt	A4-Asphaltbinder 0/22
+Asphalt	A4-Asphalttragschicht 0/32 CS
+Schotter	A4-Schottertragschicht 0/45
+
+
+_________________
+
+Schicht:	Asphaltmischgutart	Mindest Größtkorn [mm]	Maximal Größtkorn [mm]
+Deckschicht	Asphaltbeton	5	16
+Splittmastixasphalt	5	11
+Gussasphalt	5	11
+Offenporiger Asphalt	8	16
+Binderschicht	Asphaltbeton	11	22
+Bituminöse Tragschicht	Asphaltbeton	16	32
+Nicht bituminöse Tragschicht	hydraulisch gebundene Tragschicht	 
+Verfestigung
+Schottertragschicht
+Kiestragschicht
+Frostschutzschicht	Frostschutzschicht
+Frost unempfindliches Material 

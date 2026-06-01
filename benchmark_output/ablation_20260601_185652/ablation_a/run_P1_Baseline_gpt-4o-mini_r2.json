@@ -1,0 +1,83 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [],
+      "id_confidence": {}
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "f518d04d-4805-4d97-b457-9920226f3ff4",
+        "27f4f528-63ee-43ed-a61f-cabce600d7d6",
+        "787bbbfd-27d5-48bc-9e5b-041c3be3df8d",
+        "5e7608b8-15e7-4c63-b5b9-b1611413354b",
+        "86610a38-3ad1-44a6-8aa4-f8c49bbca136",
+        "4a6ab0f8-6b9e-46ab-a372-649d700f78b5",
+        "786057dd-fc78-4f12-88d8-9192ac98709b",
+        "9df1d32e-4d4a-4608-97e5-294bf4f8f369",
+        "999b6bf6-8e8a-4164-a7a6-a2880321c08a",
+        "8fb95d2d-4fbf-43df-8d40-955b70c4108f"
+      ],
+      "id_confidence": {
+        "f518d04d-4805-4d97-b457-9920226f3ff4": 35,
+        "27f4f528-63ee-43ed-a61f-cabce600d7d6": 35,
+        "787bbbfd-27d5-48bc-9e5b-041c3be3df8d": 35,
+        "5e7608b8-15e7-4c63-b5b9-b1611413354b": 35,
+        "86610a38-3ad1-44a6-8aa4-f8c49bbca136": 35,
+        "4a6ab0f8-6b9e-46ab-a372-649d700f78b5": 35,
+        "786057dd-fc78-4f12-88d8-9192ac98709b": 35,
+        "9df1d32e-4d4a-4608-97e5-294bf4f8f369": 35,
+        "999b6bf6-8e8a-4164-a7a6-a2880321c08a": 35,
+        "8fb95d2d-4fbf-43df-8d40-955b70c4108f": 35
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [],
+      "id_confidence": {}
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [],
+      "id_confidence": {}
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [],
+      "id_confidence": {}
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

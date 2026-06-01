@@ -1,0 +1,183 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 95,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 55,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 45,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 40
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 95,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 80,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 65,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 45,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "d24a85e3-f395-4124-9874-c01f977a893f"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 95,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 75,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 55,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 35,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 30
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "43eaba9f-7c2a-4132-83af-054962477a58",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f",
+        "e3634ce7-c933-4c5b-8c71-a55f1b393b4a",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 88,
+        "43eaba9f-7c2a-4132-83af-054962477a58": 80,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 75,
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b": 72,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 70,
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f": 68,
+        "e3634ce7-c933-4c5b-8c71-a55f1b393b4a": 65,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 58,
+        "286b0072-1001-4e5f-baa2-282230755243": 55,
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d": 35
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "43eaba9f-7c2a-4132-83af-054962477a58": "NedZink Naturel",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b": "Magmatische Gesteine",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f": "Sedimentäre Gesteine",
+        "e3634ce7-c933-4c5b-8c71-a55f1b393b4a": "Maschinell zerkleinertes Gestein 22-120 mm (Målselv Maskin & Transport AS)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d": "Schüttung aus Polystyrolschaumstoff-Partikeln (ohne Bindemittel)"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "5dd08fc1-0bba-4b6b-9ca0-1692ab2b088e",
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d",
+        "dad163a2-a15b-48e0-a763-6142445b5d42"
+      ],
+      "id_confidence": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 90,
+        "f4461491-586a-4770-9a04-716565e58c24": 85,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 80,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 78,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 55,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 50,
+        "286b0072-1001-4e5f-baa2-282230755243": 45,
+        "5dd08fc1-0bba-4b6b-9ca0-1692ab2b088e": 35,
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d": 30,
+        "dad163a2-a15b-48e0-a763-6142445b5d42": 30
+      },
+      "id_name": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "5dd08fc1-0bba-4b6b-9ca0-1692ab2b088e": "GLAPOR Schaumglasschotter",
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d": "Schüttung aus Polystyrolschaumstoff-Partikeln (ohne Bindemittel)",
+        "dad163a2-a15b-48e0-a763-6142445b5d42": "Blähglas Granulat"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

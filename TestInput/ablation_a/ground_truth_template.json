@@ -1,0 +1,32 @@
+{
+  "Deckschicht": {
+    "suggested_uuid": "d24a85e3-f395-4124-9874-c01f977a893f",
+    "epd_name": "Splittmastixasphalt (SMA)",
+    "frequency": "14/27",
+    "note": "Bitte UUID prüfen und ggf. korrigieren. Für ground_truth.json nur 'suggested_uuid'-Wert übernehmen (oder null wenn kein passendes EPD vorhanden)."
+  },
+  "Binderschicht": {
+    "suggested_uuid": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+    "epd_name": "Asphaltbinder",
+    "frequency": "27/28",
+    "note": "Bitte UUID prüfen und ggf. korrigieren. Für ground_truth.json nur 'suggested_uuid'-Wert übernehmen (oder null wenn kein passendes EPD vorhanden)."
+  },
+  "Bituminöse Tragschicht": {
+    "suggested_uuid": "9795c91c-0918-46fa-8a51-47deb180c271",
+    "epd_name": "Asphalttragschicht",
+    "frequency": "23/27",
+    "note": "Bitte UUID prüfen und ggf. korrigieren. Für ground_truth.json nur 'suggested_uuid'-Wert übernehmen (oder null wenn kein passendes EPD vorhanden)."
+  },
+  "Nicht bituminöse Tragschicht": {
+    "suggested_uuid": "f4461491-586a-4770-9a04-716565e58c24",
+    "epd_name": "Schotter 16/32",
+    "frequency": "9/24",
+    "note": "Bitte UUID prüfen und ggf. korrigieren. Für ground_truth.json nur 'suggested_uuid'-Wert übernehmen (oder null wenn kein passendes EPD vorhanden)."
+  },
+  "Frostschutzschicht": {
+    "suggested_uuid": "f4461491-586a-4770-9a04-716565e58c24",
+    "epd_name": "Schotter 16/32",
+    "frequency": "13/28",
+    "note": "Bitte UUID prüfen und ggf. korrigieren. Für ground_truth.json nur 'suggested_uuid'-Wert übernehmen (oder null wenn kein passendes EPD vorhanden)."
+  }
+}

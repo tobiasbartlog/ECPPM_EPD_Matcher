@@ -1,0 +1,237 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0",
+        "9568cebf-246d-4002-a94f-05e26517251d",
+        "34a977a9-abad-4f56-8d07-3188ecac7e22",
+        "a91d1195-1bd2-4957-b763-2a4b876eff22"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 95,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 80,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 60,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 55,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 50,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 40,
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": 35,
+        "9568cebf-246d-4002-a94f-05e26517251d": 25,
+        "34a977a9-abad-4f56-8d07-3188ecac7e22": 20,
+        "a91d1195-1bd2-4957-b763-2a4b876eff22": 20
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "Kunststoffmodifizierte Bitumendickbeschichtung",
+        "9568cebf-246d-4002-a94f-05e26517251d": "NH/ArmaFlex Smart Isolierung für die Industrie- und Gebäudeinstallation",
+        "34a977a9-abad-4f56-8d07-3188ecac7e22": "Verbindungstechnik - Viega - Viega Smartpress Pressverbinder",
+        "a91d1195-1bd2-4957-b763-2a4b876eff22": "Genadelte Teppichfliesen mit einer Faserzusammensetzung aus 80% PP, 20% PET und einer Bitumenschwerbeschichtung "
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0",
+        "a91d1195-1bd2-4957-b763-2a4b876eff22",
+        "2fbda489-3661-4743-82f4-06a1fe3a204e",
+        "cf69cb37-552b-492d-a9a0-1d4e28b0bf95"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 95,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 70,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 65,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 55,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 45,
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": 40,
+        "a91d1195-1bd2-4957-b763-2a4b876eff22": 30,
+        "2fbda489-3661-4743-82f4-06a1fe3a204e": 28,
+        "cf69cb37-552b-492d-a9a0-1d4e28b0bf95": 25
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "Kunststoffmodifizierte Bitumendickbeschichtung",
+        "a91d1195-1bd2-4957-b763-2a4b876eff22": "Genadelte Teppichfliesen mit einer Faserzusammensetzung aus 80% PP, 20% PET und einer Bitumenschwerbeschichtung ",
+        "2fbda489-3661-4743-82f4-06a1fe3a204e": "Getuftete Teppichfliesen mit 100% recyceltem PA6-Flormaterial und schwerem Rücken auf Bitumenbasis, LC1",
+        "cf69cb37-552b-492d-a9a0-1d4e28b0bf95": "Getuftete Teppichfliesen mit 100% recyceltem PA6-Flormaterial und schwerem Rücken auf Bitumenbasis, LC2"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0",
+        "a91d1195-1bd2-4957-b763-2a4b876eff22",
+        "2fbda489-3661-4743-82f4-06a1fe3a204e",
+        "cf69cb37-552b-492d-a9a0-1d4e28b0bf95"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 98,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 90,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 65,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 55,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 50,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 45,
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": 35,
+        "a91d1195-1bd2-4957-b763-2a4b876eff22": 25,
+        "2fbda489-3661-4743-82f4-06a1fe3a204e": 25,
+        "cf69cb37-552b-492d-a9a0-1d4e28b0bf95": 20
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "Kunststoffmodifizierte Bitumendickbeschichtung",
+        "a91d1195-1bd2-4957-b763-2a4b876eff22": "Genadelte Teppichfliesen mit einer Faserzusammensetzung aus 80% PP, 20% PET und einer Bitumenschwerbeschichtung ",
+        "2fbda489-3661-4743-82f4-06a1fe3a204e": "Getuftete Teppichfliesen mit 100% recyceltem PA6-Flormaterial und schwerem Rücken auf Bitumenbasis, LC1",
+        "cf69cb37-552b-492d-a9a0-1d4e28b0bf95": "Getuftete Teppichfliesen mit 100% recyceltem PA6-Flormaterial und schwerem Rücken auf Bitumenbasis, LC2"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0",
+        "a91d1195-1bd2-4957-b763-2a4b876eff22",
+        "2fbda489-3661-4743-82f4-06a1fe3a204e",
+        "cf69cb37-552b-492d-a9a0-1d4e28b0bf95"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 96,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 84,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 63,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 55,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 52,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 38,
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": 33,
+        "a91d1195-1bd2-4957-b763-2a4b876eff22": 27,
+        "2fbda489-3661-4743-82f4-06a1fe3a204e": 25,
+        "cf69cb37-552b-492d-a9a0-1d4e28b0bf95": 23
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "Kunststoffmodifizierte Bitumendickbeschichtung",
+        "a91d1195-1bd2-4957-b763-2a4b876eff22": "Genadelte Teppichfliesen mit einer Faserzusammensetzung aus 80% PP, 20% PET und einer Bitumenschwerbeschichtung ",
+        "2fbda489-3661-4743-82f4-06a1fe3a204e": "Getuftete Teppichfliesen mit 100% recyceltem PA6-Flormaterial und schwerem Rücken auf Bitumenbasis, LC1",
+        "cf69cb37-552b-492d-a9a0-1d4e28b0bf95": "Getuftete Teppichfliesen mit 100% recyceltem PA6-Flormaterial und schwerem Rücken auf Bitumenbasis, LC2"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef"
+      ],
+      "id_confidence": {
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": 95,
+        "f4461491-586a-4770-9a04-716565e58c24": 90,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 85,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 80,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 75,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 65,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 60,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 50,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 45,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 40
+      },
+      "id_name": {
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": "Natürliche Gesteinskörnungen (Näppi T & N Oy)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

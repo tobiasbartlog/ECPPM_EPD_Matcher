@@ -13,13 +13,13 @@
       "Volumen": 57.420
     },
     {
-      "NAME": "Tragschicht",
+      "NAME": "Bituminöse Tragschicht",
       "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
       "GUID": ["guid4", "guid5"],
       "Volumen": 57.420
     },
     {
-      "NAME": "Schottertrag",
+      "NAME": "Nicht bituminöse Tragschicht",
       "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
       "GUID": ["guid4", "guid5"],
       "Volumen": 57.420

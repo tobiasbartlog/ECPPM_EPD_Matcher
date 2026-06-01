@@ -1,0 +1,45 @@
+[
+  {
+    "input_folder": "ablation_a",
+    "config_name": "P1_Baseline",
+    "model": "gpt-4o-mini",
+    "repetition": 1,
+    "duration_seconds": 168.73,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0,
+    "layer_results": [
+      {
+        "name": "Deckschicht",
+        "material": "SMA 11 S",
+        "top_matches": [],
+        "confidences": {}
+      },
+      {
+        "name": "Binderschicht",
+        "material": "AC 16 B S",
+        "top_matches": [],
+        "confidences": {}
+      },
+      {
+        "name": "Bituminöse Tragschicht",
+        "material": "AC 22 T S",
+        "top_matches": [],
+        "confidences": {}
+      },
+      {
+        "name": "Nicht bituminöse Tragschicht",
+        "material": "STSuB 0/45",
+        "top_matches": [],
+        "confidences": {}
+      },
+      {
+        "name": "Frostschutzschicht",
+        "material": "FSS 0/32",
+        "top_matches": [],
+        "confidences": {}
+      }
+    ],
+    "error": ""
+  }
+]

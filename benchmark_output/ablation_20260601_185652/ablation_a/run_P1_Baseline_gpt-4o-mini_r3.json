@@ -1,0 +1,73 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [],
+      "id_confidence": {}
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "f518d04d-4805-4d97-b457-9920226f3ff4",
+        "b78239d5-d2c5-4794-9112-a0c7907dea72",
+        "c8835af8-44d2-47df-a833-8e823e6ee5cd",
+        "2eb43850-0ab2-4068-afe5-218d69a096f8",
+        "0fdca580-3027-493d-a3c7-815758bac55d"
+      ],
+      "id_confidence": {
+        "f518d04d-4805-4d97-b457-9920226f3ff4": 35,
+        "b78239d5-d2c5-4794-9112-a0c7907dea72": 35,
+        "c8835af8-44d2-47df-a833-8e823e6ee5cd": 35,
+        "2eb43850-0ab2-4068-afe5-218d69a096f8": 35,
+        "0fdca580-3027-493d-a3c7-815758bac55d": 35
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [],
+      "id_confidence": {}
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [],
+      "id_confidence": {}
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [],
+      "id_confidence": {}
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

@@ -170,6 +170,14 @@ class DataSourceConfig:
     OEKOBAUDAT_LANG = os.getenv("OEKOBAUDAT_LANG", "de").strip()
     OEKOBAUDAT_PAGE_SIZE = _parse_int(os.getenv("OEKOBAUDAT_PAGE_SIZE", "500"), 500)
 
+    # Datastock-Filter: nur EPDs aus einem bestimmten Release laden.
+    # Leer = globale Union aller Stocks (historisch, enthält ~5 700 Einträge).
+    # OBD_2024_I: ca70a7e6-0ea4-4e90-a947-d44585783626  (~3 084 Einträge, aktuelles Release)
+    OEKOBAUDAT_STOCK_ID = os.getenv(
+        "OEKOBAUDAT_STOCK_ID",
+        "ca70a7e6-0ea4-4e90-a947-d44585783626",
+    ).strip()
+
     # Klassifikations-Filter (leer = gesamter Katalog)
     OEKOBAUDAT_CLASSIFICATION = os.getenv("OEKOBAUDAT_CLASSIFICATION", "").strip()
     OEKOBAUDAT_CLASS_SYSTEM = os.getenv("OEKOBAUDAT_CLASS_SYSTEM", "oekobau.dat").strip()
@@ -230,6 +238,7 @@ def print_config_debug():
     print(f"  SOURCE:     {DataSourceConfig.SOURCE}")
     if DataSourceConfig.SOURCE == "oekobaudat":
         print(f"  Base URL:   {DataSourceConfig.OEKOBAUDAT_BASE_URL}")
+        print(f"  Stock-ID:   {DataSourceConfig.OEKOBAUDAT_STOCK_ID or '(alle Stocks)'}")
         print(f"  ClassFilter:{DataSourceConfig.OEKOBAUDAT_CLASSIFICATION or '(alle)'}")
     elif DataSourceConfig.SOURCE == "local":
         print(f"  DB-Pfad:    {DataSourceConfig.LOCAL_DB_PATH}")

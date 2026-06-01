@@ -140,3 +140,72 @@ _Avoid_: (keine)
 Der pro Schicht manuell in der ÖKOBAUDAT bestimmte „richtige&ldquo; EPD-Datensatz, gegen den die
 Accuracy gemessen wird. Schichten ohne passenden EPD werden aus der Bewertung ausgeschlossen.
 _Avoid_: Soll-Wert, Referenz, Gold-Standard
+
+### Studie — Artefakte
+
+Alle Studie-Artefakte liegen unter `docs/studie/`:
+
+- **`docs/studie/2026_EC3_LLM_Based_EPD_Matching.pdf`** — Ersteinreichung. Paper zur
+  EC³ 2026 (Corfu, Greece, July 12–15 2026). Beschreibt Pipeline P1–P8, Accuracy-Heatmap
+  und Cost-Efficiency-Ranking. Titel: „Implementation of an LLM-Based Method for EPD Matching
+  in BIM Workflows". Funding: BMV mFUND SusInfra.
+- **`docs/studie/EC3_Comments.docx`** — Gutachter-Kommentare (2 Reviewer) zur Ersteinreichung.
+- **`docs/studie/EPD_Ablation_20260123_170211.xlsx`** — Excel-Auswertung der Benchmark-Runs
+  (Sheets: Ablation-Study, Ground-Truth, Accuracy-pro-Schicht, Benchmark-Summary u.a.).
+
+Das Benchmark-Skript der ersten Studie liegt unter `benchmark/archiv/benchmark_alltests.py`.
+
+### Studie v1 — Ergebnisse (Ersteinreichung)
+
+**Testaufbau**: 1 IFC-Modell, 1 standardisierter 5-Schicht-Straßenaufbau, 5 Repetitionen pro
+Konfig×Modell-Kombination, 4 Modelle (gpt-4o-mini, gpt-5-nano, gpt-5-chat, gpt-5.2-chat).
+**Evaluated Layers**: 3 von 5 (2 Schichten ohne passendes ÖKOBAUDAT-EPD ausgeschlossen).
+**Accuracy-Metrik**: Top-1-Match = Ground-Truth-UUID → 1 Punkt; sonst 0.
+
+**Accuracy-Heatmap** (Mittelwert über 5 Runs, in %):
+
+| Config | gpt-4o-mini | gpt-5-nano | gpt-5-chat | gpt-5.2-chat |
+|--------|-------------|------------|------------|--------------|
+| P1     | 100         | 100        | 100        | 100          |
+| P2     | 100         | 86.7       | 100        | 100          |
+| P3     | 100         | 80         | 100        | 100          |
+| P4     | 86.7        | 60         | 66.7       | 66.7         |
+| P5     | 73.3        | 53.3       | 66.7       | 66.7         |
+| P6     | 73.3        | 66.7       | 73.3       | 93.3         |
+| P7     | 80          | 86.7       | 100        | 93.3         |
+| P8     | 66.7        | 66.7       | 66.7       | 53.3         |
+
+**Bestes Cost-Efficiency-Ergebnis**: gpt-4o-mini + P3 (Filter only) — 100% Accuracy bei
+geringstem Kosten-pro-Accuracy-Punkt-Score (0,014). P1 mit gpt-4o-mini: gleiche Accuracy,
+aber 12× teurer.
+
+**Accuracy aggregiert über alle Modelle** (Accuracy-pro-Schicht-Sheet):
+P1 (Baseline) 100% → P2 96,7% → P3 95% → P7 90% → P6 76,7% → P4 70% → P5 65% → P8 63,3%.
+Kosteneinsparung vs. P1: P3 −80%, P7 −89%, P8 −88%.
+
+### Studie v1 — Reviewer-Kritik (für v2 maßgeblich)
+
+**Reviewer 1 — zentrale Punkte:**
+1. Einzelner Testfall reicht nicht. 1 Pavement + 5 Schichten ist zu schmal; P1 mit 100%
+   über alle Modelle deutet auf trivialen Test hin.
+2. Der eigentliche Beitrag (Matching Tool) ist am wenigsten erklärt — kein Architekturdiagramm,
+   kein Interface-Schema.
+3. Umgang mit fehlenden EPDs nicht adressiert (Sparse-EPD-Problem).
+4. IFC-Datenqualität für Straßen (im Vergleich zu Gebäuden) nicht diskutiert.
+5. Neuheitsabgrenzung zu Forth et al. (2023), Hermann et al. (2024), Petrosa et al. (2025)
+   fehlt; Unterschiede wirken implementierungstechnisch, nicht methodisch.
+
+**Reviewer 2 — zentrale Punkte:**
+1. Einzelner Testfall + keine Detailangaben zu Fallstudien.
+2. Cost-Efficiency-Score fragwürdig: weniger genaue Ergebnisse sind nicht sinnvoll, auch wenn
+   sie günstig sind. Begründung für die Metrik fehlt.
+3. Prompt-Design nicht erläutert — Beispiel fehlt.
+4. Table 1 (Ablations-Konfigurationen) nicht ausreichend eingeführt: Was bedeutet „Baseline"?
+   Warum diese 8 Kombinationen?
+5. Token-Kosten-Argument gilt nur für kommerzielle LLMs — Open-Source-Alternativen fehlen.
+6. Fehlende Referenzen: Hofmeyer et al. 2023, Chen et al. 2024.
+
+**Kernproblem für v2**: Beide Reviewer beanstanden primär den **single-test-case**. Die neue
+Studie muss zwingend mehrere, diverse Eingabe-Inputs (verschiedene Schichtzusammensetzungen,
+abweichende Namenskonventionen) verwenden. Außerdem muss die Cost-Efficiency-Metrik neu
+begründet oder ersetzt werden.

@@ -101,3 +101,11 @@ Default canonical label names are used (needs-triage, needs-info, ready-for-agen
 ### Domain docs
 
 Single-context layout — one `CONTEXT.md` and `docs/adr/` at the repo root. See `docs/agents/domain.md`.
+
+### Paper design log
+
+**`docs/studie/paper_design.md`** — laufendes Protokoll aller paper-relevanten Designentscheidungen.
+Whenever a decision is made that affects the study methodology, metrics, test case design, reviewer
+responses, or paper structure, write it into this document. Sections: Studiendesign, Ground Truth,
+Metriken, Systemarchitektur, Reviewer-Kritik-Adressierung. The TODO table at the bottom tracks
+open items. Keep it current — it is the primary reference when writing the paper.

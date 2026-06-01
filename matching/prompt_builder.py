@@ -129,11 +129,10 @@ class PromptBuilder:
             columns = [c.lower() for c in MatchingConfig.COLUMNS]
 
             for i, epd in enumerate(epds, 1):
-                epd_id = epd.get("id")
                 name = str(epd.get("name", "N/A"))[:200]
-                
-                # Basis-Eintrag (ID + Name sind immer dabei)
-                entry_lines = [f"\n{i}. ID: {epd_id}", f"   Name: {name}"]
+
+                # Index ist die Referenz für den LLM; UUID wird separat aufgelöst
+                entry_lines = [f"\n{i}. {name}"]
 
                 # Optionale Spalten prüfen
                 if "klassifizierung" in columns:
@@ -158,12 +157,15 @@ class PromptBuilder:
 
                 entries.append("\n".join(entry_lines))
         else:
-            # Kompakt-Modus
+            # Kompakt-Modus: nur Index + Name; UUID wird nach dem Parsing aufgelöst
             entries = []
             for i, epd in enumerate(epds, 1):
-                epd_id = epd.get("id")
                 name = str(epd.get("name", "N/A"))
-                entries.append(f"{i}. ID: {epd_id} | {name}")
+                klassifizierung = str(epd.get("klassifizierung", ""))
+                if klassifizierung:
+                    entries.append(f"{i}. {name} [{klassifizierung}]")
+                else:
+                    entries.append(f"{i}. {name}")
 
         return header + "\n" + "\n".join(entries)
 

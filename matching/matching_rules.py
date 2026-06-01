@@ -136,7 +136,7 @@ if __name__ == "__main__":
             "Bitumenbahn: kein Ausschluss (nicht in AUSSCHLUSS_BEGRIFFE), aber Kategorie-Konflikt",
         ),
         (
-            "AC 16 T S", "Tragschicht",
+            "AC 16 T S", "Bituminöse Tragschicht",
             "Betonpflaster C25/30",
             "Mineralische Baustoffe / Pflastersteine",
             None, False, False, None,
@@ -150,7 +150,7 @@ if __name__ == "__main__":
             "Fuzzy-Match Tragschicht: alle Fakten positiv",
         ),
         (
-            "Schotter 0/45", "Schottertragschicht",
+            "Schotter 0/45", "Nicht bituminöse Tragschicht",
             "Asphaltbeton AC 16",
             "Mineralische Baustoffe / Asphalt / Tragschichten",
             None, True, False, "asphalt",

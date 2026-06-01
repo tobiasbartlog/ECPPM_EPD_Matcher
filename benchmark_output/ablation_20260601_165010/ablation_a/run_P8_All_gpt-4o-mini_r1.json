@@ -1,0 +1,141 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "24d554b6-a720-45a3-b80d-17a46e612f26",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "d84cbf6a-0a50-426f-aa3d-c45918b43575",
+        "78fb80c2-6d74-49fe-97fa-4d436af75106",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "19f46be3-d65a-441f-8d74-dfc412160cf1"
+      ],
+      "id_confidence": {
+        "24d554b6-a720-45a3-b80d-17a46e612f26": 85,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 85,
+        "d84cbf6a-0a50-426f-aa3d-c45918b43575": 85,
+        "78fb80c2-6d74-49fe-97fa-4d436af75106": 60,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "19f46be3-d65a-441f-8d74-dfc412160cf1": 60
+      },
+      "id_gueltigkeit": {
+        "24d554b6-a720-45a3-b80d-17a46e612f26": "2024",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "d84cbf6a-0a50-426f-aa3d-c45918b43575": "2022",
+        "78fb80c2-6d74-49fe-97fa-4d436af75106": "2024",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "19f46be3-d65a-441f-8d74-dfc412160cf1": "2022"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "3d1b480d-243f-4ff2-aa16-428e1a93f5d8",
+        "6b6b68f8-34a4-4a0f-97ee-714bf106c3e0",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56"
+      ],
+      "id_confidence": {
+        "3d1b480d-243f-4ff2-aa16-428e1a93f5d8": 85,
+        "6b6b68f8-34a4-4a0f-97ee-714bf106c3e0": 85,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 85
+      },
+      "id_gueltigkeit": {
+        "3d1b480d-243f-4ff2-aa16-428e1a93f5d8": "2024",
+        "6b6b68f8-34a4-4a0f-97ee-714bf106c3e0": "2022",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "85de02e5-2782-4050-9c01-c5de3849fbce",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "f34786e7-0953-4085-9f3d-955481cdd4ea",
+        "24d554b6-a720-45a3-b80d-17a46e612f26",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "d84cbf6a-0a50-426f-aa3d-c45918b43575"
+      ],
+      "id_confidence": {
+        "85de02e5-2782-4050-9c01-c5de3849fbce": 85,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 85,
+        "f34786e7-0953-4085-9f3d-955481cdd4ea": 85,
+        "24d554b6-a720-45a3-b80d-17a46e612f26": 60,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 60,
+        "d84cbf6a-0a50-426f-aa3d-c45918b43575": 60
+      },
+      "id_gueltigkeit": {
+        "85de02e5-2782-4050-9c01-c5de3849fbce": "2022",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "f34786e7-0953-4085-9f3d-955481cdd4ea": "2024",
+        "24d554b6-a720-45a3-b80d-17a46e612f26": "2024",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "d84cbf6a-0a50-426f-aa3d-c45918b43575": "2022"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "Schottertragschicht 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "6d3a545c-07b1-4d65-8fa9-2574dca3f8d9"
+      ],
+      "id_confidence": {
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 35,
+        "6d3a545c-07b1-4d65-8fa9-2574dca3f8d9": 35
+      },
+      "id_gueltigkeit": {
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "2026",
+        "6d3a545c-07b1-4d65-8fa9-2574dca3f8d9": "2024"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/56",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "a4d16918-287f-43af-831d-baf80093fe4a",
+        "becd932f-899e-4b1b-962c-64ea26c51be0"
+      ],
+      "id_confidence": {
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 40,
+        "a4d16918-287f-43af-831d-baf80093fe4a": 40,
+        "becd932f-899e-4b1b-962c-64ea26c51be0": 40
+      },
+      "id_gueltigkeit": {
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "2026",
+        "a4d16918-287f-43af-831d-baf80093fe4a": "2022",
+        "becd932f-899e-4b1b-962c-64ea26c51be0": "2024"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Standard",
+    "description": "Standardaufbau Bundesstraße, bituminöse Schichten AC/SMA, ungebundene Tragschicht",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

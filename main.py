@@ -68,7 +68,20 @@ def process_groups_batch(input_data: Dict[str, Any], matcher: AzureEPDMatcher) -
             gruppe["id"] = matched_ids
             gruppe["id_confidence"] = result.get("confidence", {})
 
-            # NEU: Zeige Details
+            if idx < len(detailed_results):
+                matches = detailed_results[idx]
+                gruppe["id_name"] = {
+                    m["uuid"]: m["name"]
+                    for m in matches
+                    if m.get("name")
+                }
+                gruppe["id_gueltigkeit"] = {
+                    m["uuid"]: m["gueltigkeit"]
+                    for m in matches
+                    if m.get("gueltigkeit")
+                }
+
+            # Zeige Details
             if idx < len(detailed_results):
                 matches = detailed_results[idx]
                 print(f"\n🎯 {len(matches)} Matches gefunden:\n")
@@ -90,8 +103,12 @@ def process_groups_batch(input_data: Dict[str, Any], matcher: AzureEPDMatcher) -
                     else:
                         conf_str = "❓ N/A"
 
+                    gueltigkeit = match.get("gueltigkeit", "")
+
                     print(f"{i:2d}. ID: {match_id}")
                     print(f"    Name: {name}")
+                    if gueltigkeit:
+                        print(f"    Gültig bis: {gueltigkeit}")
                     print(f"    Confidence: {conf_str}")
                     print(f"    Begründung: {reason}")
                     print()
@@ -168,6 +185,7 @@ def process_single_group(
     # Ergebnisse zur Gruppe hinzufügen
     gruppe["id"] = matched_ids
     gruppe["id_confidence"] = build_confidence_map(matched_ids, matcher)
+    gruppe["id_name"] = build_name_map(matched_ids, matcher)
 
     print(f"  → {len(matched_ids)} ID(s) gefunden\n")
 
@@ -176,6 +194,19 @@ def remove_duplicates(ids: list) -> list:
     """Entfernt Duplikate aus Liste unter Beibehaltung der Reihenfolge."""
     seen = set()
     return [x for x in ids if not (str(x) in seen or seen.add(str(x)))]
+
+
+def build_name_map(
+    matched_ids: list,
+    matcher: AzureEPDMatcher
+) -> Dict[str, str]:
+    detailed_results = matcher.get_last_results()
+    matched_set = {str(x) for x in matched_ids}
+    return {
+        str(result["uuid"]): result.get("name", "")
+        for result in detailed_results
+        if str(result["uuid"]) in matched_set and result.get("name")
+    }
 
 
 def build_confidence_map(

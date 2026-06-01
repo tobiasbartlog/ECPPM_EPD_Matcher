@@ -36,10 +36,7 @@ class AzureEPDMatcher:
         # Glossar-Filter initialisieren (Stage 3)
         self._epd_filter = None
         if GlossarConfig.USE_GLOSSAR and FilterConfig.USE_GLOSSAR_FILTER:
-            self._epd_filter = EPDFilter(
-                max_epds_per_material=FilterConfig.FILTER_MAX_PER_MATERIAL,
-                debug=GlossarConfig.DEBUG
-            )
+            self._epd_filter = EPDFilter(debug=GlossarConfig.DEBUG)
 
         self._print_initialization_info()
 
@@ -96,6 +93,12 @@ class AzureEPDMatcher:
 
         # Response parsen
         all_matches = self._parse_batch_response(response, len(materials))
+
+        # Index → echte UUID auflösen (LLM gibt 1-basierte Indices zurück)
+        all_matches = [
+            self._resolve_match_ids(matches, filtered_epds)
+            for matches in all_matches
+        ]
 
         # ===============================================
         # STAGE 5: Confidence-Nachvalidierung
@@ -183,6 +186,9 @@ class AzureEPDMatcher:
 
         # Ergebnisse parsen
         matches = self._parse_response(response)
+
+        # Index → echte UUID auflösen
+        matches = self._resolve_match_ids(matches, filtered_epds)
 
         # Stage 5: Nachvalidierung
         if GlossarConfig.USE_GLOSSAR and ValidationConfig.USE_CONFIDENCE_VALIDATION:
@@ -504,21 +510,44 @@ class AzureEPDMatcher:
         except (ValueError, TypeError):
             return None
 
+    @staticmethod
+    def _resolve_match_ids(
+        matches: List[Dict[str, Any]],
+        epds: List[Dict[str, Any]]
+    ) -> List[Dict[str, Any]]:
+        """Wandelt 1-basierte Indices (LLM-Output) in echte EPD-IDs um.
+
+        Fallback: Wenn der Wert schon ein nicht-numerischer String ist (UUID),
+        wird er unverändert durchgereicht.
+        """
+        result = []
+        for m in matches:
+            identifier = m.get("uuid", "")
+            try:
+                idx = int(identifier) - 1  # 1-basiert → 0-basiert
+                if 0 <= idx < len(epds):
+                    m = dict(m)
+                    m["uuid"] = str(epds[idx].get("id", identifier))
+                    result.append(m)
+                # Index außerhalb der Liste → verwerfen (halluziniert)
+            except (ValueError, TypeError):
+                # Kein Integer → vermutlich bereits eine UUID, behalten
+                result.append(m)
+        return result
+
     def _enrich_results(
         self,
         matches: List[Dict[str, Any]],
         epds: List[Dict[str, Any]]
     ) -> List[Dict[str, Any]]:
-        """Reichert Matches mit EPD-Namen an."""
-        name_map = {
-            str(e.get("id")): e.get("name", "")
-            for e in epds
-        }
+        """Reichert Matches mit EPD-Metadaten an."""
+        epd_map = {str(e.get("id")): e for e in epds}
 
         return [
             {
                 "uuid": m["uuid"],
-                "name": name_map.get(m["uuid"], ""),
+                "name": epd_map.get(m["uuid"], {}).get("name", ""),
+                "gueltigkeit": epd_map.get(m["uuid"], {}).get("gueltigkeit", ""),
                 "confidence": m.get("confidence"),
                 "begruendung": m.get("begruendung", "")
             }

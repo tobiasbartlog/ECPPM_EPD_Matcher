@@ -16,6 +16,7 @@ class OekobaudatClient:
         self._page_size = DataSourceConfig.OEKOBAUDAT_PAGE_SIZE
         self._class_id = DataSourceConfig.OEKOBAUDAT_CLASSIFICATION
         self._class_system = DataSourceConfig.OEKOBAUDAT_CLASS_SYSTEM
+        self._stock_id = DataSourceConfig.OEKOBAUDAT_STOCK_ID
 
     # ------------------------------------------------------------------
     # Public EPDDataSource interface
@@ -79,7 +80,7 @@ class OekobaudatClient:
         params = self._base_params()
         params["pageSize"] = 1
         params["startIndex"] = 0
-        data = self._get(f"{self._base}/processes", params)
+        data = self._get(self._processes_url(), params)
         return int(data.get("totalCount") or 0)
 
     # ------------------------------------------------------------------
@@ -94,16 +95,22 @@ class OekobaudatClient:
             params["classSystem"] = self._class_system
         return params
 
+    def _processes_url(self) -> str:
+        if self._stock_id:
+            return f"{self._base}/datastocks/{self._stock_id}/processes"
+        return f"{self._base}/processes"
+
     def _fetch_all_pages(self) -> List[Dict[str, Any]]:
         start = 0
         all_items: List[Dict[str, Any]] = []
+        url = self._processes_url()
 
         while True:
             params = self._base_params()
             params["pageSize"] = self._page_size
             params["startIndex"] = start
 
-            data = self._get(f"{self._base}/processes", params)
+            data = self._get(url, params)
             page = data.get("data") or []
             total = int(data.get("totalCount") or 0)
 

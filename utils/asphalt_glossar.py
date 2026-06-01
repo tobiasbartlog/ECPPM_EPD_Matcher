@@ -298,6 +298,9 @@ def _fuzzy_match_asphalt_type(text: str) -> Optional[str]:
 def _schicht_aus_name(schicht_name: str) -> Optional[str]:
     """Leitet Schichtcode aus Schichtname ab."""
     name_lower = schicht_name.lower()
+    # "Nicht bituminöse Tragschicht" ist kein Asphalt-Layer-Code
+    if "nicht bituminös" in name_lower:
+        return None
     for code, info in LAYER_CODES.items():
         for variante in info.get("name_varianten", []):
             if variante in name_lower:

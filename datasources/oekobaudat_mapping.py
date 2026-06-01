@@ -102,6 +102,8 @@ def map_list_item(data: Dict[str, Any]) -> Dict[str, Any]:
         "gueltigkeit": str(data.get("validUntil") or ""),
         "gliederungsnummer": str(data.get("classificId") or ""),
         "bauDatRef": "",
+        "regNo": str(data.get("regNo") or "").strip(),
+        "subType": str(data.get("subType") or "").strip(),
     }
 
 

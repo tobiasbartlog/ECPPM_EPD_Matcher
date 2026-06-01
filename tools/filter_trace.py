@@ -86,8 +86,8 @@ FIXTURE_EPDS: List[Dict[str, Any]] = [
 SCENARIOS: List[Tuple[str, str, str]] = [
     ("01_ac16ds_deckschicht", "AC 16 D S", "Asphaltdeckschicht"),
     ("02_sma_deckschicht", "SMA 8 S", "Deckschicht"),
-    ("03_ac32ts_tragschicht", "AC 32 T S", "Tragschicht"),
-    ("04_schotter_tragschicht", "Schotter 0/45", "Schottertragschicht"),
+    ("03_ac32ts_tragschicht", "AC 32 T S", "Bituminöse Tragschicht"),
+    ("04_schotter_tragschicht", "Schotter 0/45", "Nicht bituminöse Tragschicht"),
     ("05_frostschutz", "Gesteinskörnungsgemisch 0/32", "Frostschutzschicht"),
     ("06_abdichtung_bruecke", "Bitumenbahn", "Brückenabdichtung"),
 ]

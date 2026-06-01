@@ -1,0 +1,204 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "Splittmastixasphalt, lärmreduzierend, feine Körnung",
+      "GUID": [
+        "guid-c-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c",
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017",
+        "55a779b7-89a1-4249-a37b-1c2445e56426",
+        "9eced374-9a8d-4ace-a569-56d52a2d1013",
+        "3222ca11-e1ee-4910-9997-0ea4e42831f6",
+        "9394795b-a620-4f54-b72c-c535bb0a02f0",
+        "0e67ff82-dcb5-47fa-9783-71ebebe21077",
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d",
+        "d5c7232a-0171-45c3-b81a-856961713db8",
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7"
+      ],
+      "id_confidence": {
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": 35,
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017": 35,
+        "55a779b7-89a1-4249-a37b-1c2445e56426": 35,
+        "9eced374-9a8d-4ace-a569-56d52a2d1013": 35,
+        "3222ca11-e1ee-4910-9997-0ea4e42831f6": 35,
+        "9394795b-a620-4f54-b72c-c535bb0a02f0": 35,
+        "0e67ff82-dcb5-47fa-9783-71ebebe21077": 35,
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d": 35,
+        "d5c7232a-0171-45c3-b81a-856961713db8": 35,
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": 35
+      },
+      "id_name": {
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": "ADAGIO Acoustic+",
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017": "ADAGIO Alpha+",
+        "55a779b7-89a1-4249-a37b-1c2445e56426": "ADAGIO dB+",
+        "9eced374-9a8d-4ace-a569-56d52a2d1013": "ADAGIO dB+ and Adagio Acoustic+",
+        "3222ca11-e1ee-4910-9997-0ea4e42831f6": "ADAGIO HD+ (19 mm)",
+        "9394795b-a620-4f54-b72c-c535bb0a02f0": "ADAGIO HD+ (30 mm)",
+        "0e67ff82-dcb5-47fa-9783-71ebebe21077": "ADAGIO HD+ (35 mm)",
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d": "AMF ECOMIN & ARMSTRONG Basis Sortiment; AMF THERMATEX & ARMSTRONG Standard Sortiment (Pontalier)",
+        "d5c7232a-0171-45c3-b81a-856961713db8": "Deckensystem - HT Labor + Hospitaltechnik GmbH - Decke für Nasszelle Stahlblech, verzinkt, pulverbeschichtet",
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": "THERMATEX Acoustic"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "Asphaltzwischenschicht mit polymermodifiziertem Bitumen, Körnung 16mm",
+      "GUID": [
+        "guid-c-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0",
+        "88c0f648-2316-4bbc-99b3-dbc636580088",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426",
+        "25db4367-38c5-4483-b392-4fc071170e5e",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 95,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 60,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 60,
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": 60,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 20,
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": 20,
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": 20,
+        "25db4367-38c5-4483-b392-4fc071170e5e": 20,
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": 20,
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "Kunststoffmodifizierte Bitumendickbeschichtung",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "Bitumenbahnen G 200 S4",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "Bitumenbahnen PYE PV 200 S5 (ungeschiefert)",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "Bitumenbahnen PYE-PV 200 S5 ns (geschiefert)",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": "Bitumenbahnen V 60",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": "Bitumenverträgliche Polyisobutylen (PIB) Kunststoffdachbahn"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "grobe Asphalttragschicht mit Normalbitumen, hohe Tragfähigkeit",
+      "GUID": [
+        "guid-c-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 92,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 70
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "Schotter ungebunden, gebrochenes Korn 0-45",
+      "GUID": [
+        "guid-c-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 85,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 84,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 83,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 82,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 81,
+        "286b0072-1001-4e5f-baa2-282230755243": 80,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 79,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 78,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 77,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 76
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Kies-Sand-Gemisch frostsicher, natürlich gewonnen, bis 32mm",
+      "GUID": [
+        "guid-c-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 90,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 85,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 82,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 82,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 80,
+        "286b0072-1001-4e5f-baa2-282230755243": 80,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 80,
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": 78,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 75
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": "Bimssand",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "C_Informell",
+    "description": "Informelle Mitarbeitereingabe: Freitext statt Norm-Codes, beschreibende Materialbezeichnungen ohne TL-Asphalt-StB-Referenz",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

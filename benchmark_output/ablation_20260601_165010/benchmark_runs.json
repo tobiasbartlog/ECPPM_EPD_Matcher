@@ -1,0 +1,95 @@
+[
+  {
+    "input_folder": "ablation_a",
+    "config_name": "P8_All",
+    "model": "gpt-4o-mini",
+    "repetition": 1,
+    "duration_seconds": 13.54,
+    "input_tokens": 2842,
+    "output_tokens": 807,
+    "cost_usd": 0.0009105,
+    "layer_results": [
+      {
+        "name": "Deckschicht",
+        "material": "SMA 11 S",
+        "top_matches": [
+          "24d554b6-a720-45a3-b80d-17a46e612f26",
+          "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+          "d84cbf6a-0a50-426f-aa3d-c45918b43575",
+          "78fb80c2-6d74-49fe-97fa-4d436af75106",
+          "d24a85e3-f395-4124-9874-c01f977a893f",
+          "19f46be3-d65a-441f-8d74-dfc412160cf1"
+        ],
+        "confidences": {
+          "24d554b6-a720-45a3-b80d-17a46e612f26": 85,
+          "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 85,
+          "d84cbf6a-0a50-426f-aa3d-c45918b43575": 85,
+          "78fb80c2-6d74-49fe-97fa-4d436af75106": 60,
+          "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+          "19f46be3-d65a-441f-8d74-dfc412160cf1": 60
+        }
+      },
+      {
+        "name": "Binderschicht",
+        "material": "AC 16 B S",
+        "top_matches": [
+          "3d1b480d-243f-4ff2-aa16-428e1a93f5d8",
+          "6b6b68f8-34a4-4a0f-97ee-714bf106c3e0",
+          "85e76e87-fc16-4fd5-80ed-a07fa5767f56"
+        ],
+        "confidences": {
+          "3d1b480d-243f-4ff2-aa16-428e1a93f5d8": 85,
+          "6b6b68f8-34a4-4a0f-97ee-714bf106c3e0": 85,
+          "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 85
+        }
+      },
+      {
+        "name": "Bituminöse Tragschicht",
+        "material": "AC 22 T S",
+        "top_matches": [
+          "85de02e5-2782-4050-9c01-c5de3849fbce",
+          "9795c91c-0918-46fa-8a51-47deb180c271",
+          "f34786e7-0953-4085-9f3d-955481cdd4ea",
+          "24d554b6-a720-45a3-b80d-17a46e612f26",
+          "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+          "d84cbf6a-0a50-426f-aa3d-c45918b43575"
+        ],
+        "confidences": {
+          "85de02e5-2782-4050-9c01-c5de3849fbce": 85,
+          "9795c91c-0918-46fa-8a51-47deb180c271": 85,
+          "f34786e7-0953-4085-9f3d-955481cdd4ea": 85,
+          "24d554b6-a720-45a3-b80d-17a46e612f26": 60,
+          "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 60,
+          "d84cbf6a-0a50-426f-aa3d-c45918b43575": 60
+        }
+      },
+      {
+        "name": "Nicht bituminöse Tragschicht",
+        "material": "Schottertragschicht 0/45",
+        "top_matches": [
+          "18563fde-e042-4c4f-9a28-01de646ea9ef",
+          "6d3a545c-07b1-4d65-8fa9-2574dca3f8d9"
+        ],
+        "confidences": {
+          "18563fde-e042-4c4f-9a28-01de646ea9ef": 35,
+          "6d3a545c-07b1-4d65-8fa9-2574dca3f8d9": 35
+        }
+      },
+      {
+        "name": "Frostschutzschicht",
+        "material": "Gesteinskörnungsgemisch 0/56",
+        "top_matches": [
+          "0d61ff01-935e-4934-befe-cb0b2ea18187",
+          "a4d16918-287f-43af-831d-baf80093fe4a",
+          "becd932f-899e-4b1b-962c-64ea26c51be0"
+        ],
+        "confidences": {
+          "0d61ff01-935e-4934-befe-cb0b2ea18187": 40,
+          "a4d16918-287f-43af-831d-baf80093fe4a": 40,
+          "becd932f-899e-4b1b-962c-64ea26c51be0": 40
+        }
+      }
+    ],
+    "error": ""
+  }
+]
