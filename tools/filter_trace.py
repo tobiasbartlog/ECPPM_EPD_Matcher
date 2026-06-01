@@ -68,18 +68,18 @@ FIXTURE_EPDS: List[Dict[str, Any]] = [
      "klassifizierung": "Gesteinskörnung / Splitt"},
     {"id": "fix-09", "name": "Frostschutzschicht Kiessand 0/32",
      "klassifizierung": "Ungebundene Gemische / Frostschutz"},
-    {"id": "fix-10", "name": "XPS Perimeterdämmung 120mm",
-     "klassifizierung": "Dämmstoffe / Polystyrol extrudiert"},
-    {"id": "fix-11", "name": "Mineralwolle Dämmplatte",
-     "klassifizierung": "Dämmstoffe / Mineralwolle"},
-    {"id": "fix-12", "name": "Beton C25/30",
-     "klassifizierung": "Beton / Ortbeton"},
-    {"id": "fix-13", "name": "Betonpflaster grau",
-     "klassifizierung": "Pflaster / Betonstein"},
+    {"id": "fix-10", "name": "Kiessand 0/32 Frostschutz",
+     "klassifizierung": "Ungebundene Gemische / Frostschutzschicht"},
+    {"id": "fix-11", "name": "Gesteinskörnungsgemisch 0/45",
+     "klassifizierung": "Ungebundene Gemische / Mineralgemisch"},
+    {"id": "fix-12", "name": "Bitumenbahn G 200 S4",
+     "klassifizierung": "Abdichtung / Bitumenbahnen"},
+    {"id": "fix-13", "name": "Schweißbahn Dachabdichtung",
+     "klassifizierung": "Abdichtung / Bitumenbahnen"},
     {"id": "fix-14", "name": "Zementmörtel",
      "klassifizierung": "Mörtel / Zementmörtel"},
-    {"id": "fix-15", "name": "Holzfenster Dreifachverglasung",
-     "klassifizierung": "Fenster / Holz"},
+    {"id": "fix-15", "name": "Beton C25/30 Fahrbahndecke",
+     "klassifizierung": "Beton / Straßenbeton"},
 ]
 
 # (slug, material_name, schicht_name) — jeweils ein einzelnes Material pro Report
@@ -88,8 +88,8 @@ SCENARIOS: List[Tuple[str, str, str]] = [
     ("02_sma_deckschicht", "SMA 8 S", "Deckschicht"),
     ("03_ac32ts_tragschicht", "AC 32 T S", "Tragschicht"),
     ("04_schotter_tragschicht", "Schotter 0/45", "Schottertragschicht"),
-    ("05_xps_daemmung", "XPS", "Wärmedämmung"),
-    ("06_unbekannt_keyword", "Holzfenster", "Fassade"),
+    ("05_frostschutz", "Gesteinskörnungsgemisch 0/32", "Frostschutzschicht"),
+    ("06_abdichtung_bruecke", "Bitumenbahn", "Brückenabdichtung"),
 ]
 
 
