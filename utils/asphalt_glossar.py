@@ -145,9 +145,6 @@ PMB_KEYWORDS = ["PMB", "POLYMER", "MODIFIZIERT", "ELASTOMER",
 # =============================================================================
 
 AUSSCHLUSS_BEGRIFFE: List[str] = [
-    "Betonpflaster", "Pflasterstein", "Betonstein",
-    "Betonsteinpflaster", "Verbundpflaster",
-    "C20/25", "C25/30", "C30/37", "C35/45", "C40/50", "C45/55", "C50/60",
     "Mörtel", "Estrich",
     "Kalksandstein", "Mauerwerk", "Ziegel",
     "Anhydrit", "Gips",
@@ -161,29 +158,17 @@ AUSSCHLUSS_BEGRIFFE: List[str] = [
 
 MATERIAL_KATEGORIEN: Dict[str, Dict[str, Any]] = {
     "schotter": {
-        "keywords": ["schotter", "kies", "splitt", "gestein", "mineralgemisch",
-                    "gesteinskörnung", "naturstein", "brechsand", "edelsplitt"],
-        "suchbegriffe": ["schotter", "kies", "splitt", "gestein", "mineral",
-                        "gesteinskörnung", "naturstein", "brechsand", "sand",
-                        "rundkies", "edelsplitt", "bims"],
+        "keywords": ["schotter", "kies", "splitt", "gesteinskörnung",
+                    "brechsand", "edelsplitt"],
+        "suchbegriffe": ["schotter", "kies", "splitt", "gesteinskörnung",
+                        "brechsand", "rundkies", "edelsplitt", "kiessand"],
         "ausschluss": ["asphalt", "bitumen", "dämmung", "xps", "eps", "beton",
                       "bitumenbahn", "abdichtung"]
     },
     "frostschutz": {
         "keywords": ["frostschutz", "fsts", "fsks", "fsk"],
-        "suchbegriffe": ["frostschutz", "kies", "sand", "mineral", "tragschicht",
-                        "schotter", "kiessand"],
+        "suchbegriffe": ["frostschutz", "kiessand", "schotter"],
         "ausschluss": ["asphalt", "bitumen", "dämmung", "bitumenbahn"]
-    },
-    "daemmung": {
-        "keywords": ["xps", "eps", "dämmung", "dämm", "isolierung", "pur", "pir",
-                    "mineralwolle", "steinwolle", "glaswolle", "polystyrol",
-                    "wärmedämmung", "perimeterdämmung"],
-        "suchbegriffe": ["xps", "eps", "dämmung", "dämm", "polystyrol", "isolier",
-                        "wärme", "mineralwolle", "steinwolle", "schaum", "styro",
-                        "perimeter", "extrudiert"],
-        "ausschluss": ["asphalt", "bitumen", "schotter", "kies", "beton",
-                      "bitumenbahn", "pflaster"]
     },
     "abdichtung": {
         "keywords": ["abdichtung", "bitumenbahn", "dachbahn", "schweißbahn"],

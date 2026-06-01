@@ -55,7 +55,88 @@ _Avoid_: Basis/Voll, kurz/lang
 ### Pipeline
 
 **Glossar-Filter**:
-Stage 3 der Pipeline. Reduziert den EPD-Katalog auf relevante Kandidaten, indem er deutsche
-Substrings (`asphalt`, `trag`, `deck`, `binder`, …) in `name + klassifizierung` sucht —
-bevor an das LLM geschickt wird. Datenquellen-unabhängig.
+Stage 3 der Pipeline. Reduziert den EPD-Katalog auf relevante Kandidaten — bevor an das LLM
+geschickt wird. Datenquellen-unabhängig. Dünner Aufrufer von [[matching-rules]].
+Asymmetrische Filterlogik: **Inklusion** (Suchbegriffe, Schicht-Treffer) gegen `name` —
+verhindert Treffer auf breite Oberbegriffe in `klassifizierung`; **Exklusion** (Ausschluss-
+und Mismatch-Begriffe) gegen `name + klassifizierung`. Ausnahme: `ist_asphalt`-Erkennung
+prüft `name + klassifizierung`, da `"Asphalt / ..."` in der Klassifizierung zuverlässig und
+spezifisch ist (kein Explosionsrisiko wie generische Kategorie-Suchbegriffe).
 _Avoid_: Vorfilter, EPDFilter, Pre-Filtering
+
+**matching_rules**:
+Das tiefe Modul mit den geteilten Fakten darüber, ob ein EPD-Kandidat zu einem Material passt.
+Einzige Quelle für Ausschluss-, Kategorie- und Mismatch-Wissen (löst die frühere Dreifach-
+Duplizierung über `AUSSCHLUSS_BEGRIFFE`, `MATERIAL_KATEGORIEN` und `MATERIAL_MISMATCHES` ab).
+Stellt `bewerte_kandidat(material, epd) -> Bewertung` bereit; importiert den Stage-2-Parser aus
+`asphalt_glossar`, verschiebt ihn aber nicht. Stage 3 (Glossar-Filter) und Stage 5
+(Confidence-Validierung) sind dünne Aufrufer und bleiben getrennte Policies.
+_Avoid_: Materialkunde, Validator, Scoring-Engine
+
+**Bewertung**:
+Das Fakten-Objekt aus `bewerte_kandidat` — die Tatsachen über ein (Material, EPD)-Paar
+(`ist_asphalt`, `ausgeschlossen`, `schicht_passt`, `kategorie_konflikt`), nicht die Policy.
+Stage 3 liest sie als Tor (primär/sekundär/raus), Stage 5 als Confidence-Cap. Die beiden
+Policies dürfen bewusst verschieden bleiben.
+_Avoid_: Score, Verdikt, Match-Result
+
+**5-Stage-Pipeline**:
+Die feste Reihenfolge jedes Laufs: (1) Kontext-Extraktion, (2) Material-Code-Parsing (Glossar),
+(3) EPD-Vorfilterung, (4) LLM-Matching, (5) Ergebnis-Aggregation + Confidence-Validierung. Die
+Stage-Grenzen sind die Struktur des Papers — eine Config-Klasse in `settings.py` pro Stage. Nicht
+verwischen.
+_Avoid_: Schritte, Phasen, Module (für die Stages)
+
+**Confidence-Cap**:
+Stage 5. Regelbasierte Nachkorrektur der LLM-Confidence: kappt auf `MAX_CONFIDENCE_EXCLUDED` bei
+Ausschluss/Kategorie-Konflikt, auf 60 bei fehlender Schicht. Bewusst **konstant** in allen
+Konfigurationen (kein Ablations-Schalter) — im Paper als Nachkorrektur dokumentiert, nicht als
+Variable. Liest [[Bewertung]].
+_Avoid_: Validierung (allein), Scoring, Re-Ranking
+
+### Workflow & Systeme
+
+**CDE**:
+Common Data Environment. Liefert die IFC-abgeleiteten Eingaben (Schicht-Name, Material, GUIDs,
+Volumen) als `input.json` pro Task-Ordner und nimmt die angereicherten Ergebnisse zurück. Das
+Matching-Tool ist der zentrale Knoten zwischen CDE, EPD-Datenquelle und LCA-Tool.
+_Avoid_: BIM-Tool, Frontend, Plattform
+
+**LCA-Tool**:
+Nachgelagertes Ökobilanz-Werkzeug. Bekommt die Schicht-Info angereichert um EPD-UUIDs (`id`) und
+`id_confidence`; nutzt `Volumen` als Bezugsgröße für die Hochrechnung.
+_Avoid_: Ökobilanzierer, Impact-Tool
+
+**JSON-Vertrag**:
+Das gemeinsame Eingabe-/Ausgabe-Schema (`NAME`, `MATERIAL`, `GUID`, `Volumen` je `Gruppe`). Ein-
+und Ausgabe nutzen dasselbe Schema; die Ausgabe ergänzt `id` und `id_confidence`. Nicht zu
+verwechseln mit dem internen [[EPD-Vertrag]].
+_Avoid_: Input-Format, Payload, DTO
+
+**Schicht-Taxonomie**:
+Die fünf normierten Schicht-Namen (RStO-orientiert): Deckschicht, Binderschicht, Tragschicht,
+Schottertragschicht, Frostschutzschicht. Im `NAME`-Feld geführt; korrespondiert direkt mit
+EPD-Klassifizierungen und treibt die [[matching-rules]]-Schicht-Prüfung.
+_Avoid_: Layer-Typen, Aufbau
+
+### Experiment
+
+**Ablations-Schalter**:
+Die drei binären Variablen der Studie: **Batch** (`EPD_USE_BATCH_MODE`), **Filter**
+(`EPD_USE_GLOSSAR_FILTER`), **NamePref** (`EPD_PREFER_NAME_FIELD`). Ergeben 2×2×2 = 8
+Konfigurationen P1–P8. **Glossar** (Stage 2) und **Confidence-Cap** (Stage 5) sind bewusst
+*nicht* abladiert — sie bleiben konstant. Jeder Refactor muss diese drei Schalter einzeln
+schaltbar lassen.
+_Avoid_: Flags, Optionen, Parameter (für die drei Studien-Variablen)
+
+**Stage-2-Vorbehalt**:
+Material-Code-Parsing (Glossar) ist beim aktuellen ÖKOBAUDAT-Bestand „in den meisten Fällen
+obsolet&ldquo;, weil kaum produktspezifische Infrastruktur-EPDs existieren und meist nur generische
+Datensätze matchen. Der Parser bleibt erhalten (er speist das `schicht_muss`-Signal des Filters),
+sein Mehrwert wächst aber erst mit der Datenbankabdeckung.
+_Avoid_: (keine)
+
+**Ground Truth**:
+Der pro Schicht manuell in der ÖKOBAUDAT bestimmte „richtige&ldquo; EPD-Datensatz, gegen den die
+Accuracy gemessen wird. Schichten ohne passenden EPD werden aus der Bewertung ausgeschlossen.
+_Avoid_: Soll-Wert, Referenz, Gold-Standard

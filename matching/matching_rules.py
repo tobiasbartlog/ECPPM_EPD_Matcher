@@ -1,0 +1,190 @@
+"""Geteilte Matching-Regeln für Stage 3 (EPD-Vorfilterung) und Stage 5 (Confidence-Validierung).
+
+Einzige Quelle für Ausschluss-, Kategorie- und Mismatch-Wissen.
+Stage 3 (EPDFilter) und Stage 5 (ConfidenceValidator) sind dünne Aufrufer,
+die Bewertung je nach Policy interpretieren.
+"""
+from dataclasses import dataclass
+from typing import Dict, Any, List, Optional
+
+from utils.asphalt_glossar import (
+    AUSSCHLUSS_BEGRIFFE,
+    ASPHALT_TYPES,
+    _ist_ausgeschlossen,
+    _ist_generisch_asphalt,
+)
+
+# Mismatch-Wissen: diese EPD-Begriffe passen NICHT zum jeweiligen Material-Typ.
+# War früher dupliziert in epd_filter.MATERIAL_MISMATCHES.
+MATERIAL_MISMATCHES: Dict[str, List[str]] = {
+    "asphalt": [
+        "bitumenbahn", "bitumenbahnen", "dachbahn", "dachabdichtung",
+        "schweißbahn", "kaltselbstklebebahn", "dampfsperre",
+        "emulsion",
+    ],
+    "schotter": [
+        "bitumenbahn", "bitumenbahnen", "asphalt", "gussasphalt",
+        "emulsion", "dampfsperre",
+    ],
+}
+
+
+@dataclass
+class Bewertung:
+    """Fakten über ein (Material, EPD)-Paar. Keine Policy."""
+    ist_asphalt: bool                  # EPD hat Asphalt-Bezug
+    ausgeschlossen: Optional[str]      # erster treffender Ausschluss-Begriff, oder None
+    schicht_passt: bool                # schicht_epd_muss_enthalten trifft auf EPD
+    kategorie_konflikt: Optional[str]  # erster treffender Mismatch-Begriff, oder None
+
+
+def get_material_type(parsed_material: Dict[str, Any]) -> Optional[str]:
+    """Ermittelt den groben Material-Typ für die Mismatch-Prüfung."""
+    material_orig = parsed_material.get("material_original", "").lower()
+    schicht_orig = (parsed_material.get("schicht_name_original") or "").lower()
+    combined = f"{material_orig} {schicht_orig}"
+    if parsed_material.get("ist_asphalt"):
+        return "asphalt"
+    if any(kw in combined for kw in ["schotter", "kies", "splitt", "frostschutz"]):
+        return "schotter"
+    return None
+
+
+def bewerte_kandidat(material: Dict[str, Any], epd: Dict[str, Any]) -> Bewertung:
+    """
+    Gibt die geteilten Fakten über ein (Material, EPD)-Paar zurück.
+
+    Args:
+        material: Parsed-Material-Dict (Output von parse_material_input).
+        epd:      EPD-Dict mit mindestens 'name' und 'klassifizierung'.
+
+    Returns:
+        Bewertung mit vier Fakten. Stage 3 und Stage 5 interpretieren sie je nach Policy.
+    """
+    epd_name = epd.get("name", "").lower()
+    epd_klassifizierung = epd.get("klassifizierung", "").lower()
+    combined = f"{epd_name} {epd_klassifizierung}"
+
+    # 1. Ausschluss-Begriff (Exklusion: gegen combined)
+    ausgeschlossen: Optional[str] = None
+    for term in AUSSCHLUSS_BEGRIFFE:
+        if term.lower() in combined:
+            ausgeschlossen = term
+            break
+
+    # 2. Asphalt-Bezug der EPD (gegen combined: Klassifizierung "Asphalt/..." ist zuverlässig,
+    #    kein Explosionsrisiko wie bei generischen Kategorie-Suchbegriffen)
+    typ_begriffe: List[str] = []
+    if material.get("typ") and material["typ"] in ASPHALT_TYPES:
+        typ_begriffe = [b.lower() for b in ASPHALT_TYPES[material["typ"]]["suchbegriffe"]]
+    ist_asphalt = _ist_generisch_asphalt(combined) or any(t in combined for t in typ_begriffe)
+
+    # 3. Schicht-Treffer (Inklusion: gegen name — verhindert False Positives über Klassifizierung)
+    schicht_muss = (material.get("schicht_epd_muss_enthalten") or "").lower()
+    schicht_passt = bool(schicht_muss and schicht_muss in epd_name)
+
+    # 4. Kategorie-/Typ-Konflikt (Exklusion: gegen combined)
+    material_type = get_material_type(material)
+    kategorie_konflikt: Optional[str] = None
+    if material_type:
+        for term in MATERIAL_MISMATCHES.get(material_type, []):
+            if term in combined:
+                kategorie_konflikt = term
+                break
+
+    return Bewertung(
+        ist_asphalt=ist_asphalt,
+        ausgeschlossen=ausgeschlossen,
+        schicht_passt=schicht_passt,
+        kategorie_konflikt=kategorie_konflikt,
+    )
+
+
+# =============================================================================
+# TEST
+# =============================================================================
+
+if __name__ == "__main__":
+    from utils.asphalt_glossar import parse_material_input
+
+    print("=" * 70)
+    print("MATCHING-RULES TEST")
+    print("=" * 70)
+
+    # (mat_name, schicht, epd_name, epd_klass,
+    #  erw_ausgeschlossen, erw_ist_asphalt, erw_schicht_passt, erw_kategorie_konflikt, beschreibung)
+    tests = [
+        (
+            "AC 16 D S", "Deckschicht",
+            "Asphaltdeckschicht AC 11 D S",
+            "Mineralische Baustoffe / Asphalt / Deckschichten",
+            None, True, True, None,
+            "Deckschicht-Match — alle Fakten positiv",
+        ),
+        (
+            "AC 16 B S", "Binderschicht",
+            "Asphalttragschicht AC 32 T S",
+            "Mineralische Baustoffe / Asphalt / Tragschichten",
+            None, True, False, None,
+            "Falscher Schicht-Typ: schicht_passt=False, kein Konflikt",
+        ),
+        (
+            "AC 16 D S", "Deckschicht",
+            "Bitumenbahn G 200 S4",
+            "Abdichtung / Bitumenbahnen",
+            None, True, False, "bitumenbahn",
+            "Bitumenbahn: kein Ausschluss (nicht in AUSSCHLUSS_BEGRIFFE), aber Kategorie-Konflikt",
+        ),
+        (
+            "AC 16 T S", "Tragschicht",
+            "Betonpflaster C25/30",
+            "Mineralische Baustoffe / Pflastersteine",
+            None, False, False, None,
+            "Betonpflaster: kein globaler Ausschluss (Tiefbau-valide), kein Asphalt-Bezug im Namen -> raus",
+        ),
+        (
+            "Asphalttragschicht", "Tragschicht",
+            "Asphalttragschicht AC 32 T N",
+            "Asphalt / Tragschichten",
+            None, True, True, None,
+            "Fuzzy-Match Tragschicht: alle Fakten positiv",
+        ),
+        (
+            "Schotter 0/45", "Schottertragschicht",
+            "Asphaltbeton AC 16",
+            "Mineralische Baustoffe / Asphalt / Tragschichten",
+            None, True, False, "asphalt",
+            "Schotter vs. Asphalt-EPD: Kategorie-Konflikt; schicht_passt=False (Inklusion gegen name, 'trag' nur in Klassifizierung)",
+        ),
+    ]
+
+    passed = 0
+    for (mat, schicht, epd_name, epd_klass,
+         erw_ausg, erw_asph, erw_schicht, erw_konfl, desc) in tests:
+
+        parsed = parse_material_input(mat, schicht)
+        epd = {"name": epd_name, "klassifizierung": epd_klass}
+        b = bewerte_kandidat(parsed, epd)
+
+        ok = (
+            b.ausgeschlossen == erw_ausg
+            and b.ist_asphalt == erw_asph
+            and b.schicht_passt == erw_schicht
+            and b.kategorie_konflikt == erw_konfl
+        )
+        status = "[OK]  " if ok else "[FAIL]"
+        print(f"\n{status} {desc}")
+        if not ok:
+            print(f"  Material:  {mat!r} / {schicht!r}")
+            print(f"  EPD:       {epd_name!r}")
+            print(f"  Erwartet:  ausgeschlossen={erw_ausg!r}, ist_asphalt={erw_asph}, "
+                  f"schicht_passt={erw_schicht}, kategorie_konflikt={erw_konfl!r}")
+            print(f"  Erhalten:  ausgeschlossen={b.ausgeschlossen!r}, ist_asphalt={b.ist_asphalt}, "
+                  f"schicht_passt={b.schicht_passt}, kategorie_konflikt={b.kategorie_konflikt!r}")
+        else:
+            passed += 1
+
+    print(f"\n{'=' * 70}")
+    print(f"Ergebnis: {passed}/{len(tests)} Tests bestanden")
+    if passed < len(tests):
+        raise SystemExit(1)

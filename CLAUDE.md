@@ -84,7 +84,7 @@ Output adds `id` (list of matched EPD IDs) and `id_confidence` (map of id → 0�
 ## Key design decisions
 
 - **Batch vs. individual mode**: Batch (`EPD_USE_BATCH_MODE=true`) sends all layers in one LLM request — faster and cheaper but requires the model to produce structured output for N layers simultaneously. Individual mode is the fallback.
-- **EPD pre-filtering is the main cost lever**: With 10 000+ EPDs in the database, the glossar filter (`EPDFilter`) is what makes LLM calls feasible. Tuning `EPD_GLOSSAR_FILTER_MAX` controls the trade-off between recall and token cost.
+- **EPD pre-filtering is the main cost lever**: With 10 000+ EPDs in the database, the glossar filter (`EPDFilter`) is what makes LLM calls feasible. The filter returns all relevant matches, primary (correct layer) first; `PROMPT_MAX_EPD` is only a token-limit safety cap on the prompt, not a relevance filter.
 - **Confidence validation (Stage 5) is rule-based**, not LLM-based: it caps scores for known mismatches (e.g. Bitumenbahnen matched to Asphalt) using `MATERIAL_MISMATCHES` and `AUSSCHLUSS_BEGRIFFE` lists in `epd_filter.py`.
 - **The LLM response is always parsed defensively**: both `_parse_response` and `_parse_batch_response` strip markdown fences and fall back to regex extraction before giving up.
 

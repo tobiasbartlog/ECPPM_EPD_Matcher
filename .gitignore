@@ -16,3 +16,6 @@ src
 /benchmark/
 /helper_envextractor.py
 data/
+
+# Filter-Trace-Reports (generierte Artefakte)
+filter_reports/

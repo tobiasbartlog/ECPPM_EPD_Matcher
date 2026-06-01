@@ -1,8 +1,11 @@
 """
 EPD-Vorfilterung für effizienteres Matching.
 
-Stage 3: Pre-filtering
-Stage 5: Confidence Validation
+Stage 3: Pre-filtering  (EPDFilter)
+Stage 5: Confidence Validation  (ConfidenceValidator)
+
+Beide lesen ihre Fakten aus matching_rules.bewerte_kandidat —
+die einzige Quelle für Ausschluss-, Kategorie- und Mismatch-Wissen.
 """
 
 from typing import Dict, Any, List, Optional, Tuple
@@ -10,18 +13,17 @@ from typing import Dict, Any, List, Optional, Tuple
 from config.settings import ValidationConfig, GlossarConfig, ContextConfig
 from utils.asphalt_glossar import (
     parse_material_input,
-    filter_epds_for_material,
-    ASPHALT_TYPES,
-    LAYER_CODES,
-    AUSSCHLUSS_BEGRIFFE
+    _detect_material_category,
+    MATERIAL_KATEGORIEN,
+    _ist_ausgeschlossen,
 )
+from matching.matching_rules import bewerte_kandidat, get_material_type
 
 
 class EPDFilter:
     """Stage 3: Filtert EPDs basierend auf Material-Analyse."""
 
-    def __init__(self, max_epds_per_material: int = 100, debug: bool = False):
-        self.max_epds = max_epds_per_material
+    def __init__(self, debug: bool = False):
         self.debug = debug
 
     def filter_for_materials(
@@ -30,7 +32,6 @@ class EPDFilter:
             materials: List[Dict[str, Any]]
     ) -> Dict[str, Any]:
         """Filtert EPDs für mehrere Materialien."""
-        all_relevant_ids = set()
         per_material = {}
         stats = {
             "total_epds": len(all_epds),
@@ -43,9 +44,7 @@ class EPDFilter:
             schicht_name = mat.get("context", {}).get("NAME", "")
 
             parsed = parse_material_input(material_name, schicht_name)
-            primaer, sekundaer = filter_epds_for_material(
-                all_epds, parsed, self.max_epds
-            )
+            primaer, sekundaer = self._filter_epds(all_epds, parsed)
 
             combined = primaer + sekundaer
             per_material[idx] = {
@@ -54,9 +53,6 @@ class EPDFilter:
                 "sekundaer": sekundaer,
                 "combined": combined
             }
-
-            for epd in combined:
-                all_relevant_ids.add(epd.get("id"))
 
             stats["filtered_per_material"].append({
                 "material": material_name,
@@ -71,7 +67,19 @@ class EPDFilter:
                 print(f"    Parsed: {parsed.get('typ', 'N/A')} / {parsed.get('schicht', 'N/A')}")
                 print(f"    Primär: {len(primaer)}, Sekundär: {len(sekundaer)}")
 
-        combined_epds = [epd for epd in all_epds if epd.get("id") in all_relevant_ids]
+        # Primär-zuerst über alle Materialien, dann sekundär — dedupliziert.
+        # So bleibt eine relevanz-sortierte Reihenfolge erhalten, falls Stage 4
+        # die Liste später auf MAX_EPD_IN_PROMPT kürzt (gute Treffer fallen nie raus).
+        combined_epds: List[Dict[str, Any]] = []
+        seen_ids = set()
+        for bucket in ("primaer", "sekundaer"):
+            for idx in sorted(per_material):
+                for epd in per_material[idx][bucket]:
+                    epd_id = epd.get("id")
+                    if epd_id in seen_ids:
+                        continue
+                    seen_ids.add(epd_id)
+                    combined_epds.append(epd)
 
         stats["combined_count"] = len(combined_epds)
         stats["reduction_percent"] = round(
@@ -95,8 +103,92 @@ class EPDFilter:
     ) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
         """Filtert EPDs für ein einzelnes Material."""
         parsed = parse_material_input(material_name, schicht_name)
-        primaer, sekundaer = filter_epds_for_material(all_epds, parsed, self.max_epds)
+        primaer, sekundaer = self._filter_epds(all_epds, parsed)
         return primaer + sekundaer, parsed
+
+    def _filter_epds(
+            self,
+            all_epds: List[Dict[str, Any]],
+            parsed: Dict[str, Any],
+    ) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+        """Drei-Fall-Filterlogik für ein geparstets Material."""
+
+        # =====================================================================
+        # FALL 1: Asphalt — bewerte_kandidat liefert die Fakten
+        # =====================================================================
+        if parsed.get("ist_asphalt"):
+            primaer: List[Dict[str, Any]] = []
+            sekundaer: List[Dict[str, Any]] = []
+            for epd in all_epds:
+                b = bewerte_kandidat(parsed, epd)
+                if b.ausgeschlossen:
+                    continue
+                if b.kategorie_konflikt:
+                    continue
+                if not b.ist_asphalt:
+                    continue
+                if b.schicht_passt:
+                    primaer.append(epd)
+                else:
+                    sekundaer.append(epd)
+            return primaer, sekundaer
+
+        # =====================================================================
+        # FALL 2: Nicht-Asphalt — kategorie-basierte Filterung
+        # Inklusion: Suchbegriffe gegen name (spezifisch).
+        # Exklusion: globaler Ausschluss + Kategorie-Ausschluss gegen combined.
+        # =====================================================================
+        material_orig = parsed.get("material_original", "")
+        schicht_orig = parsed.get("schicht_name_original", "") or ""
+        category = _detect_material_category(material_orig, schicht_orig)
+
+        if category and category in MATERIAL_KATEGORIEN:
+            cat_info = MATERIAL_KATEGORIEN[category]
+            suchbegriffe = [s.lower() for s in cat_info["suchbegriffe"]]
+            ausschluss = [a.lower() for a in cat_info["ausschluss"]]
+            primaer = []
+            sekundaer = []
+            for epd in all_epds:
+                epd_name = epd.get("name", "").lower()
+                epd_klassifizierung = epd.get("klassifizierung", "").lower()
+                combined = f"{epd_name} {epd_klassifizierung}"
+                if _ist_ausgeschlossen(combined):
+                    continue
+                if any(excl in combined for excl in ausschluss):
+                    continue
+                if any(such in epd_name for such in suchbegriffe):
+                    primaer.append(epd)
+            if len(primaer) < 10:
+                material_words = [w for w in material_orig.lower().split() if len(w) > 3]
+                for epd in all_epds:
+                    if epd in primaer:
+                        continue
+                    epd_name = epd.get("name", "").lower()
+                    if any(word in epd_name for word in material_words):
+                        sekundaer.append(epd)
+            return primaer, sekundaer
+
+        # =====================================================================
+        # FALL 3: Unbekannt — keyword-basierte Suche gegen name.
+        # Exklusion weiter gegen combined.
+        # =====================================================================
+        stop_words = {"mit", "und", "für", "der", "die", "das", "von", "nach", "gemäß"}
+        material_words = [
+            w.lower() for w in f"{material_orig} {schicht_orig}".split()
+            if len(w) > 2 and w.lower() not in stop_words
+        ]
+        if not material_words:
+            return all_epds, []
+        primaer = []
+        for epd in all_epds:
+            epd_name = epd.get("name", "").lower()
+            epd_klassifizierung = epd.get("klassifizierung", "").lower()
+            combined = f"{epd_name} {epd_klassifizierung}"
+            if _ist_ausgeschlossen(combined):
+                continue
+            if any(word in epd_name for word in material_words):
+                primaer.append(epd)
+        return primaer, []
 
     @staticmethod
     def get_filter_summary(stats: Dict[str, Any]) -> str:
@@ -107,13 +199,11 @@ class EPDFilter:
             f"Materialien: {stats['materials_count']}",
             ""
         ]
-
         for i, mat_stat in enumerate(stats.get("filtered_per_material", []), 1):
             lines.append(
                 f"  {i}. {mat_stat['material'][:40]}... → "
                 f"{mat_stat['primaer_count']} primär, {mat_stat['sekundaer_count']} sekundär"
             )
-
         return "\n".join(lines)
 
 
@@ -121,26 +211,11 @@ class EPDFilter:
 # STAGE 5: CONFIDENCE-VALIDATOR
 # =============================================================================
 
-# Begriffe die für bestimmte Materialtypen NICHT passen
-MATERIAL_MISMATCHES: Dict[str, List[str]] = {
-    "asphalt": [
-        "bitumenbahn", "bitumenbahnen", "dachbahn", "dachabdichtung",
-        "schweißbahn", "kaltselbstklebebahn", "dampfsperre",
-        "emulsion",
-    ],
-    "schotter": [
-        "bitumenbahn", "bitumenbahnen", "asphalt", "gussasphalt",
-        "emulsion", "dampfsperre",
-    ],
-    "daemmung": [
-        "bitumenbahn", "bitumenbahnen", "asphalt", "gussasphalt",
-        "schotter", "kies", "splitt", "emulsion",
-    ],
-}
-
-
 class ConfidenceValidator:
-    """Stage 5: Validiert und korrigiert GPT-Confidence-Werte."""
+    """Stage 5: Validiert und korrigiert GPT-Confidence-Werte.
+
+    Liest Fakten aus bewerte_kandidat; die Cap-Policy (Schwellwerte) bleibt hier.
+    """
 
     @staticmethod
     def validate_match(
@@ -148,75 +223,33 @@ class ConfidenceValidator:
             parsed_material: Dict[str, Any],
             gpt_confidence: int
     ) -> Tuple[int, str]:
-        """
-        Validiert einen einzelnen Match und korrigiert Confidence wenn nötig.
-
-        Verwendet ValidationConfig für Schwellwerte.
-        """
-        epd_name = epd.get("name", "").lower()
-        epd_klassifizierung = epd.get("klassifizierung", "").lower()
-        combined = f"{epd_name} {epd_klassifizierung}"
-
+        """Validiert einen einzelnen Match und korrigiert Confidence wenn nötig."""
         max_excluded = ValidationConfig.MAX_CONFIDENCE_EXCLUDED
+        b = bewerte_kandidat(parsed_material, epd)
 
         # 1. Ausschluss-Check
-        for excl in AUSSCHLUSS_BEGRIFFE:
-            if excl.lower() in combined:
-                return min(gpt_confidence, max_excluded), f"Ausschluss-Begriff '{excl}' gefunden"
+        if b.ausgeschlossen:
+            return min(gpt_confidence, max_excluded), f"Ausschluss-Begriff '{b.ausgeschlossen}' gefunden"
 
-        # 2. Material-Typ-Mismatch Check
-        material_type = ConfidenceValidator._get_material_type(parsed_material)
-        if material_type:
-            mismatches = MATERIAL_MISMATCHES.get(material_type, [])
-            for mismatch in mismatches:
-                if mismatch in combined:
-                    return min(gpt_confidence, max_excluded), f"'{mismatch}' passt nicht zu {material_type}"
+        # 2. Kategorie-/Typ-Konflikt
+        if b.kategorie_konflikt:
+            material_type = get_material_type(parsed_material)
+            return min(gpt_confidence, max_excluded), f"'{b.kategorie_konflikt}' passt nicht zu {material_type}"
 
-        # 3. Schicht-Check
-        # Nur durchführen, wenn wir NICHT das Material priorisieren
+        # 3. Schicht-Check (nur wenn PREFER_NAME_FIELD und Schicht bekannt)
         schicht_muss = parsed_material.get("schicht_epd_muss_enthalten", "")
         if schicht_muss and ContextConfig.PREFER_NAME_FIELD:
-            schicht_muss_lower = schicht_muss.lower()
-            if schicht_muss_lower not in combined:
-                ist_gleicher_typ = ConfidenceValidator._ist_gleicher_material_typ(
-                    combined, parsed_material
-                )
-                if ist_gleicher_typ:
+            if not b.schicht_passt:
+                if b.ist_asphalt:
                     return min(gpt_confidence, 60), f"Schicht-Begriff '{schicht_muss}' fehlt"
                 else:
                     return min(gpt_confidence, 35), f"Schicht-Begriff '{schicht_muss}' fehlt + falscher Typ"
 
-        # 4. Typ-Check für Asphalt
-        ist_asphalt = any(
-            keyword.lower() in combined
-            for keyword in ["asphalt", "bitumen", "bituminös"]
-        )
-        if parsed_material.get("ist_asphalt") and not ist_asphalt:
+        # 4. Asphalt-Typ-Check
+        if parsed_material.get("ist_asphalt") and not b.ist_asphalt:
             return min(gpt_confidence, 35), "Kein Asphalt-Bezug im EPD"
 
         return gpt_confidence, "Validiert"
-
-    @staticmethod
-    def _get_material_type(parsed_material: Dict[str, Any]) -> Optional[str]:
-        """Ermittelt den Material-Typ für Mismatch-Prüfung."""
-        material_orig = parsed_material.get("material_original", "").lower()
-        schicht_orig = parsed_material.get("schicht_name_original", "").lower()
-        combined = f"{material_orig} {schicht_orig}"
-
-        if parsed_material.get("ist_asphalt"):
-            return "asphalt"
-        if any(kw in combined for kw in ["schotter", "kies", "splitt", "frostschutz"]):
-            return "schotter"
-        if any(kw in combined for kw in ["dämm", "xps", "eps", "pur", "pir", "mineralwolle"]):
-            return "daemmung"
-        return None
-
-    @staticmethod
-    def _ist_gleicher_material_typ(epd_combined: str, parsed_material: Dict[str, Any]) -> bool:
-        """Prüft ob EPD und Material grundsätzlich gleicher Typ sind."""
-        if parsed_material.get("ist_asphalt"):
-            return any(kw in epd_combined for kw in ["asphalt", "bituminös"])
-        return False
 
     @staticmethod
     def validate_batch_results(
@@ -224,11 +257,7 @@ class ConfidenceValidator:
             materials: List[Dict[str, Any]],
             epds: List[Dict[str, Any]]
     ) -> List[List[Dict[str, Any]]]:
-        """
-        Validiert alle Batch-Ergebnisse.
-
-        Filtert Ergebnisse unter MIN_CONFIDENCE raus.
-        """
+        """Validiert alle Batch-Ergebnisse. Filtert Ergebnisse unter MIN_CONFIDENCE."""
         epd_by_id = {str(e.get("id")): e for e in epds}
         min_confidence = ValidationConfig.MIN_CONFIDENCE
 
@@ -251,7 +280,6 @@ class ConfidenceValidator:
                     epd, parsed, gpt_confidence
                 )
 
-                # Filter by MIN_CONFIDENCE
                 if new_confidence < min_confidence:
                     continue
 
@@ -283,13 +311,14 @@ if __name__ == "__main__":
     print(f"ValidationConfig.MAX_CONFIDENCE_EXCLUDED: {ValidationConfig.MAX_CONFIDENCE_EXCLUDED}")
 
     test_cases = [
-        ("Bitumenbahnen G 200 S4", "AC 16 D S", "Deckschicht", "sollte niedrig sein"),
-        ("Asphalttragschicht", "AC 16 D S", "Deckschicht", "sollte mittel sein"),
-        ("Asphaltdeckschicht", "AC 16 D S", "Deckschicht", "sollte hoch sein"),
+        ("Bitumenbahnen G 200 S4", "AC 16 D S", "Deckschicht", "<=20 (Kategorie-Konflikt)"),
+        ("Asphalttragschicht", "AC 16 D S", "Deckschicht", "<=60 nur wenn PREFER_NAME_FIELD=true, sonst 85"),
+        ("Asphaltdeckschicht", "AC 16 D S", "Deckschicht", "85 (korrekte Deckschicht)"),
     ]
 
     for epd_name, material, schicht, erwartung in test_cases:
         epd = {"name": epd_name, "klassifizierung": ""}
         parsed = parse_material_input(material, schicht)
         new_conf, grund = ConfidenceValidator.validate_match(epd, parsed, 85)
-        print(f"\nEPD: {epd_name} → {new_conf}% ({grund})")
+        print(f"\nEPD: {epd_name} -> {new_conf}% ({grund})")
+        print(f"  Erwartung: {erwartung}")

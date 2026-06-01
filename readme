@@ -36,9 +36,6 @@ EPD_GLOSSAR_DEBUG=true
 # Reduziert EPD-Menge vor dem LLM-Call erheblich
 EPD_USE_GLOSSAR_FILTER=true
 
-# Maximale EPDs pro Material nach Filterung
-EPD_GLOSSAR_FILTER_MAX=10000
-
 # Legacy: Einfacher Label-Filter (nur wenn USE_GLOSSAR=false)
 EPD_USE_FILTER_LABELS=false
 EPD_FILTER_LABELS=Asphalt,Bitumen,Tragschicht,Deckschicht,Binder

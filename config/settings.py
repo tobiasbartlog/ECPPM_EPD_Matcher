@@ -92,11 +92,6 @@ class FilterConfig:
     # Glossar-basierte Vorfilterung aktivieren
     USE_GLOSSAR_FILTER = _parse_bool(os.getenv("EPD_USE_GLOSSAR_FILTER", "true"))
 
-    # Maximale EPDs pro Material nach Filterung
-    FILTER_MAX_PER_MATERIAL = _parse_int(
-        os.getenv("EPD_GLOSSAR_FILTER_MAX", "100"), 100
-    )
-
     # Legacy: Einfacher Label-Filter
     USE_FILTER_LABELS = _parse_bool(os.getenv("EPD_USE_FILTER_LABELS", "false"))
     FILTER_LABELS: List[str] = [
@@ -112,8 +107,9 @@ class FilterConfig:
 class MatchingConfig:
     """Stage 4: LLM-basiertes Matching."""
 
-    # Maximale EPDs im Prompt (Token-Limit!)
-    MAX_EPD_IN_PROMPT = _parse_int(os.getenv("PROMPT_MAX_EPD", "200"), 200)
+    # Sicherheits-Obergrenze für EPDs im Prompt (schützt nur gegen das Token-Limit;
+    # der Vorfilter sortiert primär-zuerst, damit dieser Cap nie gute Treffer verwirft).
+    MAX_EPD_IN_PROMPT = _parse_int(os.getenv("PROMPT_MAX_EPD", "500"), 500)
 
     # Detail-Matching: technischeBeschreibung etc. laden
     USE_DETAIL_MATCHING = _parse_bool(os.getenv("EPD_USE_DETAIL_MATCHING", "false"))
@@ -251,7 +247,6 @@ def print_config_debug():
 
     print("\n[Stage 3: EPD Pre-filtering]")
     print(f"  USE_GLOSSAR_FILTER: {FilterConfig.USE_GLOSSAR_FILTER}")
-    print(f"  FILTER_MAX:         {FilterConfig.FILTER_MAX_PER_MATERIAL}")
     print(f"  USE_FILTER_LABELS:  {FilterConfig.USE_FILTER_LABELS} (legacy)")
 
     print("\n[Stage 4: Semantic Matching]")
