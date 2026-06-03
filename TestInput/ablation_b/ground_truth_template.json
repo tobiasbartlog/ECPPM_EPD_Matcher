@@ -18,10 +18,10 @@
     "note": "Bitte UUID prüfen und ggf. korrigieren. Für ground_truth.json nur 'suggested_uuid'-Wert übernehmen (oder null wenn kein passendes EPD vorhanden)."
   },
   "Nicht bituminöse Tragschicht": {
-    "suggested_uuid": "9795c91c-0918-46fa-8a51-47deb180c271",
-    "epd_name": "Asphalttragschicht",
-    "frequency": "1/1",
-    "note": "Bitte UUID prüfen und ggf. korrigieren. Für ground_truth.json nur 'suggested_uuid'-Wert übernehmen (oder null wenn kein passendes EPD vorhanden)."
+    "suggested_uuid": null,
+    "epd_name": null,
+    "frequency": "n/a",
+    "note": "VORLÄUFIG NULL — Input ist konzeptionell inkonsistent: NAME='Nicht bituminöse Tragschicht', MATERIAL='AC 32 T S mit Straßenbaubitumen 30/45' (Asphalt). Der Modell-Konsens (24/28 Pre-Fix, 9795c91c=Asphalttragschicht) spiegelt das Material-Feld wider. Per paper_design.md §2.2 wird diese Schicht aus der Accuracy-Berechnung ausgeschlossen, bis Experten-Validierung erfolgt. Alternativ kann der Konsens akzeptiert werden (siehe §1.2.5)."
   },
   "Frostschutzschicht": {
     "suggested_uuid": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",

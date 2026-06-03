@@ -323,6 +323,61 @@ fast alle 24 Modell-Config-Kombinationen auf 3 korrekte Zuschlag-EPDs, dominant
 **Phase-A-Gesamtkosten**: ca. 12 USD für 96 Runs. Hochrechnung Phase B (5 Reps, 480 Runs):
 ca. 60 USD.
 
+#### 1.2.5 Nach Ablation — Code-Review-Befunde und Ground-Truth-Entscheidungen
+
+Diese Sektion dokumentiert, was *nach* dem vollständigen 5-Rep-Lauf (480 Runs, Commit
+`a159897` vom 2026-06-03) durch ein systematisches Code-Review und durch Sichtung der
+generierten Ground-Truth-Vorlagen gefunden wurde. Die Befunde betreffen die Studien-
+auswertung, nicht den Pipeline-Code-Stand zum Zeitpunkt des Laufs.
+
+**Studienvalidität.** Alle 480 Runs sind mit dem Code-Stand inklusive der v2-Filter-Quality-
+Fixes (Commit `4916523`, `fe22bdb`, `c50d232` — alle *vor* dem Lauf) entstanden. Das
+Code-Review identifizierte acht Defekte (siehe `.scratch/v2-post-review-fixes/PRD.md`).
+Eine systematische Datenanalyse zeigt: keiner dieser Defekte hat die v2-Studiendaten
+beeinflusst. Begründung pro Befund:
+
+| Befund | Effekt auf v2-Daten | Begründung |
+|--------|---------------------|------------|
+| Fall-3 ohne Cap | keiner | Fall 3 ist in v2 *dead path* (§1.2.2); kein Material erreicht ihn |
+| Fuzzy-Match Bypass für „bitumen"-Inputs | keiner | Kein v2-MATERIAL trifft die Negativ-Kontext-Bedingung; „Straßenbaubitumen" wird zuvor von `_parse_normierte_bezeichnung("AC 32 T S …")` abgefangen |
+| Fall-2 `len > 3` vs. Fall-3 `len > 2` | keiner | Sekundärer Fallback nur bei <10 Primärtreffern aktiv; alle v2-Materialien haben genügend Primärtreffer |
+| Stage-5-Annotation im Einzelmodus | keiner für Accuracy | Bug betrifft nur das `begruendung`-Debug-Feld, nicht die `confidence`-Werte oder Top-1-Auswahl |
+| `filter_trace.py` Fixture-Pfade | keiner | Reines Erklärungstool, nicht Teil der Pipeline |
+| Toter Import `filter_epds_for_material` | keiner | Funktion wird nirgendwo aufgerufen |
+| Betonpflaster-Testfall | keiner | Unit-Test, läuft nicht im Benchmark |
+
+**Konsequenz für das Paper:** Die 480 Runs werden ohne Neuausführung ausgewertet. Die
+Code-Fixes sind technische Schulden und werden nach Paper-Einreichung adressiert.
+
+**Ground-Truth-Entscheidung für ablation_b / „Nicht bituminöse Tragschicht".**
+Der Input für diese Schicht ist konzeptionell inkonsistent: `NAME="Nicht bituminöse Tragschicht"`,
+`MATERIAL="AC 32 T S mit Straßenbaubitumen 30/45"` (Asphalt). Dies ist *kein* Datenfehler,
+sondern beabsichtigte Eigenschaft des „B_Praxis"-Szenarios („Reales IFC-Praxismodell:
+spezifische PMB-Materialien, abweichende Schichtnamen"). Im 5-Rep-Lauf wählt das LLM
+über alle 8 Configs überwiegend `9795c91c` (Asphalttragschicht) für diese Schicht
+(Pre-Fix-Frequenz: 24/28), weil das `MATERIAL`-Feld die Asphalt-Klassifizierung dominant
+signalisiert.
+
+**Methodische Optionen:**
+1. **`ground_truth = null`** → Schicht aus der Accuracy-Berechnung ausschließen (per §2.2).
+   Begründung: Bei konzeptionellem Input-Widerspruch existiert kein eindeutig „richtiges"
+   EPD. Konsequenz: ablation_b wird auf 4 von 5 Schichten ausgewertet.
+2. **`ground_truth = 9795c91c`** (Asphalttragschicht) → Konsens akzeptieren. Begründung:
+   Das LLM folgt korrekt dem MATERIAL-Feld als der spezifischeren Quelle. Konsequenz:
+   ablation_b/Nicht-bituminös ist eine Kontroll-Schicht für das Verhalten bei
+   NAME/MATERIAL-Konflikten — NamePref=false-Configs (P1/P2/P3/P7) sollten hier
+   systematisch besser abschneiden als NamePref=true-Configs (P4/P5/P6/P8).
+
+**Vorläufige Entscheidung:** Option 1 (`null`), bis Experten-Validierung des
+Ground-Truth-Dokuments erfolgt ist. Im Paper als methodische Annahme dokumentieren —
+die Robustheit gegen Input-Inkonsistenzen wird in der Diskussion erwähnt.
+
+**Andere ablation_b-Schichten:** Deckschicht (`d24a85e3`/SMA), Binderschicht
+(`85e76e87`/Asphaltbinder), Bituminöse Tragschicht (`9795c91c`/Asphalttragschicht) und
+Frostschutzschicht (`cff84492`/Natürliche Gesteinskörnungen) sind unproblematisch — die
+Modell-Konsens-Vorlagen passen semantisch zur Schicht. Sie werden vom Experten-Review
+nur final bestätigt.
+
 **Konstante Faktoren** (nicht abladiert, Begründung im Paper notwendig):
 - Stage 2 (Glossar-Parsing): bleibt aktiv, aber sein Beitrag ist gering da ÖKOBAUDAT kaum
   produktspezifische Infrastruktur-EPDs hat → „Stage-2-Vorbehalt" im Paper dokumentieren
@@ -505,7 +560,9 @@ Ohne `ground_truth.json` läuft das Skript durch, gibt aber keine Accuracy aus.
 - [ ] `custom_entries_config.json` erstellen (aus Template, UUIDs nach ÖKOBAUDAT-Lookup)
 - [ ] Prompt-Beispiel dokumentieren (Abschnitt 4.2)
 - [ ] Snapshot-Datum der lokalen ÖKOBAUDAT-DB dokumentieren
-- [ ] Benchmark-Rerun für P3/P6/P7/P8 mit Filter-Quality-Fixes (Accuracy-Validierung der §1.2.3-Tabelle); P1/P2/P4/P5 unverändert, da Filter=OFF
+- [x] Benchmark-Rerun für P3/P6/P7/P8 mit Filter-Quality-Fixes (durchgeführt 2026-06-02, Commit `a159897`)
+- [ ] Experten-Validierung der `ground_truth.json` für ablation_a/b/c (insbesondere ablation_b/„Nicht bituminöse Tragschicht" — vorläufig `null`, siehe §1.2.5)
+- [ ] Post-Review-Fixes adressieren (siehe `.scratch/v2-post-review-fixes/PRD.md`) — nach Paper-Einreichung
 - [ ] Preisdatum der 4 Azure-Modelle für v2 dokumentieren (neue Benchmark-Läufe)
 - [ ] Referenzen Hofmeyer et al. 2023 und Chen et al. 2024 sichten (Reviewer 2)
 - [ ] Limitation Open-Source-LLMs ausformulieren

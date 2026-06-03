@@ -12,14 +12,20 @@ Defekte aufgedeckt, die die Korrektheit der Ablationsstudie und die Zuverlässig
 Entwicklungs-Toolings beeinträchtigen:
 
 **Studienrelevante Befunde:**
-1. Das Ground-Truth-Template für ablation_b schlägt für „Nicht bituminöse Tragschicht" die
-   UUID der Asphalttragschicht (9795c91c) vor – strukturell falsch für eine nicht-bituminöse
-   Schicht, und basierend auf einem einzelnen Pre-Fix-Pilot-Run, der durch die bekannten
-   Recall-Bugs beeinflusst war. Paper-Daten (§1.2.4 Phase A: 0/24 Modell-Config-Kombinationen
-   wählten diese EPD nach den Fixes) widersprechen der Vorlage direkt.
+1. Das Ground-Truth-Template für ablation_b „Nicht bituminöse Tragschicht" empfiehlt
+   `9795c91c` (Asphalttragschicht). **Nuancierung nach Validierung**: Das ist *kein*
+   Pipeline-Bug, sondern eine bewusste Forscher-Entscheidung. Der Input ist konzeptionell
+   inkonsistent (NAME=„Nicht bituminöse Tragschicht", MATERIAL=„AC 32 T S mit Straßenbau-
+   bitumen 30/45"=Asphalt) — das ist beabsichtigte Eigenschaft des „B_Praxis"-Szenarios.
+   Im 5-Rep-Lauf wählt das LLM über alle 8 Configs überwiegend `9795c91c` (Pre-Fix:
+   24/28). Die Vorlage spiegelt den Modell-Konsens korrekt wider; offen ist nur die
+   methodische Entscheidung, ob die Schicht aus der Accuracy ausgeschlossen wird
+   (`null`) oder der Konsens akzeptiert wird. Siehe `paper_design.md` §1.2.5.
 2. `_fuzzy_match_asphalt_type` matcht „bitumen" als AC-Typ bevor `_ist_generisch_asphalt`
    aufgerufen wird. Der Negativ-Kontext-Fix greift damit für Eingabematerialien wie
    „Bitumenbahn G200" nicht (sie werden weiterhin als Asphalt klassifiziert).
+   **v2-Effekt: keiner** (kein v2-MATERIAL trifft diese Bedingung — „Straßenbaubitumen"
+   wird zuvor von `_parse_normierte_bezeichnung("AC 32 T S …")` abgefangen).
 
 **Tool-relevante Befunde:**
 3. Die Fixture-EPDs in `filter_trace.py` verwenden kurze, nicht-kanonische
@@ -50,10 +56,13 @@ Entwicklungs-Toolings beeinträchtigen:
 
 ## Solution
 
-Acht kleine, isolierte Korrekturen in der aufsteigenden Dringlichkeit für die Studie:
+Sieben kleine Code-Fixes plus eine Forscher-/Experten-Entscheidung:
 
-1. **ablation_b Ground-Truth-Template** neu generieren oder manuell korrigieren:
-   „Nicht bituminöse Tragschicht" → Schotter-EPD (Schotter 16/32, `f4461491`) oder `null`.
+1. **ablation_b Ground-Truth-Entscheidung** (kein Code-Fix, methodische Wahl): Vorläufig
+   `suggested_uuid = null` im Template gesetzt. Experten-Review entscheidet final, ob die
+   Schicht aus der Accuracy ausgeschlossen wird (`null` → 4-von-5-Auswertung) oder der
+   Modell-Konsens `9795c91c` akzeptiert wird (NamePref-Kontroll-Schicht). Begründung im
+   Paper-Methodikteil dokumentieren (Vorlage: `paper_design.md` §1.2.5).
 2. **filter_trace.py Fixtures** auf kanonische Klassifizierungspfade umstellen.
 3. **Fall 3 Cap** wiederherstellen: `return all_epds[:50], []` (oder konfigurierbarer Wert).
 4. **Fuzzy-Match Negativ-Kontext**: `_fuzzy_match_asphalt_type` oder den Step-2-Aufruf in
@@ -111,13 +120,25 @@ Acht kleine, isolierte Korrekturen in der aufsteigenden Dringlichkeit für die S
 
 ## Implementation Decisions
 
-### Befund 1 — ablation_b Ground-Truth-Template
+### Befund 1 — ablation_b „Nicht bituminöse Tragschicht" Ground-Truth
 
-Das Template muss neu generiert oder manuell bearbeitet werden. Laut Phase-A-Tabelle
-(paper_design.md §1.2.4) dominiert `Schotter 16/32` (f4461491) mit 20/24 Kombinationen.
-Vorschlag: `suggested_uuid` auf `f4461491` setzen und `epd_name` auf `Schotter 16/32`.
-Alternativ `null` setzen, wenn das manuelle Review ergeben hat, dass kein EPD passt.
-Die `frequency`-Felder können nach dem vollen 5-Rep-Lauf aktualisiert werden.
+**Korrektur der ursprünglichen Annahme**: Die §1.2.4-Phase-A-Tabelle mit „20/24 Schotter
+16/32" bezog sich auf die STSuB-Schicht in **ablation_a**, nicht auf ablation_b. Für
+ablation_b ist `9795c91c` (Asphalttragschicht) im Pre-Fix-Lauf mit 24/28 dominant und
+auch im Post-Fix-5-Rep-Lauf der LLM-Konsens über alle 8 Configs — weil das MATERIAL-Feld
+„AC 32 T S mit Straßenbaubitumen 30/45" die Asphalt-Klassifizierung signalisiert.
+
+**Vorläufige Aktion (umgesetzt)**: `suggested_uuid = null` im Template gesetzt, mit
+ausführlicher Note. Wartet auf Experten-Validierung.
+
+**Optionen für die finale Entscheidung** (Expert + Forscher):
+- **(a) `null`** → Schicht aus Accuracy ausschließen (per §2.2). Konservativ, vermeidet
+  semantische Streitfälle, kostet eine Schicht von ablation_b.
+- **(b) `9795c91c`** → Konsens akzeptieren. ablation_b wird zur Kontroll-Schicht für
+  NamePref-Verhalten bei Input-Konflikten; NamePref=true (P4/P5/P6/P8) und NamePref=false
+  (P1/P2/P3/P7) sollten systematisch unterschiedlich abschneiden.
+
+Begründung der gewählten Option im Paper unter „Methodische Annahmen" dokumentieren.
 
 ### Befund 2 — filter_trace.py Fixtures
 
@@ -206,14 +227,22 @@ Die bestehenden `if __name__ == "__main__":`-Blöcke in `matching_rules.py` und
 ## Further Notes
 
 **Priorisierung für den Paper-Deadline-Pfad:**
-Befunde 1 und 2 (Ground Truth und filter_trace.py) sind studien-kritisch und sollten
-zuerst adressiert werden, bevor der vollständige 5-Rep-Benchmark-Lauf gestartet wird.
-Befunde 3–8 sind technische Schulden, die parallel oder danach bereinigt werden können.
+Der vollständige 5-Rep-Benchmark-Lauf (480 Runs) ist bereits am 2026-06-02 abgeschlossen
+(Commit `a159897`). Befund 1 ist eine methodische Entscheidung beim Ground-Truth-Review
+und blockiert nur die Auswertung (`ablation_analysis.py`), nicht den Pipeline-Code.
+Befunde 2–8 sind technische Schulden ohne Einfluss auf die v2-Studiendaten und können
+nach Paper-Einreichung bereinigt werden.
+
+**Studienvalidität bestätigt:**
+Eine systematische Analyse aller acht Befunde gegen die v2-Eingabematerialien hat ergeben,
+dass keiner einen Effekt auf die 480 Runs hat. Details in `paper_design.md` §1.2.5
+(Tabelle „Effekt auf v2-Daten").
 
 **Befund 4 trifft das v2-Testset nicht:**
-Kein v2-Eingabematerial enthält „bitumenbahn" oder ähnliche Negativ-Kontext-Terme
-im MATERIAL-Feld. Der Fix ist prophylaktisch für zukünftige Inputs und schadet
-der aktuellen Studie nicht, wenn er zurückgestellt wird.
+Kein v2-MATERIAL enthält „bitumenbahn" oder ähnliche Negativ-Kontext-Terme.
+„Straßenbaubitumen 30/45" im ablation_b-Input wird zuerst von `_parse_normierte_bezeichnung`
+abgefangen (AC-Code an Stelle 0), bevor `_fuzzy_match_asphalt_type` aufgerufen wird —
+der Fuzzy-Pfad ist für v2 nicht erreichbar.
 
 **Befund 6 ist pre-existing:**
 Der Stage-5-Annotationsbug in `azure_matcher.py` wurde nicht durch die v2-Änderungen
