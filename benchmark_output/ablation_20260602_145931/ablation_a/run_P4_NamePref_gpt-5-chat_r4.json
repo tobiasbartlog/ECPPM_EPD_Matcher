@@ -1,0 +1,225 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "1ba3d2bb-56ca-416d-866c-959f3e83ca77",
+        "ba9c150e-4334-4bdf-ba93-337ea848c7ea",
+        "3e2e2e0d-957f-4c34-8a44-d0a177d7ab8e",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d",
+        "8f4e4fdb-fa6c-46b3-8680-57120c4bee5e",
+        "24484f95-db48-4d40-9b06-c08ab7b4cd51"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "1ba3d2bb-56ca-416d-866c-959f3e83ca77": 35,
+        "ba9c150e-4334-4bdf-ba93-337ea848c7ea": 35,
+        "3e2e2e0d-957f-4c34-8a44-d0a177d7ab8e": 35,
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": 35,
+        "8f4e4fdb-fa6c-46b3-8680-57120c4bee5e": 35,
+        "24484f95-db48-4d40-9b06-c08ab7b4cd51": 20
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "1ba3d2bb-56ca-416d-866c-959f3e83ca77": "Strom-Mix-Szenario 2030; <1kV",
+        "ba9c150e-4334-4bdf-ba93-337ea848c7ea": "WDVS Verklebung und Beschichtung Silikat-Dispersionsputz",
+        "3e2e2e0d-957f-4c34-8a44-d0a177d7ab8e": "Strom-Mix-Szenario 2050; <1kV",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": "Baumwolle ökologisch",
+        "8f4e4fdb-fa6c-46b3-8680-57120c4bee5e": "Zement (CEM III 42,5)",
+        "24484f95-db48-4d40-9b06-c08ab7b4cd51": "Beton C25/30 XC4 XF1 XA1 F3 16 L ECOPact R, Rezept Nummer DA4234R-DNZK Version 1, Transportbetonwerk Kerpen, Germany"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b",
+        "8f11c179-e367-4833-93f3-10597923c79c"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 96,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": 35,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c": 35,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20,
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": 20,
+        "8f11c179-e367-4833-93f3-10597923c79c": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": "Baumwolle ökologisch",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c": "Balkenschichtholz Nadelholz (generisch)",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "Transportbeton C20/25",
+        "8f11c179-e367-4833-93f3-10597923c79c": "Recycling Transportbeton C20/25"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "12bc74ba-14b6-4382-8610-b706ce6898e7",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 90,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 85,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 57,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 50,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 47,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "12bc74ba-14b6-4382-8610-b706ce6898e7": 20,
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": 20,
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": 20
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "12bc74ba-14b6-4382-8610-b706ce6898e7": "Wienerberger-02-Geschützte Mauer- und Deckenziegel; 1 Tonne Produkt mit Rohdichte gemäß Flusseigenschaft",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "Transportbeton C20/25",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": "Transportbeton C25/30"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8",
+        "f1974493-0668-4b34-880b-21c3f27345bc",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+        "28862311-601b-4bba-a885-6e919522ff41",
+        "a3763da5-91b7-4dc9-b150-be14df009c83",
+        "736ac815-a211-478d-939a-fe19433c538d"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 95,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 92,
+        "286b0072-1001-4e5f-baa2-282230755243": 85,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 82,
+        "f1974493-0668-4b34-880b-21c3f27345bc": 78,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 76,
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": 74,
+        "28862311-601b-4bba-a885-6e919522ff41": 70,
+        "a3763da5-91b7-4dc9-b150-be14df009c83": 60,
+        "736ac815-a211-478d-939a-fe19433c538d": 58
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)",
+        "f1974493-0668-4b34-880b-21c3f27345bc": "Sanitärkeramik",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": "Natürliche Gesteinskörnungen (Näppi T & N Oy)",
+        "28862311-601b-4bba-a885-6e919522ff41": "Chlorodifluormethan (R22)",
+        "a3763da5-91b7-4dc9-b150-be14df009c83": "Kohlenstoffdioxid (R744)",
+        "736ac815-a211-478d-939a-fe19433c538d": "Grobalith®"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "67c9d57a-872a-4614-8be8-37ecaf9952e4",
+        "8ac5659c-5918-41bb-966d-91efdd6c4e50",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "ab14e105-1768-4cd7-bcd2-3436c16fad16",
+        "2ad6cb2d-b8f4-49c0-8fa2-c24410927fb5",
+        "c836b484-773f-4a07-9baa-c70da743ccea",
+        "61c0c795-7116-407d-8635-68fe422f76a9"
+      ],
+      "id_confidence": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 95,
+        "f4461491-586a-4770-9a04-716565e58c24": 93,
+        "67c9d57a-872a-4614-8be8-37ecaf9952e4": 70,
+        "8ac5659c-5918-41bb-966d-91efdd6c4e50": 65,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 60,
+        "286b0072-1001-4e5f-baa2-282230755243": 55,
+        "ab14e105-1768-4cd7-bcd2-3436c16fad16": 45,
+        "2ad6cb2d-b8f4-49c0-8fa2-c24410927fb5": 30,
+        "c836b484-773f-4a07-9baa-c70da743ccea": 25,
+        "61c0c795-7116-407d-8635-68fe422f76a9": 20
+      },
+      "id_name": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "67c9d57a-872a-4614-8be8-37ecaf9952e4": "Blähton Granulat",
+        "8ac5659c-5918-41bb-966d-91efdd6c4e50": "Blähton Sand",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "ab14e105-1768-4cd7-bcd2-3436c16fad16": "PVC-Dachbahnen",
+        "2ad6cb2d-b8f4-49c0-8fa2-c24410927fb5": "Dichtmasse auf Polysulfidbasis",
+        "c836b484-773f-4a07-9baa-c70da743ccea": "Brettschichtholz - Sonderformen (Durchschnitt DE)",
+        "61c0c795-7116-407d-8635-68fe422f76a9": "Recycling Transportbeton C25/30"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

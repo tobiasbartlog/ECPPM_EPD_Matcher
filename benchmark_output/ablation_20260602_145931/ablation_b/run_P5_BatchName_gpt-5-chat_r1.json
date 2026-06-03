@@ -1,0 +1,297 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d",
+        "9c1b485e-c801-42ad-bb59-fe209392fc98",
+        "efb296ec-9a09-4344-99c7-faa3cc805541",
+        "a28ca150-de06-4a99-9b8e-6dbb381f69e1",
+        "a3f8b417-db5f-4f97-bad5-7bd8a0df617d",
+        "f913d8b1-3696-48e6-92cd-d8a083b81319",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2"
+      ],
+      "id_confidence": {
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": 35,
+        "9c1b485e-c801-42ad-bb59-fe209392fc98": 35,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35,
+        "a28ca150-de06-4a99-9b8e-6dbb381f69e1": 35,
+        "a3f8b417-db5f-4f97-bad5-7bd8a0df617d": 20,
+        "f913d8b1-3696-48e6-92cd-d8a083b81319": 20,
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": 20,
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": 20
+      },
+      "id_name": {
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": "Baumwolle ökologisch",
+        "9c1b485e-c801-42ad-bb59-fe209392fc98": "Bauschutt-Deponierung",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente",
+        "a28ca150-de06-4a99-9b8e-6dbb381f69e1": "Bauschuttaufbereitung",
+        "a3f8b417-db5f-4f97-bad5-7bd8a0df617d": "Beton C25/30 XC4 XF1 XA1 F3 16 M ECOPact, Rezept Nummer NA4234-DHZK Version 1, Transportbetonwerk Babenhausen, Germany",
+        "f913d8b1-3696-48e6-92cd-d8a083b81319": "Beton C25/30 XC4 XF1 XA1 F3 16 M ECOPact, Rezept Nummer NA4234-DHZS Version 1, Transportbetonwerk Büttelborn, Germany",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "Transportbeton C20/25",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": "Transportbeton C25/30"
+      },
+      "id_gueltigkeit": {
+        "52d4092b-b220-4850-9179-4f11094da94e": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": "2026",
+        "9c1b485e-c801-42ad-bb59-fe209392fc98": "2026",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "2026",
+        "a28ca150-de06-4a99-9b8e-6dbb381f69e1": "2026",
+        "a3f8b417-db5f-4f97-bad5-7bd8a0df617d": "2028",
+        "f913d8b1-3696-48e6-92cd-d8a083b81319": "2028",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "2026",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": "2026"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "a28ca150-de06-4a99-9b8e-6dbb381f69e1",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d",
+        "8d2d5241-1729-4925-922d-fbebef7f23e4",
+        "369ccdd7-104d-46a9-b3e3-81bc1a19ac80",
+        "b2ba83d3-0427-404c-8c27-f551d0a26bd3",
+        "de4f1273-f63f-4c2e-998c-639cb0e6e2c3",
+        "9c1b485e-c801-42ad-bb59-fe209392fc98",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 95,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 40,
+        "a28ca150-de06-4a99-9b8e-6dbb381f69e1": 35,
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": 35,
+        "8d2d5241-1729-4925-922d-fbebef7f23e4": 35,
+        "369ccdd7-104d-46a9-b3e3-81bc1a19ac80": 35,
+        "b2ba83d3-0427-404c-8c27-f551d0a26bd3": 35,
+        "de4f1273-f63f-4c2e-998c-639cb0e6e2c3": 35,
+        "9c1b485e-c801-42ad-bb59-fe209392fc98": 35,
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "a28ca150-de06-4a99-9b8e-6dbb381f69e1": "Bauschuttaufbereitung",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": "Baumwolle ökologisch",
+        "8d2d5241-1729-4925-922d-fbebef7f23e4": "Rohre für Strom-Wärmepumpe (Wasser-Wasser) 10 kW",
+        "369ccdd7-104d-46a9-b3e3-81bc1a19ac80": "Rohre für Strom-Wärmepumpe (Wasser-Wasser) 20 kW",
+        "b2ba83d3-0427-404c-8c27-f551d0a26bd3": "Transparente Platten PC",
+        "de4f1273-f63f-4c2e-998c-639cb0e6e2c3": "Heizöl el",
+        "9c1b485e-c801-42ad-bb59-fe209392fc98": "Bauschutt-Deponierung",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "Transportbeton C20/25"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "a28ca150-de06-4a99-9b8e-6dbb381f69e1": "2026",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": "2026",
+        "8d2d5241-1729-4925-922d-fbebef7f23e4": "2026",
+        "369ccdd7-104d-46a9-b3e3-81bc1a19ac80": "2026",
+        "b2ba83d3-0427-404c-8c27-f551d0a26bd3": "2026",
+        "de4f1273-f63f-4c2e-998c-639cb0e6e2c3": "2026",
+        "9c1b485e-c801-42ad-bb59-fe209392fc98": "2026",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "2026"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "efb296ec-9a09-4344-99c7-faa3cc805541",
+        "9c1b485e-c801-42ad-bb59-fe209392fc98",
+        "f9f40b59-268d-4a0b-8c80-d978ac97608f",
+        "24b673e5-b737-4fe9-ab51-ca68391ccdd3",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2",
+        "d6f982e3-beda-49f0-a298-694fcbf3ba38",
+        "0a1fa7f9-ad49-4942-a173-cb8c4ad99c9b",
+        "a3f8b417-db5f-4f97-bad5-7bd8a0df617d"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 95,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35,
+        "9c1b485e-c801-42ad-bb59-fe209392fc98": 35,
+        "f9f40b59-268d-4a0b-8c80-d978ac97608f": 35,
+        "24b673e5-b737-4fe9-ab51-ca68391ccdd3": 35,
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": 20,
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": 20,
+        "d6f982e3-beda-49f0-a298-694fcbf3ba38": 20,
+        "0a1fa7f9-ad49-4942-a173-cb8c4ad99c9b": 20,
+        "a3f8b417-db5f-4f97-bad5-7bd8a0df617d": 20
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente",
+        "9c1b485e-c801-42ad-bb59-fe209392fc98": "Bauschutt-Deponierung",
+        "f9f40b59-268d-4a0b-8c80-d978ac97608f": "Hochdichte Faserplatte (Durchschnitt DE)",
+        "24b673e5-b737-4fe9-ab51-ca68391ccdd3": "Sperrholzplatte (generisch)",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "Transportbeton C20/25",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": "Transportbeton C25/30",
+        "d6f982e3-beda-49f0-a298-694fcbf3ba38": "Transportbeton C30/37",
+        "0a1fa7f9-ad49-4942-a173-cb8c4ad99c9b": "Transportbeton C50/60",
+        "a3f8b417-db5f-4f97-bad5-7bd8a0df617d": "Beton C25/30 XC4 XF1 XA1 F3 16 M ECOPact, Rezept Nummer NA4234-DHZK Version 1, Transportbetonwerk Babenhausen, Germany"
+      },
+      "id_gueltigkeit": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "2026",
+        "9c1b485e-c801-42ad-bb59-fe209392fc98": "2026",
+        "f9f40b59-268d-4a0b-8c80-d978ac97608f": "2028",
+        "24b673e5-b737-4fe9-ab51-ca68391ccdd3": "2026",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "2026",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": "2026",
+        "d6f982e3-beda-49f0-a298-694fcbf3ba38": "2026",
+        "0a1fa7f9-ad49-4942-a173-cb8c4ad99c9b": "2026",
+        "a3f8b417-db5f-4f97-bad5-7bd8a0df617d": "2028"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "63f776af-c722-40f5-a03a-7dc8a438a3a3",
+        "9c1b485e-c801-42ad-bb59-fe209392fc98",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2",
+        "d6f982e3-beda-49f0-a298-694fcbf3ba38",
+        "0a1fa7f9-ad49-4942-a173-cb8c4ad99c9b",
+        "e69c7597-9d58-48cb-88c9-8e73445e7000",
+        "d5d98d4b-a9ba-4fb3-b2d2-6766f8ef5a59",
+        "8347f9a7-f4ec-4a36-a266-a0281f5fd16d",
+        "b3fb0ba9-2376-49bf-b21a-7f7a5cd97233"
+      ],
+      "id_confidence": {
+        "63f776af-c722-40f5-a03a-7dc8a438a3a3": 35,
+        "9c1b485e-c801-42ad-bb59-fe209392fc98": 35,
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": 20,
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": 20,
+        "d6f982e3-beda-49f0-a298-694fcbf3ba38": 20,
+        "0a1fa7f9-ad49-4942-a173-cb8c4ad99c9b": 20,
+        "e69c7597-9d58-48cb-88c9-8e73445e7000": 20,
+        "d5d98d4b-a9ba-4fb3-b2d2-6766f8ef5a59": 20,
+        "8347f9a7-f4ec-4a36-a266-a0281f5fd16d": 20,
+        "b3fb0ba9-2376-49bf-b21a-7f7a5cd97233": 20
+      },
+      "id_name": {
+        "63f776af-c722-40f5-a03a-7dc8a438a3a3": "Trinkwasser",
+        "9c1b485e-c801-42ad-bb59-fe209392fc98": "Bauschutt-Deponierung",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "Transportbeton C20/25",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": "Transportbeton C25/30",
+        "d6f982e3-beda-49f0-a298-694fcbf3ba38": "Transportbeton C30/37",
+        "0a1fa7f9-ad49-4942-a173-cb8c4ad99c9b": "Transportbeton C50/60",
+        "e69c7597-9d58-48cb-88c9-8e73445e7000": "Beton C8/10 X0 F3 32 M, Rezept Nummer NU0334-AHZK Version 1, Transportbetonwerk Bocholt, Germany",
+        "d5d98d4b-a9ba-4fb3-b2d2-6766f8ef5a59": "Beton der Druckfestigkeitsklasse C20/25",
+        "8347f9a7-f4ec-4a36-a266-a0281f5fd16d": "Beton der Druckfestigkeitsklasse C25/30",
+        "b3fb0ba9-2376-49bf-b21a-7f7a5cd97233": "Beton der Druckfestigkeitsklasse C30/37"
+      },
+      "id_gueltigkeit": {
+        "63f776af-c722-40f5-a03a-7dc8a438a3a3": "2026",
+        "9c1b485e-c801-42ad-bb59-fe209392fc98": "2026",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "2026",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": "2026",
+        "d6f982e3-beda-49f0-a298-694fcbf3ba38": "2026",
+        "0a1fa7f9-ad49-4942-a173-cb8c4ad99c9b": "2026",
+        "e69c7597-9d58-48cb-88c9-8e73445e7000": "2030",
+        "d5d98d4b-a9ba-4fb3-b2d2-6766f8ef5a59": "2028",
+        "8347f9a7-f4ec-4a36-a266-a0281f5fd16d": "2028",
+        "b3fb0ba9-2376-49bf-b21a-7f7a5cd97233": "2028"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "ee0c4b18-f9c9-44d1-8766-36db08856a2f",
+        "c93cfa1e-0b60-403f-a66e-0e4ad88ad567",
+        "c8588c14-1264-4584-a580-f54883fda8b8",
+        "7474e95c-6689-40ae-a304-1b1e8a5fc086",
+        "ba11346b-51c7-40cb-8e87-d8bd7ce97c3e",
+        "4a74f215-c56d-492d-b267-da2f41dd68bf",
+        "3e15eb88-e824-4a81-972a-45e06930aa19"
+      ],
+      "id_confidence": {
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 90,
+        "f4461491-586a-4770-9a04-716565e58c24": 82,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 80,
+        "ee0c4b18-f9c9-44d1-8766-36db08856a2f": 60,
+        "c93cfa1e-0b60-403f-a66e-0e4ad88ad567": 55,
+        "c8588c14-1264-4584-a580-f54883fda8b8": 50,
+        "7474e95c-6689-40ae-a304-1b1e8a5fc086": 20,
+        "ba11346b-51c7-40cb-8e87-d8bd7ce97c3e": 20,
+        "4a74f215-c56d-492d-b267-da2f41dd68bf": 20,
+        "3e15eb88-e824-4a81-972a-45e06930aa19": 20
+      },
+      "id_name": {
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "ee0c4b18-f9c9-44d1-8766-36db08856a2f": "Holzfaserdämmstoff flexible Matte (Durchschnitt DE)",
+        "c93cfa1e-0b60-403f-a66e-0e4ad88ad567": "Strom-Wärmepumpe (Sole-Wasser, Erdsonde) 10 kW",
+        "c8588c14-1264-4584-a580-f54883fda8b8": "Nutzung - Flachkollektor (1m2 und Jahr), entspr. GEG",
+        "7474e95c-6689-40ae-a304-1b1e8a5fc086": "Beton C25/30 XC4 XF1 XA1 F3 16 M EcoPact, Rezept Nummer DA4234R-DHNR Version 1, Transportbetonwerk Lünen, Germany",
+        "ba11346b-51c7-40cb-8e87-d8bd7ce97c3e": "Beton C25/30 XC4 XF1 XA1 F3 16 M ECOPact, Rezept Nummer DA4234-DNZK Version 1, Transportbetonwerk Dormagen, Germany",
+        "4a74f215-c56d-492d-b267-da2f41dd68bf": "Beton C25/30 XC4 XF1 XA1 F3 16 M EcoPact, Rezept Nummer DA4234-DNZK Version 1, Transportbetonwerk Langenfeld, Germany",
+        "3e15eb88-e824-4a81-972a-45e06930aa19": "Recycling Transportbeton C30/37"
+      },
+      "id_gueltigkeit": {
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026",
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "ee0c4b18-f9c9-44d1-8766-36db08856a2f": "2028",
+        "c93cfa1e-0b60-403f-a66e-0e4ad88ad567": "2026",
+        "c8588c14-1264-4584-a580-f54883fda8b8": "2026",
+        "7474e95c-6689-40ae-a304-1b1e8a5fc086": "2028",
+        "ba11346b-51c7-40cb-8e87-d8bd7ce97c3e": "2028",
+        "4a74f215-c56d-492d-b267-da2f41dd68bf": "2028",
+        "3e15eb88-e824-4a81-972a-45e06930aa19": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

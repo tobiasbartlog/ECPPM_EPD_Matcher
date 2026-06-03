@@ -1,0 +1,251 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "879756d8-15b1-44d7-a454-29c961b2eab7",
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98",
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0",
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010",
+        "44502a7a-8229-421f-b12d-44719c2a026c",
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176",
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7",
+        "78d81405-a108-455e-b339-2dbac96dcf56",
+        "83979499-f57c-462f-860b-efbc60bd000f",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e"
+      ],
+      "id_confidence": {
+        "879756d8-15b1-44d7-a454-29c961b2eab7": 35,
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98": 35,
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0": 35,
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010": 35,
+        "44502a7a-8229-421f-b12d-44719c2a026c": 35,
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176": 35,
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7": 35,
+        "78d81405-a108-455e-b339-2dbac96dcf56": 35,
+        "83979499-f57c-462f-860b-efbc60bd000f": 35,
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": 35
+      },
+      "id_name": {
+        "879756d8-15b1-44d7-a454-29c961b2eab7": "BRESPA-Decke Typ A15B (DW Systembau GmbH)",
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98": "BRESPA-Decke Typ A20B (DW Systembau GmbH)",
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0": "BRESPA-Decke Typ A20Q (DW Systembau GmbH)",
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010": "BRESPA-Decke Typ A22B (DW Systembau GmbH)",
+        "44502a7a-8229-421f-b12d-44719c2a026c": "BRESPA-Decke Typ A26B (DW Systembau GmbH)",
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176": "BRESPA-Decke Typ A26Q (DW Systembau GmbH)",
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7": "BRESPA-Decke Typ A32V (DW Systembau GmbH)",
+        "78d81405-a108-455e-b339-2dbac96dcf56": "BRESPA-Decke Typ A40V (DW Systembau GmbH)",
+        "83979499-f57c-462f-860b-efbc60bd000f": "Classic Lite Deckenplatten",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "Classic Max Deckenplatten"
+      },
+      "id_gueltigkeit": {
+        "879756d8-15b1-44d7-a454-29c961b2eab7": "2029",
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98": "2029",
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0": "2029",
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010": "2029",
+        "44502a7a-8229-421f-b12d-44719c2a026c": "2029",
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176": "2029",
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7": "2029",
+        "78d81405-a108-455e-b339-2dbac96dcf56": "2029",
+        "83979499-f57c-462f-860b-efbc60bd000f": "2029",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "2029"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "962826c3-4b38-4300-af59-f39fad184aaa",
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba",
+        "9bcd1268-18a6-4e8f-86a8-95169e28ef04",
+        "37e62d96-7e02-466e-aaf4-99539b29d9a9",
+        "7e5b6fc9-8ce5-4099-bd16-c538d289ea8b",
+        "c8e950f4-40b0-498b-9880-bc7402c31741",
+        "229971c1-84a5-442a-8e1c-c2d77e84c1c0",
+        "72d27e4d-8371-4bf5-a23f-4b4356749817",
+        "9fed0291-329a-4853-8d41-10a92f122dfd",
+        "5772b959-c22a-4b52-94bd-2983e3e64a1b"
+      ],
+      "id_confidence": {
+        "962826c3-4b38-4300-af59-f39fad184aaa": 35,
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba": 35,
+        "9bcd1268-18a6-4e8f-86a8-95169e28ef04": 35,
+        "37e62d96-7e02-466e-aaf4-99539b29d9a9": 35,
+        "7e5b6fc9-8ce5-4099-bd16-c538d289ea8b": 35,
+        "c8e950f4-40b0-498b-9880-bc7402c31741": 35,
+        "229971c1-84a5-442a-8e1c-c2d77e84c1c0": 35,
+        "72d27e4d-8371-4bf5-a23f-4b4356749817": 35,
+        "9fed0291-329a-4853-8d41-10a92f122dfd": 35,
+        "5772b959-c22a-4b52-94bd-2983e3e64a1b": 35
+      },
+      "id_name": {
+        "962826c3-4b38-4300-af59-f39fad184aaa": "CEM I 42,5 N (st)",
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba": "CEM I 42,5 R",
+        "9bcd1268-18a6-4e8f-86a8-95169e28ef04": "CEM I 42,5 R (na)",
+        "37e62d96-7e02-466e-aaf4-99539b29d9a9": "CEM I 52,5 R (ft)",
+        "7e5b6fc9-8ce5-4099-bd16-c538d289ea8b": "CEM I 52,5 R-SR3 Bulk Plant Carboneras",
+        "c8e950f4-40b0-498b-9880-bc7402c31741": "CEM I 52.5 R Bulk Plant Beli Izvor",
+        "229971c1-84a5-442a-8e1c-c2d77e84c1c0": "CEM II A-LL 42.5 R  Bulk Plant Beli Izvor",
+        "72d27e4d-8371-4bf5-a23f-4b4356749817": "CEM II A-LL 52.5 N  Bulk Plant Beli Izvor",
+        "9fed0291-329a-4853-8d41-10a92f122dfd": "CEM II B-LL 42.5 R Bagged Plant Beli Izvor",
+        "5772b959-c22a-4b52-94bd-2983e3e64a1b": "CEM II B-LL 42.5 R Bulk Plant Beli Izvor"
+      },
+      "id_gueltigkeit": {
+        "962826c3-4b38-4300-af59-f39fad184aaa": "2029",
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba": "2029",
+        "9bcd1268-18a6-4e8f-86a8-95169e28ef04": "2029",
+        "37e62d96-7e02-466e-aaf4-99539b29d9a9": "2029",
+        "7e5b6fc9-8ce5-4099-bd16-c538d289ea8b": "2030",
+        "c8e950f4-40b0-498b-9880-bc7402c31741": "2029",
+        "229971c1-84a5-442a-8e1c-c2d77e84c1c0": "2029",
+        "72d27e4d-8371-4bf5-a23f-4b4356749817": "2029",
+        "9fed0291-329a-4853-8d41-10a92f122dfd": "2029",
+        "5772b959-c22a-4b52-94bd-2983e3e64a1b": "2029"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "efb296ec-9a09-4344-99c7-faa3cc805541",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 88,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 70,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 70,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich"
+      },
+      "id_gueltigkeit": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "2026",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "ec113894-769a-464d-acc7-52b01f0c1775",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1",
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b",
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f",
+        "efd7fbad-374b-459f-bd23-07e064da533a",
+        "43b998a6-a505-4044-acbc-e7f52cd8facb"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 88,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 88,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 88,
+        "ec113894-769a-464d-acc7-52b01f0c1775": 88,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 88,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 88,
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b": 88,
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f": 88,
+        "efd7fbad-374b-459f-bd23-07e064da533a": 88,
+        "43b998a6-a505-4044-acbc-e7f52cd8facb": 88
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "ec113894-769a-464d-acc7-52b01f0c1775": "Kippschalter (Lichtschalter)",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)",
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b": "Magmatische Gesteine",
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f": "Sedimentäre Gesteine",
+        "efd7fbad-374b-459f-bd23-07e064da533a": "Waschbims",
+        "43b998a6-a505-4044-acbc-e7f52cd8facb": "REDOTTO-RC Betonpflasterstein"
+      },
+      "id_gueltigkeit": {
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026",
+        "ec113894-769a-464d-acc7-52b01f0c1775": "2026",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "2026",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "2026",
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b": "2029",
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f": "2029",
+        "efd7fbad-374b-459f-bd23-07e064da533a": "2026",
+        "43b998a6-a505-4044-acbc-e7f52cd8facb": "2027"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "f27b04a9-2fa2-4ac2-8c5f-03addd0a643a",
+        "f0b20a40-b4cb-4c34-9f2e-145e3d9af024",
+        "44d20812-1ed2-4e11-9cf0-54a3b7eb56fa",
+        "c93da4c3-94c9-4c86-b092-610cf1cf012f"
+      ],
+      "id_confidence": {
+        "f27b04a9-2fa2-4ac2-8c5f-03addd0a643a": 76,
+        "f0b20a40-b4cb-4c34-9f2e-145e3d9af024": 76,
+        "44d20812-1ed2-4e11-9cf0-54a3b7eb56fa": 76,
+        "c93da4c3-94c9-4c86-b092-610cf1cf012f": 76
+      },
+      "id_name": {
+        "f27b04a9-2fa2-4ac2-8c5f-03addd0a643a": "FOAMGLAS® F",
+        "f0b20a40-b4cb-4c34-9f2e-145e3d9af024": "FOAMGLAS® S3",
+        "44d20812-1ed2-4e11-9cf0-54a3b7eb56fa": "FOAMGLAS® T3+",
+        "c93da4c3-94c9-4c86-b092-610cf1cf012f": "FOAMGLAS® T4+"
+      },
+      "id_gueltigkeit": {
+        "f27b04a9-2fa2-4ac2-8c5f-03addd0a643a": "2026",
+        "f0b20a40-b4cb-4c34-9f2e-145e3d9af024": "2026",
+        "44d20812-1ed2-4e11-9cf0-54a3b7eb56fa": "2026",
+        "c93da4c3-94c9-4c86-b092-610cf1cf012f": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

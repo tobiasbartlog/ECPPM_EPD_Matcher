@@ -1,0 +1,99 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "Splittmastixasphalt, lärmreduzierend, feine Körnung",
+      "GUID": [
+        "guid-c-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "Asphaltzwischenschicht mit polymermodifiziertem Bitumen, Körnung 16mm",
+      "GUID": [
+        "guid-c-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "grobe Asphalttragschicht mit Normalbitumen, hohe Tragfähigkeit",
+      "GUID": [
+        "guid-c-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "Schotter ungebunden, gebrochenes Korn 0-45",
+      "GUID": [
+        "guid-c-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Kies-Sand-Gemisch frostsicher, natürlich gewonnen, bis 32mm",
+      "GUID": [
+        "guid-c-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d",
+        "ec113894-769a-464d-acc7-52b01f0c1775",
+        "2deb4078-5323-4785-ad2a-913eb66dcf5d"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 85,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 80,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 75,
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": 70,
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": 65,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 60,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 60,
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d": 50,
+        "ec113894-769a-464d-acc7-52b01f0c1775": 50,
+        "2deb4078-5323-4785-ad2a-913eb66dcf5d": 20
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": "Bims-Planstein (SFK-4)",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": "Bimssand",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d": "Schüttung aus Polystyrolschaumstoff-Partikeln (ohne Bindemittel)",
+        "ec113894-769a-464d-acc7-52b01f0c1775": "Kippschalter (Lichtschalter)",
+        "2deb4078-5323-4785-ad2a-913eb66dcf5d": "Kleber für Gipsplatten"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "C_Informell",
+    "description": "Informelle Mitarbeitereingabe: Freitext statt Norm-Codes, beschreibende Materialbezeichnungen ohne TL-Asphalt-StB-Referenz",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

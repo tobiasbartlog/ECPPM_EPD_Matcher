@@ -1,0 +1,169 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c",
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d",
+        "83979499-f57c-462f-860b-efbc60bd000f",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e",
+        "d5c7232a-0171-45c3-b81a-856961713db8",
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7",
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd",
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190",
+        "d4e55666-62d6-4758-a9f5-3417b36c75ae",
+        "47a1e105-0b9d-46e8-a278-2ecfff5a57e6"
+      ],
+      "id_confidence": {
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": 35,
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d": 35,
+        "83979499-f57c-462f-860b-efbc60bd000f": 35,
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": 35,
+        "d5c7232a-0171-45c3-b81a-856961713db8": 35,
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": 35,
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd": 35,
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190": 35,
+        "d4e55666-62d6-4758-a9f5-3417b36c75ae": 35,
+        "47a1e105-0b9d-46e8-a278-2ecfff5a57e6": 35
+      },
+      "id_name": {
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": "ADAGIO Acoustic+",
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d": "AMF ECOMIN & ARMSTRONG Basis Sortiment; AMF THERMATEX & ARMSTRONG Standard Sortiment (Pontalier)",
+        "83979499-f57c-462f-860b-efbc60bd000f": "Classic Lite Deckenplatten",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "Classic Max Deckenplatten",
+        "d5c7232a-0171-45c3-b81a-856961713db8": "Deckensystem - HT Labor + Hospitaltechnik GmbH - Decke für Nasszelle Stahlblech, verzinkt, pulverbeschichtet",
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": "THERMATEX Acoustic",
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd": "THERMATEX Acoustic, Pontarlier",
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190": "THERMATEX Basic & Standard",
+        "d4e55666-62d6-4758-a9f5-3417b36c75ae": "krafton® 236.40 FRP Brückendeckplanke (krafton)",
+        "47a1e105-0b9d-46e8-a278-2ecfff5a57e6": "krafton® 256.40 FRP Brückendeckplanke (krafton)"
+      },
+      "id_gueltigkeit": {
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": "2029",
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d": "2026",
+        "83979499-f57c-462f-860b-efbc60bd000f": "2029",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "2029",
+        "d5c7232a-0171-45c3-b81a-856961713db8": "2029",
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": "2026",
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd": "2026",
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190": "2026",
+        "d4e55666-62d6-4758-a9f5-3417b36c75ae": "2030",
+        "47a1e105-0b9d-46e8-a278-2ecfff5a57e6": "2030"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "26855c20-be97-45c8-afd0-08dadef1256a"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 85,
+        "26855c20-be97-45c8-afd0-08dadef1256a": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "26855c20-be97-45c8-afd0-08dadef1256a": "Holcim Binder Sackware Werk Höver"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "26855c20-be97-45c8-afd0-08dadef1256a": "2027"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 85,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      },
+      "id_gueltigkeit": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 82,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      },
+      "id_gueltigkeit": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 70,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 65
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)"
+      },
+      "id_gueltigkeit": {
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

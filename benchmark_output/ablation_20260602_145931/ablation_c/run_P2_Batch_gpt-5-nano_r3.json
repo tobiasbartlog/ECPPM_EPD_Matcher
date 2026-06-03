@@ -1,0 +1,219 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "Splittmastixasphalt, lärmreduzierend, feine Körnung",
+      "GUID": [
+        "guid-c-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "88c0f648-2316-4bbc-99b3-dbc636580088",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426",
+        "25db4367-38c5-4483-b392-4fc071170e5e",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 85,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 80,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 75,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 20,
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": 20,
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": 20,
+        "25db4367-38c5-4483-b392-4fc071170e5e": 20,
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": 20,
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": 20
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "Bitumenbahnen G 200 S4",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "Bitumenbahnen PYE PV 200 S5 (ungeschiefert)",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "Bitumenbahnen PYE-PV 200 S5 ns (geschiefert)",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": "Bitumenbahnen V 60",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": "Bitumenverträgliche Polyisobutylen (PIB) Kunststoffdachbahn"
+      },
+      "id_gueltigkeit": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "2026",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "2026",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "2026",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "2026",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": "2026",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": "2026"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "Asphaltzwischenschicht mit polymermodifiziertem Bitumen, Körnung 16mm",
+      "GUID": [
+        "guid-c-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0",
+        "88c0f648-2316-4bbc-99b3-dbc636580088",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426",
+        "25db4367-38c5-4483-b392-4fc071170e5e"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 85,
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": 70,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 20,
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": 20,
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": 20,
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": 20,
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": 20,
+        "25db4367-38c5-4483-b392-4fc071170e5e": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "Kunststoffmodifizierte Bitumendickbeschichtung",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "Bitumenbahnen G 200 S4",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": "Bitumenbahnen V 60",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": "Bitumenverträgliche Polyisobutylen (PIB) Kunststoffdachbahn",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "Bitumenbahnen PYE PV 200 S5 (ungeschiefert)",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "Bitumenbahnen PYE-PV 200 S5 ns (geschiefert)"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "2026",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "2026",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "2026",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": "2026",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": "2026",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "2026",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "2026"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "grobe Asphalttragschicht mit Normalbitumen, hohe Tragfähigkeit",
+      "GUID": [
+        "guid-c-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 90,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl"
+      },
+      "id_gueltigkeit": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "Schotter ungebunden, gebrochenes Korn 0-45",
+      "GUID": [
+        "guid-c-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 85,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 80,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 78,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 75,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 70,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 68
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)"
+      },
+      "id_gueltigkeit": {
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "2026",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Kies-Sand-Gemisch frostsicher, natürlich gewonnen, bis 32mm",
+      "GUID": [
+        "guid-c-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75"
+      ],
+      "id_confidence": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 78,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 75,
+        "f4461491-586a-4770-9a04-716565e58c24": 70,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 68,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 64,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 63
+      },
+      "id_name": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)"
+      },
+      "id_gueltigkeit": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026",
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "2026",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "C_Informell",
+    "description": "Informelle Mitarbeitereingabe: Freitext statt Norm-Codes, beschreibende Materialbezeichnungen ohne TL-Asphalt-StB-Referenz",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

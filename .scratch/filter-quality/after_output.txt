@@ -1,0 +1,104 @@
+
+======================================================================
+EPD MATCHER - KONFIGURATION
+======================================================================
+
+[Azure OpenAI - Stage 4]
+  Endpoint:   https://susinfra-epd-matcher.cognitiveservices.azu...
+  Deployment: gpt-4o-mini
+  Timeout:    240.0s
+
+[EPD-Datenquelle]
+  SOURCE:     local
+  DB-Pfad:    data/oekobaudat.db
+
+[Stage 1: Context Extraction]
+  PREFER_NAME_FIELD:  False
+  EXTRACT_VOLUME:     True
+
+[Stage 2: Material Code Parsing]
+  USE_GLOSSAR:        True
+  DEBUG:              False
+
+[Stage 3: EPD Pre-filtering]
+  USE_GLOSSAR_FILTER: True
+  USE_FILTER_LABELS:  False (legacy)
+
+[Stage 4: Semantic Matching]
+  MAX_EPD_IN_PROMPT:  10360
+  USE_DETAIL_MATCHING:False
+  USE_BATCH_MODE:     True
+  PARALLEL_WORKERS:   10
+
+[Stage 5: Confidence Validation]
+  USE_VALIDATION:     False
+  MIN_CONFIDENCE:     25
+
+======================================================================
+
+Total EPDs: 2779
+
+FILTER RECALL:
+    10 EPDs | Nicht bituminöse Tragschicht        | STSuB 0/45
+           -> Natürliche Gesteinskörnungen (Näppi T & N Oy)
+              [Mineralische Baustoffe / Zuschläge / Nat]
+           -> Bims Schotter
+              [Mineralische Baustoffe / Zuschläge / Bim]
+           -> Brechsand 0/2
+              [Mineralische Baustoffe / Zuschläge / Nat]
+     3 EPDs | Frostschutzschicht                  | FSS 0/32
+           -> Bims Schotter
+              [Mineralische Baustoffe / Zuschläge / Bim]
+           -> Schotter 16/32
+              [Mineralische Baustoffe / Zuschläge / Nat]
+           -> Schotter 16/32 (getrocknet)
+              [Mineralische Baustoffe / Zuschläge / Nat]
+     5 EPDs | Deckschicht                         | SMA 11 S
+           -> Tragdeckschicht
+              [Mineralische Baustoffe / Asphalt / Trags]
+           -> Asphaltbinder
+              [Mineralische Baustoffe / Asphalt / Aspha]
+           -> Asphalttragschicht
+              [Mineralische Baustoffe / Asphalt / Trags]
+     5 EPDs | Binderschicht                       | AC 16 B S
+           -> Asphaltbinder
+              [Mineralische Baustoffe / Asphalt / Aspha]
+           -> Asphalttragschicht
+              [Mineralische Baustoffe / Asphalt / Trags]
+           -> Gussasphalt
+              [Mineralische Baustoffe / Asphalt / Gussa]
+     5 EPDs | Bituminöse Tragschicht              | AC 22 T S
+           -> Asphalttragschicht
+              [Mineralische Baustoffe / Asphalt / Trags]
+           -> Tragdeckschicht
+              [Mineralische Baustoffe / Asphalt / Trags]
+           -> Asphaltbinder
+              [Mineralische Baustoffe / Asphalt / Aspha]
+     5 EPDs | Deckschicht                         | Splittmastixasphalt, laermreduzierend, feine Körnung
+           -> Tragdeckschicht
+              [Mineralische Baustoffe / Asphalt / Trags]
+           -> Asphaltbinder
+              [Mineralische Baustoffe / Asphalt / Aspha]
+           -> Asphalttragschicht
+              [Mineralische Baustoffe / Asphalt / Trags]
+    10 EPDs | Nicht bituminöse Tragschicht        | Schotter ungebunden, gebrochenes Korn 0-45
+           -> Natürliche Gesteinskörnungen (Näppi T & N Oy)
+              [Mineralische Baustoffe / Zuschläge / Nat]
+           -> Bims Schotter
+              [Mineralische Baustoffe / Zuschläge / Bim]
+           -> Brechsand 0/2
+              [Mineralische Baustoffe / Zuschläge / Nat]
+     5 EPDs | Binderschicht                       | Asphaltzwischenschicht mit polymermodifiziertem Bitumen
+           -> Asphaltbinder
+              [Mineralische Baustoffe / Asphalt / Aspha]
+           -> Asphalttragschicht
+              [Mineralische Baustoffe / Asphalt / Trags]
+           -> Gussasphalt
+              [Mineralische Baustoffe / Asphalt / Gussa]
+    10 EPDs | Frostschutzschicht                  | Gesteinskörnungsgemisch 0/32
+           -> Natürliche Gesteinskörnungen (Näppi T & N Oy)
+              [Mineralische Baustoffe / Zuschläge / Nat]
+           -> Bims Schotter
+              [Mineralische Baustoffe / Zuschläge / Bim]
+           -> Brechsand 0/2
+              [Mineralische Baustoffe / Zuschläge / Nat]

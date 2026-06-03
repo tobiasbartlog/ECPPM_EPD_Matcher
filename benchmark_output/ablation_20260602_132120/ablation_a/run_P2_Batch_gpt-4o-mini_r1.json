@@ -1,0 +1,143 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 90,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 70,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 60
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht"
+      },
+      "id_gueltigkeit": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 90,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 70,
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668": "Armierung (Kunstharzspachtel)"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668": "2026"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 90,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 70,
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668": 20
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668": "Armierung (Kunstharzspachtel)"
+      },
+      "id_gueltigkeit": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "2cdcffc6-84e9-4238-b8af-beebabea9a2d",
+        "45e6dcac-70b9-4982-bf04-4ff566facba1"
+      ],
+      "id_confidence": {
+        "2cdcffc6-84e9-4238-b8af-beebabea9a2d": 60,
+        "45e6dcac-70b9-4982-bf04-4ff566facba1": 50
+      },
+      "id_name": {
+        "2cdcffc6-84e9-4238-b8af-beebabea9a2d": "Beton-Mauersteine",
+        "45e6dcac-70b9-4982-bf04-4ff566facba1": "Betonfertigteil Decke, Dicke 20cm"
+      },
+      "id_gueltigkeit": {
+        "2cdcffc6-84e9-4238-b8af-beebabea9a2d": "2026",
+        "45e6dcac-70b9-4982-bf04-4ff566facba1": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "2cdcffc6-84e9-4238-b8af-beebabea9a2d",
+        "45e6dcac-70b9-4982-bf04-4ff566facba1"
+      ],
+      "id_confidence": {
+        "2cdcffc6-84e9-4238-b8af-beebabea9a2d": 60,
+        "45e6dcac-70b9-4982-bf04-4ff566facba1": 50
+      },
+      "id_name": {
+        "2cdcffc6-84e9-4238-b8af-beebabea9a2d": "Beton-Mauersteine",
+        "45e6dcac-70b9-4982-bf04-4ff566facba1": "Betonfertigteil Decke, Dicke 20cm"
+      },
+      "id_gueltigkeit": {
+        "2cdcffc6-84e9-4238-b8af-beebabea9a2d": "2026",
+        "45e6dcac-70b9-4982-bf04-4ff566facba1": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

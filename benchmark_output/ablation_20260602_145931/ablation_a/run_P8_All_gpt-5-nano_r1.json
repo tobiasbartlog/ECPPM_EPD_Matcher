@@ -1,0 +1,291 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 85,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 60,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 60,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 35,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 35,
+        "f4461491-586a-4770-9a04-716565e58c24": 35,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 35,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)"
+      },
+      "id_gueltigkeit": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "2026",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "2026",
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "f4461491-586a-4770-9a04-716565e58c24"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 85,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 60,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 60,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 35,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 35,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 35,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 35,
+        "f4461491-586a-4770-9a04-716565e58c24": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "2026",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "2026",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "f4461491-586a-4770-9a04-716565e58c24": "2026"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "f4461491-586a-4770-9a04-716565e58c24"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 85,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 80,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 60,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 35,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 35,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 35,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 35,
+        "f4461491-586a-4770-9a04-716565e58c24": 35
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32"
+      },
+      "id_gueltigkeit": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "2026",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "2026",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "f4461491-586a-4770-9a04-716565e58c24": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75"
+      ],
+      "id_confidence": {
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": 85,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 78,
+        "f4461491-586a-4770-9a04-716565e58c24": 72,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 68,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 66,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 65,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 63,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 60,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 58,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 55
+      },
+      "id_name": {
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": "Natürliche Gesteinskörnungen (Näppi T & N Oy)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)"
+      },
+      "id_gueltigkeit": {
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": "2030",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "2026",
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "2026",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "2026",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "2026",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1"
+      ],
+      "id_confidence": {
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": 85,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 82,
+        "f4461491-586a-4770-9a04-716565e58c24": 78,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 75,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 72,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 68,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 66,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 62,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 60,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 58
+      },
+      "id_name": {
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": "Natürliche Gesteinskörnungen (Näppi T & N Oy)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)"
+      },
+      "id_gueltigkeit": {
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": "2030",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "2026",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "2026",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "2026",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "2026",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

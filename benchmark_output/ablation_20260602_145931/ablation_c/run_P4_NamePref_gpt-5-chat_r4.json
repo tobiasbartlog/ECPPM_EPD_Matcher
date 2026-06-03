@@ -1,0 +1,228 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "Splittmastixasphalt, lärmreduzierend, feine Körnung",
+      "GUID": [
+        "guid-c-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d",
+        "7790235b-cecd-4345-8cd4-1c5452191163",
+        "9c1b485e-c801-42ad-bb59-fe209392fc98",
+        "a28ca150-de06-4a99-9b8e-6dbb381f69e1",
+        "ee6d9736-2ddd-4d2d-acc1-3ea1031c1f9e",
+        "592ffe6e-4c21-4a24-ba67-273acbfca373",
+        "a6d60a75-7a4e-4dfc-87cc-fd40f68d279a"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": 35,
+        "7790235b-cecd-4345-8cd4-1c5452191163": 35,
+        "9c1b485e-c801-42ad-bb59-fe209392fc98": 35,
+        "a28ca150-de06-4a99-9b8e-6dbb381f69e1": 35,
+        "ee6d9736-2ddd-4d2d-acc1-3ea1031c1f9e": 35,
+        "592ffe6e-4c21-4a24-ba67-273acbfca373": 20,
+        "a6d60a75-7a4e-4dfc-87cc-fd40f68d279a": 20
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": "Baumwolle ökologisch",
+        "7790235b-cecd-4345-8cd4-1c5452191163": "Rohre für Strom-Wärmepumpe (Sole-Wasser, Erdsonde) 70 kW",
+        "9c1b485e-c801-42ad-bb59-fe209392fc98": "Bauschutt-Deponierung",
+        "a28ca150-de06-4a99-9b8e-6dbb381f69e1": "Bauschuttaufbereitung",
+        "ee6d9736-2ddd-4d2d-acc1-3ea1031c1f9e": "1.3.11. Dachsteine (Beton)",
+        "592ffe6e-4c21-4a24-ba67-273acbfca373": "Dachziegel",
+        "a6d60a75-7a4e-4dfc-87cc-fd40f68d279a": "Dachziegel (inklusive Zubehör)"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "Asphaltzwischenschicht mit polymermodifiziertem Bitumen, Körnung 16mm",
+      "GUID": [
+        "guid-c-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d",
+        "7a7e7ba5-ede9-4592-bd47-b0cc072d7602",
+        "9b6db56a-bf13-4f56-a0aa-44c3119502e1",
+        "0debb933-3fab-469d-bed8-a6277908c132",
+        "869a5d98-bf9d-491b-85b1-670f482ff87f"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 98,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 60,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": 35,
+        "7a7e7ba5-ede9-4592-bd47-b0cc072d7602": 35,
+        "9b6db56a-bf13-4f56-a0aa-44c3119502e1": 35,
+        "0debb933-3fab-469d-bed8-a6277908c132": 35,
+        "869a5d98-bf9d-491b-85b1-670f482ff87f": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": "Baumwolle ökologisch",
+        "7a7e7ba5-ede9-4592-bd47-b0cc072d7602": "Windows / fixed windows outward opened 75 mm sash (BYKO – W75)",
+        "9b6db56a-bf13-4f56-a0aa-44c3119502e1": "Heizkörper",
+        "0debb933-3fab-469d-bed8-a6277908c132": "Hausmülldeponie",
+        "869a5d98-bf9d-491b-85b1-670f482ff87f": "Beschlagverbund Fenster Stahl"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "grobe Asphalttragschicht mit Normalbitumen, hohe Tragfähigkeit",
+      "GUID": [
+        "guid-c-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602",
+        "8f11c179-e367-4833-93f3-10597923c79c",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b",
+        "89e9804e-c433-4de1-9322-ef302d5c8e4c"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 93,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 90,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 58,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20,
+        "8f11c179-e367-4833-93f3-10597923c79c": 20,
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": 20,
+        "89e9804e-c433-4de1-9322-ef302d5c8e4c": 20
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich",
+        "8f11c179-e367-4833-93f3-10597923c79c": "Recycling Transportbeton C20/25",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "Transportbeton C20/25",
+        "89e9804e-c433-4de1-9322-ef302d5c8e4c": "Beton C25/30 XC4 XF1 XA1 F3 32 M EcoPact, Rezept Nummer DA4334-DHMK Version 1, Transportbetonwerk Bocholt, Germany"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "Schotter ungebunden, gebrochenes Korn 0-45",
+      "GUID": [
+        "guid-c-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "f0ae9686-25b1-444c-8474-1f1d078cfed8",
+        "f1974493-0668-4b34-880b-21c3f27345bc",
+        "8f6daa87-b2ee-4eb0-95e0-737ac8c6a59f",
+        "1f9e860b-307b-47c3-8cb7-83aff71b0494"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 95,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 90,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 85,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 80,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 75,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 65,
+        "f0ae9686-25b1-444c-8474-1f1d078cfed8": 55,
+        "f1974493-0668-4b34-880b-21c3f27345bc": 30,
+        "8f6daa87-b2ee-4eb0-95e0-737ac8c6a59f": 25,
+        "1f9e860b-307b-47c3-8cb7-83aff71b0494": 20
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "f0ae9686-25b1-444c-8474-1f1d078cfed8": "Pumpen von 1 m3 Beton",
+        "f1974493-0668-4b34-880b-21c3f27345bc": "Sanitärkeramik",
+        "8f6daa87-b2ee-4eb0-95e0-737ac8c6a59f": "Schüttung aus Polystyrolschaumstoff-Partikeln (zementgebunden)",
+        "1f9e860b-307b-47c3-8cb7-83aff71b0494": "Zement (CEM II 42,5)"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Kies-Sand-Gemisch frostsicher, natürlich gewonnen, bis 32mm",
+      "GUID": [
+        "guid-c-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "c1bfdecc-e167-4c3a-8792-5dc06b97b4b8",
+        "ec113894-769a-464d-acc7-52b01f0c1775",
+        "592ffe6e-4c21-4a24-ba67-273acbfca373"
+      ],
+      "id_confidence": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 52,
+        "286b0072-1001-4e5f-baa2-282230755243": 91,
+        "f4461491-586a-4770-9a04-716565e58c24": 88,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 84,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 78,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 72,
+        "c1bfdecc-e167-4c3a-8792-5dc06b97b4b8": 66,
+        "ec113894-769a-464d-acc7-52b01f0c1775": 56,
+        "592ffe6e-4c21-4a24-ba67-273acbfca373": 20
+      },
+      "id_name": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "c1bfdecc-e167-4c3a-8792-5dc06b97b4b8": "Containerschiff",
+        "ec113894-769a-464d-acc7-52b01f0c1775": "Kippschalter (Lichtschalter)",
+        "592ffe6e-4c21-4a24-ba67-273acbfca373": "Dachziegel"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "C_Informell",
+    "description": "Informelle Mitarbeitereingabe: Freitext statt Norm-Codes, beschreibende Materialbezeichnungen ohne TL-Asphalt-StB-Referenz",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

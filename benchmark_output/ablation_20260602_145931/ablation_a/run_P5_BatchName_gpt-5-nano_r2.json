@@ -1,0 +1,291 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "83979499-f57c-462f-860b-efbc60bd000f",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e",
+        "1d522341-f2c3-45af-8900-473447c86e4a",
+        "581abdb3-a283-41b0-ab3f-74dc89798df2",
+        "d5c7232a-0171-45c3-b81a-856961713db8",
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7",
+        "f1e5357e-e6b3-4af1-95db-940d5438a949",
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd",
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190",
+        "1815c06b-97e4-49bd-8121-771505dfb5a2"
+      ],
+      "id_confidence": {
+        "83979499-f57c-462f-860b-efbc60bd000f": 35,
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": 35,
+        "1d522341-f2c3-45af-8900-473447c86e4a": 35,
+        "581abdb3-a283-41b0-ab3f-74dc89798df2": 35,
+        "d5c7232a-0171-45c3-b81a-856961713db8": 35,
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": 35,
+        "f1e5357e-e6b3-4af1-95db-940d5438a949": 35,
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd": 35,
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190": 35,
+        "1815c06b-97e4-49bd-8121-771505dfb5a2": 35
+      },
+      "id_name": {
+        "83979499-f57c-462f-860b-efbc60bd000f": "Classic Lite Deckenplatten",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "Classic Max Deckenplatten",
+        "1d522341-f2c3-45af-8900-473447c86e4a": "Bioguard Plain Deckenplatten",
+        "581abdb3-a283-41b0-ab3f-74dc89798df2": "Bioguard Acoustic, Ultima",
+        "d5c7232a-0171-45c3-b81a-856961713db8": "Deckensystem - HT Labor + Hospitaltechnik GmbH - Decke für Nasszelle Stahlblech, verzinkt, pulverbeschichtet",
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": "THERMATEX Acoustic",
+        "f1e5357e-e6b3-4af1-95db-940d5438a949": "THERMATEX Acoustic Medical, THERMATEX Acoustic",
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd": "THERMATEX Acoustic, Pontarlier",
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190": "THERMATEX Basic & Standard",
+        "1815c06b-97e4-49bd-8121-771505dfb5a2": "Heradesign Akustikplatten Euroklasse A2"
+      },
+      "id_gueltigkeit": {
+        "83979499-f57c-462f-860b-efbc60bd000f": "2029",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "2029",
+        "1d522341-f2c3-45af-8900-473447c86e4a": "2029",
+        "581abdb3-a283-41b0-ab3f-74dc89798df2": "2028",
+        "d5c7232a-0171-45c3-b81a-856961713db8": "2029",
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": "2026",
+        "f1e5357e-e6b3-4af1-95db-940d5438a949": "2028",
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd": "2026",
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190": "2026",
+        "1815c06b-97e4-49bd-8121-771505dfb5a2": "2029"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0",
+        "26855c20-be97-45c8-afd0-08dadef1256a",
+        "88c0f648-2316-4bbc-99b3-dbc636580088",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426",
+        "25db4367-38c5-4483-b392-4fc071170e5e",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 88,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 60,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 60,
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": 60,
+        "26855c20-be97-45c8-afd0-08dadef1256a": 35,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 20,
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": 20,
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": 20,
+        "25db4367-38c5-4483-b392-4fc071170e5e": 20,
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "Kunststoffmodifizierte Bitumendickbeschichtung",
+        "26855c20-be97-45c8-afd0-08dadef1256a": "Holcim Binder Sackware Werk Höver",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "Bitumenbahnen G 200 S4",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "Bitumenbahnen PYE PV 200 S5 (ungeschiefert)",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "Bitumenbahnen PYE-PV 200 S5 ns (geschiefert)",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": "Bitumenverträgliche Polyisobutylen (PIB) Kunststoffdachbahn"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "2026",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "2026",
+        "26855c20-be97-45c8-afd0-08dadef1256a": "2027",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "2026",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "2026",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "2026",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "2026",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": "2026"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602",
+        "88c0f648-2316-4bbc-99b3-dbc636580088",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426",
+        "25db4367-38c5-4483-b392-4fc071170e5e"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 90,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 60,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 60,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 20,
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": 20,
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": 20,
+        "25db4367-38c5-4483-b392-4fc071170e5e": 20
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "Bitumenbahnen G 200 S4",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "Bitumenbahnen PYE PV 200 S5 (ungeschiefert)",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "Bitumenbahnen PYE-PV 200 S5 ns (geschiefert)"
+      },
+      "id_gueltigkeit": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "2026",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "2026",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "2026",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "2026",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "2026",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "efd7fbad-374b-459f-bd23-07e064da533a"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 85,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 83,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 82,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 82,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 81,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 79,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 78,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 78,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 75,
+        "efd7fbad-374b-459f-bd23-07e064da533a": 70
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "efd7fbad-374b-459f-bd23-07e064da533a": "Waschbims"
+      },
+      "id_gueltigkeit": {
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "2026",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "2026",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "2026",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "2026",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "2026",
+        "efd7fbad-374b-459f-bd23-07e064da533a": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "f27b04a9-2fa2-4ac2-8c5f-03addd0a643a",
+        "f0b20a40-b4cb-4c34-9f2e-145e3d9af024",
+        "44d20812-1ed2-4e11-9cf0-54a3b7eb56fa",
+        "c93da4c3-94c9-4c86-b092-610cf1cf012f",
+        "7874a8f3-108e-4c82-824d-5a4d51dfd4b8",
+        "6136bc06-715a-4ec8-b198-335771bc752f",
+        "906a624c-2360-4a27-8493-c10fe7d398b2",
+        "2a7b2942-ff5d-4dca-8365-d4ffc28d013d",
+        "412ad711-7828-47f0-99fb-70f42cda755c",
+        "d07a1fef-6a6c-405c-84bc-ab82634f9490"
+      ],
+      "id_confidence": {
+        "f27b04a9-2fa2-4ac2-8c5f-03addd0a643a": 85,
+        "f0b20a40-b4cb-4c34-9f2e-145e3d9af024": 82,
+        "44d20812-1ed2-4e11-9cf0-54a3b7eb56fa": 80,
+        "c93da4c3-94c9-4c86-b092-610cf1cf012f": 79,
+        "7874a8f3-108e-4c82-824d-5a4d51dfd4b8": 78,
+        "6136bc06-715a-4ec8-b198-335771bc752f": 78,
+        "906a624c-2360-4a27-8493-c10fe7d398b2": 78,
+        "2a7b2942-ff5d-4dca-8365-d4ffc28d013d": 76,
+        "412ad711-7828-47f0-99fb-70f42cda755c": 76,
+        "d07a1fef-6a6c-405c-84bc-ab82634f9490": 75
+      },
+      "id_name": {
+        "f27b04a9-2fa2-4ac2-8c5f-03addd0a643a": "FOAMGLAS® F",
+        "f0b20a40-b4cb-4c34-9f2e-145e3d9af024": "FOAMGLAS® S3",
+        "44d20812-1ed2-4e11-9cf0-54a3b7eb56fa": "FOAMGLAS® T3+",
+        "c93da4c3-94c9-4c86-b092-610cf1cf012f": "FOAMGLAS® T4+",
+        "7874a8f3-108e-4c82-824d-5a4d51dfd4b8": "Kooltherm® K10",
+        "6136bc06-715a-4ec8-b198-335771bc752f": "Kooltherm® K12",
+        "906a624c-2360-4a27-8493-c10fe7d398b2": "Kooltherm® K15",
+        "2a7b2942-ff5d-4dca-8365-d4ffc28d013d": "Kooltherm® K15 C",
+        "412ad711-7828-47f0-99fb-70f42cda755c": "Kooltherm® K17",
+        "d07a1fef-6a6c-405c-84bc-ab82634f9490": "Kooltherm® K20"
+      },
+      "id_gueltigkeit": {
+        "f27b04a9-2fa2-4ac2-8c5f-03addd0a643a": "2026",
+        "f0b20a40-b4cb-4c34-9f2e-145e3d9af024": "2026",
+        "44d20812-1ed2-4e11-9cf0-54a3b7eb56fa": "2026",
+        "c93da4c3-94c9-4c86-b092-610cf1cf012f": "2026",
+        "7874a8f3-108e-4c82-824d-5a4d51dfd4b8": "2026",
+        "6136bc06-715a-4ec8-b198-335771bc752f": "2026",
+        "906a624c-2360-4a27-8493-c10fe7d398b2": "2026",
+        "2a7b2942-ff5d-4dca-8365-d4ffc28d013d": "2026",
+        "412ad711-7828-47f0-99fb-70f42cda755c": "2026",
+        "d07a1fef-6a6c-405c-84bc-ab82634f9490": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

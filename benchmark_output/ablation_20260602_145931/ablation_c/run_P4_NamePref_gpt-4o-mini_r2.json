@@ -1,0 +1,117 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "Splittmastixasphalt, lärmreduzierend, feine Körnung",
+      "GUID": [
+        "guid-c-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "Asphaltzwischenschicht mit polymermodifiziertem Bitumen, Körnung 16mm",
+      "GUID": [
+        "guid-c-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "grobe Asphalttragschicht mit Normalbitumen, hohe Tragfähigkeit",
+      "GUID": [
+        "guid-c-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668",
+        "96045987-0862-4f29-b4ec-798c2e14f23a"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 85,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 70,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 60,
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668": 20,
+        "96045987-0862-4f29-b4ec-798c2e14f23a": 20
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668": "Armierung (Kunstharzspachtel)",
+        "96045987-0862-4f29-b4ec-798c2e14f23a": "Anhydrit (CaSO4)"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "Schotter ungebunden, gebrochenes Korn 0-45",
+      "GUID": [
+        "guid-c-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Kies-Sand-Gemisch frostsicher, natürlich gewonnen, bis 32mm",
+      "GUID": [
+        "guid-c-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4",
+        "5b617407-2029-4b47-84d0-2caf10937b1d",
+        "b0ba5886-a611-4eb1-8b8e-3423d81d7140",
+        "f45f5435-9150-44db-b297-23f1e4efb62a"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 85,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 85,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 85,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 85,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 60,
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": 60,
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": 60,
+        "5b617407-2029-4b47-84d0-2caf10937b1d": 60,
+        "b0ba5886-a611-4eb1-8b8e-3423d81d7140": 60,
+        "f45f5435-9150-44db-b297-23f1e4efb62a": 60
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": "Bims-Planstein (SFK-4)",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": "Bimssand",
+        "5b617407-2029-4b47-84d0-2caf10937b1d": "Binnenschiff (Berg-Tal Durchschnitt)",
+        "b0ba5886-a611-4eb1-8b8e-3423d81d7140": "Schornstein Polypropylen (PP)",
+        "f45f5435-9150-44db-b297-23f1e4efb62a": "Schornstein gemauert (Zweizügig)"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "C_Informell",
+    "description": "Informelle Mitarbeitereingabe: Freitext statt Norm-Codes, beschreibende Materialbezeichnungen ohne TL-Asphalt-StB-Referenz",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

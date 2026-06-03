@@ -159,14 +159,15 @@ AUSSCHLUSS_BEGRIFFE: List[str] = [
 MATERIAL_KATEGORIEN: Dict[str, Dict[str, Any]] = {
     "schotter": {
         "keywords": ["schotter", "kies", "splitt", "gesteinskörnung",
-                    "brechsand", "edelsplitt"],
+                    "brechsand", "edelsplitt",
+                    "stsub", "ungebunden", "schottertrag"],
         "suchbegriffe": ["schotter", "kies", "splitt", "gesteinskörnung",
                         "brechsand", "rundkies", "edelsplitt", "kiessand"],
         "ausschluss": ["asphalt", "bitumen", "dämmung", "xps", "eps", "beton",
                       "bitumenbahn", "abdichtung"]
     },
     "frostschutz": {
-        "keywords": ["frostschutz", "fsts", "fsks", "fsk"],
+        "keywords": ["frostschutz", "fsts", "fsks", "fsk", "fss"],
         "suchbegriffe": ["frostschutz", "kiessand", "schotter"],
         "ausschluss": ["asphalt", "bitumen", "dämmung", "bitumenbahn"]
     },
@@ -315,13 +316,31 @@ def _ist_polymermodifiziert(text: str) -> bool:
 
 
 def _ist_generisch_asphalt(text: str) -> bool:
-    """Prüft ob Text generisch auf Asphalt hinweist."""
-    asphalt_keywords = [
-        "asphalt", "aspahlt", "bitumen", "bituminös", "bituminos",
+    """Prüft ob Text generisch auf Asphalt hinweist.
+
+    `bitumen` allein gilt nicht mehr als Asphalt-Bezug, wenn ein bekannter
+    Negativ-Kontext (Bitumenbahn, Bitumenträger u.ä.) gleichzeitig im Text
+    vorkommt. Verhindert False Positives auf Bodenbelägen mit Bitumen-
+    Trägerplatte und Abdichtungsbahnen.
+    """
+    text_lower = text.lower()
+    strict_keywords = [
+        "asphalt", "aspahlt", "bituminös", "bituminos",
         "schwarzdecke", "heißmischgut"
     ]
-    text_lower = text.lower()
-    return any(kw in text_lower for kw in asphalt_keywords)
+    if any(kw in text_lower for kw in strict_keywords):
+        return True
+    if "bitumen" in text_lower:
+        # Negativ-Kontexte aus realem DB-Inventar (Bodenbeläge, Dachbahnen,
+        # Dichtbeschichtungen — keine Asphaltmischgüter):
+        negativ_kontext = [
+            "bitumenbahn", "bitumenbasis", "bitumenträger", "bitumenbelag",
+            "bitumendach", "bitumenrücken", "bitumenschwerbeschichtung",
+            "bitumendickbeschichtung", "bitumenverträglich",
+        ]
+        if not any(neg in text_lower for neg in negativ_kontext):
+            return True
+    return False
 
 
 def _ist_ausgeschlossen(text: str) -> bool:

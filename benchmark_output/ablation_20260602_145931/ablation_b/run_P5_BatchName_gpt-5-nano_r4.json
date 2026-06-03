@@ -1,0 +1,213 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7",
+        "f1e5357e-e6b3-4af1-95db-940d5438a949",
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd",
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190",
+        "1d522341-f2c3-45af-8900-473447c86e4a",
+        "581abdb3-a283-41b0-ab3f-74dc89798df2",
+        "d5c7232a-0171-45c3-b81a-856961713db8",
+        "83979499-f57c-462f-860b-efbc60bd000f",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e",
+        "72a70a60-acb3-4c24-b160-8bfe1f5bf02e"
+      ],
+      "id_confidence": {
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": 35,
+        "f1e5357e-e6b3-4af1-95db-940d5438a949": 35,
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd": 35,
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190": 35,
+        "1d522341-f2c3-45af-8900-473447c86e4a": 35,
+        "581abdb3-a283-41b0-ab3f-74dc89798df2": 35,
+        "d5c7232a-0171-45c3-b81a-856961713db8": 35,
+        "83979499-f57c-462f-860b-efbc60bd000f": 35,
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": 35,
+        "72a70a60-acb3-4c24-b160-8bfe1f5bf02e": 35
+      },
+      "id_name": {
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": "THERMATEX Acoustic",
+        "f1e5357e-e6b3-4af1-95db-940d5438a949": "THERMATEX Acoustic Medical, THERMATEX Acoustic",
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd": "THERMATEX Acoustic, Pontarlier",
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190": "THERMATEX Basic & Standard",
+        "1d522341-f2c3-45af-8900-473447c86e4a": "Bioguard Plain Deckenplatten",
+        "581abdb3-a283-41b0-ab3f-74dc89798df2": "Bioguard Acoustic, Ultima",
+        "d5c7232a-0171-45c3-b81a-856961713db8": "Deckensystem - HT Labor + Hospitaltechnik GmbH - Decke für Nasszelle Stahlblech, verzinkt, pulverbeschichtet",
+        "83979499-f57c-462f-860b-efbc60bd000f": "Classic Lite Deckenplatten",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "Classic Max Deckenplatten",
+        "72a70a60-acb3-4c24-b160-8bfe1f5bf02e": "Nassfilz-Mineral-Deckenfliesen (GR)"
+      },
+      "id_gueltigkeit": {
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": "2026",
+        "f1e5357e-e6b3-4af1-95db-940d5438a949": "2028",
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd": "2026",
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190": "2026",
+        "1d522341-f2c3-45af-8900-473447c86e4a": "2029",
+        "581abdb3-a283-41b0-ab3f-74dc89798df2": "2028",
+        "d5c7232a-0171-45c3-b81a-856961713db8": "2029",
+        "83979499-f57c-462f-860b-efbc60bd000f": "2029",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "2029",
+        "72a70a60-acb3-4c24-b160-8bfe1f5bf02e": "2027"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "26855c20-be97-45c8-afd0-08dadef1256a"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 90,
+        "26855c20-be97-45c8-afd0-08dadef1256a": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "26855c20-be97-45c8-afd0-08dadef1256a": "Holcim Binder Sackware Werk Höver"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "26855c20-be97-45c8-afd0-08dadef1256a": "2027"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 78,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 70,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      },
+      "id_gueltigkeit": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 72,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      },
+      "id_gueltigkeit": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 78,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 76,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 72,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 70,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 69,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 68,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 67,
+        "286b0072-1001-4e5f-baa2-282230755243": 66,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 65,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 60
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15"
+      },
+      "id_gueltigkeit": {
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "2026",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "2026",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "2026",
+        "286b0072-1001-4e5f-baa2-282230755243": "2026",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "2026",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

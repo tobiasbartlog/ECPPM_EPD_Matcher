@@ -1,0 +1,193 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "879756d8-15b1-44d7-a454-29c961b2eab7",
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98",
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0",
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010",
+        "44502a7a-8229-421f-b12d-44719c2a026c",
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176",
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7",
+        "78d81405-a108-455e-b339-2dbac96dcf56",
+        "83979499-f57c-462f-860b-efbc60bd000f",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e"
+      ],
+      "id_confidence": {
+        "879756d8-15b1-44d7-a454-29c961b2eab7": 35,
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98": 35,
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0": 35,
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010": 35,
+        "44502a7a-8229-421f-b12d-44719c2a026c": 35,
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176": 35,
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7": 35,
+        "78d81405-a108-455e-b339-2dbac96dcf56": 35,
+        "83979499-f57c-462f-860b-efbc60bd000f": 35,
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": 35
+      },
+      "id_name": {
+        "879756d8-15b1-44d7-a454-29c961b2eab7": "BRESPA-Decke Typ A15B (DW Systembau GmbH)",
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98": "BRESPA-Decke Typ A20B (DW Systembau GmbH)",
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0": "BRESPA-Decke Typ A20Q (DW Systembau GmbH)",
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010": "BRESPA-Decke Typ A22B (DW Systembau GmbH)",
+        "44502a7a-8229-421f-b12d-44719c2a026c": "BRESPA-Decke Typ A26B (DW Systembau GmbH)",
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176": "BRESPA-Decke Typ A26Q (DW Systembau GmbH)",
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7": "BRESPA-Decke Typ A32V (DW Systembau GmbH)",
+        "78d81405-a108-455e-b339-2dbac96dcf56": "BRESPA-Decke Typ A40V (DW Systembau GmbH)",
+        "83979499-f57c-462f-860b-efbc60bd000f": "Classic Lite Deckenplatten",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "Classic Max Deckenplatten"
+      },
+      "id_gueltigkeit": {
+        "879756d8-15b1-44d7-a454-29c961b2eab7": "2029",
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98": "2029",
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0": "2029",
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010": "2029",
+        "44502a7a-8229-421f-b12d-44719c2a026c": "2029",
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176": "2029",
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7": "2029",
+        "78d81405-a108-455e-b339-2dbac96dcf56": "2029",
+        "83979499-f57c-462f-860b-efbc60bd000f": "2029",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "2029"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "26855c20-be97-45c8-afd0-08dadef1256a"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 82,
+        "26855c20-be97-45c8-afd0-08dadef1256a": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "26855c20-be97-45c8-afd0-08dadef1256a": "Holcim Binder Sackware Werk Höver"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "26855c20-be97-45c8-afd0-08dadef1256a": "2027"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 90,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      },
+      "id_gueltigkeit": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 85,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      },
+      "id_gueltigkeit": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75",
+        "efd7fbad-374b-459f-bd23-07e064da533a"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 86,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 84,
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": 78,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 72,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 70,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 66,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 64,
+        "efd7fbad-374b-459f-bd23-07e064da533a": 60
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": "Bims-Planstein (SFK-4)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)",
+        "efd7fbad-374b-459f-bd23-07e064da533a": "Waschbims"
+      },
+      "id_gueltigkeit": {
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": "2026",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "2026",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "2026",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "2026",
+        "efd7fbad-374b-459f-bd23-07e064da533a": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

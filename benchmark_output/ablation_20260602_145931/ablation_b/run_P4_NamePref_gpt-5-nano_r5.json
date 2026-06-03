@@ -1,0 +1,213 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "d5c7232a-0171-45c3-b81a-856961713db8",
+        "879756d8-15b1-44d7-a454-29c961b2eab7",
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98",
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0",
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010",
+        "44502a7a-8229-421f-b12d-44719c2a026c",
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176",
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7",
+        "78d81405-a108-455e-b339-2dbac96dcf56",
+        "83979499-f57c-462f-860b-efbc60bd000f"
+      ],
+      "id_confidence": {
+        "d5c7232a-0171-45c3-b81a-856961713db8": 35,
+        "879756d8-15b1-44d7-a454-29c961b2eab7": 35,
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98": 35,
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0": 35,
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010": 35,
+        "44502a7a-8229-421f-b12d-44719c2a026c": 35,
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176": 35,
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7": 35,
+        "78d81405-a108-455e-b339-2dbac96dcf56": 35,
+        "83979499-f57c-462f-860b-efbc60bd000f": 35
+      },
+      "id_name": {
+        "d5c7232a-0171-45c3-b81a-856961713db8": "Deckensystem - HT Labor + Hospitaltechnik GmbH - Decke für Nasszelle Stahlblech, verzinkt, pulverbeschichtet",
+        "879756d8-15b1-44d7-a454-29c961b2eab7": "BRESPA-Decke Typ A15B (DW Systembau GmbH)",
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98": "BRESPA-Decke Typ A20B (DW Systembau GmbH)",
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0": "BRESPA-Decke Typ A20Q (DW Systembau GmbH)",
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010": "BRESPA-Decke Typ A22B (DW Systembau GmbH)",
+        "44502a7a-8229-421f-b12d-44719c2a026c": "BRESPA-Decke Typ A26B (DW Systembau GmbH)",
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176": "BRESPA-Decke Typ A26Q (DW Systembau GmbH)",
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7": "BRESPA-Decke Typ A32V (DW Systembau GmbH)",
+        "78d81405-a108-455e-b339-2dbac96dcf56": "BRESPA-Decke Typ A40V (DW Systembau GmbH)",
+        "83979499-f57c-462f-860b-efbc60bd000f": "Classic Lite Deckenplatten"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426",
+        "25db4367-38c5-4483-b392-4fc071170e5e",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6",
+        "88c0f648-2316-4bbc-99b3-dbc636580088",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419",
+        "a3cbfec7-6e44-4b0a-b124-afca92a4d934"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 100,
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": 60,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 60,
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": 20,
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": 20,
+        "25db4367-38c5-4483-b392-4fc071170e5e": 20,
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": 20,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 20,
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": 20,
+        "a3cbfec7-6e44-4b0a-b124-afca92a4d934": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "Kunststoffmodifizierte Bitumendickbeschichtung",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "Bitumenbahnen G 200 S4",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "Bitumenbahnen PYE PV 200 S5 (ungeschiefert)",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "Bitumenbahnen PYE-PV 200 S5 ns (geschiefert)",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": "Bitumenbahnen V 60",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": "Bitumenverträgliche Polyisobutylen (PIB) Kunststoffdachbahn",
+        "a3cbfec7-6e44-4b0a-b124-afca92a4d934": "RESITRIX® MB und CL"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426",
+        "25db4367-38c5-4483-b392-4fc071170e5e",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6",
+        "88c0f648-2316-4bbc-99b3-dbc636580088"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 95,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 88,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 60,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 60,
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": 60,
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": 20,
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": 20,
+        "25db4367-38c5-4483-b392-4fc071170e5e": 20,
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": 20,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 20
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "Kunststoffmodifizierte Bitumendickbeschichtung",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "Bitumenbahnen G 200 S4",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "Bitumenbahnen PYE PV 200 S5 (ungeschiefert)",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "Bitumenbahnen PYE-PV 200 S5 ns (geschiefert)",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": "Bitumenbahnen V 60",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 92,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "efd7fbad-374b-459f-bd23-07e064da533a"
+      ],
+      "id_confidence": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 85,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 85,
+        "286b0072-1001-4e5f-baa2-282230755243": 75,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 75,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 75,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 75,
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": 70,
+        "f4461491-586a-4770-9a04-716565e58c24": 70,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 70,
+        "efd7fbad-374b-459f-bd23-07e064da533a": 60
+      },
+      "id_name": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": "Bimssand",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "efd7fbad-374b-459f-bd23-07e064da533a": "Waschbims"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

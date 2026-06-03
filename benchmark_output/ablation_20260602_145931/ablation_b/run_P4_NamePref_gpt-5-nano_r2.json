@@ -1,0 +1,189 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c",
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017",
+        "55a779b7-89a1-4249-a37b-1c2445e56426",
+        "9eced374-9a8d-4ace-a569-56d52a2d1013",
+        "3222ca11-e1ee-4910-9997-0ea4e42831f6",
+        "9394795b-a620-4f54-b72c-c535bb0a02f0",
+        "0e67ff82-dcb5-47fa-9783-71ebebe21077",
+        "83979499-f57c-462f-860b-efbc60bd000f",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e",
+        "d5c7232a-0171-45c3-b81a-856961713db8"
+      ],
+      "id_confidence": {
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": 35,
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017": 35,
+        "55a779b7-89a1-4249-a37b-1c2445e56426": 35,
+        "9eced374-9a8d-4ace-a569-56d52a2d1013": 35,
+        "3222ca11-e1ee-4910-9997-0ea4e42831f6": 35,
+        "9394795b-a620-4f54-b72c-c535bb0a02f0": 35,
+        "0e67ff82-dcb5-47fa-9783-71ebebe21077": 35,
+        "83979499-f57c-462f-860b-efbc60bd000f": 35,
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": 35,
+        "d5c7232a-0171-45c3-b81a-856961713db8": 35
+      },
+      "id_name": {
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": "ADAGIO Acoustic+",
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017": "ADAGIO Alpha+",
+        "55a779b7-89a1-4249-a37b-1c2445e56426": "ADAGIO dB+",
+        "9eced374-9a8d-4ace-a569-56d52a2d1013": "ADAGIO dB+ and Adagio Acoustic+",
+        "3222ca11-e1ee-4910-9997-0ea4e42831f6": "ADAGIO HD+ (19 mm)",
+        "9394795b-a620-4f54-b72c-c535bb0a02f0": "ADAGIO HD+ (30 mm)",
+        "0e67ff82-dcb5-47fa-9783-71ebebe21077": "ADAGIO HD+ (35 mm)",
+        "83979499-f57c-462f-860b-efbc60bd000f": "Classic Lite Deckenplatten",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "Classic Max Deckenplatten",
+        "d5c7232a-0171-45c3-b81a-856961713db8": "Deckensystem - HT Labor + Hospitaltechnik GmbH - Decke für Nasszelle Stahlblech, verzinkt, pulverbeschichtet"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "26855c20-be97-45c8-afd0-08dadef1256a",
+        "962826c3-4b38-4300-af59-f39fad184aaa",
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba",
+        "9bcd1268-18a6-4e8f-86a8-95169e28ef04",
+        "a8a69121-df3c-4b30-897c-309af8eb6344",
+        "823c0674-fd50-4b7d-aef4-14acdaced11d",
+        "303a5071-090d-4ff2-963a-3fb2fa69bc0e",
+        "b17d9886-7021-4106-9d66-467115056597",
+        "b235845d-0fa8-477b-9498-6b95cefebcbf"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 92,
+        "26855c20-be97-45c8-afd0-08dadef1256a": 35,
+        "962826c3-4b38-4300-af59-f39fad184aaa": 35,
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba": 35,
+        "9bcd1268-18a6-4e8f-86a8-95169e28ef04": 35,
+        "a8a69121-df3c-4b30-897c-309af8eb6344": 35,
+        "823c0674-fd50-4b7d-aef4-14acdaced11d": 35,
+        "303a5071-090d-4ff2-963a-3fb2fa69bc0e": 35,
+        "b17d9886-7021-4106-9d66-467115056597": 35,
+        "b235845d-0fa8-477b-9498-6b95cefebcbf": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "26855c20-be97-45c8-afd0-08dadef1256a": "Holcim Binder Sackware Werk Höver",
+        "962826c3-4b38-4300-af59-f39fad184aaa": "CEM I 42,5 N (st)",
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba": "CEM I 42,5 R",
+        "9bcd1268-18a6-4e8f-86a8-95169e28ef04": "CEM I 42,5 R (na)",
+        "a8a69121-df3c-4b30-897c-309af8eb6344": "CEM II/A-LL 42,5 R",
+        "823c0674-fd50-4b7d-aef4-14acdaced11d": "CEM II/B-S 42,5 N",
+        "303a5071-090d-4ff2-963a-3fb2fa69bc0e": "CEM II/B-S 52,5 R",
+        "b17d9886-7021-4106-9d66-467115056597": "CEM II/C-M (S-LL) 42,5 N \"CZ\"",
+        "b235845d-0fa8-477b-9498-6b95cefebcbf": "CEM II/C-M (S-LL) 42,5 N-NA \"CZ\""
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 90,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 92,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4",
+        "dad163a2-a15b-48e0-a763-6142445b5d42",
+        "efd7fbad-374b-459f-bd23-07e064da533a",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1",
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b",
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f"
+      ],
+      "id_confidence": {
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 95,
+        "f4461491-586a-4770-9a04-716565e58c24": 85,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 80,
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": 70,
+        "dad163a2-a15b-48e0-a763-6142445b5d42": 70,
+        "efd7fbad-374b-459f-bd23-07e064da533a": 60,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 60,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 60,
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b": 60,
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f": 60
+      },
+      "id_name": {
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": "Bimssand",
+        "dad163a2-a15b-48e0-a763-6142445b5d42": "Blähglas Granulat",
+        "efd7fbad-374b-459f-bd23-07e064da533a": "Waschbims",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)",
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b": "Magmatische Gesteine",
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f": "Sedimentäre Gesteine"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "Splittmastixasphalt, lärmreduzierend, feine Körnung",
+      "GUID": [
+        "guid-c-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602",
+        "af98c17b-b748-4d08-b5d5-9ff028ae7f25",
+        "dca9f05c-036b-40e5-ae81-c957c2420fd8",
+        "c916ceb3-a44d-40b7-8984-861afa589956"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 95,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 60,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 55,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": 35,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20,
+        "af98c17b-b748-4d08-b5d5-9ff028ae7f25": 20,
+        "dca9f05c-036b-40e5-ae81-c957c2420fd8": 20,
+        "c916ceb3-a44d-40b7-8984-861afa589956": 20
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": "Baumwolle ökologisch",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich",
+        "af98c17b-b748-4d08-b5d5-9ff028ae7f25": "Kalkzementmörtel",
+        "dca9f05c-036b-40e5-ae81-c957c2420fd8": "Kalkzement Putzmörtel",
+        "c916ceb3-a44d-40b7-8984-861afa589956": "Kalksandstein"
+      },
+      "id_gueltigkeit": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "52d4092b-b220-4850-9179-4f11094da94e": "2026",
+        "2b12108a-b20d-4a46-8ec2-22d0d0a41c6d": "2026",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "2026",
+        "af98c17b-b748-4d08-b5d5-9ff028ae7f25": "2026",
+        "dca9f05c-036b-40e5-ae81-c957c2420fd8": "2026",
+        "c916ceb3-a44d-40b7-8984-861afa589956": "2026"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "Asphaltzwischenschicht mit polymermodifiziertem Bitumen, Körnung 16mm",
+      "GUID": [
+        "guid-c-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "a74d29ca-755a-48e2-88c2-e791760dfc18",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602",
+        "dca9f05c-036b-40e5-ae81-c957c2420fd8",
+        "af98c17b-b748-4d08-b5d5-9ff028ae7f25",
+        "c916ceb3-a44d-40b7-8984-861afa589956"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 70,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 65,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "a74d29ca-755a-48e2-88c2-e791760dfc18": 20,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20,
+        "dca9f05c-036b-40e5-ae81-c957c2420fd8": 20,
+        "af98c17b-b748-4d08-b5d5-9ff028ae7f25": 20,
+        "c916ceb3-a44d-40b7-8984-861afa589956": 20
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "a74d29ca-755a-48e2-88c2-e791760dfc18": "Wire Rods ",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich",
+        "dca9f05c-036b-40e5-ae81-c957c2420fd8": "Kalkzement Putzmörtel",
+        "af98c17b-b748-4d08-b5d5-9ff028ae7f25": "Kalkzementmörtel",
+        "c916ceb3-a44d-40b7-8984-861afa589956": "Kalksandstein"
+      },
+      "id_gueltigkeit": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "52d4092b-b220-4850-9179-4f11094da94e": "2026",
+        "a74d29ca-755a-48e2-88c2-e791760dfc18": "2027",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "2026",
+        "dca9f05c-036b-40e5-ae81-c957c2420fd8": "2026",
+        "af98c17b-b748-4d08-b5d5-9ff028ae7f25": "2026",
+        "c916ceb3-a44d-40b7-8984-861afa589956": "2026"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "grobe Asphalttragschicht mit Normalbitumen, hohe Tragfähigkeit",
+      "GUID": [
+        "guid-c-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2",
+        "d6f982e3-beda-49f0-a298-694fcbf3ba38",
+        "0a1fa7f9-ad49-4942-a173-cb8c4ad99c9b"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 95,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 65,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20,
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": 20,
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": 20,
+        "d6f982e3-beda-49f0-a298-694fcbf3ba38": 20,
+        "0a1fa7f9-ad49-4942-a173-cb8c4ad99c9b": 20
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "Transportbeton C20/25",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": "Transportbeton C25/30",
+        "d6f982e3-beda-49f0-a298-694fcbf3ba38": "Transportbeton C30/37",
+        "0a1fa7f9-ad49-4942-a173-cb8c4ad99c9b": "Transportbeton C50/60"
+      },
+      "id_gueltigkeit": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "52d4092b-b220-4850-9179-4f11094da94e": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "2026",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "2026",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": "2026",
+        "d6f982e3-beda-49f0-a298-694fcbf3ba38": "2026",
+        "0a1fa7f9-ad49-4942-a173-cb8c4ad99c9b": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "Schotter ungebunden, gebrochenes Korn 0-45",
+      "GUID": [
+        "guid-c-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "88435dab-218f-43a8-99c1-6d03df124f68",
+        "e45e2b55-a8c4-4037-bc7d-e3718c4e28f3",
+        "3e15eb88-e824-4a81-972a-45e06930aa19",
+        "8f11c179-e367-4833-93f3-10597923c79c",
+        "67b6c807-3924-4bc5-b983-6aeff6537e45"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 60,
+        "286b0072-1001-4e5f-baa2-282230755243": 70,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 68,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 65,
+        "88435dab-218f-43a8-99c1-6d03df124f68": 40,
+        "e45e2b55-a8c4-4037-bc7d-e3718c4e28f3": 25,
+        "3e15eb88-e824-4a81-972a-45e06930aa19": 20,
+        "8f11c179-e367-4833-93f3-10597923c79c": 20,
+        "67b6c807-3924-4bc5-b983-6aeff6537e45": 20
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "88435dab-218f-43a8-99c1-6d03df124f68": "Schmelzkammergranulat",
+        "e45e2b55-a8c4-4037-bc7d-e3718c4e28f3": "Strohdämmung",
+        "3e15eb88-e824-4a81-972a-45e06930aa19": "Recycling Transportbeton C30/37",
+        "8f11c179-e367-4833-93f3-10597923c79c": "Recycling Transportbeton C20/25",
+        "67b6c807-3924-4bc5-b983-6aeff6537e45": "Schnittholz Buche (generisch, 12% Feuchte/10,7% H2O)"
+      },
+      "id_gueltigkeit": {
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "286b0072-1001-4e5f-baa2-282230755243": "2026",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "88435dab-218f-43a8-99c1-6d03df124f68": "2026",
+        "e45e2b55-a8c4-4037-bc7d-e3718c4e28f3": "2026",
+        "3e15eb88-e824-4a81-972a-45e06930aa19": "2026",
+        "8f11c179-e367-4833-93f3-10597923c79c": "2026",
+        "67b6c807-3924-4bc5-b983-6aeff6537e45": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Kies-Sand-Gemisch frostsicher, natürlich gewonnen, bis 32mm",
+      "GUID": [
+        "guid-c-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8",
+        "ec113894-769a-464d-acc7-52b01f0c1775",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "88435dab-218f-43a8-99c1-6d03df124f68",
+        "89318772-3a50-4f56-9839-d0a8c702e396",
+        "67b6c807-3924-4bc5-b983-6aeff6537e45"
+      ],
+      "id_confidence": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 90,
+        "286b0072-1001-4e5f-baa2-282230755243": 85,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 80,
+        "f4461491-586a-4770-9a04-716565e58c24": 75,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 70,
+        "ec113894-769a-464d-acc7-52b01f0c1775": 60,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 55,
+        "88435dab-218f-43a8-99c1-6d03df124f68": 50,
+        "89318772-3a50-4f56-9839-d0a8c702e396": 25,
+        "67b6c807-3924-4bc5-b983-6aeff6537e45": 20
+      },
+      "id_name": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)",
+        "ec113894-769a-464d-acc7-52b01f0c1775": "Kippschalter (Lichtschalter)",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "88435dab-218f-43a8-99c1-6d03df124f68": "Schmelzkammergranulat",
+        "89318772-3a50-4f56-9839-d0a8c702e396": "Stahl Feinblech (0,3-3,0mm)",
+        "67b6c807-3924-4bc5-b983-6aeff6537e45": "Schnittholz Buche (generisch, 12% Feuchte/10,7% H2O)"
+      },
+      "id_gueltigkeit": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "286b0072-1001-4e5f-baa2-282230755243": "2026",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026",
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "2026",
+        "ec113894-769a-464d-acc7-52b01f0c1775": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "88435dab-218f-43a8-99c1-6d03df124f68": "2026",
+        "89318772-3a50-4f56-9839-d0a8c702e396": "2026",
+        "67b6c807-3924-4bc5-b983-6aeff6537e45": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "C_Informell",
+    "description": "Informelle Mitarbeitereingabe: Freitext statt Norm-Codes, beschreibende Materialbezeichnungen ohne TL-Asphalt-StB-Referenz",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "Splittmastixasphalt, lärmreduzierend, feine Körnung",
+      "GUID": [
+        "guid-c-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "88c0f648-2316-4bbc-99b3-dbc636580088",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426",
+        "25db4367-38c5-4483-b392-4fc071170e5e",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 95,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 85,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 75,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 75,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 70,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 20,
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": 20,
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": 20,
+        "25db4367-38c5-4483-b392-4fc071170e5e": 20,
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": 20
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "Bitumenbahnen G 200 S4",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "Bitumenbahnen PYE PV 200 S5 (ungeschiefert)",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "Bitumenbahnen PYE-PV 200 S5 ns (geschiefert)",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": "Bitumenbahnen V 60"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "Asphaltzwischenschicht mit polymermodifiziertem Bitumen, Körnung 16mm",
+      "GUID": [
+        "guid-c-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0",
+        "2630158e-fc89-4b2d-bb7d-4a193fb58324",
+        "88c0f648-2316-4bbc-99b3-dbc636580088",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426",
+        "25db4367-38c5-4483-b392-4fc071170e5e"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 90,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 75,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 70,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 68,
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": 65,
+        "2630158e-fc89-4b2d-bb7d-4a193fb58324": 35,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 20,
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": 20,
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": 20,
+        "25db4367-38c5-4483-b392-4fc071170e5e": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "Kunststoffmodifizierte Bitumendickbeschichtung",
+        "2630158e-fc89-4b2d-bb7d-4a193fb58324": "Kunststoffprofil CR (Chloropren-Kautschuk)",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "Bitumenbahnen G 200 S4",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "Bitumenbahnen PYE PV 200 S5 (ungeschiefert)",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "Bitumenbahnen PYE-PV 200 S5 ns (geschiefert)"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "grobe Asphalttragschicht mit Normalbitumen, hohe Tragfähigkeit",
+      "GUID": [
+        "guid-c-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 92,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 78
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "Schotter ungebunden, gebrochenes Korn 0-45",
+      "GUID": [
+        "guid-c-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 92,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 90,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 85,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 72,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 72,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 68,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 68,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 60,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 60
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Kies-Sand-Gemisch frostsicher, natürlich gewonnen, bis 32mm",
+      "GUID": [
+        "guid-c-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8"
+      ],
+      "id_confidence": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 85,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 85,
+        "f4461491-586a-4770-9a04-716565e58c24": 80,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 80,
+        "286b0072-1001-4e5f-baa2-282230755243": 75,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 75
+      },
+      "id_name": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "C_Informell",
+    "description": "Informelle Mitarbeitereingabe: Freitext statt Norm-Codes, beschreibende Materialbezeichnungen ohne TL-Asphalt-StB-Referenz",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

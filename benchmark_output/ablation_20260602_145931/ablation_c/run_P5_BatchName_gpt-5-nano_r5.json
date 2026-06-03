@@ -1,0 +1,231 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "Splittmastixasphalt, lärmreduzierend, feine Körnung",
+      "GUID": [
+        "guid-c-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "d5c7232a-0171-45c3-b81a-856961713db8",
+        "879756d8-15b1-44d7-a454-29c961b2eab7",
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98",
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0",
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010",
+        "44502a7a-8229-421f-b12d-44719c2a026c",
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176",
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7",
+        "78d81405-a108-455e-b339-2dbac96dcf56",
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c"
+      ],
+      "id_confidence": {
+        "d5c7232a-0171-45c3-b81a-856961713db8": 35,
+        "879756d8-15b1-44d7-a454-29c961b2eab7": 35,
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98": 35,
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0": 35,
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010": 35,
+        "44502a7a-8229-421f-b12d-44719c2a026c": 35,
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176": 35,
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7": 35,
+        "78d81405-a108-455e-b339-2dbac96dcf56": 35,
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": 35
+      },
+      "id_name": {
+        "d5c7232a-0171-45c3-b81a-856961713db8": "Deckensystem - HT Labor + Hospitaltechnik GmbH - Decke für Nasszelle Stahlblech, verzinkt, pulverbeschichtet",
+        "879756d8-15b1-44d7-a454-29c961b2eab7": "BRESPA-Decke Typ A15B (DW Systembau GmbH)",
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98": "BRESPA-Decke Typ A20B (DW Systembau GmbH)",
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0": "BRESPA-Decke Typ A20Q (DW Systembau GmbH)",
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010": "BRESPA-Decke Typ A22B (DW Systembau GmbH)",
+        "44502a7a-8229-421f-b12d-44719c2a026c": "BRESPA-Decke Typ A26B (DW Systembau GmbH)",
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176": "BRESPA-Decke Typ A26Q (DW Systembau GmbH)",
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7": "BRESPA-Decke Typ A32V (DW Systembau GmbH)",
+        "78d81405-a108-455e-b339-2dbac96dcf56": "BRESPA-Decke Typ A40V (DW Systembau GmbH)",
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": "ADAGIO Acoustic+"
+      },
+      "id_gueltigkeit": {
+        "d5c7232a-0171-45c3-b81a-856961713db8": "2029",
+        "879756d8-15b1-44d7-a454-29c961b2eab7": "2029",
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98": "2029",
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0": "2029",
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010": "2029",
+        "44502a7a-8229-421f-b12d-44719c2a026c": "2029",
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176": "2029",
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7": "2029",
+        "78d81405-a108-455e-b339-2dbac96dcf56": "2029",
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": "2029"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "Asphaltzwischenschicht mit polymermodifiziertem Bitumen, Körnung 16mm",
+      "GUID": [
+        "guid-c-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "26855c20-be97-45c8-afd0-08dadef1256a",
+        "2b992858-8d7c-461b-8cca-cc50868dcd3f",
+        "f3171dbc-2855-4a13-8f44-9e4babb80abf",
+        "e3927b32-2f62-4ed2-9f81-09195d720daf",
+        "4194dc88-c6f6-45a6-97fd-a97359fb2f1c",
+        "774e756e-4a8b-4e9c-8e39-7d77d9c443bf",
+        "00485255-d8a7-4e6d-b2ab-fba929e3cc4a",
+        "97c76892-fb16-4d56-87db-f24e7159fa4b",
+        "db3d0bcc-d7c2-4f06-b5b3-58aaee20f105",
+        "8c90eef7-01dd-4ce5-96a6-fb1ca480592a"
+      ],
+      "id_confidence": {
+        "26855c20-be97-45c8-afd0-08dadef1256a": 35,
+        "2b992858-8d7c-461b-8cca-cc50868dcd3f": 35,
+        "f3171dbc-2855-4a13-8f44-9e4babb80abf": 35,
+        "e3927b32-2f62-4ed2-9f81-09195d720daf": 35,
+        "4194dc88-c6f6-45a6-97fd-a97359fb2f1c": 35,
+        "774e756e-4a8b-4e9c-8e39-7d77d9c443bf": 35,
+        "00485255-d8a7-4e6d-b2ab-fba929e3cc4a": 35,
+        "97c76892-fb16-4d56-87db-f24e7159fa4b": 35,
+        "db3d0bcc-d7c2-4f06-b5b3-58aaee20f105": 35,
+        "8c90eef7-01dd-4ce5-96a6-fb1ca480592a": 35
+      },
+      "id_name": {
+        "26855c20-be97-45c8-afd0-08dadef1256a": "Holcim Binder Sackware Werk Höver",
+        "2b992858-8d7c-461b-8cca-cc50868dcd3f": "Ecoplanet Bagged Plant La Union",
+        "f3171dbc-2855-4a13-8f44-9e4babb80abf": "ECOPlanet Bulk Plant Alesd",
+        "e3927b32-2f62-4ed2-9f81-09195d720daf": "EcoPlanet Prime (CEM IV 42,5 B(V) Bulk Plant Beli Izvor",
+        "4194dc88-c6f6-45a6-97fd-a97359fb2f1c": "ECOPlanet Prime CEM IV/B(V) 42.5 N Bagged Plant Beli Izvor",
+        "774e756e-4a8b-4e9c-8e39-7d77d9c443bf": "ECOPlanet SR CEM II B-V 42.5 R - SR Bulk Plant Beli Izvor",
+        "00485255-d8a7-4e6d-b2ab-fba929e3cc4a": "Zement",
+        "97c76892-fb16-4d56-87db-f24e7159fa4b": "Optimo 42 Bulk Plant Alesd",
+        "db3d0bcc-d7c2-4f06-b5b3-58aaee20f105": "Portland Composite Zement CEM II/A-M (T-L) 42,5 R",
+        "8c90eef7-01dd-4ce5-96a6-fb1ca480592a": "Portland Zement CEM I 52,5 R"
+      },
+      "id_gueltigkeit": {
+        "26855c20-be97-45c8-afd0-08dadef1256a": "2027",
+        "2b992858-8d7c-461b-8cca-cc50868dcd3f": "2029",
+        "f3171dbc-2855-4a13-8f44-9e4babb80abf": "2030",
+        "e3927b32-2f62-4ed2-9f81-09195d720daf": "2029",
+        "4194dc88-c6f6-45a6-97fd-a97359fb2f1c": "2029",
+        "774e756e-4a8b-4e9c-8e39-7d77d9c443bf": "2029",
+        "00485255-d8a7-4e6d-b2ab-fba929e3cc4a": "2025",
+        "97c76892-fb16-4d56-87db-f24e7159fa4b": "2030",
+        "db3d0bcc-d7c2-4f06-b5b3-58aaee20f105": "2027",
+        "8c90eef7-01dd-4ce5-96a6-fb1ca480592a": "2027"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "grobe Asphalttragschicht mit Normalbitumen, hohe Tragfähigkeit",
+      "GUID": [
+        "guid-c-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 92,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 90,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      },
+      "id_gueltigkeit": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "Schotter ungebunden, gebrochenes Korn 0-45",
+      "GUID": [
+        "guid-c-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb"
+      ],
+      "id_confidence": {
+        "286b0072-1001-4e5f-baa2-282230755243": 85,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 83,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 82,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 80,
+        "f4461491-586a-4770-9a04-716565e58c24": 78,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 78
+      },
+      "id_name": {
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)"
+      },
+      "id_gueltigkeit": {
+        "286b0072-1001-4e5f-baa2-282230755243": "2026",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "2026",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026",
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Kies-Sand-Gemisch frostsicher, natürlich gewonnen, bis 32mm",
+      "GUID": [
+        "guid-c-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 85,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 84,
+        "286b0072-1001-4e5f-baa2-282230755243": 83,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 82,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 82,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 81
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)"
+      },
+      "id_gueltigkeit": {
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "286b0072-1001-4e5f-baa2-282230755243": "2026",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "2026",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "C_Informell",
+    "description": "Informelle Mitarbeitereingabe: Freitext statt Norm-Codes, beschreibende Materialbezeichnungen ohne TL-Asphalt-StB-Referenz",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c",
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017",
+        "55a779b7-89a1-4249-a37b-1c2445e56426",
+        "9eced374-9a8d-4ace-a569-56d52a2d1013",
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d",
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7",
+        "f1e5357e-e6b3-4af1-95db-940d5438a949",
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd",
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190",
+        "83979499-f57c-462f-860b-efbc60bd000f"
+      ],
+      "id_confidence": {
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": 35,
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017": 35,
+        "55a779b7-89a1-4249-a37b-1c2445e56426": 35,
+        "9eced374-9a8d-4ace-a569-56d52a2d1013": 35,
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d": 35,
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": 35,
+        "f1e5357e-e6b3-4af1-95db-940d5438a949": 35,
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd": 35,
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190": 35,
+        "83979499-f57c-462f-860b-efbc60bd000f": 35
+      },
+      "id_name": {
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": "ADAGIO Acoustic+",
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017": "ADAGIO Alpha+",
+        "55a779b7-89a1-4249-a37b-1c2445e56426": "ADAGIO dB+",
+        "9eced374-9a8d-4ace-a569-56d52a2d1013": "ADAGIO dB+ and Adagio Acoustic+",
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d": "AMF ECOMIN & ARMSTRONG Basis Sortiment; AMF THERMATEX & ARMSTRONG Standard Sortiment (Pontalier)",
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": "THERMATEX Acoustic",
+        "f1e5357e-e6b3-4af1-95db-940d5438a949": "THERMATEX Acoustic Medical, THERMATEX Acoustic",
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd": "THERMATEX Acoustic, Pontarlier",
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190": "THERMATEX Basic & Standard",
+        "83979499-f57c-462f-860b-efbc60bd000f": "Classic Lite Deckenplatten"
+      },
+      "id_gueltigkeit": {
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": "2029",
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017": "2029",
+        "55a779b7-89a1-4249-a37b-1c2445e56426": "2029",
+        "9eced374-9a8d-4ace-a569-56d52a2d1013": "2029",
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d": "2026",
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": "2026",
+        "f1e5357e-e6b3-4af1-95db-940d5438a949": "2028",
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd": "2026",
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190": "2026",
+        "83979499-f57c-462f-860b-efbc60bd000f": "2029"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "26855c20-be97-45c8-afd0-08dadef1256a"
+      ],
+      "id_confidence": {
+        "26855c20-be97-45c8-afd0-08dadef1256a": 35
+      },
+      "id_name": {
+        "26855c20-be97-45c8-afd0-08dadef1256a": "Holcim Binder Sackware Werk Höver"
+      },
+      "id_gueltigkeit": {
+        "26855c20-be97-45c8-afd0-08dadef1256a": "2027"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 83,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      },
+      "id_gueltigkeit": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 88,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 85,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 82
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter"
+      },
+      "id_gueltigkeit": {
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {},
+      "id_gueltigkeit": {}
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

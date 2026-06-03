@@ -1,0 +1,157 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "f518d04d-4805-4d97-b457-9920226f3ff4",
+        "cbd2e78d-8930-4214-9715-553cee8e376e",
+        "185f34be-3e4b-4956-8b58-0000b8858406"
+      ],
+      "id_confidence": {
+        "f518d04d-4805-4d97-b457-9920226f3ff4": 35,
+        "cbd2e78d-8930-4214-9715-553cee8e376e": 35,
+        "185f34be-3e4b-4956-8b58-0000b8858406": 35
+      },
+      "id_name": {
+        "f518d04d-4805-4d97-b457-9920226f3ff4": " LCO White Clinker Bulk Plant Oggaz",
+        "cbd2e78d-8930-4214-9715-553cee8e376e": " RS PRO R-Series (Steinel GmbH)",
+        "185f34be-3e4b-4956-8b58-0000b8858406": " RS PRO S-Series (Steinel GmbH)"
+      },
+      "id_gueltigkeit": {
+        "f518d04d-4805-4d97-b457-9920226f3ff4": "2030",
+        "cbd2e78d-8930-4214-9715-553cee8e376e": "2029",
+        "185f34be-3e4b-4956-8b58-0000b8858406": "2029"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "29e0729d-13dd-496c-9f91-99d60b45c4e4",
+        "bbb23637-b4d8-4082-bb0a-f0e1710b9d28",
+        "a557450a-c269-4c05-8db0-295dd8b17f6d"
+      ],
+      "id_confidence": {
+        "29e0729d-13dd-496c-9f91-99d60b45c4e4": 35,
+        "bbb23637-b4d8-4082-bb0a-f0e1710b9d28": 35,
+        "a557450a-c269-4c05-8db0-295dd8b17f6d": 35
+      },
+      "id_name": {
+        "29e0729d-13dd-496c-9f91-99d60b45c4e4": "1m² Type II Technisches Textil",
+        "bbb23637-b4d8-4082-bb0a-f0e1710b9d28": "76/105 Group door wooden with 17.5 kg wood frame",
+        "a557450a-c269-4c05-8db0-295dd8b17f6d": "76/105 Group window wooden with 15 kg wood frame"
+      },
+      "id_gueltigkeit": {
+        "29e0729d-13dd-496c-9f91-99d60b45c4e4": "2028",
+        "bbb23637-b4d8-4082-bb0a-f0e1710b9d28": "2028",
+        "a557450a-c269-4c05-8db0-295dd8b17f6d": "2028"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "0fdca580-3027-493d-a3c7-815758bac55d",
+        "6dd5bef4-d25f-4f42-abc7-2ba3357a3a83",
+        "20c24cbe-4c17-45f6-9539-144d43099b25"
+      ],
+      "id_confidence": {
+        "0fdca580-3027-493d-a3c7-815758bac55d": 35,
+        "6dd5bef4-d25f-4f42-abc7-2ba3357a3a83": 35,
+        "20c24cbe-4c17-45f6-9539-144d43099b25": 35
+      },
+      "id_name": {
+        "0fdca580-3027-493d-a3c7-815758bac55d": "A2-Betonpflaster- Standardstein grau mit Vorsatz",
+        "6dd5bef4-d25f-4f42-abc7-2ba3357a3a83": "Abdichtungsbahnen – Schönox WSF/Casco Wetstop/SikaCeram Abdichtungsmembran W (Sika Services AG)",
+        "20c24cbe-4c17-45f6-9539-144d43099b25": "Access manager 92 00"
+      },
+      "id_gueltigkeit": {
+        "0fdca580-3027-493d-a3c7-815758bac55d": "2026",
+        "6dd5bef4-d25f-4f42-abc7-2ba3357a3a83": "2027",
+        "20c24cbe-4c17-45f6-9539-144d43099b25": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "671a8c95-a3f8-4010-937e-c72940f66504",
+        "299cd856-c220-4b82-910d-60c91e035c7d",
+        "44a74a65-6425-4b98-9a9c-3f3a89c6a6e1"
+      ],
+      "id_confidence": {
+        "671a8c95-a3f8-4010-937e-c72940f66504": 35,
+        "299cd856-c220-4b82-910d-60c91e035c7d": 35,
+        "44a74a65-6425-4b98-9a9c-3f3a89c6a6e1": 35
+      },
+      "id_name": {
+        "671a8c95-a3f8-4010-937e-c72940f66504": "Access manager 92 30",
+        "299cd856-c220-4b82-910d-60c91e035c7d": "Access manager 92 90 Wall",
+        "44a74a65-6425-4b98-9a9c-3f3a89c6a6e1": "ACEFormer™"
+      },
+      "id_gueltigkeit": {
+        "671a8c95-a3f8-4010-937e-c72940f66504": "2026",
+        "299cd856-c220-4b82-910d-60c91e035c7d": "2026",
+        "44a74a65-6425-4b98-9a9c-3f3a89c6a6e1": "2028"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "a1adf5fa-1db4-4bf8-9e8b-4e944d8c2081",
+        "98775611-4588-49a7-b539-9beb7492fc4f",
+        "cf001cae-092a-48a0-beda-bdc7eeb53418"
+      ],
+      "id_confidence": {
+        "a1adf5fa-1db4-4bf8-9e8b-4e944d8c2081": 85,
+        "98775611-4588-49a7-b539-9beb7492fc4f": 70,
+        "cf001cae-092a-48a0-beda-bdc7eeb53418": 60
+      },
+      "id_name": {
+        "a1adf5fa-1db4-4bf8-9e8b-4e944d8c2081": "ACEGrid®",
+        "98775611-4588-49a7-b539-9beb7492fc4f": "ACEMat™",
+        "cf001cae-092a-48a0-beda-bdc7eeb53418": "ACETex® PET"
+      },
+      "id_gueltigkeit": {
+        "a1adf5fa-1db4-4bf8-9e8b-4e944d8c2081": "2028",
+        "98775611-4588-49a7-b539-9beb7492fc4f": "2028",
+        "cf001cae-092a-48a0-beda-bdc7eeb53418": "2028"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

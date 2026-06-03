@@ -1,0 +1,104 @@
+
+======================================================================
+EPD MATCHER - KONFIGURATION
+======================================================================
+
+[Azure OpenAI - Stage 4]
+  Endpoint:   https://susinfra-epd-matcher.cognitiveservices.azu...
+  Deployment: gpt-4o-mini
+  Timeout:    240.0s
+
+[EPD-Datenquelle]
+  SOURCE:     local
+  DB-Pfad:    data/oekobaudat.db
+
+[Stage 1: Context Extraction]
+  PREFER_NAME_FIELD:  False
+  EXTRACT_VOLUME:     True
+
+[Stage 2: Material Code Parsing]
+  USE_GLOSSAR:        True
+  DEBUG:              False
+
+[Stage 3: EPD Pre-filtering]
+  USE_GLOSSAR_FILTER: True
+  USE_FILTER_LABELS:  False (legacy)
+
+[Stage 4: Semantic Matching]
+  MAX_EPD_IN_PROMPT:  10360
+  USE_DETAIL_MATCHING:False
+  USE_BATCH_MODE:     True
+  PARALLEL_WORKERS:   10
+
+[Stage 5: Confidence Validation]
+  USE_VALIDATION:     False
+  MIN_CONFIDENCE:     25
+
+======================================================================
+
+Total EPDs: 2779
+
+FILTER RECALL:
+     4 EPDs | Nicht bituminöse Tragschicht        | STSuB 0/45
+           -> Elektroband - nicht-schlussgeglüht
+              [Metalle / Stahl und Eisen / Stahlbleche]
+           -> Walzplattierte Grobbleche mit Auflagen aus austenitisch
+              [Metalle / Stahl und Eisen / Stahlbleche]
+           -> Walzplattiertes Grobblech mit Auflagen aus ferritischen
+              [Metalle / Stahl und Eisen / Stahlbleche]
+     4 EPDs | Frostschutzschicht                  | FSS 0/32
+           -> GLAPOR Schaumglasschotter
+              [Dämmstoffe / Schaumglas / Granulat]
+           -> Bims Schotter
+              [Mineralische Baustoffe / Zuschläge / Bim]
+           -> Schotter 16/32
+              [Mineralische Baustoffe / Zuschläge / Nat]
+    18 EPDs | Deckschicht                         | SMA 11 S
+           -> Tragdeckschicht
+              [Mineralische Baustoffe / Asphalt / Trags]
+           -> Brausesets - EcoSmart
+              [Gebäudetechnik / Sanitär / Armaturen]
+           -> Dezentrale Lüftungsgeräte - SIEGENIA-AUBI KG - Wandlüft
+              [Gebäudetechnik / Klimatisierung und Lüft]
+    12 EPDs | Binderschicht                       | AC 16 B S
+           -> Asphaltbinder
+              [Mineralische Baustoffe / Asphalt / Aspha]
+           -> Genadelte Teppichfliesen mit einer Faserzusammensetzung
+              [Kunststoffe / Bodenbeläge / Textile Bode]
+           -> Getuftete Teppichfliesen mit 100% recyceltem PA6-Florma
+              [Kunststoffe / Bodenbeläge / Textile Bode]
+    12 EPDs | Bituminöse Tragschicht              | AC 22 T S
+           -> Asphalttragschicht
+              [Mineralische Baustoffe / Asphalt / Trags]
+           -> Tragdeckschicht
+              [Mineralische Baustoffe / Asphalt / Trags]
+           -> Genadelte Teppichfliesen mit einer Faserzusammensetzung
+              [Kunststoffe / Bodenbeläge / Textile Bode]
+    12 EPDs | Deckschicht                         | Splittmastixasphalt, laermreduzierend, feine Körnung
+           -> Tragdeckschicht
+              [Mineralische Baustoffe / Asphalt / Trags]
+           -> Genadelte Teppichfliesen mit einer Faserzusammensetzung
+              [Kunststoffe / Bodenbeläge / Textile Bode]
+           -> Getuftete Teppichfliesen mit 100% recyceltem PA6-Florma
+              [Kunststoffe / Bodenbeläge / Textile Bode]
+    11 EPDs | Nicht bituminöse Tragschicht        | Schotter ungebunden, gebrochenes Korn 0-45
+           -> GLAPOR Schaumglasschotter
+              [Dämmstoffe / Schaumglas / Granulat]
+           -> Natürliche Gesteinskörnungen (Näppi T & N Oy)
+              [Mineralische Baustoffe / Zuschläge / Nat]
+           -> Bims Schotter
+              [Mineralische Baustoffe / Zuschläge / Bim]
+    12 EPDs | Binderschicht                       | Asphaltzwischenschicht mit polymermodifiziertem Bitumen
+           -> Asphaltbinder
+              [Mineralische Baustoffe / Asphalt / Aspha]
+           -> Genadelte Teppichfliesen mit einer Faserzusammensetzung
+              [Kunststoffe / Bodenbeläge / Textile Bode]
+           -> Getuftete Teppichfliesen mit 100% recyceltem PA6-Florma
+              [Kunststoffe / Bodenbeläge / Textile Bode]
+    11 EPDs | Frostschutzschicht                  | Gesteinskörnungsgemisch 0/32
+           -> GLAPOR Schaumglasschotter
+              [Dämmstoffe / Schaumglas / Granulat]
+           -> Natürliche Gesteinskörnungen (Näppi T & N Oy)
+              [Mineralische Baustoffe / Zuschläge / Nat]
+           -> Bims Schotter
+              [Mineralische Baustoffe / Zuschläge / Bim]

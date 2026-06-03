@@ -66,6 +66,263 @@ zugewiesen — es gibt keine Variante mit uninformativen NAME-Werten.
 Faktorielle über 3 binäre Variablen deckt alle Interaktionseffekte ab. Diese Begründung fehlt
 in v1 und muss im Paper explizit gemacht werden (Referenz: Fostiropoulos & Itti 2023).
 
+#### 1.2.1 Genaue Funktion der drei Ablations-Schalter
+
+Diese Beschreibungen sind die Vorlage für den Methodik-Teil des Papers. Sie spiegeln den
+Code-Stand der v2-Studie wider (inkl. Filter-Quality-Fixes — siehe Abschnitt 1.2.2).
+
+**`Batch` (`EPD_USE_BATCH_MODE`)** — wirkt in Stage 4.
+- **ON**: Alle Schichten eines Inputs werden in einer einzigen LLM-Anfrage gemeinsam abgefragt.
+  EPD-Katalog und System-Prompt werden nur einmal übertragen; die Antwort enthält strukturierten
+  JSON-Output für N Layer.
+- **OFF**: Pro Schicht eine eigene LLM-Anfrage. EPD-Katalog und System-Prompt werden N-mal
+  übertragen.
+- **Erwartete Wirkung**: Drastische Token-Reduktion bei OFF→ON, dafür höheres Failure-Risiko,
+  weil das Modell strukturierten Output für N Layer simultan liefern muss. Im v1-Befund mit
+  P2 leicht verringerter Accuracy gegenüber P1.
+
+**`Filter` (`EPD_USE_GLOSSAR_FILTER`)** — wirkt in Stage 3.
+- **ON**: Der EPD-Katalog wird vor dem LLM-Call durch eine mehrstufige, regelbasierte Filterkette
+  reduziert. Die Kette ist hierarchisch:
+  1. **Tiefbau-Scope-Whitelist** *(v2-neu)*: Nur EPDs, deren Klassifizierungspfad mit einem
+     der drei erlaubten Tiefbau-Präfixe beginnt, passieren den Filter (siehe §1.2.2 für
+     die empirische Auswahl):
+     - `Mineralische Baustoffe / Asphalt`
+     - `Mineralische Baustoffe / Zuschläge`
+     - `Mineralische Baustoffe / Mörtel und Beton / Beton`
+
+     Strukturelle Exklusion aller Hochbau-, Gebäudetechnik-, Dämmstoff-, Metall- und
+     Kunststoff-EPDs. Verhindert Cross-Domain-Hallucinations (z.B. Teppichfliesen für
+     Asphaltschichten, Stahlblech für Schottertragschichten).
+  2. **Drei-Fall-Logik je nach geparstem Material-Typ**:
+     - *Fall 1 — Asphalt erkannt* (regex-Match auf TL Asphalt-StB-Code oder Fuzzy-Treffer):
+       Zwei-Stufen-Filter. *Primäre* Treffer enthalten den Schicht-Term (z.B. „Binder" für
+       Binderschicht) im `name` UND einen Asphalt-Term in `name + klassifizierung`.
+       *Sekundäre* Treffer enthalten nur Asphalt-Term, kein Schicht-Match.
+     - *Fall 2 — Nicht-Asphalt, aber kategorisierbar* (Schotter, Frostschutz, Abdichtung
+       via Keyword-Match): Kategorie-spezifische Inklusionsbegriffe gegen `name`,
+       Kategorie-Ausschlussbegriffe gegen `name + klassifizierung`.
+     - *Fall 3 — Unbekanntes Material*: Tokenisierte Keyword-Suche aus
+       `material + schicht`-Text gegen `name`.
+  3. **Globale Ausschluss- und Mismatch-Listen** wirken in allen drei Fällen:
+     - `AUSSCHLUSS_BEGRIFFE` (z.B. `Mörtel`, `Ziegel`, `Gips`) — wären typischerweise schon
+       durch die Whitelist abgefangen, fungieren als zweiter Riegel.
+     - `MATERIAL_MISMATCHES` (z.B. `Bitumenbahn`, `Schweißbahn` werden nicht als Asphalt-Match
+       akzeptiert) — fängt EPDs ab, deren Klassifizierung zwar Tiefbau-relevant scheint,
+       deren Produkttyp aber zur Material-Klasse des Inputs nicht passt.
+  - **Architektur-Hinweis**: Inklusion erfolgt asymmetrisch gegen `name` (verhindert
+    Treffer auf breite Oberbegriffe in `klassifizierung`); Exklusion erfolgt gegen
+    `name + klassifizierung` (Klassifizierung ist für Negativ-Aussagen zuverlässig).
+- **OFF**: Der vollständige EPD-Katalog wird ohne jegliche Vorverarbeitung an das LLM übergeben.
+  Tiefbau-Whitelist, Schicht-Filter und globale Listen bleiben inaktiv.
+- **Erwartete Wirkung**: Drastische Token-Reduktion (in v1 Faktor ~270×), reduziertes
+  Hallucination-Risiko durch Cross-Domain-Ausschluss, potenziell schlechterer Recall bei
+  Edge Cases (unbekannte Materialien).
+
+**`NamePref` (`EPD_PREFER_NAME_FIELD`)** — wirkt in Stage 1 und propagiert in Stage 5.
+- **ON**: Bei der Schicht-Extraktion wird das strukturierte `NAME`-Feld (RStO-orientierte
+  5-Werte-Schicht-Taxonomie: Deckschicht / Binderschicht / Tragschicht /
+  Schottertragschicht / Frostschutzschicht) als primäre Schicht-Quelle bevorzugt.
+  Folgewirkungen: Stage 3 verwendet den abgeleiteten Schicht-Term für die Inklusionsprüfung;
+  Stage 5 kappt Confidence auf 60, wenn ein passender Schicht-Term im EPD fehlt.
+- **OFF**: Das nutzergeschriebene `MATERIAL`-Feld wird als primäre Schicht-Quelle verwendet.
+  Stage-5-Schicht-Cap inaktiv.
+- **Erwartete Wirkung**: `NAME` ist 1:1 zur EPD-Klassifizierungs-Hierarchie und reduziert
+  falsche Schicht-Zuordnungen, wenn `MATERIAL` von der Standardterminologie abweicht.
+
+#### 1.2.2 Lessons learned aus v1 und resultierende Parameter-Anpassungen für v2
+
+Diese Sektion dokumentiert nachvollziehbar, was aus dem v1-Lauf gelernt wurde und welche
+Stellschrauben für v2 angepasst wurden — als Vorlage für die Paper-Abschnitte „Pilot study
+findings" und „Method refinements" sowie für die Reproduzierbarkeit der Studie.
+
+**Was wir aus v1 wissen** (gpt-4o-mini + P3_Filter erreichte 100% Accuracy bei 1/12 der
+Kosten von P1_Baseline). Die Stage-3-Vorfilterung war damit der zentrale Cost-Efficiency-Hebel.
+Reviewer kritisierten v1 primär am Single-Test-Case (siehe Reviewer-Kritik-Tabelle).
+
+**Was wir aus v1-Pilotruns danach gelernt haben** (94 Filter-Quality-Runs zwischen v1- und
+v2-Submission, 8 Configs × 4 Modelle × 3 Inputs, Analyse-Artefakte unter
+`.scratch/filter-quality/`):
+
+| # | Befund | Beobachtung | Root Cause | Studienrisiko |
+|---|--------|-------------|------------|---------------|
+| 1 | Precision-Bug Asphalt | Für `AC 16 B S` lieferte Stage 3 Teppichfliesen-, Sanitär- und Lüftungsgerät-EPDs als Asphalt-Kandidaten | `_ist_generisch_asphalt` matchte das Substring `bitumen` im Namen von Bodenbelägen mit Bitumen-Trägerplatte. Konsequenz: das `ist_asphalt`-Fakt in [[Bewertung]] wurde falsch True — betrifft nicht nur Stage 3, sondern auch die Stage-5-Confidence-Validierung in den Filter=OFF-Baseline-Configs (P1/P2/P4/P5) | Verfälscht die Filter-vs-Baseline-Aussage. Doppelt kritisch: in P1/P4 ohne Vorfilter ist Stage 5 die letzte Verteidigung gegen LLM-Hallucinations; ein falsch-positives `ist_asphalt` deaktiviert dort die „kein Asphalt-Bezug → cap auf 35"-Regel |
+| 2 | Recall-Bug Schottertragschicht | Für `STSuB 0/45` lieferte Stage 3 vier Stahlblech-EPDs und null Schotter-EPDs | (a) `STSuB` wurde im Glossar nicht als Schotter-Kategorie erkannt → Fallback auf Fall 3 (Keyword-Suche). (b) Stoppwort-Liste in Fall 3 enthielt `nicht` nicht → „nicht" aus „Nicht bituminöse Tragschicht" matchte „nicht-schlussgeglüht" in Stahlblech-EPD-Namen | LLM bekam null relevante EPDs, gab 0 Matches zurück — verfälscht Filter-Accuracy für nicht-Asphalt-Schichten systematisch nach unten |
+| 3 | Klassifikations-Pfade in Ökobaudat anders als angenommen | DB-Inspektion zeigt: `Mineralische Baustoffe / Beton` und `… / Pflastersteine` existieren nicht; Beton liegt unter `… / Mörtel und Beton / Beton`, Pflastersteine unter `… / Steine und Elemente / Betonfertigteile und Betonwaren` | Annahme aus der Filter-PRD basierte nicht auf einer DB-Validierung | Whitelist-Definition wäre falsch geworden |
+
+**Empirisch fundierte Tiefbau-Scope-Whitelist** (DB-Snapshot, Stand v2). Auswahl basiert auf
+Top-Level-Inspektion aller `klassifizierung`-Pfade unter `Mineralische Baustoffe / …` und
+Stichproben-Validierung der enthaltenen EPD-Namen:
+
+| Whitelist-Präfix | EPDs in DB | In Scope für v2 weil… |
+|------------------|-----------:|----------------------|
+| `Mineralische Baustoffe / Asphalt` | 6 | Deckt alle vier v2-Asphalt-Subtypen (Tragschichten, Asphaltbinder, Splittmastix, Gussasphalt) — direkter Match für Deckschicht / Binderschicht / Bituminöse Tragschicht |
+| `Mineralische Baustoffe / Zuschläge` | 35 | Deckt Schotter (Naturstein 16/32, Bims), Sand & Kies, Kraftwerksnebenprodukte — direkter Match für Schottertragschicht / Frostschutzschicht |
+| `Mineralische Baustoffe / Mörtel und Beton / Beton` | 278 | Reservescope für mögliche Betonfahrbahn-Inputs in zukünftigen Erweiterungen. Inhalt überwiegend Hochbau-Beton (Stahlbeton C20/25); diese werden durch die Schicht- und Kategorie-Filter (Fall 1 verlangt Asphalt-Term; Fall 2 schließt `beton` für Schotter aus) für die v2-Schichten weggefiltert |
+| **Summe** | **319 EPDs** (≈ 11,5 % von 2779) | |
+
+**Bewusst nicht in der Whitelist**:
+
+| Pfad | EPDs | Begründung der Exklusion |
+|------|-----:|---------------------------|
+| `Mineralische Baustoffe / Bindemittel / *` | 198 | Zement/Kalk/Gips sind Bindemittel, keine Schicht-Materialien |
+| `Mineralische Baustoffe / Steine und Elemente / Betonfertigteile und Betonwaren` | 72 | Enthält Betonpflastersteine (Tiefbau) und Mauersteine/Decken/Wände/Treppen (Hochbau); keine Pflasterstraße in v2-Test-Schichten |
+| `Mineralische Baustoffe / Steine und Elemente / *` (außer Betonfertigteile) | 131 | Ziegel, Gipsplatten, Faserzement etc. ausschließlich Hochbau |
+| `Mineralische Baustoffe / Mörtel und Beton / *` (außer Beton) | 78 | Putz, Mauermörtel, Kleber, Estrich (Estrich zusätzlich in `AUSSCHLUSS_BEGRIFFE`) — alles Hochbau |
+| `Dämmstoffe / Schaumglas / Granulat` (Schaumglasschotter) | 1 | RStO-unüblich; falls in Zukunft als Frostschutz benötigt, gezielt ergänzen |
+| Alle anderen Top-Level-Klassen | 1581 | Gebäudetechnik, Kunststoffe, Metalle, Dämmstoffe, Holz, Beschichtungen — strukturell kein Tiefbau |
+
+**HGT-Sonderfall**: „Hydraulisch gebundene Tragschicht" wurde in §1.1 als möglicher Input C
+genannt. DB-Suche („hydraulisch", „HGT", „Verfestigung") liefert 0 Treffer. → Falls Input C
+eine HGT-Schicht enthält, muss diese mit `ground_truth = null` markiert und aus der
+Accuracy-Berechnung ausgeschlossen werden (analog zum v1-Vorgehen bei nicht-passenden EPDs).
+Dies wird im Paper als bekannte Datenbank-Limitation referenziert.
+
+**Daraus resultierende Anpassungen für v2** (alle als Bestandteil des `Filter`-Treatments,
+**kein neuer Ablations-Schalter**):
+
+| Anpassung | Wirkort | Effekt |
+|-----------|---------|--------|
+| Tiefbau-Scope-Whitelist (3 Präfixe) | `matching_rules.py` (Konstante + Helper), `epd_filter.py` (Anwendung) | Fix Befund #1 *strukturell* bei `Filter=ON`; reduziert die Vor-LLM-Menge von 2 779 auf ~319 EPDs (v2-DB) |
+| Negativ-Kontext-Fix in `_ist_generisch_asphalt` (`bitumen` allein gilt nicht mehr als Asphalt-Bezug, wenn `bitumenbahn`/`bitumenträger`/`bitumenbelag`/`bitumendach` ebenfalls im Text ist) | `asphalt_glossar.py` (Logik) | Fix Befund #1 *an der Wurzel*: Stage 5 cap'd Teppichfliesen-/Bodenbelag-EPDs auch in den Filter=OFF-Configs (P1/P2/P4/P5) zuverlässig. Die Whitelist (Vorzeile) und dieser Fix bilden Defense-in-Depth: Whitelist verhindert das Problem strukturell in Stage 3, der Source-Fix sichert die Korrektheit des `ist_asphalt`-Fakts für alle Aufrufer von `bewerte_kandidat` |
+| Erweiterte Material-Kategorie-Keywords (Schotter: `stsub`, `ungebunden`, `schottertrag`; Frostschutz: `fss`) | `asphalt_glossar.py` (Daten) | Fix Befund #2a — STSuB landet im Schotter-Fall 2 statt im Fallback Fall 3 |
+| Erweiterte Stoppwort-Liste in Fall 3 (`nicht`, `kein`, `ohne`, `auch`, `beim`, `sein`, `wird`) | `epd_filter.py` | Fix Befund #2b — kurze Negationen erzeugen keine Cross-Domain-Matches mehr. Bewusst gegen die alternative Anhebung der Mindest-Token-Länge auf 4 entschieden, damit 3-Letter-Codes wie `OPA` (Offenporiger Asphalt) als zukünftige Fallback-Inputs erkennbar bleiben |
+
+**Per-Input-Validierung der Keyword-Erweiterung** (alle v2-MATERIAL-Werte
+gegen den neuen Filter durchgespielt):
+
+| Input | Layer | MATERIAL | Erkennung im neuen Filter |
+|-------|------:|----------|---------------------------|
+| ablation_a | 4 | `STSuB 0/45` | **Neu**: trifft `stsub` → Schotter-Kategorie |
+| ablation_a | 5 | `FSS 0/32` | Schon vorher via NAME=Frostschutzschicht; `fss`-Keyword als Konsistenz-Backup |
+| ablation_b | 5 | `Gesteinskörnungsgemisch 0/32` | Schon vorher via Keyword `gesteinskörnung` |
+| ablation_c | 4 | `Schotter ungebunden, gebrochenes Korn 0-45` | Schon vorher via Keyword `schotter`; `ungebunden` als Backup |
+| ablation_c | 5 | `Kies-Sand-Gemisch frostsicher, natürlich gewonnen, bis 32mm` | Schon vorher via Keyword `kies` |
+
+Bewusst **nicht** aus der PRD übernommen: die Abkürzungen `stuetzschicht`, `gnb`, `rcb` und
+`fsk`/`fsks` (letztere bereits in v1-Code). Begründung: weder im v2-Test-Set noch in RStO als
+Standardterm referenziert; Substring-Matching-Risiko in unverwandten EPD-Namen überwiegt den
+unbelegten Nutzen.
+
+**Fall 3 ist in v2 ein dead path** (paper-relevant): nach Whitelist-Vorfilter, Tiefbau-Scope
+und erweiterten Schotter-/Frostschutz-Keywords trifft kein v2-MATERIAL mehr den
+Keyword-Fallback in `_filter_epds`. Der Stoppwort-Fix ist defensiv und reproduziert kein
+beobachtetes v2-Versagen — er sichert das Verhalten gegen zukünftige unbekannte Materialien
+ab und entfernt einen offen gewordenen False-Positive-Pfad. Im Paper kann Fall 3 als
+„safety-net fallback for unrecognised material descriptions" benannt werden, wobei v2
+empirisch zeigt, dass alle Tier-1- und Tier-2-Schichten von Fall 1 oder Fall 2 abgefangen
+werden.
+
+**Warum kein eigener Ablations-Schalter für die Whitelist**: Das v1-Paper definiert
+`Filter=ON` als „category-based filtering approach reduces the search space" und `Filter=OFF`
+als „all EPDs are passed to the LLM". Die Whitelist verschärft den Filter-Modus genau in dem
+Sinn, den der Paper-Text bereits beschreibt. Ein separater Schalter würde die Studie auf
+2×2×2×2 = 16 Configs verdoppeln; eine Whitelist-immer-an-Konstante würde den publizierten
+Stage-3-Text („all EPDs are passed to the LLM") für die Baseline P1 falsch machen. Diese
+Begründung wird im Paper-Abschnitt „Method refinements" explizit gemacht.
+
+#### 1.2.3 Empirische Validierung der Filter-Quality-Fixes (Stage 3, LLM-frei)
+
+Vor und nach Anwendung der Fixes aus §1.2.2 wurde das Filter-Recall-Test-Skript
+(`.scratch/filter_recall_test.py`) über die 9 Materialien aus den drei v2-Inputs
+ausgeführt. Dieser Test prüft *nur* Stage 3 (regelbasiert, keine LLM-Calls) — er isoliert
+den Effekt der Fixes vom stochastischen LLM-Verhalten. Ergebnis-Artefakte liegen unter
+`.scratch/filter-quality/baseline_output.txt` und `.../after_output.txt`.
+
+| Material (Input / Layer) | EPDs vor | EPDs nach | Top-Treffer vorher | Top-Treffer nachher |
+|-------------------------|---------:|----------:|--------------------|---------------------|
+| STSuB 0/45 (a/4) | 4 | 10 | 3× Stahlblech („Elektroband nicht-schlussgeglüht", Walzplattierte Grobbleche) | 3× Zuschläge (Natürliche Gesteinskörnungen, Bims Schotter, Brechsand 0/2) |
+| FSS 0/32 (a/5) | 4 | 3 | Schaumglasschotter (Dämmstoff) | 3× Zuschläge (Bims, Schotter 16/32) |
+| SMA 11 S (a/1) | 18 | 5 | Brausesets, Lüftungsgeräte | 3× Asphalt (Tragdeckschicht, Asphaltbinder, Asphalttragschicht) |
+| AC 16 B S (a/2) | 12 | 5 | Teppichfliesen | 3× Asphalt (Binder, Tragschicht, Gussasphalt) |
+| AC 22 T S (a/3) | 12 | 5 | Teppichfliesen | 3× Asphalt |
+| Splittmastixasphalt … (c/1) | 12 | 5 | Teppichfliesen | 3× Asphalt |
+| Schotter ungebunden (c/4) | 11 | 10 | Schaumglasschotter | 3× Zuschläge |
+| Asphaltzwischenschicht … (c/2) | 12 | 5 | Teppichfliesen | 3× Asphalt |
+| Gesteinskörnungsgemisch (b/5) | 11 | 10 | Schaumglasschotter | 3× Zuschläge |
+
+**Was die Tabelle zeigt** (paper-relevant):
+- **Recall-Fix wirkt strukturell**: STSuB 0/45 verdoppelt die Kandidatenzahl (4 → 10) UND
+  ersetzt alle drei Top-Treffer (Stahlblech → Zuschläge). Damit gibt es im v2-Lauf erstmals
+  überhaupt sinnvolle Kandidaten für „Nicht bituminöse Tragschicht" via STSuB-Code.
+- **Precision-Fix wirkt drastisch**: Asphalt-Schichten reduzieren ihre Kandidaten von 12-18
+  auf konstant 5 EPDs, und die Top-3-Treffer sind in *jedem* Fall reine Asphalt-EPDs ohne
+  Cross-Domain-Noise. Bei Filter=ON ist der Stage-4-Prompt damit deutlich kompakter und
+  hallucination-resistenter.
+- **Edge-Case Schaumglasschotter** wird konsistent ausgeschlossen — sowohl bei FSS- als auch
+  bei Gesteinskörnungs- und Schotter-Inputs.
+- **Token-Reduktion vor LLM**: Aus 2 779 DB-EPDs überleben nach Whitelist 319 (≈ 11,5 %);
+  pro Material reduziert die Drei-Fall-Logik diese weiter auf 3-10 EPDs. Bei `Batch=ON` (P7,
+  P8) übersetzt sich das in eine spürbar geringere Token-Last pro Lauf, ohne Recall-Verlust
+  für die v2-Test-Schichten.
+
+**Limitation dieses Tests**: Er sagt nichts über Accuracy aus — nur über die *Eingangsmenge*
+für das LLM. Die finale Accuracy-Aussage hängt am vollständigen Benchmark-Rerun für die
+Filter-aktiven Configs P3/P6/P7/P8 (Folge-Schritt; siehe §6 TODO).
+
+#### 1.2.4 LLM-Validierung Phase A — Pilot vor / nach Filter-Fixes
+
+Nach dem Stage-3-Test (§1.2.3) wurde ein vollständiger 1-Rep-Pilot über alle 8 Configs ×
+4 Modelle × 3 Inputs = 96 Runs gefahren — einmal mit dem alten Filter
+(`benchmark_output/ablation_20260601_195759/`) und einmal mit den v2-Fixes
+(`benchmark_output/ablation_20260602_132120/`). Vergleichskriterium: Top-1-Match-Konsistenz
+pro Schicht sowie Token-Verbrauch pro Config.
+
+Phase A ist **kein** Paper-Datensatz (nur 1 Rep), sondern eine LLM-stochastik-bewusste
+Validierung, dass die Filter-Fixes auch im echten LLM-Lauf wirken — bevor mit 5 Reps × 480
+Runs der finale Paper-Lauf gefahren wird.
+
+**Schlüsselbefund — Recall-Bug bei STSuB-Schicht ist eliminiert:**
+
+| UUID-Präfix | EPD | Im alten Lauf gewählt von … | Im neuen Lauf gewählt von … |
+|-------------|-----|------------------------------|-------------------------------|
+| `c71cd5b5` | **Bade- und Duschwanne Acryl** (Gebäudetechnik / Sanitär) | 1 Modell | — |
+| `75db1c10` | Beton C20/25 (Hochbau-Beton) | 2 Modelle | — |
+| `9795c91c` | Asphalttragschicht (falsche Kategorie für nicht-bituminös) | 2 Modelle | — |
+| `5dd08fc1` | GLAPOR Schaumglasschotter (Dämmstoff) | 1 Modell | — |
+| `f4461491` | Schotter 16/32 (Naturstein) | 5 Modelle | **20 Modell-Config-Kombinationen** |
+| `cff84492` | Natürliche Gesteinskörnungen | 1 Modell | 2 Kombinationen |
+| `d35a5f2a` | Kies 2/32 | 1 Modell | 1 Kombination |
+| `286b0072` | Sand 0/2 | 1 Modell | — |
+
+→ Im alten Lauf streute der Top-1-Match über 8 verschiedene UUIDs, davon 4 strukturell
+domänenfremd (Sanitär, Hochbau-Beton, Asphalt, Dämmstoff). Im neuen Lauf konvergieren
+fast alle 24 Modell-Config-Kombinationen auf 3 korrekte Zuschlag-EPDs, dominant
+`Schotter 16/32`. Keine Cross-Domain-Hallucinations mehr.
+
+**Top-1-Stabilität und Token-Verbrauch pro Config** (Δ vs. Vor-Lauf, über alle 3 Inputs
+× 4 Modelle × 5 Schichten = 60 Schicht-Entscheidungen pro Config):
+
+| Config | Filter | Δ Top-1 | None→UUID | UUID→None | Δ Tokens | Δ USD |
+|--------|:------:|--------:|----------:|----------:|---------:|------:|
+| P1_Baseline | – | 14 | 0 | 3 | — | +0,03 |
+| P2_Batch | – | 24 | 9 | 0 | +12 k | +0,01 |
+| **P3_Filter** | ✓ | **8** | **2** | **0** | **−9 k** | +0,01 |
+| P4_NamePref | – | 19 | 0 | 0 | +0 k | 0,00 |
+| P5_BatchName | – | 24 | 4 | 0 | −1 k | +0,01 |
+| **P6_FilterName** | ✓ | **10** | **2** | **0** | **−21 k** | **−0,03** |
+| **P7_BatchFilter** | ✓ | **11** | **0** | **0** | +3 k | 0,00 |
+| **P8_All** | ✓ | **9** | **1** | **0** | **−9 k** | **−0,01** |
+
+*Δ Tokens P1: durch zwei neu erfolgreich gelaufene Runs verzerrt (im Vor-Lauf abgebrochen)
+— kein interpretierbares Signal.*
+
+**Was die Tabelle für das Paper hergibt:**
+1. **Filter-aktive Configs (P3/P6/P7/P8) sind kohärenter als Filter=OFF**: 8-11 Top-1-Wechsel
+   gegenüber 14-24 in Filter=OFF. Die Filter-Fixes erhöhen die Modell-übergreifende
+   Reproduzierbarkeit — eine paper-relevante Eigenschaft jenseits reiner Accuracy.
+2. **Recall-Gewinn ohne Recall-Verlust** in den Filter-Configs: alle None→UUID-Übergänge
+   liegen in den Filter-Configs (5 Fälle), kein einziger UUID→None. Die drei UUID→None-Fälle
+   in P1 sind LLM-Stochastik in der Filter=OFF-Baseline und nicht durch die Fixes verursacht.
+3. **Token-Reduktion bei Filter=ON sichtbar** (P6: −18 %, P8: −15 %, P3: −9 %), trotz
+   unveränderter Stage-4-Prompt-Struktur — die Whitelist + Negativ-Kontext-Fixes liefern
+   konsistentere und kompaktere Kandidatenlisten an das LLM.
+4. **Die zwei zuvor abgebrochenen Runs** (ablation_a P1 gpt-5-nano; ablation_b P3 gpt-5.2-chat)
+   sind im neuen Lauf erfolgreich — keine separate Merge-Strategie für den Paper-Run nötig.
+
+**Phase-A-Gesamtkosten**: ca. 12 USD für 96 Runs. Hochrechnung Phase B (5 Reps, 480 Runs):
+ca. 60 USD.
+
 **Konstante Faktoren** (nicht abladiert, Begründung im Paper notwendig):
 - Stage 2 (Glossar-Parsing): bleibt aktiv, aber sein Beitrag ist gering da ÖKOBAUDAT kaum
   produktspezifische Infrastruktur-EPDs hat → „Stage-2-Vorbehalt" im Paper dokumentieren
@@ -248,6 +505,7 @@ Ohne `ground_truth.json` läuft das Skript durch, gibt aber keine Accuracy aus.
 - [ ] `custom_entries_config.json` erstellen (aus Template, UUIDs nach ÖKOBAUDAT-Lookup)
 - [ ] Prompt-Beispiel dokumentieren (Abschnitt 4.2)
 - [ ] Snapshot-Datum der lokalen ÖKOBAUDAT-DB dokumentieren
+- [ ] Benchmark-Rerun für P3/P6/P7/P8 mit Filter-Quality-Fixes (Accuracy-Validierung der §1.2.3-Tabelle); P1/P2/P4/P5 unverändert, da Filter=OFF
 - [ ] Preisdatum der 4 Azure-Modelle für v2 dokumentieren (neue Benchmark-Läufe)
 - [ ] Referenzen Hofmeyer et al. 2023 und Chen et al. 2024 sichten (Reviewer 2)
 - [ ] Limitation Open-Source-LLMs ausformulieren

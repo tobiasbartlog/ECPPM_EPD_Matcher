@@ -1,0 +1,203 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "Splittmastixasphalt, lärmreduzierend, feine Körnung",
+      "GUID": [
+        "guid-c-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 95,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 65,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c": 35
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c": "Balkenschichtholz Nadelholz (generisch)"
+      },
+      "id_gueltigkeit": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "52d4092b-b220-4850-9179-4f11094da94e": "2026",
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c": "2026"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "Asphaltzwischenschicht mit polymermodifiziertem Bitumen, Körnung 16mm",
+      "GUID": [
+        "guid-c-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 95,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 65,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c": 35,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c": "Balkenschichtholz Nadelholz (generisch)",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "grobe Asphalttragschicht mit Normalbitumen, hohe Tragfähigkeit",
+      "GUID": [
+        "guid-c-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c",
+        "52d4092b-b220-4850-9179-4f11094da94e"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 70,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 55,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 50,
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c": 35,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c": "Balkenschichtholz Nadelholz (generisch)",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "aeab0f39-5eab-422f-8c4b-822bb98aa63c": "2026",
+        "52d4092b-b220-4850-9179-4f11094da94e": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "Schotter ungebunden, gebrochenes Korn 0-45",
+      "GUID": [
+        "guid-c-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "28862311-601b-4bba-a885-6e919522ff41",
+        "c34de763-3a6c-437d-9b3a-566926f8abc4",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 95,
+        "28862311-601b-4bba-a885-6e919522ff41": 80,
+        "c34de763-3a6c-437d-9b3a-566926f8abc4": 80,
+        "286b0072-1001-4e5f-baa2-282230755243": 70,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 65,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 55
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "28862311-601b-4bba-a885-6e919522ff41": "Chlorodifluormethan (R22)",
+        "c34de763-3a6c-437d-9b3a-566926f8abc4": "Difluormethan (R32)",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter"
+      },
+      "id_gueltigkeit": {
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "28862311-601b-4bba-a885-6e919522ff41": "2026",
+        "c34de763-3a6c-437d-9b3a-566926f8abc4": "2026",
+        "286b0072-1001-4e5f-baa2-282230755243": "2026",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "2026",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Kies-Sand-Gemisch frostsicher, natürlich gewonnen, bis 32mm",
+      "GUID": [
+        "guid-c-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "28862311-601b-4bba-a885-6e919522ff41",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef"
+      ],
+      "id_confidence": {
+        "286b0072-1001-4e5f-baa2-282230755243": 90,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 85,
+        "f4461491-586a-4770-9a04-716565e58c24": 80,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 75,
+        "28862311-601b-4bba-a885-6e919522ff41": 65,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 55
+      },
+      "id_name": {
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "28862311-601b-4bba-a885-6e919522ff41": "Chlorodifluormethan (R22)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter"
+      },
+      "id_gueltigkeit": {
+        "286b0072-1001-4e5f-baa2-282230755243": "2026",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "2026",
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "28862311-601b-4bba-a885-6e919522ff41": "2026",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "C_Informell",
+    "description": "Informelle Mitarbeitereingabe: Freitext statt Norm-Codes, beschreibende Materialbezeichnungen ohne TL-Asphalt-StB-Referenz",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 95,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 70,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 55,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 45,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 40
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "88c0f648-2316-4bbc-99b3-dbc636580088"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 95,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 80,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 70,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 55,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 50,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 35,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 95,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 70,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 60,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 45,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 35
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 95,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 75,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 60,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 45,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 35
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f",
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7"
+      ],
+      "id_confidence": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 90,
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": 80,
+        "f4461491-586a-4770-9a04-716565e58c24": 75,
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f": 60,
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b": 55,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 50,
+        "286b0072-1001-4e5f-baa2-282230755243": 45,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 40,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 35,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 30
+      },
+      "id_name": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": "Natürliche Gesteinskörnungen (Näppi T & N Oy)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f": "Sedimentäre Gesteine",
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b": "Magmatische Gesteine",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

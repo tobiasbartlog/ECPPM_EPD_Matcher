@@ -1,0 +1,229 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426",
+        "25db4367-38c5-4483-b392-4fc071170e5e",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6",
+        "88c0f648-2316-4bbc-99b3-dbc636580088"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 85,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 80,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 78,
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": 65,
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": 20,
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": 20,
+        "25db4367-38c5-4483-b392-4fc071170e5e": 20,
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": 20,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 20
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "Kunststoffmodifizierte Bitumendickbeschichtung",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "Bitumenbahnen G 200 S4",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "Bitumenbahnen PYE PV 200 S5 (ungeschiefert)",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "Bitumenbahnen PYE-PV 200 S5 ns (geschiefert)",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": "Bitumenbahnen V 60",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)"
+      },
+      "id_gueltigkeit": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "2026",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "2026",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "2026",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "2026",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": "2026",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "2026"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0",
+        "88c0f648-2316-4bbc-99b3-dbc636580088",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426",
+        "25db4367-38c5-4483-b392-4fc071170e5e",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 85,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 72,
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": 60,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 20,
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": 20,
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": 20,
+        "25db4367-38c5-4483-b392-4fc071170e5e": 20,
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": 20,
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "Kunststoffmodifizierte Bitumendickbeschichtung",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "Bitumenbahnen G 200 S4",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "Bitumenbahnen PYE PV 200 S5 (ungeschiefert)",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "Bitumenbahnen PYE-PV 200 S5 ns (geschiefert)",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": "Bitumenbahnen V 60",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": "Bitumenverträgliche Polyisobutylen (PIB) Kunststoffdachbahn"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "2026",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "2026",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "2026",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "2026",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "2026",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "2026",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": "2026",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": "2026"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426",
+        "25db4367-38c5-4483-b392-4fc071170e5e",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6",
+        "88c0f648-2316-4bbc-99b3-dbc636580088",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 85,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 78,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 60,
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": 60,
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": 20,
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": 20,
+        "25db4367-38c5-4483-b392-4fc071170e5e": 20,
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": 20,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 20,
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": 20
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "Kunststoffmodifizierte Bitumendickbeschichtung",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "Bitumenbahnen G 200 S4",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "Bitumenbahnen PYE PV 200 S5 (ungeschiefert)",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "Bitumenbahnen PYE-PV 200 S5 ns (geschiefert)",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": "Bitumenbahnen V 60",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": "Bitumenverträgliche Polyisobutylen (PIB) Kunststoffdachbahn"
+      },
+      "id_gueltigkeit": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "2026",
+        "85c48e5f-299c-463b-9aaf-da332a29dfe0": "2026",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "2026",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "2026",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "2026",
+        "23b67663-f4b0-445e-bbba-b741a59d57e6": "2026",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "2026",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb296ec-9a09-4344-99c7-faa3cc805541",
+        "7a265769-b70e-4cbb-a9ac-f6af4e55f8a6",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 85,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35,
+        "7a265769-b70e-4cbb-a9ac-f6af4e55f8a6": 35,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente",
+        "7a265769-b70e-4cbb-a9ac-f6af4e55f8a6": "Transparente Platten PMMA, extrudiert",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)"
+      },
+      "id_gueltigkeit": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "2026",
+        "7a265769-b70e-4cbb-a9ac-f6af4e55f8a6": "2026",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8"
+      ],
+      "id_confidence": {
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 82
+      },
+      "id_name": {
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)"
+      },
+      "id_gueltigkeit": {
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "Splittmastixasphalt, lärmreduzierend, feine Körnung",
+      "GUID": [
+        "guid-c-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "ee6d9736-2ddd-4d2d-acc1-3ea1031c1f9e",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 60,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "ee6d9736-2ddd-4d2d-acc1-3ea1031c1f9e": 30,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20,
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": 20
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "ee6d9736-2ddd-4d2d-acc1-3ea1031c1f9e": "1.3.11. Dachsteine (Beton)",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": "Transportbeton C25/30"
+      },
+      "id_gueltigkeit": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "52d4092b-b220-4850-9179-4f11094da94e": "2026",
+        "ee6d9736-2ddd-4d2d-acc1-3ea1031c1f9e": "2026",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "2026",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": "2026"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "Asphaltzwischenschicht mit polymermodifiziertem Bitumen, Körnung 16mm",
+      "GUID": [
+        "guid-c-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "a1deced7-6fa9-4266-bc86-da75b3653b06",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 95,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "286b0072-1001-4e5f-baa2-282230755243": 35,
+        "a1deced7-6fa9-4266-bc86-da75b3653b06": 30,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "a1deced7-6fa9-4266-bc86-da75b3653b06": "Leichtbetonstein aus 100% Naturbims",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "52d4092b-b220-4850-9179-4f11094da94e": "2026",
+        "286b0072-1001-4e5f-baa2-282230755243": "2026",
+        "a1deced7-6fa9-4266-bc86-da75b3653b06": "2026",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "2026"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "grobe Asphalttragschicht mit Normalbitumen, hohe Tragfähigkeit",
+      "GUID": [
+        "guid-c-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 92,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 60,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "286b0072-1001-4e5f-baa2-282230755243": 35,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich"
+      },
+      "id_gueltigkeit": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "52d4092b-b220-4850-9179-4f11094da94e": "2026",
+        "286b0072-1001-4e5f-baa2-282230755243": "2026",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "Schotter ungebunden, gebrochenes Korn 0-45",
+      "GUID": [
+        "guid-c-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "52d31f1f-d533-47c3-997c-4ca9d126054f",
+        "2582642e-308a-4a8e-b731-3289665b44da",
+        "61c0c795-7116-407d-8635-68fe422f76a9"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 95,
+        "286b0072-1001-4e5f-baa2-282230755243": 85,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 82,
+        "52d31f1f-d533-47c3-997c-4ca9d126054f": 60,
+        "2582642e-308a-4a8e-b731-3289665b44da": 40,
+        "61c0c795-7116-407d-8635-68fe422f76a9": 20
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "52d31f1f-d533-47c3-997c-4ca9d126054f": "Nutzung - Fahrstuhl geringe Auslastung (100.000 Fahrten/a)",
+        "2582642e-308a-4a8e-b731-3289665b44da": "Betonrohr, unbewehrt",
+        "61c0c795-7116-407d-8635-68fe422f76a9": "Recycling Transportbeton C25/30"
+      },
+      "id_gueltigkeit": {
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "286b0072-1001-4e5f-baa2-282230755243": "2026",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "52d31f1f-d533-47c3-997c-4ca9d126054f": "2026",
+        "2582642e-308a-4a8e-b731-3289665b44da": "2026",
+        "61c0c795-7116-407d-8635-68fe422f76a9": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Kies-Sand-Gemisch frostsicher, natürlich gewonnen, bis 32mm",
+      "GUID": [
+        "guid-c-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "2277a824-1018-4569-8c8e-34986a66fa2d"
+      ],
+      "id_confidence": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 95,
+        "286b0072-1001-4e5f-baa2-282230755243": 88,
+        "f4461491-586a-4770-9a04-716565e58c24": 82,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 75,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 70,
+        "2277a824-1018-4569-8c8e-34986a66fa2d": 20
+      },
+      "id_name": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "2277a824-1018-4569-8c8e-34986a66fa2d": "Beton C25/30 XC4 XF1 XA1 F3 16 M ECOPact, Rezept Nummer DA4234-DHMK Version 1, Transportbetonwerk Mülheim, Germany"
+      },
+      "id_gueltigkeit": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "286b0072-1001-4e5f-baa2-282230755243": "2026",
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "2026",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026",
+        "2277a824-1018-4569-8c8e-34986a66fa2d": "2028"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "C_Informell",
+    "description": "Informelle Mitarbeitereingabe: Freitext statt Norm-Codes, beschreibende Materialbezeichnungen ohne TL-Asphalt-StB-Referenz",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

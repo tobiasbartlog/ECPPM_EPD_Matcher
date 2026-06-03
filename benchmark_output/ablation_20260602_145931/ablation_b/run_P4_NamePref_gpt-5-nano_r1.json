@@ -1,0 +1,153 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c",
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017",
+        "55a779b7-89a1-4249-a37b-1c2445e56426",
+        "9eced374-9a8d-4ace-a569-56d52a2d1013",
+        "3222ca11-e1ee-4910-9997-0ea4e42831f6",
+        "9394795b-a620-4f54-b72c-c535bb0a02f0",
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d",
+        "83979499-f57c-462f-860b-efbc60bd000f",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e",
+        "d5c7232a-0171-45c3-b81a-856961713db8"
+      ],
+      "id_confidence": {
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": 35,
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017": 35,
+        "55a779b7-89a1-4249-a37b-1c2445e56426": 35,
+        "9eced374-9a8d-4ace-a569-56d52a2d1013": 35,
+        "3222ca11-e1ee-4910-9997-0ea4e42831f6": 35,
+        "9394795b-a620-4f54-b72c-c535bb0a02f0": 35,
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d": 35,
+        "83979499-f57c-462f-860b-efbc60bd000f": 35,
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": 35,
+        "d5c7232a-0171-45c3-b81a-856961713db8": 35
+      },
+      "id_name": {
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": "ADAGIO Acoustic+",
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017": "ADAGIO Alpha+",
+        "55a779b7-89a1-4249-a37b-1c2445e56426": "ADAGIO dB+",
+        "9eced374-9a8d-4ace-a569-56d52a2d1013": "ADAGIO dB+ and Adagio Acoustic+",
+        "3222ca11-e1ee-4910-9997-0ea4e42831f6": "ADAGIO HD+ (19 mm)",
+        "9394795b-a620-4f54-b72c-c535bb0a02f0": "ADAGIO HD+ (30 mm)",
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d": "AMF ECOMIN & ARMSTRONG Basis Sortiment; AMF THERMATEX & ARMSTRONG Standard Sortiment (Pontalier)",
+        "83979499-f57c-462f-860b-efbc60bd000f": "Classic Lite Deckenplatten",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "Classic Max Deckenplatten",
+        "d5c7232a-0171-45c3-b81a-856961713db8": "Deckensystem - HT Labor + Hospitaltechnik GmbH - Decke für Nasszelle Stahlblech, verzinkt, pulverbeschichtet"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "26855c20-be97-45c8-afd0-08dadef1256a"
+      ],
+      "id_confidence": {
+        "26855c20-be97-45c8-afd0-08dadef1256a": 35
+      },
+      "id_name": {
+        "26855c20-be97-45c8-afd0-08dadef1256a": "Holcim Binder Sackware Werk Höver"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 90,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 78,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb"
+      ],
+      "id_confidence": {
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 70,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 65,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 60,
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": 55,
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": 50,
+        "f4461491-586a-4770-9a04-716565e58c24": 40,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 40
+      },
+      "id_name": {
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": "Bims-Planstein (SFK-4)",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": "Bimssand",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

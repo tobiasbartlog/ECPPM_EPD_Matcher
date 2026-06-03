@@ -1,0 +1,223 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "30158f86-d3f3-490f-8159-7618d2075a7b",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b",
+        "1b39b1f7-93da-484b-b2f7-2a9d4283e1c2"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 75,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 60,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "30158f86-d3f3-490f-8159-7618d2075a7b": 20,
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": 20,
+        "1b39b1f7-93da-484b-b2f7-2a9d4283e1c2": 20
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "30158f86-d3f3-490f-8159-7618d2075a7b": "Beton C20/25 XC1 XC2 F3 16 M ECOPact, Rezept Nummer DI3234-BNZK Version 1, Transportbetonwerk Mönchengladbach, Germany",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "Transportbeton C20/25",
+        "1b39b1f7-93da-484b-b2f7-2a9d4283e1c2": "FIS EM Plus"
+      },
+      "id_gueltigkeit": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "30158f86-d3f3-490f-8159-7618d2075a7b": "2028",
+        "e3d7a045-ee91-43ac-8fb4-a5216c65ba0b": "2026",
+        "1b39b1f7-93da-484b-b2f7-2a9d4283e1c2": "2029"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb9b0b4-1e06-46aa-9398-06f5537016ae"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 100,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 60,
+        "efb9b0b4-1e06-46aa-9398-06f5537016ae": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb9b0b4-1e06-46aa-9398-06f5537016ae": "Estrichmörtel-Calciumsulfatestrich"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "efb9b0b4-1e06-46aa-9398-06f5537016ae": "2029"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "93efa55f-9e37-4d40-8f85-287b2bd4efb4",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 100,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 95,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 60,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 60,
+        "93efa55f-9e37-4d40-8f85-287b2bd4efb4": 20,
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": 20
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "93efa55f-9e37-4d40-8f85-287b2bd4efb4": "Beton C20/25 XC1 XC2 F3 16 M ECOPact, Rezept Nummer DI3234-BNZK Version 1, Transportbetonwerk Troisdorf, Germany",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": "Transportbeton C25/30"
+      },
+      "id_gueltigkeit": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "93efa55f-9e37-4d40-8f85-287b2bd4efb4": "2028",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "67c9d57a-872a-4614-8be8-37ecaf9952e4",
+        "24b673e5-b737-4fe9-ab51-ca68391ccdd3",
+        "5f091578-7d83-46de-bfba-754087398afe",
+        "28862311-601b-4bba-a885-6e919522ff41"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 95,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 85,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 80,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 70,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 60,
+        "67c9d57a-872a-4614-8be8-37ecaf9952e4": 55,
+        "24b673e5-b737-4fe9-ab51-ca68391ccdd3": 25,
+        "5f091578-7d83-46de-bfba-754087398afe": 20,
+        "28862311-601b-4bba-a885-6e919522ff41": 20
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "67c9d57a-872a-4614-8be8-37ecaf9952e4": "Blähton Granulat",
+        "24b673e5-b737-4fe9-ab51-ca68391ccdd3": "Sperrholzplatte (generisch)",
+        "5f091578-7d83-46de-bfba-754087398afe": "CR Profil (Chloropren-Kautschuk)",
+        "28862311-601b-4bba-a885-6e919522ff41": "Chlorodifluormethan (R22)"
+      },
+      "id_gueltigkeit": {
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "2026",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "2026",
+        "67c9d57a-872a-4614-8be8-37ecaf9952e4": "2026",
+        "24b673e5-b737-4fe9-ab51-ca68391ccdd3": "2026",
+        "5f091578-7d83-46de-bfba-754087398afe": "2026",
+        "28862311-601b-4bba-a885-6e919522ff41": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "67c9d57a-872a-4614-8be8-37ecaf9952e4",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "8ac5659c-5918-41bb-966d-91efdd6c4e50"
+      ],
+      "id_confidence": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 100,
+        "f4461491-586a-4770-9a04-716565e58c24": 95,
+        "67c9d57a-872a-4614-8be8-37ecaf9952e4": 85,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 80,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 75,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 70,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 60,
+        "8ac5659c-5918-41bb-966d-91efdd6c4e50": 55
+      },
+      "id_name": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "67c9d57a-872a-4614-8be8-37ecaf9952e4": "Blähton Granulat",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "8ac5659c-5918-41bb-966d-91efdd6c4e50": "Blähton Sand"
+      },
+      "id_gueltigkeit": {
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "67c9d57a-872a-4614-8be8-37ecaf9952e4": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "2026",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "2026",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "2026",
+        "8ac5659c-5918-41bb-966d-91efdd6c4e50": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

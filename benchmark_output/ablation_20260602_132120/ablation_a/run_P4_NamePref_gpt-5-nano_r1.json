@@ -1,0 +1,186 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "83979499-f57c-462f-860b-efbc60bd000f",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e",
+        "d5c7232a-0171-45c3-b81a-856961713db8",
+        "eebfc74f-5651-4d43-a2aa-f04b66ff8a4c",
+        "dc0557ec-f724-4b61-b25d-38665cbad37b",
+        "edab317d-6e11-44ad-a679-7af509d3f565",
+        "719759c9-a53d-46ca-ad3f-0f0efbde4d84",
+        "373b5e70-413e-4940-9896-eaa211456d62",
+        "09f14961-a247-4cd8-94d9-71be817bab9b",
+        "9a0cee45-9e87-4ebd-ba21-9d47b65dd882"
+      ],
+      "id_confidence": {
+        "83979499-f57c-462f-860b-efbc60bd000f": 35,
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": 35,
+        "d5c7232a-0171-45c3-b81a-856961713db8": 35,
+        "eebfc74f-5651-4d43-a2aa-f04b66ff8a4c": 35,
+        "dc0557ec-f724-4b61-b25d-38665cbad37b": 35,
+        "edab317d-6e11-44ad-a679-7af509d3f565": 35,
+        "719759c9-a53d-46ca-ad3f-0f0efbde4d84": 35,
+        "373b5e70-413e-4940-9896-eaa211456d62": 35,
+        "09f14961-a247-4cd8-94d9-71be817bab9b": 35,
+        "9a0cee45-9e87-4ebd-ba21-9d47b65dd882": 35
+      },
+      "id_name": {
+        "83979499-f57c-462f-860b-efbc60bd000f": "Classic Lite Deckenplatten",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "Classic Max Deckenplatten",
+        "d5c7232a-0171-45c3-b81a-856961713db8": "Deckensystem - HT Labor + Hospitaltechnik GmbH - Decke für Nasszelle Stahlblech, verzinkt, pulverbeschichtet",
+        "eebfc74f-5651-4d43-a2aa-f04b66ff8a4c": "Metalldeckenmembranen (0,5 mm, mit Akustikvlies)",
+        "dc0557ec-f724-4b61-b25d-38665cbad37b": "Metalldeckenmembranen (0,5 mm, ohne akustische Füllung)",
+        "edab317d-6e11-44ad-a679-7af509d3f565": "Metalldeckenmembranen (0,6 mm, mit Akustikvlies)",
+        "719759c9-a53d-46ca-ad3f-0f0efbde4d84": "Metalldeckenmembranen (0,6 mm, ohne akustische Füllung)",
+        "373b5e70-413e-4940-9896-eaa211456d62": "Metalldeckenmembranen (0,7 mm, mit Akustikvlies)",
+        "09f14961-a247-4cd8-94d9-71be817bab9b": "Metalldeckenmembranen (0,7 mm, ohne akustische Füllung)",
+        "9a0cee45-9e87-4ebd-ba21-9d47b65dd882": "Mesh-Deckenmembranen (1,5 mm)"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "26855c20-be97-45c8-afd0-08dadef1256a"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 98,
+        "26855c20-be97-45c8-afd0-08dadef1256a": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "26855c20-be97-45c8-afd0-08dadef1256a": "Holcim Binder Sackware Werk Höver"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 88,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 90,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 90,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 85,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 85,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 80,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 80,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 75,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 75,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 70,
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": 70
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": "Bimssand"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b",
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f",
+        "f82e3ab8-d7bb-4765-a60c-bfe78ede1565",
+        "e2e9d29e-c775-4eef-af57-de8194db7524",
+        "c241605d-34f1-44db-bf07-78610e849edb",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1"
+      ],
+      "id_confidence": {
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b": 85,
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f": 85,
+        "f82e3ab8-d7bb-4765-a60c-bfe78ede1565": 80,
+        "e2e9d29e-c775-4eef-af57-de8194db7524": 75,
+        "c241605d-34f1-44db-bf07-78610e849edb": 75,
+        "f4461491-586a-4770-9a04-716565e58c24": 65,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 65,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 65,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 60,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 60
+      },
+      "id_name": {
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b": "Magmatische Gesteine",
+        "8f302b19-91b6-47b6-a97d-bacdaadf4e3f": "Sedimentäre Gesteine",
+        "f82e3ab8-d7bb-4765-a60c-bfe78ede1565": "Natursteinplatte, hart, Außenbereich, Dicke 80mm",
+        "e2e9d29e-c775-4eef-af57-de8194db7524": "Natursteinplatte, hart, Fassade (30mm)",
+        "c241605d-34f1-44db-bf07-78610e849edb": "Natursteinplatte, hart, Innenboden (20mm)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

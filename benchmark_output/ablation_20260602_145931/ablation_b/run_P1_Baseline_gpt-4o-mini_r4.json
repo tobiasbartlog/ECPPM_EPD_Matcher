@@ -1,0 +1,204 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "29a2e1c9-fcde-4957-b39b-165400a2e7ee",
+        "a665af6b-a140-47a9-bb0d-c5c2b70f8c28",
+        "143a4df2-563e-4ef9-b75b-90e1cf9f7ef9",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602",
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668",
+        "96045987-0862-4f29-b4ec-798c2e14f23a"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 85,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 60,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 60,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 60,
+        "29a2e1c9-fcde-4957-b39b-165400a2e7ee": 35,
+        "a665af6b-a140-47a9-bb0d-c5c2b70f8c28": 35,
+        "143a4df2-563e-4ef9-b75b-90e1cf9f7ef9": 35,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20,
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668": 20,
+        "96045987-0862-4f29-b4ec-798c2e14f23a": 20
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "29a2e1c9-fcde-4957-b39b-165400a2e7ee": "Ammoniak (R717)",
+        "a665af6b-a140-47a9-bb0d-c5c2b70f8c28": "Aluminiumfolie (d=0,1 mm)",
+        "143a4df2-563e-4ef9-b75b-90e1cf9f7ef9": "Aluminiumblech",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich",
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668": "Armierung (Kunstharzspachtel)",
+        "96045987-0862-4f29-b4ec-798c2e14f23a": "Anhydrit (CaSO4)"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "962826c3-4b38-4300-af59-f39fad184aaa",
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba",
+        "9bcd1268-18a6-4e8f-86a8-95169e28ef04",
+        "37e62d96-7e02-466e-aaf4-99539b29d9a9",
+        "7e5b6fc9-8ce5-4099-bd16-c538d289ea8b",
+        "c8e950f4-40b0-498b-9880-bc7402c31741",
+        "17dcfac6-3213-4712-a8d9-b47bb30cf87e",
+        "d730417e-edf8-455b-a605-d76a5ffe6f3b",
+        "229971c1-84a5-442a-8e1c-c2d77e84c1c0",
+        "72d27e4d-8371-4bf5-a23f-4b4356749817"
+      ],
+      "id_confidence": {
+        "962826c3-4b38-4300-af59-f39fad184aaa": 35,
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba": 35,
+        "9bcd1268-18a6-4e8f-86a8-95169e28ef04": 35,
+        "37e62d96-7e02-466e-aaf4-99539b29d9a9": 35,
+        "7e5b6fc9-8ce5-4099-bd16-c538d289ea8b": 35,
+        "c8e950f4-40b0-498b-9880-bc7402c31741": 35,
+        "17dcfac6-3213-4712-a8d9-b47bb30cf87e": 35,
+        "d730417e-edf8-455b-a605-d76a5ffe6f3b": 35,
+        "229971c1-84a5-442a-8e1c-c2d77e84c1c0": 35,
+        "72d27e4d-8371-4bf5-a23f-4b4356749817": 35
+      },
+      "id_name": {
+        "962826c3-4b38-4300-af59-f39fad184aaa": "CEM I 42,5 N (st)",
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba": "CEM I 42,5 R",
+        "9bcd1268-18a6-4e8f-86a8-95169e28ef04": "CEM I 42,5 R (na)",
+        "37e62d96-7e02-466e-aaf4-99539b29d9a9": "CEM I 52,5 R (ft)",
+        "7e5b6fc9-8ce5-4099-bd16-c538d289ea8b": "CEM I 52,5 R-SR3 Bulk Plant Carboneras",
+        "c8e950f4-40b0-498b-9880-bc7402c31741": "CEM I 52.5 R Bulk Plant Beli Izvor",
+        "17dcfac6-3213-4712-a8d9-b47bb30cf87e": "CEM II / B-LL 32.5 R Bagged Plant Beli Izvor",
+        "d730417e-edf8-455b-a605-d76a5ffe6f3b": "CEM II / B-LL 32.5 R Bulk Plant Beli Izvor",
+        "229971c1-84a5-442a-8e1c-c2d77e84c1c0": "CEM II A-LL 42.5 R  Bulk Plant Beli Izvor",
+        "72d27e4d-8371-4bf5-a23f-4b4356749817": "CEM II A-LL 52.5 N  Bulk Plant Beli Izvor"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "29a2e1c9-fcde-4957-b39b-165400a2e7ee",
+        "a665af6b-a140-47a9-bb0d-c5c2b70f8c28",
+        "143a4df2-563e-4ef9-b75b-90e1cf9f7ef9",
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602",
+        "96045987-0862-4f29-b4ec-798c2e14f23a"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 85,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 70,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 60,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 50,
+        "29a2e1c9-fcde-4957-b39b-165400a2e7ee": 35,
+        "a665af6b-a140-47a9-bb0d-c5c2b70f8c28": 30,
+        "143a4df2-563e-4ef9-b75b-90e1cf9f7ef9": 30,
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668": 20,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20,
+        "96045987-0862-4f29-b4ec-798c2e14f23a": 20
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "29a2e1c9-fcde-4957-b39b-165400a2e7ee": "Ammoniak (R717)",
+        "a665af6b-a140-47a9-bb0d-c5c2b70f8c28": "Aluminiumfolie (d=0,1 mm)",
+        "143a4df2-563e-4ef9-b75b-90e1cf9f7ef9": "Aluminiumblech",
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668": "Armierung (Kunstharzspachtel)",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich",
+        "96045987-0862-4f29-b4ec-798c2e14f23a": "Anhydrit (CaSO4)"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4",
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "5b617407-2029-4b47-84d0-2caf10937b1d",
+        "b1052ab1-97a9-45a1-810a-cdd0a3b1f07a"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 85,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 80,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 60,
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": 60,
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": 60,
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d": 60,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 50,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 50,
+        "5b617407-2029-4b47-84d0-2caf10937b1d": 40,
+        "b1052ab1-97a9-45a1-810a-cdd0a3b1f07a": 40
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": "Bims-Planstein (SFK-4)",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": "Bimssand",
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d": "Schüttung aus Polystyrolschaumstoff-Partikeln (ohne Bindemittel)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "5b617407-2029-4b47-84d0-2caf10937b1d": "Binnenschiff (Berg-Tal Durchschnitt)",
+        "b1052ab1-97a9-45a1-810a-cdd0a3b1f07a": "Biogas (1 kg)"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

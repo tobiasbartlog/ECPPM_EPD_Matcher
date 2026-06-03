@@ -1,0 +1,183 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "83979499-f57c-462f-860b-efbc60bd000f",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e",
+        "d5c7232a-0171-45c3-b81a-856961713db8",
+        "eaba872f-8a05-4a7a-b233-05b09a96749e"
+      ],
+      "id_confidence": {
+        "83979499-f57c-462f-860b-efbc60bd000f": 35,
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": 35,
+        "d5c7232a-0171-45c3-b81a-856961713db8": 35,
+        "eaba872f-8a05-4a7a-b233-05b09a96749e": 35
+      },
+      "id_name": {
+        "83979499-f57c-462f-860b-efbc60bd000f": "Classic Lite Deckenplatten",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "Classic Max Deckenplatten",
+        "d5c7232a-0171-45c3-b81a-856961713db8": "Deckensystem - HT Labor + Hospitaltechnik GmbH - Decke für Nasszelle Stahlblech, verzinkt, pulverbeschichtet",
+        "eaba872f-8a05-4a7a-b233-05b09a96749e": "Dune Max Deckenplatten"
+      },
+      "id_gueltigkeit": {
+        "83979499-f57c-462f-860b-efbc60bd000f": "2029",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "2029",
+        "d5c7232a-0171-45c3-b81a-856961713db8": "2029",
+        "eaba872f-8a05-4a7a-b233-05b09a96749e": "2029"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "26855c20-be97-45c8-afd0-08dadef1256a",
+        "962826c3-4b38-4300-af59-f39fad184aaa",
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba",
+        "229971c1-84a5-442a-8e1c-c2d77e84c1c0",
+        "72d27e4d-8371-4bf5-a23f-4b4356749817",
+        "9fed0291-329a-4853-8d41-10a92f122dfd",
+        "5772b959-c22a-4b52-94bd-2983e3e64a1b",
+        "00485255-d8a7-4e6d-b2ab-fba929e3cc4a",
+        "db3d0bcc-d7c2-4f06-b5b3-58aaee20f105"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 95,
+        "26855c20-be97-45c8-afd0-08dadef1256a": 35,
+        "962826c3-4b38-4300-af59-f39fad184aaa": 35,
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba": 35,
+        "229971c1-84a5-442a-8e1c-c2d77e84c1c0": 35,
+        "72d27e4d-8371-4bf5-a23f-4b4356749817": 35,
+        "9fed0291-329a-4853-8d41-10a92f122dfd": 35,
+        "5772b959-c22a-4b52-94bd-2983e3e64a1b": 35,
+        "00485255-d8a7-4e6d-b2ab-fba929e3cc4a": 35,
+        "db3d0bcc-d7c2-4f06-b5b3-58aaee20f105": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "26855c20-be97-45c8-afd0-08dadef1256a": "Holcim Binder Sackware Werk Höver",
+        "962826c3-4b38-4300-af59-f39fad184aaa": "CEM I 42,5 N (st)",
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba": "CEM I 42,5 R",
+        "229971c1-84a5-442a-8e1c-c2d77e84c1c0": "CEM II A-LL 42.5 R  Bulk Plant Beli Izvor",
+        "72d27e4d-8371-4bf5-a23f-4b4356749817": "CEM II A-LL 52.5 N  Bulk Plant Beli Izvor",
+        "9fed0291-329a-4853-8d41-10a92f122dfd": "CEM II B-LL 42.5 R Bagged Plant Beli Izvor",
+        "5772b959-c22a-4b52-94bd-2983e3e64a1b": "CEM II B-LL 42.5 R Bulk Plant Beli Izvor",
+        "00485255-d8a7-4e6d-b2ab-fba929e3cc4a": "Zement",
+        "db3d0bcc-d7c2-4f06-b5b3-58aaee20f105": "Portland Composite Zement CEM II/A-M (T-L) 42,5 R"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "26855c20-be97-45c8-afd0-08dadef1256a": "2027",
+        "962826c3-4b38-4300-af59-f39fad184aaa": "2029",
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba": "2029",
+        "229971c1-84a5-442a-8e1c-c2d77e84c1c0": "2029",
+        "72d27e4d-8371-4bf5-a23f-4b4356749817": "2029",
+        "9fed0291-329a-4853-8d41-10a92f122dfd": "2029",
+        "5772b959-c22a-4b52-94bd-2983e3e64a1b": "2029",
+        "00485255-d8a7-4e6d-b2ab-fba929e3cc4a": "2025",
+        "db3d0bcc-d7c2-4f06-b5b3-58aaee20f105": "2027"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 86,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      },
+      "id_gueltigkeit": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb"
+      ],
+      "id_confidence": {
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 82,
+        "f4461491-586a-4770-9a04-716565e58c24": 79,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 75
+      },
+      "id_name": {
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)"
+      },
+      "id_gueltigkeit": {
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "2026",
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "f27b04a9-2fa2-4ac2-8c5f-03addd0a643a",
+        "f0b20a40-b4cb-4c34-9f2e-145e3d9af024",
+        "44d20812-1ed2-4e11-9cf0-54a3b7eb56fa",
+        "c93da4c3-94c9-4c86-b092-610cf1cf012f"
+      ],
+      "id_confidence": {
+        "f27b04a9-2fa2-4ac2-8c5f-03addd0a643a": 92,
+        "f0b20a40-b4cb-4c34-9f2e-145e3d9af024": 90,
+        "44d20812-1ed2-4e11-9cf0-54a3b7eb56fa": 88,
+        "c93da4c3-94c9-4c86-b092-610cf1cf012f": 85
+      },
+      "id_name": {
+        "f27b04a9-2fa2-4ac2-8c5f-03addd0a643a": "FOAMGLAS® F",
+        "f0b20a40-b4cb-4c34-9f2e-145e3d9af024": "FOAMGLAS® S3",
+        "44d20812-1ed2-4e11-9cf0-54a3b7eb56fa": "FOAMGLAS® T3+",
+        "c93da4c3-94c9-4c86-b092-610cf1cf012f": "FOAMGLAS® T4+"
+      },
+      "id_gueltigkeit": {
+        "f27b04a9-2fa2-4ac2-8c5f-03addd0a643a": "2026",
+        "f0b20a40-b4cb-4c34-9f2e-145e3d9af024": "2026",
+        "44d20812-1ed2-4e11-9cf0-54a3b7eb56fa": "2026",
+        "c93da4c3-94c9-4c86-b092-610cf1cf012f": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

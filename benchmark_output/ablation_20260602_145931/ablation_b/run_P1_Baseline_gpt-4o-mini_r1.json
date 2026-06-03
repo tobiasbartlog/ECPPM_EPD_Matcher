@@ -1,0 +1,132 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "962826c3-4b38-4300-af59-f39fad184aaa",
+        "00485255-d8a7-4e6d-b2ab-fba929e3cc4a",
+        "0808539c-0cd5-4561-b4a0-058c6f4c7b04",
+        "1f9e860b-307b-47c3-8cb7-83aff71b0494",
+        "ecf670be-a509-43a1-91ed-1409fb605228",
+        "aaaedf41-a759-4756-bd55-cd2af3af17f4",
+        "3be4fe78-86d4-4497-9e9d-173b87f321f4",
+        "8f4e4fdb-fa6c-46b3-8680-57120c4bee5e",
+        "b612f2cd-021b-4ecd-9e0e-6f8f00180527",
+        "3f764d2e-320b-4996-8c28-0f38e8971044"
+      ],
+      "id_confidence": {
+        "962826c3-4b38-4300-af59-f39fad184aaa": 35,
+        "00485255-d8a7-4e6d-b2ab-fba929e3cc4a": 35,
+        "0808539c-0cd5-4561-b4a0-058c6f4c7b04": 35,
+        "1f9e860b-307b-47c3-8cb7-83aff71b0494": 35,
+        "ecf670be-a509-43a1-91ed-1409fb605228": 35,
+        "aaaedf41-a759-4756-bd55-cd2af3af17f4": 35,
+        "3be4fe78-86d4-4497-9e9d-173b87f321f4": 35,
+        "8f4e4fdb-fa6c-46b3-8680-57120c4bee5e": 35,
+        "b612f2cd-021b-4ecd-9e0e-6f8f00180527": 35,
+        "3f764d2e-320b-4996-8c28-0f38e8971044": 35
+      },
+      "id_name": {
+        "962826c3-4b38-4300-af59-f39fad184aaa": "CEM I 42,5 N (st)",
+        "00485255-d8a7-4e6d-b2ab-fba929e3cc4a": "Zement",
+        "0808539c-0cd5-4561-b4a0-058c6f4c7b04": "Zement (CEM II 32,5)",
+        "1f9e860b-307b-47c3-8cb7-83aff71b0494": "Zement (CEM II 42,5)",
+        "ecf670be-a509-43a1-91ed-1409fb605228": "Zement (CEM II 52,5)",
+        "aaaedf41-a759-4756-bd55-cd2af3af17f4": "Zement (CEM II/A)",
+        "3be4fe78-86d4-4497-9e9d-173b87f321f4": "Zement (CEM II/B)",
+        "8f4e4fdb-fa6c-46b3-8680-57120c4bee5e": "Zement (CEM III 42,5)",
+        "b612f2cd-021b-4ecd-9e0e-6f8f00180527": "Zement (CEM III 52,5)",
+        "3f764d2e-320b-4996-8c28-0f38e8971044": "Zellulosefaserplatten"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4",
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d",
+        "5b617407-2029-4b47-84d0-2caf10937b1d",
+        "b1052ab1-97a9-45a1-810a-cdd0a3b1f07a"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 90,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 85,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 70,
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": 65,
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": 60,
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d": 50,
+        "5b617407-2029-4b47-84d0-2caf10937b1d": 40,
+        "b1052ab1-97a9-45a1-810a-cdd0a3b1f07a": 30
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": "Bims-Planstein (SFK-4)",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": "Bimssand",
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d": "Schüttung aus Polystyrolschaumstoff-Partikeln (ohne Bindemittel)",
+        "5b617407-2029-4b47-84d0-2caf10937b1d": "Binnenschiff (Berg-Tal Durchschnitt)",
+        "b1052ab1-97a9-45a1-810a-cdd0a3b1f07a": "Biogas (1 kg)"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

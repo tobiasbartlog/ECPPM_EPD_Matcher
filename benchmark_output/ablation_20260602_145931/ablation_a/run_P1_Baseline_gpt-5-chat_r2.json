@@ -1,0 +1,228 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602",
+        "24484f95-db48-4d40-9b06-c08ab7b4cd51",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2",
+        "8ff45674-34e0-4ef3-8899-8417f1916a8c"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 100,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 75,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 68,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 60,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20,
+        "24484f95-db48-4d40-9b06-c08ab7b4cd51": 20,
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": 20,
+        "8ff45674-34e0-4ef3-8899-8417f1916a8c": 20
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich",
+        "24484f95-db48-4d40-9b06-c08ab7b4cd51": "Beton C25/30 XC4 XF1 XA1 F3 16 L ECOPact R, Rezept Nummer DA4234R-DNZK Version 1, Transportbetonwerk Kerpen, Germany",
+        "a71e60a5-b64b-4715-ae8a-c8c8819149d2": "Transportbeton C25/30",
+        "8ff45674-34e0-4ef3-8899-8417f1916a8c": "Beton C25/30 XC4 XF1 XA1 F3 32 M EcoPact, Rezept Nummer DA4334-DHFS Version 1, Transportbetonwerk Balve, Germany"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "7790235b-cecd-4345-8cd4-1c5452191163",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602",
+        "88c0f648-2316-4bbc-99b3-dbc636580088",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 98,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 59,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 50,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 45,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "7790235b-cecd-4345-8cd4-1c5452191163": 35,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 20,
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "7790235b-cecd-4345-8cd4-1c5452191163": "Rohre für Strom-Wärmepumpe (Sole-Wasser, Erdsonde) 70 kW",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)",
+        "91412f3f-6077-44d4-9c9d-95c543bcb419": "Bitumenverträgliche Polyisobutylen (PIB) Kunststoffdachbahn"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "52d4092b-b220-4850-9179-4f11094da94e",
+        "d673e926-417a-4aca-ab93-a60b8130cbf9",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602",
+        "24484f95-db48-4d40-9b06-c08ab7b4cd51"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 92,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 90,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 58,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 54,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 43,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "52d4092b-b220-4850-9179-4f11094da94e": 35,
+        "d673e926-417a-4aca-ab93-a60b8130cbf9": 25,
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": 20,
+        "24484f95-db48-4d40-9b06-c08ab7b4cd51": 20
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "52d4092b-b220-4850-9179-4f11094da94e": "Baumwolle konventionell",
+        "d673e926-417a-4aca-ab93-a60b8130cbf9": "Fibrolith®-Leichtbauplatten/Stall-Lüftungsplatten",
+        "c7381cc7-53b7-427e-9c0b-c9edc4152602": "Gussasphaltestrich",
+        "24484f95-db48-4d40-9b06-c08ab7b4cd51": "Beton C25/30 XC4 XF1 XA1 F3 16 L ECOPact R, Rezept Nummer DA4234R-DNZK Version 1, Transportbetonwerk Kerpen, Germany"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8",
+        "0b30edfa-34ca-43c1-b0bf-2f3b3c5fe4fc",
+        "736ac815-a211-478d-939a-fe19433c538d",
+        "28862311-601b-4bba-a885-6e919522ff41",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "88435dab-218f-43a8-99c1-6d03df124f68",
+        "0230605f-3d91-4cac-8189-1f4c4298c271"
+      ],
+      "id_confidence": {
+        "286b0072-1001-4e5f-baa2-282230755243": 92,
+        "f4461491-586a-4770-9a04-716565e58c24": 90,
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": 88,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 80,
+        "0b30edfa-34ca-43c1-b0bf-2f3b3c5fe4fc": 78,
+        "736ac815-a211-478d-939a-fe19433c538d": 60,
+        "28862311-601b-4bba-a885-6e919522ff41": 50,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 45,
+        "88435dab-218f-43a8-99c1-6d03df124f68": 40,
+        "0230605f-3d91-4cac-8189-1f4c4298c271": 20
+      },
+      "id_name": {
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": "Natürliche Gesteinskörnungen (Näppi T & N Oy)",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)",
+        "0b30edfa-34ca-43c1-b0bf-2f3b3c5fe4fc": "LCO 14/100-500/38 o4a NF C EXC3",
+        "736ac815-a211-478d-939a-fe19433c538d": "Grobalith®",
+        "28862311-601b-4bba-a885-6e919522ff41": "Chlorodifluormethan (R22)",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "88435dab-218f-43a8-99c1-6d03df124f68": "Schmelzkammergranulat",
+        "0230605f-3d91-4cac-8189-1f4c4298c271": "Beton C25/30 XC4 XF1 XA1 F3 16 M ECOPact, Rezept Nummer DA4234-DHMK Version 1, Transportbetonwerk Ahaus, Germany"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "f1974493-0668-4b34-880b-21c3f27345bc",
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1",
+        "c1bfdecc-e167-4c3a-8792-5dc06b97b4b8"
+      ],
+      "id_confidence": {
+        "286b0072-1001-4e5f-baa2-282230755243": 80,
+        "f4461491-586a-4770-9a04-716565e58c24": 92,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 88,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 86,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 84,
+        "f1974493-0668-4b34-880b-21c3f27345bc": 81,
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": 79,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 78,
+        "c1bfdecc-e167-4c3a-8792-5dc06b97b4b8": 40
+      },
+      "id_name": {
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "f1974493-0668-4b34-880b-21c3f27345bc": "Sanitärkeramik",
+        "cff84492-d5c8-4da9-a79b-aea5a8507d9d": "Natürliche Gesteinskörnungen (Näppi T & N Oy)",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)",
+        "c1bfdecc-e167-4c3a-8792-5dc06b97b4b8": "Containerschiff"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "879756d8-15b1-44d7-a454-29c961b2eab7",
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98",
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0",
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010",
+        "44502a7a-8229-421f-b12d-44719c2a026c",
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176",
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7",
+        "78d81405-a108-455e-b339-2dbac96dcf56",
+        "83979499-f57c-462f-860b-efbc60bd000f",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e"
+      ],
+      "id_confidence": {
+        "879756d8-15b1-44d7-a454-29c961b2eab7": 35,
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98": 35,
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0": 35,
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010": 35,
+        "44502a7a-8229-421f-b12d-44719c2a026c": 35,
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176": 35,
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7": 35,
+        "78d81405-a108-455e-b339-2dbac96dcf56": 35,
+        "83979499-f57c-462f-860b-efbc60bd000f": 35,
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": 35
+      },
+      "id_name": {
+        "879756d8-15b1-44d7-a454-29c961b2eab7": "BRESPA-Decke Typ A15B (DW Systembau GmbH)",
+        "6dfa46d3-d8e7-4fb1-9861-dc138daf2c98": "BRESPA-Decke Typ A20B (DW Systembau GmbH)",
+        "73dece0a-2d2a-4b4e-aa42-88f881c051f0": "BRESPA-Decke Typ A20Q (DW Systembau GmbH)",
+        "9ef54bdd-092e-4ff2-8acc-999c0e895010": "BRESPA-Decke Typ A22B (DW Systembau GmbH)",
+        "44502a7a-8229-421f-b12d-44719c2a026c": "BRESPA-Decke Typ A26B (DW Systembau GmbH)",
+        "91d4ced9-8bf9-46e6-a2d2-7903d31d4176": "BRESPA-Decke Typ A26Q (DW Systembau GmbH)",
+        "4febee8f-ae5d-4ed3-ada0-dbc08e94dfd7": "BRESPA-Decke Typ A32V (DW Systembau GmbH)",
+        "78d81405-a108-455e-b339-2dbac96dcf56": "BRESPA-Decke Typ A40V (DW Systembau GmbH)",
+        "83979499-f57c-462f-860b-efbc60bd000f": "Classic Lite Deckenplatten",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "Classic Max Deckenplatten"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "26855c20-be97-45c8-afd0-08dadef1256a",
+        "962826c3-4b38-4300-af59-f39fad184aaa",
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba",
+        "9bcd1268-18a6-4e8f-86a8-95169e28ef04",
+        "37e62d96-7e02-466e-aaf4-99539b29d9a9",
+        "7e5b6fc9-8ce5-4099-bd16-c538d289ea8b",
+        "c8e950f4-40b0-498b-9880-bc7402c31741",
+        "17dcfac6-3213-4712-a8d9-b47bb30cf87e",
+        "d730417e-edf8-455b-a605-d76a5ffe6f3b"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 95,
+        "26855c20-be97-45c8-afd0-08dadef1256a": 35,
+        "962826c3-4b38-4300-af59-f39fad184aaa": 35,
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba": 35,
+        "9bcd1268-18a6-4e8f-86a8-95169e28ef04": 35,
+        "37e62d96-7e02-466e-aaf4-99539b29d9a9": 35,
+        "7e5b6fc9-8ce5-4099-bd16-c538d289ea8b": 35,
+        "c8e950f4-40b0-498b-9880-bc7402c31741": 35,
+        "17dcfac6-3213-4712-a8d9-b47bb30cf87e": 35,
+        "d730417e-edf8-455b-a605-d76a5ffe6f3b": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "26855c20-be97-45c8-afd0-08dadef1256a": "Holcim Binder Sackware Werk Höver",
+        "962826c3-4b38-4300-af59-f39fad184aaa": "CEM I 42,5 N (st)",
+        "5429f879-3e40-48ac-9a21-ee83f97e0aba": "CEM I 42,5 R",
+        "9bcd1268-18a6-4e8f-86a8-95169e28ef04": "CEM I 42,5 R (na)",
+        "37e62d96-7e02-466e-aaf4-99539b29d9a9": "CEM I 52,5 R (ft)",
+        "7e5b6fc9-8ce5-4099-bd16-c538d289ea8b": "CEM I 52,5 R-SR3 Bulk Plant Carboneras",
+        "c8e950f4-40b0-498b-9880-bc7402c31741": "CEM I 52.5 R Bulk Plant Beli Izvor",
+        "17dcfac6-3213-4712-a8d9-b47bb30cf87e": "CEM II / B-LL 32.5 R Bagged Plant Beli Izvor",
+        "d730417e-edf8-455b-a605-d76a5ffe6f3b": "CEM II / B-LL 32.5 R Bulk Plant Beli Izvor"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 95,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 75,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "32c020ee-4c79-4fe1-9550-02813e06c7f0",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "f82e3ab8-d7bb-4765-a60c-bfe78ede1565",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4",
+        "e2e9d29e-c775-4eef-af57-de8194db7524",
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "c241605d-34f1-44db-bf07-78610e849edb"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 92,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 90,
+        "32c020ee-4c79-4fe1-9550-02813e06c7f0": 90,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 88,
+        "f82e3ab8-d7bb-4765-a60c-bfe78ede1565": 88,
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": 87,
+        "e2e9d29e-c775-4eef-af57-de8194db7524": 87,
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b": 86,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 85,
+        "c241605d-34f1-44db-bf07-78610e849edb": 85
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "32c020ee-4c79-4fe1-9550-02813e06c7f0": "Massengutfrachter Hochsee",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "f82e3ab8-d7bb-4765-a60c-bfe78ede1565": "Natursteinplatte, hart, Außenbereich, Dicke 80mm",
+        "5b1356cc-f9f5-46d8-b8ae-21d0a426baf4": "Bimssand",
+        "e2e9d29e-c775-4eef-af57-de8194db7524": "Natursteinplatte, hart, Fassade (30mm)",
+        "11078fc0-f5b5-46d2-8d6d-e93b2cea577b": "Magmatische Gesteine",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "c241605d-34f1-44db-bf07-78610e849edb": "Natursteinplatte, hart, Innenboden (20mm)"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "286b0072-1001-4e5f-baa2-282230755243",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1"
+      ],
+      "id_confidence": {
+        "286b0072-1001-4e5f-baa2-282230755243": 85,
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": 82,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 80,
+        "f4461491-586a-4770-9a04-716565e58c24": 80,
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": 78,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 78,
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": 75,
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": 73,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 72,
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": 70
+      },
+      "id_name": {
+        "286b0072-1001-4e5f-baa2-282230755243": "Sand 0/2",
+        "0d027c8c-89dc-486e-8390-b4649f5e6ed8": "Sand 0/2 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "a7bad3b6-2123-483b-99b5-2ec481254be7": "Kies 2/32 (getrocknet)",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "f501dc99-706c-4b15-aaec-2cca2b409b41": "Splitt 2/15",
+        "08dd6b43-d77b-48fe-8c97-c68294ed4f75": "Splitt 2/15 (getrocknet)",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2",
+        "b461219e-87df-4a40-b12a-5c6a10a99bf1": "Brechsand 0/2 (getrocknet)"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

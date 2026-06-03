@@ -14,6 +14,23 @@ from utils.asphalt_glossar import (
     _ist_generisch_asphalt,
 )
 
+# Tiefbau-Scope: Whitelist der Ökobaudat-Klassifikationspfade, die für Straßenbau-EPD-
+# Matching als domänenrelevant gelten. EPDs außerhalb dieser Präfixe (z.B. Sanitär,
+# Bodenbeläge, Stahlbleche) werden vor der Drei-Fall-Filterlogik strukturell ausgeschlossen.
+# Empirisch in DB-Snapshot validiert (siehe docs/studie/paper_design.md §1.2.2).
+TIEFBAU_KLASSIFIKATION_PREFIXES: List[str] = [
+    "Mineralische Baustoffe / Asphalt",
+    "Mineralische Baustoffe / Zuschläge",
+    "Mineralische Baustoffe / Mörtel und Beton / Beton",
+]
+
+
+def ist_tiefbau_relevant(epd: Dict[str, Any]) -> bool:
+    """True, wenn der Klassifizierungspfad des EPDs unter einem Tiefbau-Präfix liegt."""
+    klass = epd.get("klassifizierung", "")
+    return any(klass.startswith(p) for p in TIEFBAU_KLASSIFIKATION_PREFIXES)
+
+
 # Mismatch-Wissen: diese EPD-Begriffe passen NICHT zum jeweiligen Material-Typ.
 # War früher dupliziert in epd_filter.MATERIAL_MISMATCHES.
 MATERIAL_MISMATCHES: Dict[str, List[str]] = {
@@ -73,10 +90,18 @@ def bewerte_kandidat(material: Dict[str, Any], epd: Dict[str, Any]) -> Bewertung
             break
 
     # 2. Asphalt-Bezug der EPD (gegen combined: Klassifizierung "Asphalt/..." ist zuverlässig,
-    #    kein Explosionsrisiko wie bei generischen Kategorie-Suchbegriffen)
+    #    kein Explosionsrisiko wie bei generischen Kategorie-Suchbegriffen).
+    #    Generische Begriffe ('asphalt', 'bitumen' …) werden ausschließlich von
+    #    _ist_generisch_asphalt mit Negativ-Kontext-Logik behandelt; aus typ_begriffe
+    #    werden sie ausgefiltert, damit Bodenbelag-EPDs mit Bitumen-Trägerplatte hier
+    #    nicht naiv als Asphalt durchrutschen (v2 Precision-Fix).
     typ_begriffe: List[str] = []
     if material.get("typ") and material["typ"] in ASPHALT_TYPES:
-        typ_begriffe = [b.lower() for b in ASPHALT_TYPES[material["typ"]]["suchbegriffe"]]
+        _generic = {"asphalt", "bitumen", "bituminös", "bituminos", "aspahlt"}
+        typ_begriffe = [
+            b.lower() for b in ASPHALT_TYPES[material["typ"]]["suchbegriffe"]
+            if b.lower() not in _generic
+        ]
     ist_asphalt = _ist_generisch_asphalt(combined) or any(t in combined for t in typ_begriffe)
 
     # 3. Schicht-Treffer (Inklusion: gegen name — verhindert False Positives über Klassifizierung)
@@ -132,8 +157,8 @@ if __name__ == "__main__":
             "AC 16 D S", "Deckschicht",
             "Bitumenbahn G 200 S4",
             "Abdichtung / Bitumenbahnen",
-            None, True, False, "bitumenbahn",
-            "Bitumenbahn: kein Ausschluss (nicht in AUSSCHLUSS_BEGRIFFE), aber Kategorie-Konflikt",
+            None, False, False, "bitumenbahn",
+            "Bitumenbahn: Negativ-Kontext greift -> ist_asphalt=False (Bitumenbahn ist kein Asphaltmischgut); Kategorie-Konflikt fängt sie als Abdichtungs-Produkt ab",
         ),
         (
             "AC 16 T S", "Bituminöse Tragschicht",
@@ -155,6 +180,13 @@ if __name__ == "__main__":
             "Mineralische Baustoffe / Asphalt / Tragschichten",
             None, True, False, "asphalt",
             "Schotter vs. Asphalt-EPD: Kategorie-Konflikt; schicht_passt=False (Inklusion gegen name, 'trag' nur in Klassifizierung)",
+        ),
+        (
+            "AC 16 B S", "Binderschicht",
+            "Genadelte Teppichfliesen mit einer Faserzusammensetzung aus 80% PP, 20% PET und einer Bitumenschwerbeschichtung",
+            "Kunststoffe / Bodenbeläge / Textile Bodenbeläge",
+            None, False, False, None,
+            "Teppichfliese mit Bitumenschwerbeschichtung: 'bitumen' im Namen, aber Negativ-Kontext greift → ist_asphalt=False (Fix für v2-Precision-Bug)",
         ),
     ]
 
@@ -185,6 +217,47 @@ if __name__ == "__main__":
             passed += 1
 
     print(f"\n{'=' * 70}")
-    print(f"Ergebnis: {passed}/{len(tests)} Tests bestanden")
-    if passed < len(tests):
+    print(f"Bewertung-Tests: {passed}/{len(tests)} bestanden")
+
+    # =========================================================================
+    # ist_tiefbau_relevant — Helper-Tests
+    # =========================================================================
+    print(f"\n{'=' * 70}")
+    print("TIEFBAU-WHITELIST TEST")
+    print(f"{'=' * 70}")
+
+    tiefbau_tests = [
+        ({"klassifizierung": "Mineralische Baustoffe / Asphalt / Tragschichten"}, True,
+         "Asphalt-Tragschicht"),
+        ({"klassifizierung": "Mineralische Baustoffe / Zuschläge / Naturstein"}, True,
+         "Zuschlag-Naturstein"),
+        ({"klassifizierung": "Mineralische Baustoffe / Mörtel und Beton / Beton"}, True,
+         "Straßenbeton (Whitelist-Reservescope)"),
+        ({"klassifizierung": "Kunststoffe / Bodenbeläge / Textile Bodenbeläge"}, False,
+         "Teppichfliese — strukturell außerhalb Tiefbau"),
+        ({"klassifizierung": "Metalle / Stahl und Eisen / Stahlbleche"}, False,
+         "Stahlblech — strukturell außerhalb Tiefbau"),
+        ({"klassifizierung": "Gebäudetechnik / Sanitär / Armaturen"}, False,
+         "Brauseset — strukturell außerhalb Tiefbau"),
+        ({"klassifizierung": "Dämmstoffe / Schaumglas / Granulat"}, False,
+         "Schaumglasschotter — Dämmstoff, RStO-unüblich"),
+        ({"klassifizierung": "Mineralische Baustoffe / Steine und Elemente / Betonfertigteile und Betonwaren"}, False,
+         "Betonpflasterstein — bewusst NICHT in Whitelist für v2"),
+        ({"klassifizierung": "Mineralische Baustoffe / Bindemittel / Zement"}, False,
+         "Zement — Bindemittel, keine Schicht"),
+    ]
+    tb_passed = 0
+    for epd, expected, desc in tiefbau_tests:
+        got = ist_tiefbau_relevant(epd)
+        ok = got == expected
+        status = "[OK]  " if ok else "[FAIL]"
+        print(f"{status} {desc} -> {got} (erwartet {expected})")
+        if ok:
+            tb_passed += 1
+    print(f"\nTiefbau-Tests: {tb_passed}/{len(tiefbau_tests)} bestanden")
+
+    total = passed + tb_passed
+    total_n = len(tests) + len(tiefbau_tests)
+    print(f"\nGESAMT: {total}/{total_n} bestanden")
+    if total < total_n:
         raise SystemExit(1)

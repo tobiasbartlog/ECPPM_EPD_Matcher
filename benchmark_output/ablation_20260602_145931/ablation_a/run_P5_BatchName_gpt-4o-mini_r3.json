@@ -1,0 +1,191 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "f518d04d-4805-4d97-b457-9920226f3ff4",
+        "cbd2e78d-8930-4214-9715-553cee8e376e",
+        "185f34be-3e4b-4956-8b58-0000b8858406",
+        "29e0729d-13dd-496c-9f91-99d60b45c4e4",
+        "bbb23637-b4d8-4082-bb0a-f0e1710b9d28"
+      ],
+      "id_confidence": {
+        "f518d04d-4805-4d97-b457-9920226f3ff4": 35,
+        "cbd2e78d-8930-4214-9715-553cee8e376e": 35,
+        "185f34be-3e4b-4956-8b58-0000b8858406": 35,
+        "29e0729d-13dd-496c-9f91-99d60b45c4e4": 35,
+        "bbb23637-b4d8-4082-bb0a-f0e1710b9d28": 35
+      },
+      "id_name": {
+        "f518d04d-4805-4d97-b457-9920226f3ff4": " LCO White Clinker Bulk Plant Oggaz",
+        "cbd2e78d-8930-4214-9715-553cee8e376e": " RS PRO R-Series (Steinel GmbH)",
+        "185f34be-3e4b-4956-8b58-0000b8858406": " RS PRO S-Series (Steinel GmbH)",
+        "29e0729d-13dd-496c-9f91-99d60b45c4e4": "1m² Type II Technisches Textil",
+        "bbb23637-b4d8-4082-bb0a-f0e1710b9d28": "76/105 Group door wooden with 17.5 kg wood frame"
+      },
+      "id_gueltigkeit": {
+        "f518d04d-4805-4d97-b457-9920226f3ff4": "2030",
+        "cbd2e78d-8930-4214-9715-553cee8e376e": "2029",
+        "185f34be-3e4b-4956-8b58-0000b8858406": "2029",
+        "29e0729d-13dd-496c-9f91-99d60b45c4e4": "2028",
+        "bbb23637-b4d8-4082-bb0a-f0e1710b9d28": "2028"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "a557450a-c269-4c05-8db0-295dd8b17f6d",
+        "0fdca580-3027-493d-a3c7-815758bac55d",
+        "6dd5bef4-d25f-4f42-abc7-2ba3357a3a83",
+        "20c24cbe-4c17-45f6-9539-144d43099b25",
+        "671a8c95-a3f8-4010-937e-c72940f66504"
+      ],
+      "id_confidence": {
+        "a557450a-c269-4c05-8db0-295dd8b17f6d": 35,
+        "0fdca580-3027-493d-a3c7-815758bac55d": 35,
+        "6dd5bef4-d25f-4f42-abc7-2ba3357a3a83": 35,
+        "20c24cbe-4c17-45f6-9539-144d43099b25": 35,
+        "671a8c95-a3f8-4010-937e-c72940f66504": 35
+      },
+      "id_name": {
+        "a557450a-c269-4c05-8db0-295dd8b17f6d": "76/105 Group window wooden with 15 kg wood frame",
+        "0fdca580-3027-493d-a3c7-815758bac55d": "A2-Betonpflaster- Standardstein grau mit Vorsatz",
+        "6dd5bef4-d25f-4f42-abc7-2ba3357a3a83": "Abdichtungsbahnen – Schönox WSF/Casco Wetstop/SikaCeram Abdichtungsmembran W (Sika Services AG)",
+        "20c24cbe-4c17-45f6-9539-144d43099b25": "Access manager 92 00",
+        "671a8c95-a3f8-4010-937e-c72940f66504": "Access manager 92 30"
+      },
+      "id_gueltigkeit": {
+        "a557450a-c269-4c05-8db0-295dd8b17f6d": "2028",
+        "0fdca580-3027-493d-a3c7-815758bac55d": "2026",
+        "6dd5bef4-d25f-4f42-abc7-2ba3357a3a83": "2027",
+        "20c24cbe-4c17-45f6-9539-144d43099b25": "2026",
+        "671a8c95-a3f8-4010-937e-c72940f66504": "2026"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "299cd856-c220-4b82-910d-60c91e035c7d",
+        "44a74a65-6425-4b98-9a9c-3f3a89c6a6e1",
+        "a1adf5fa-1db4-4bf8-9e8b-4e944d8c2081",
+        "98775611-4588-49a7-b539-9beb7492fc4f",
+        "cf001cae-092a-48a0-beda-bdc7eeb53418"
+      ],
+      "id_confidence": {
+        "299cd856-c220-4b82-910d-60c91e035c7d": 35,
+        "44a74a65-6425-4b98-9a9c-3f3a89c6a6e1": 35,
+        "a1adf5fa-1db4-4bf8-9e8b-4e944d8c2081": 35,
+        "98775611-4588-49a7-b539-9beb7492fc4f": 35,
+        "cf001cae-092a-48a0-beda-bdc7eeb53418": 35
+      },
+      "id_name": {
+        "299cd856-c220-4b82-910d-60c91e035c7d": "Access manager 92 90 Wall",
+        "44a74a65-6425-4b98-9a9c-3f3a89c6a6e1": "ACEFormer™",
+        "a1adf5fa-1db4-4bf8-9e8b-4e944d8c2081": "ACEGrid®",
+        "98775611-4588-49a7-b539-9beb7492fc4f": "ACEMat™",
+        "cf001cae-092a-48a0-beda-bdc7eeb53418": "ACETex® PET"
+      },
+      "id_gueltigkeit": {
+        "299cd856-c220-4b82-910d-60c91e035c7d": "2026",
+        "44a74a65-6425-4b98-9a9c-3f3a89c6a6e1": "2028",
+        "a1adf5fa-1db4-4bf8-9e8b-4e944d8c2081": "2028",
+        "98775611-4588-49a7-b539-9beb7492fc4f": "2028",
+        "cf001cae-092a-48a0-beda-bdc7eeb53418": "2028"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "ab3ceac3-3235-4c6f-b893-261a0735c8e0",
+        "72ea0b24-e04b-43df-b64f-a7f7f4e0f757",
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c",
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017",
+        "55a779b7-89a1-4249-a37b-1c2445e56426"
+      ],
+      "id_confidence": {
+        "ab3ceac3-3235-4c6f-b893-261a0735c8e0": 85,
+        "72ea0b24-e04b-43df-b64f-a7f7f4e0f757": 80,
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": 75,
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017": 70,
+        "55a779b7-89a1-4249-a37b-1c2445e56426": 60
+      },
+      "id_name": {
+        "ab3ceac3-3235-4c6f-b893-261a0735c8e0": "ACETex® PP",
+        "72ea0b24-e04b-43df-b64f-a7f7f4e0f757": "ACETube®",
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": "ADAGIO Acoustic+",
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017": "ADAGIO Alpha+",
+        "55a779b7-89a1-4249-a37b-1c2445e56426": "ADAGIO dB+"
+      },
+      "id_gueltigkeit": {
+        "ab3ceac3-3235-4c6f-b893-261a0735c8e0": "2028",
+        "72ea0b24-e04b-43df-b64f-a7f7f4e0f757": "2028",
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": "2029",
+        "eb6f1c56-85f7-436f-b8d7-36fd3d072017": "2029",
+        "55a779b7-89a1-4249-a37b-1c2445e56426": "2029"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "9eced374-9a8d-4ace-a569-56d52a2d1013",
+        "3222ca11-e1ee-4910-9997-0ea4e42831f6",
+        "9394795b-a620-4f54-b72c-c535bb0a02f0",
+        "0e67ff82-dcb5-47fa-9783-71ebebe21077",
+        "60e7796e-cd49-4d03-a930-014271b30144"
+      ],
+      "id_confidence": {
+        "9eced374-9a8d-4ace-a569-56d52a2d1013": 85,
+        "3222ca11-e1ee-4910-9997-0ea4e42831f6": 80,
+        "9394795b-a620-4f54-b72c-c535bb0a02f0": 75,
+        "0e67ff82-dcb5-47fa-9783-71ebebe21077": 70,
+        "60e7796e-cd49-4d03-a930-014271b30144": 60
+      },
+      "id_name": {
+        "9eced374-9a8d-4ace-a569-56d52a2d1013": "ADAGIO dB+ and Adagio Acoustic+",
+        "3222ca11-e1ee-4910-9997-0ea4e42831f6": "ADAGIO HD+ (19 mm)",
+        "9394795b-a620-4f54-b72c-c535bb0a02f0": "ADAGIO HD+ (30 mm)",
+        "0e67ff82-dcb5-47fa-9783-71ebebe21077": "ADAGIO HD+ (35 mm)",
+        "60e7796e-cd49-4d03-a930-014271b30144": "Admonter Massivholzmehrschichtprodukte"
+      },
+      "id_gueltigkeit": {
+        "9eced374-9a8d-4ace-a569-56d52a2d1013": "2029",
+        "3222ca11-e1ee-4910-9997-0ea4e42831f6": "2029",
+        "9394795b-a620-4f54-b72c-c535bb0a02f0": "2029",
+        "0e67ff82-dcb5-47fa-9783-71ebebe21077": "2029",
+        "60e7796e-cd49-4d03-a930-014271b30144": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

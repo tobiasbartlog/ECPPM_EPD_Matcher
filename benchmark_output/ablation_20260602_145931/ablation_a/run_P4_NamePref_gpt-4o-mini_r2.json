@@ -1,0 +1,153 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "29a2e1c9-fcde-4957-b39b-165400a2e7ee",
+        "a665af6b-a140-47a9-bb0d-c5c2b70f8c28",
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668",
+        "96045987-0862-4f29-b4ec-798c2e14f23a"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 85,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 60,
+        "29a2e1c9-fcde-4957-b39b-165400a2e7ee": 35,
+        "a665af6b-a140-47a9-bb0d-c5c2b70f8c28": 35,
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668": 20,
+        "96045987-0862-4f29-b4ec-798c2e14f23a": 20
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "29a2e1c9-fcde-4957-b39b-165400a2e7ee": "Ammoniak (R717)",
+        "a665af6b-a140-47a9-bb0d-c5c2b70f8c28": "Aluminiumfolie (d=0,1 mm)",
+        "d4a53a6a-2a78-4f43-90e1-aca206cb5668": "Armierung (Kunstharzspachtel)",
+        "96045987-0862-4f29-b4ec-798c2e14f23a": "Anhydrit (CaSO4)"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426",
+        "25db4367-38c5-4483-b392-4fc071170e5e",
+        "6ade4721-3262-4024-ab99-0265972b38bf",
+        "88c0f648-2316-4bbc-99b3-dbc636580088",
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d",
+        "8f6daa87-b2ee-4eb0-95e0-737ac8c6a59f",
+        "b0ba5886-a611-4eb1-8b8e-3423d81d7140"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 85,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 80,
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": 60,
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": 50,
+        "25db4367-38c5-4483-b392-4fc071170e5e": 50,
+        "6ade4721-3262-4024-ab99-0265972b38bf": 40,
+        "88c0f648-2316-4bbc-99b3-dbc636580088": 40,
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d": 30,
+        "8f6daa87-b2ee-4eb0-95e0-737ac8c6a59f": 30,
+        "b0ba5886-a611-4eb1-8b8e-3423d81d7140": 30
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "27ccffb8-02ec-466d-b925-f6db91d4ef71": "Bitumenbahnen G 200 S4",
+        "c984526a-18b5-45c1-a2eb-7b95466e8426": "Bitumenbahnen PYE PV 200 S5 (ungeschiefert)",
+        "25db4367-38c5-4483-b392-4fc071170e5e": "Bitumenbahnen PYE-PV 200 S5 ns (geschiefert)",
+        "6ade4721-3262-4024-ab99-0265972b38bf": "Bitumen Kaltkleber (60% Bitumen, 23%LM, 17% Wasser)",
+        "88c0f648-2316-4bbc-99b3-dbc636580088": "Bitumen Emulsion (40% Bitumen, 60% Wasser)",
+        "f2552bdf-c847-4ef8-9665-c37e8ef4d44d": "Schüttung aus Polystyrolschaumstoff-Partikeln (ohne Bindemittel)",
+        "8f6daa87-b2ee-4eb0-95e0-737ac8c6a59f": "Schüttung aus Polystyrolschaumstoff-Partikeln (zementgebunden)",
+        "b0ba5886-a611-4eb1-8b8e-3423d81d7140": "Schornstein Polypropylen (PP)"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "75db1c10-6002-4fa2-9cc9-aae4fb7e8345",
+        "cb928d86-f997-495b-81ad-9fa5f37ccc86",
+        "bb6970aa-9d71-430f-8b81-930b9fe467c8",
+        "dbbd0cb2-5244-42b6-b5ab-8a00ca54aec7",
+        "335241f9-db84-486c-9a19-cd5ebb791903",
+        "7503bc8c-e613-4c10-9014-c08d9d0cc55d",
+        "8b65af4e-4aa6-4ce2-bb6c-59b42e9d4b6a",
+        "309ff917-b087-4680-ab76-e831422717c5",
+        "340c97e3-6e7e-4478-bccc-34200a986045",
+        "54ba3ec4-d013-4a08-a0ad-e0a8ac2486bb"
+      ],
+      "id_confidence": {
+        "75db1c10-6002-4fa2-9cc9-aae4fb7e8345": 20,
+        "cb928d86-f997-495b-81ad-9fa5f37ccc86": 20,
+        "bb6970aa-9d71-430f-8b81-930b9fe467c8": 20,
+        "dbbd0cb2-5244-42b6-b5ab-8a00ca54aec7": 20,
+        "335241f9-db84-486c-9a19-cd5ebb791903": 20,
+        "7503bc8c-e613-4c10-9014-c08d9d0cc55d": 20,
+        "8b65af4e-4aa6-4ce2-bb6c-59b42e9d4b6a": 20,
+        "309ff917-b087-4680-ab76-e831422717c5": 20,
+        "340c97e3-6e7e-4478-bccc-34200a986045": 20,
+        "54ba3ec4-d013-4a08-a0ad-e0a8ac2486bb": 20
+      },
+      "id_name": {
+        "75db1c10-6002-4fa2-9cc9-aae4fb7e8345": "Beton C20/25 XC1 XC2 F3 16 M ECOPact, Rezept Nummer DI3234-BHFS Version 1, Transportbetonwerk Balve, Germany",
+        "cb928d86-f997-495b-81ad-9fa5f37ccc86": "Beton C20/25 XC1 XC2 F3 16 M EcoPact, Rezept Nummer DI3234-BHFS Version 1, Transportbetonwerk Dortmund-Schüren, Germany",
+        "bb6970aa-9d71-430f-8b81-930b9fe467c8": "Beton C20/25 XC1 XC2 F3 16 M EcoPact, Rezept Nummer DI3234-BHFS Version 1, Transportbetonwerk Frankfurt, Germany",
+        "dbbd0cb2-5244-42b6-b5ab-8a00ca54aec7": "Beton C20/25 XC1 XC2 F3 16 M Ecopact, Rezept Nummer DI3234-BHFS Version 1, Transportbetonwerk Herne, Germany",
+        "335241f9-db84-486c-9a19-cd5ebb791903": "Beton C20/25 XC1 XC2 F3 16 M ECOPact, Rezept Nummer DI3234-BHFS Version 1, Transportbetonwerk Lüdenscheid-Freisenberg, Germany",
+        "7503bc8c-e613-4c10-9014-c08d9d0cc55d": "Beton C20/25 XC1 XC2 F3 16 M EcoPact, Rezept Nummer DI3234-BHFS Version 1, Transportbetonwerk Lünen, Germany",
+        "8b65af4e-4aa6-4ce2-bb6c-59b42e9d4b6a": "Beton C20/25 XC1 XC2 F3 16 M EcoPact, Rezept Nummer DI3234-BHFS Version 1, Transportbetonwerk Mainz, Germany",
+        "309ff917-b087-4680-ab76-e831422717c5": "Beton C20/25 XC1 XC2 F3 16 M ECOPact, Rezept Nummer DI3234-BHFS Version 1, Transportbetonwerk Plettenberg, Germany",
+        "340c97e3-6e7e-4478-bccc-34200a986045": "Beton C20/25 XC1 XC2 F3 16 M ECOPact, Rezept Nummer DI3234-BHFS Version 1, Transportbetonwerk Radevormwald, Germany",
+        "54ba3ec4-d013-4a08-a0ad-e0a8ac2486bb": "Beton C20/25 XC1 XC2 F3 16 M ECOPact, Rezept Nummer DI3234-BHFS Version 1, Transportbetonwerk Wuppertal-Elberfeld, Germany"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

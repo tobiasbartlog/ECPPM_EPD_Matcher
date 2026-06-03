@@ -17,7 +17,7 @@ from utils.asphalt_glossar import (
     MATERIAL_KATEGORIEN,
     _ist_ausgeschlossen,
 )
-from matching.matching_rules import bewerte_kandidat, get_material_type
+from matching.matching_rules import bewerte_kandidat, get_material_type, ist_tiefbau_relevant
 
 
 class EPDFilter:
@@ -114,6 +114,15 @@ class EPDFilter:
         """Drei-Fall-Filterlogik für ein geparstets Material."""
 
         # =====================================================================
+        # VORFILTER: Tiefbau-Scope-Whitelist
+        # Schließt strukturell alle Hochbau-, Gebäudetechnik-, Dämmstoff-,
+        # Metall- und Kunststoff-EPDs aus, bevor die Drei-Fall-Logik greift.
+        # Verhindert Cross-Domain-Hallucinations (Teppichfliesen, Brausesets,
+        # Stahlblech etc.). Siehe docs/studie/paper_design.md §1.2.2.
+        # =====================================================================
+        all_epds = [e for e in all_epds if ist_tiefbau_relevant(e)]
+
+        # =====================================================================
         # FALL 1: Asphalt — bewerte_kandidat liefert die Fakten
         # =====================================================================
         if parsed.get("ist_asphalt"):
@@ -172,7 +181,13 @@ class EPDFilter:
         # FALL 3: Unbekannt — keyword-basierte Suche gegen name.
         # Exklusion weiter gegen combined.
         # =====================================================================
-        stop_words = {"mit", "und", "für", "der", "die", "das", "von", "nach", "gemäß"}
+        # Stoppwörter erweitert um kurze Negationen / Hilfswörter (v2):
+        # `nicht` matchte sonst auf `nicht-schlussgeglüht` in Stahlblech-Namen
+        # (war historisch der Stahlblech-für-STSuB-Recall-Bug, Stage 3 Fall 3).
+        stop_words = {
+            "mit", "und", "für", "der", "die", "das", "von", "nach", "gemäß",
+            "nicht", "kein", "ohne", "auch", "beim", "sein", "wird",
+        }
         material_words = [
             w.lower() for w in f"{material_orig} {schicht_orig}".split()
             if len(w) > 2 and w.lower() not in stop_words
@@ -322,3 +337,41 @@ if __name__ == "__main__":
         new_conf, grund = ConfidenceValidator.validate_match(epd, parsed, 85)
         print(f"\nEPD: {epd_name} -> {new_conf}% ({grund})")
         print(f"  Erwartung: {erwartung}")
+
+    # =========================================================================
+    # STAGE 3 — EPDFilter Smoke-Test: STSuB-Recall + Tiefbau-Whitelist
+    # =========================================================================
+    print("\n" + "=" * 70)
+    print("EPDFilter STSuB-SMOKE")
+    print("=" * 70)
+
+    synth_epds = [
+        {"id": "asp1", "name": "Asphalttragschicht AC 32 T S",
+         "klassifizierung": "Mineralische Baustoffe / Asphalt / Tragschichten"},
+        {"id": "zus1", "name": "Schotter 16/32 (Naturstein)",
+         "klassifizierung": "Mineralische Baustoffe / Zuschläge / Naturstein"},
+        {"id": "zus2", "name": "Kiessand-Gemisch frostsicher 0/32",
+         "klassifizierung": "Mineralische Baustoffe / Zuschläge / Sand und Kies"},
+        {"id": "stb1", "name": "Elektroband nicht-schlussgeglüht",
+         "klassifizierung": "Metalle / Stahl und Eisen / Stahlbleche"},
+        {"id": "tep1", "name": "Genadelte Teppichfliesen mit Bitumenschwerbeschichtung",
+         "klassifizierung": "Kunststoffe / Bodenbeläge / Textile Bodenbeläge"},
+        {"id": "san1", "name": "Brausesets - EcoSmart",
+         "klassifizierung": "Gebäudetechnik / Sanitär / Armaturen"},
+    ]
+
+    f = EPDFilter()
+    out, _ = f.filter_for_single_material(synth_epds, "STSuB 0/45",
+                                           schicht_name="Nicht bituminöse Tragschicht")
+    out_ids = {e["id"] for e in out}
+    print(f"\nSTSuB 0/45 → {len(out)} EPDs: {sorted(out_ids)}")
+    # Erwartet: zus1, zus2 drin (Schotter-Kategorie); stb1, tep1, san1 raus (Whitelist);
+    # asp1 raus (Kategorie-Konflikt 'asphalt' in schotter-ausschluss).
+    expected_in = {"zus1", "zus2"}
+    expected_out = {"stb1", "tep1", "san1", "asp1"}
+    ok_in = expected_in.issubset(out_ids)
+    ok_out = not (expected_out & out_ids)
+    print(f"  Schotter-EPDs enthalten:    {'[OK]' if ok_in else '[FAIL]'} (erwartet {expected_in})")
+    print(f"  Nicht-Schotter ausgeschlossen: {'[OK]' if ok_out else '[FAIL]'} (erwartet weg: {expected_out})")
+    if not (ok_in and ok_out):
+        raise SystemExit(1)

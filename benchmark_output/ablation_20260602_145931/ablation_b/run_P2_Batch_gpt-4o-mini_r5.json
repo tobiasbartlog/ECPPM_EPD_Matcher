@@ -1,0 +1,197 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 85,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 70,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": 35,
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": "Bagger 100 kW Aushub",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": "Bagger 15 kW Aushub"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": "2026",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": "2026"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 85,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 70,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": 35,
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": "Bagger 100 kW Aushub",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": "Bagger 15 kW Aushub"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": "2026",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": "2026"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 85,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 70,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": 35,
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": "Bagger 100 kW Aushub",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": "Bagger 15 kW Aushub"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": "2026",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 85,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 70,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35,
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": 35,
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": "Bagger 100 kW Aushub",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": "Bagger 15 kW Aushub"
+      },
+      "id_gueltigkeit": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": "2026",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "c71cd5b5-b766-470f-a04b-4f39408777e9",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "9795c91c-0918-46fa-8a51-47deb180c271"
+      ],
+      "id_confidence": {
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 70,
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": 60,
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": 60,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 20,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 20
+      },
+      "id_name": {
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": "Bagger 100 kW Aushub",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": "Bagger 15 kW Aushub",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht"
+      },
+      "id_gueltigkeit": {
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "2026",
+        "6abf619b-9e1e-4c1d-996b-0458137d3303": "2026",
+        "0e4230ed-86d7-4230-bba1-1ab3dd05b09b": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

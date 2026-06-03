@@ -1,0 +1,138 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "962826c3-4b38-4300-af59-f39fad184aaa",
+        "00485255-d8a7-4e6d-b2ab-fba929e3cc4a",
+        "7e38bb46-2c08-485d-b5b3-bda4730e0b69",
+        "e4728170-1bbc-4f62-a73d-edb756c52c59",
+        "a79f918c-f815-4341-8977-e2896f64241a",
+        "19c425a3-4287-4f8d-af5d-0f4ab1442f51",
+        "07013edc-188e-4c30-bb2b-e0aa59314195",
+        "10b05552-a0ca-4393-b6db-ae335df4187c",
+        "ee6d9736-2ddd-4d2d-acc1-3ea1031c1f9e",
+        "b822aa09-3cb6-49a3-98f6-a3ebf325a70b"
+      ],
+      "id_confidence": {
+        "962826c3-4b38-4300-af59-f39fad184aaa": 35,
+        "00485255-d8a7-4e6d-b2ab-fba929e3cc4a": 35,
+        "7e38bb46-2c08-485d-b5b3-bda4730e0b69": 35,
+        "e4728170-1bbc-4f62-a73d-edb756c52c59": 35,
+        "a79f918c-f815-4341-8977-e2896f64241a": 35,
+        "19c425a3-4287-4f8d-af5d-0f4ab1442f51": 35,
+        "07013edc-188e-4c30-bb2b-e0aa59314195": 35,
+        "10b05552-a0ca-4393-b6db-ae335df4187c": 35,
+        "ee6d9736-2ddd-4d2d-acc1-3ea1031c1f9e": 35,
+        "b822aa09-3cb6-49a3-98f6-a3ebf325a70b": 20
+      },
+      "id_name": {
+        "962826c3-4b38-4300-af59-f39fad184aaa": "CEM I 42,5 N (st)",
+        "00485255-d8a7-4e6d-b2ab-fba929e3cc4a": "Zement",
+        "7e38bb46-2c08-485d-b5b3-bda4730e0b69": "Zinc coated steel structures",
+        "e4728170-1bbc-4f62-a73d-edb756c52c59": "ZOE VARIO 200 2000 830/835/840 DALI",
+        "a79f918c-f815-4341-8977-e2896f64241a": "ZOE VARIO 210 SURFACE MOUNT BOX",
+        "19c425a3-4287-4f8d-af5d-0f4ab1442f51": "ZOE VARIOFLEX 130 700 830/35/40",
+        "07013edc-188e-4c30-bb2b-e0aa59314195": "ZOE VARIOFLEX 165 1000 830/35/40",
+        "10b05552-a0ca-4393-b6db-ae335df4187c": "ZOE VARIOFLEX 200 2000 830/35/40",
+        "ee6d9736-2ddd-4d2d-acc1-3ea1031c1f9e": "1.3.11. Dachsteine (Beton)",
+        "b822aa09-3cb6-49a3-98f6-a3ebf325a70b": "1.3.02. Mauerziegel (mit Polystyrol gefüllt)"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [],
+      "id_confidence": {},
+      "id_name": {}
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "2cdcffc6-84e9-4238-b8af-beebabea9a2d",
+        "45e6dcac-70b9-4982-bf04-4ff566facba1",
+        "20b0761f-99e0-48db-b1e4-0fdb1b7739ef",
+        "97b971c7-8d43-4650-bfd6-75fdcf9a2101",
+        "cf3d6ac9-0308-452a-8db1-11f60cf2af52",
+        "2582642e-308a-4a8e-b731-3289665b44da",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 85,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 80,
+        "2cdcffc6-84e9-4238-b8af-beebabea9a2d": 60,
+        "45e6dcac-70b9-4982-bf04-4ff566facba1": 60,
+        "20b0761f-99e0-48db-b1e4-0fdb1b7739ef": 60,
+        "97b971c7-8d43-4650-bfd6-75fdcf9a2101": 60,
+        "cf3d6ac9-0308-452a-8db1-11f60cf2af52": 60,
+        "2582642e-308a-4a8e-b731-3289665b44da": 60,
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": 50,
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": 50
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "2cdcffc6-84e9-4238-b8af-beebabea9a2d": "Beton-Mauersteine",
+        "45e6dcac-70b9-4982-bf04-4ff566facba1": "Betonfertigteil Decke, Dicke 20cm",
+        "20b0761f-99e0-48db-b1e4-0fdb1b7739ef": "Betonfertigteil Treppe (1,1 m Breite, 9 Stufen a 16 cm)",
+        "97b971c7-8d43-4650-bfd6-75fdcf9a2101": "Betonfertigteil Wand, Dicke 12cm",
+        "cf3d6ac9-0308-452a-8db1-11f60cf2af52": "Betonrohr, bewehrt",
+        "2582642e-308a-4a8e-b731-3289665b44da": "Betonrohr, unbewehrt",
+        "18563fde-e042-4c4f-9a28-01de646ea9ef": "Bims Schotter",
+        "2e31cc41-fa94-442a-b19b-48d82c3555d8": "Bims-Planstein (SFK-4)"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

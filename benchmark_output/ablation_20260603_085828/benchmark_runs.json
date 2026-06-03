@@ -1,0 +1,79 @@
+[
+  {
+    "input_folder": "ablation_b",
+    "config_name": "P7_BatchFilter",
+    "model": "gpt-5-nano",
+    "repetition": 1,
+    "duration_seconds": 49.12,
+    "input_tokens": 1433,
+    "output_tokens": 6457,
+    "cost_usd": 0.0026545,
+    "layer_results": [
+      {
+        "name": "Deckschicht",
+        "material": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+        "top_matches": [
+          "d24a85e3-f395-4124-9874-c01f977a893f",
+          "c6f77799-ed43-4ec4-bfc3-0759e41b60ca"
+        ],
+        "confidences": {
+          "d24a85e3-f395-4124-9874-c01f977a893f": 95,
+          "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 78
+        }
+      },
+      {
+        "name": "Binderschicht",
+        "material": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+        "top_matches": [
+          "85e76e87-fc16-4fd5-80ed-a07fa5767f56"
+        ],
+        "confidences": {
+          "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 92
+        }
+      },
+      {
+        "name": "Bituminöse Tragschicht",
+        "material": "AC 32 T S mit Straßenbaubitumen 30/45",
+        "top_matches": [
+          "9795c91c-0918-46fa-8a51-47deb180c271",
+          "c6f77799-ed43-4ec4-bfc3-0759e41b60ca"
+        ],
+        "confidences": {
+          "9795c91c-0918-46fa-8a51-47deb180c271": 90,
+          "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 72
+        }
+      },
+      {
+        "name": "Nicht bituminöse Tragschicht",
+        "material": "AC 32 T S mit Straßenbaubitumen 30/45",
+        "top_matches": [
+          "9795c91c-0918-46fa-8a51-47deb180c271",
+          "c6f77799-ed43-4ec4-bfc3-0759e41b60ca"
+        ],
+        "confidences": {
+          "9795c91c-0918-46fa-8a51-47deb180c271": 85,
+          "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 70
+        }
+      },
+      {
+        "name": "Frostschutzschicht",
+        "material": "Gesteinskörnungsgemisch 0/32",
+        "top_matches": [
+          "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+          "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+          "f4461491-586a-4770-9a04-716565e58c24",
+          "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+          "a7bad3b6-2123-483b-99b5-2ec481254be7"
+        ],
+        "confidences": {
+          "cff84492-d5c8-4da9-a79b-aea5a8507d9d": 85,
+          "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 60,
+          "f4461491-586a-4770-9a04-716565e58c24": 58,
+          "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 55,
+          "a7bad3b6-2123-483b-99b5-2ec481254be7": 55
+        }
+      }
+    ],
+    "error": ""
+  }
+]

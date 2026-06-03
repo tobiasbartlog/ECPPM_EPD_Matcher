@@ -1,0 +1,144 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "d5c7232a-0171-45c3-b81a-856961713db8",
+        "83979499-f57c-462f-860b-efbc60bd000f",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e",
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c",
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d",
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7",
+        "f1e5357e-e6b3-4af1-95db-940d5438a949",
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd",
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190",
+        "4dbf5c48-7445-4fdb-be1f-94614ce872fa"
+      ],
+      "id_confidence": {
+        "d5c7232a-0171-45c3-b81a-856961713db8": 35,
+        "83979499-f57c-462f-860b-efbc60bd000f": 35,
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": 35,
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": 35,
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d": 35,
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": 35,
+        "f1e5357e-e6b3-4af1-95db-940d5438a949": 35,
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd": 35,
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190": 35,
+        "4dbf5c48-7445-4fdb-be1f-94614ce872fa": 35
+      },
+      "id_name": {
+        "d5c7232a-0171-45c3-b81a-856961713db8": "Deckensystem - HT Labor + Hospitaltechnik GmbH - Decke für Nasszelle Stahlblech, verzinkt, pulverbeschichtet",
+        "83979499-f57c-462f-860b-efbc60bd000f": "Classic Lite Deckenplatten",
+        "59e2b443-58e7-4b24-8a7d-11c562e1a82e": "Classic Max Deckenplatten",
+        "1d3d4e53-43c7-45d9-9c97-a02c2785ab1c": "ADAGIO Acoustic+",
+        "98abfafd-b08c-4eb4-8d02-67d66e0ecc1d": "AMF ECOMIN & ARMSTRONG Basis Sortiment; AMF THERMATEX & ARMSTRONG Standard Sortiment (Pontalier)",
+        "336a04d8-07f0-4209-bb23-c35c1a077ab7": "THERMATEX Acoustic",
+        "f1e5357e-e6b3-4af1-95db-940d5438a949": "THERMATEX Acoustic Medical, THERMATEX Acoustic",
+        "4c57ddb8-c44f-4865-9cd4-da650e240acd": "THERMATEX Acoustic, Pontarlier",
+        "0dbe6d26-f0e6-4abf-a7f4-e36198257190": "THERMATEX Basic & Standard",
+        "4dbf5c48-7445-4fdb-be1f-94614ce872fa": "Eindeckrahmen - Roto Frank - Eindeckrahmen Designo für Standardeinbau"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "26855c20-be97-45c8-afd0-08dadef1256a"
+      ],
+      "id_confidence": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 92,
+        "26855c20-be97-45c8-afd0-08dadef1256a": 35
+      },
+      "id_name": {
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "26855c20-be97-45c8-afd0-08dadef1256a": "Holcim Binder Sackware Werk Höver"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "efb296ec-9a09-4344-99c7-faa3cc805541"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 95,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 70,
+        "efb296ec-9a09-4344-99c7-faa3cc805541": 35
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "efb296ec-9a09-4344-99c7-faa3cc805541": "Tragende Wärmedämmelemente"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9"
+      ],
+      "id_confidence": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 85,
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": 35
+      },
+      "id_name": {
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "c71cd5b5-b766-470f-a04b-4f39408777e9": "Bade- und Duschwanne Acryl"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb"
+      ],
+      "id_confidence": {
+        "f4461491-586a-4770-9a04-716565e58c24": 78,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 78
+      },
+      "id_name": {
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}
