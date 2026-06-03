@@ -473,6 +473,45 @@ reduces cost by X% compared to P1."
 Der in v1 verwendete Score `Cost / Accuracy [%]` wurde von Reviewer 2 als „not plausible"
 abgelehnt. Er wird in v2 nicht verwendet.
 
+### 3.4 Anmerkung zur Kostenberechnung: Prompt-Caching
+
+**Sachverhalt**: Die im Paper berichteten Kosten werden mit `utils/cost_tracker.py` aus den
+Token-Counts der API-Response und den Azure-Listenpreisen (Sweden Central, Global Standard)
+berechnet:
+
+```
+cost = (prompt_tokens / 1e6) × input_price + (completion_tokens / 1e6) × output_price
+```
+
+Dieser Rechner berücksichtigt **kein Prompt-Caching**. Azure OpenAI rechnet identische
+Prompt-Präfixe ab ≥1024 Tokens und innerhalb einer Cache-TTL von ~5 Minuten zu einem
+reduzierten Preis ab (Faktor ~10× günstiger bei GPT-4.1- und GPT-5-Familie, ~2× bei GPT-4o)
+und liefert die gecachte Anzahl in `usage.prompt_tokens_details.cached_tokens` zurück.
+
+**Empirischer Befund**: Ein Abgleich der `cost_tracker`-Schätzung gegen die Azure-Abrechnung
+(Cost-Analysis-Export 2026-06-01 bis 2026-06-03, 3-Tages-Summe ≈ 36.79 USD) zeigt, dass die
+tatsächlichen Cloud-Kosten deutlich niedriger ausfallen als die im Tracker ausgewiesenen
+Listenpreis-Kosten. Plausible Ursache: Der EPD-Matcher hat einen stabilen, großen
+Prompt-Präfix (System-Prompt + EPD-Katalog, je nach Config 10–20k Tokens) und viele Calls
+innerhalb der Cache-TTL.
+
+**Implikation für das Paper**: Die berichteten Kostenzahlen sind als **Obergrenze**
+(Listenpreis ohne Cache-Discount) zu lesen, nicht als tatsächliche Cloud-Kosten. Diese
+Konvention wird im Methodik-Teil explizit benannt.
+
+**Implikation für die Ablation**: Der Cache-Effekt trifft die P-Configs unterschiedlich
+hart. Configs ohne Batching (P1, P3, P4, P6) führen N Calls pro Input mit identischem
+Präfix aus → hoher Cache-Anteil ab dem zweiten Call. Batch-Configs (P2, P5, P7, P8) haben
+nur einen Call pro Input → der Cache greift nur zwischen Reps und Inputs. Die relativen
+Kostenverhältnisse zwischen P-Configs in der echten Azure-Abrechnung können dadurch von
+den Listenpreis-Verhältnissen abweichen. Im Paper als Diskussion erwähnen, im Fließtext
+nicht als Hauptbefund.
+
+**Paper-Formulierung (Vorschlag)**: „Reported costs are computed from token counts at
+Azure's published list prices (Sweden Central, Global Standard, May 2026) and do not
+account for prompt-caching discounts. Actual billed costs are lower; the magnitude of
+the discount depends on the configuration's prompt-reuse pattern."
+
 ---
 
 ## 4. Systemarchitektur — Paper-relevante Entscheidungen
@@ -564,6 +603,7 @@ Ohne `ground_truth.json` läuft das Skript durch, gibt aber keine Accuracy aus.
 - [ ] Experten-Validierung der `ground_truth.json` für ablation_a/b/c (insbesondere ablation_b/„Nicht bituminöse Tragschicht" — vorläufig `null`, siehe §1.2.5)
 - [ ] Post-Review-Fixes adressieren (siehe `.scratch/v2-post-review-fixes/PRD.md`) — nach Paper-Einreichung
 - [ ] Preisdatum der 4 Azure-Modelle für v2 dokumentieren (neue Benchmark-Läufe)
+- [ ] Caching-Hinweis aus §3.4 in Methodik-Abschnitt des Papers einbauen + Limitation-Satz
 - [ ] Referenzen Hofmeyer et al. 2023 und Chen et al. 2024 sichten (Reviewer 2)
 - [ ] Limitation Open-Source-LLMs ausformulieren
 
