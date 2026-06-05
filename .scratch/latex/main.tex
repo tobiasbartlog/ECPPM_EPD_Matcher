@@ -1,0 +1,642 @@
+% ============================================================
+% ECPPM 2026 Full Paper Template
+% European Conference on Product and Process Modelling
+% 9–11 September 2026, Cardiff
+% ============================================================
+% Two-column IEEE-style layout, A4, 10pt
+% Page limit: 6–8 pages (all-inclusive)
+% ============================================================
+
+\documentclass[10pt, a4paper, twocolumn]{article}
+
+% --- Packages ---
+\usepackage[a4paper,
+            top=2.0cm, bottom=2.5cm,
+            left=1.5cm, right=1.5cm,
+            columnsep=0.6cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times}           % Times New Roman body font
+\usepackage{mathptmx}        % Times for maths
+\usepackage{microtype}       % Better justification
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{cite}            % Numbered citations [1], [2,3]
+
+% --- Section heading style: "I. INTRODUCTION" (uppercase, centred) ---
+\titleformat{\section}
+  {\normalfont\normalsize\bfseries\centering\MakeUppercase}
+  {\Roman{section}.}{0.5em}{}
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% --- Subsection: italic, no number ---
+\titleformat{\subsection}
+  {\normalfont\normalsize\itshape}
+  {}{0pt}{}
+\titlespacing{\subsection}{0pt}{6pt}{3pt}
+
+% --- Caption style ---
+\captionsetup[figure]{font=footnotesize, labelfont=bf,
+                       labelsep=period, position=below}
+\captionsetup[table]{font=footnotesize, labelfont=bf,
+                      labelsep=period, position=above}
+
+% --- Hyperref ---
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black,
+  pdfborder={0 0 0}
+}
+
+% --- No page numbers (conference style) ---
+\pagestyle{empty}
+
+% ============================================================
+\begin{document}
+% ============================================================
+
+% --- Title block (one-column span) ---
+\twocolumn[{%
+\begin{@twocolumnfalse}
+
+  \begin{center}
+
+    {\Large\bfseries
+      Systematic Evaluation of LLM-based EPD Matching Configurations for Road Infrastructure BIM Models 
+    \par}
+
+    \vspace{10pt}
+
+    {\normalsize
+      First Author$^{1}$,
+      Second Author$^{2}$,
+      Third Author$^{1}$
+    \par}
+
+    \vspace{4pt}
+
+    {\small
+      $^{1}$Department, Institution, City, Country\quad
+      $^{2}$Department, Institution, City, Country
+    \par}
+
+    \vspace{2pt}
+
+    {\small Corresponding author: \texttt{name@example.org} \par}
+
+    \vspace{2pt}
+
+    {\small\itshape
+      Author names and affiliations must be removed for blind review.
+      Insert them only in the camera-ready version if requested.
+    \par}
+
+  \end{center}
+
+  \vspace{8pt}
+
+  % --- Abstract: inline label "Abstract—" matching Word template ---
+  \noindent\textbf{Abstract}\textbf{---}Linking Building Information Modeling (BIM) based road infrastructure models to Environmental Product Declaration (EPD) databases is essential for early-stage Life Cycle Assessment (LCA), yet hampered by inconsistent Industry Foundation Classes (IFC) data, sparse EPDs, and scarce road models. This paper presents a configurable, multi-stage Large Language Model (LLM)-assisted matching pipeline and evaluates it through a full-factorial ablation study across four models and eight configurations. Results quantify accuracy–cost trade-offs and demonstrate the pipeline’s readiness to scale as BIM adoption advances and EPD coverage expands. 
+
+  \vspace{6pt}
+
+  \noindent\textbf{Keywords---}Environmental Product Declarations (EPDs), Road infrastructure, Building Information Modeling (BIM), Industry Foundation Classes (IFC), Ablation study
+
+  \vspace{8pt}
+
+  {\small\itshape
+    Papers must be 6--8 pages. The maximum is 8 pages all-inclusive, including
+    all figures, tables, acknowledgements, and references. Remove all instruction
+    text before submission.
+  \par}
+
+  \vspace{10pt}
+
+\end{@twocolumnfalse}
+}]
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+\subsection{Context and relevance}
+
+The construction sector is one of the largest  contributors to global environmental impacts. In 2022, buildings and construction accounted for approximately 34 \% of global energy demand and 37 \% of energy- and process-related CO$_2$ emissions, while the broader construction industry is responsible for around 21 \% of global greenhouse gas emissions \cite{UN report}. Consequently, the sector has become a central focus of international and European decarbonization strategies, highlighting the need methods that enable environmentally informed decision-making throughout the planning, design,  and construction process \cite{Chen 2024}.
+
+While sustainability assessment methodologies for buildings have reached a relatively high level of maturity, equivalent approaches for infrastructure projects remain considerably less developed \cite{Milic 2024}. This gap presents a significant opportunity for improving the sustainability performance of future infrastructure projects. This is particularly evident in Germany, which operates an extensive highway system covering approximately 13,000 km, much of which will require extensive rehabilitation and renewal measures over the coming decades \cite{FederalMinistryofTransport.2025}. Autobahn GmbH, the largest agency responsible for tendering and operating highways, has committed itself to achieving climate neutrality in construction and operation by 2045 \cite{AutobahnGmbH.}. Similarly, DEGES promotes digitalization strategies and the early integration of sustainability assessments into infrastructure planning processes \cite{DEGES.2025}. Similarly, another important public client, DEGES, is pursuing targeted digitization strategies and promoting early sustainability assessments in planning phases. ~\cite{DEGES.2025} 
+
+Based on these developments, the semi-automation of EPD data integration and matching within road infrastructure models represents a significant advancement in the field of sustainability assessment. Such advances are crucial for the creation of scalable and efficient workflows that allow the effective integration of environmental data into decision-making processes.
+
+
+\subsection{Motivation and gap}
+
+Sustainability assessment of road infrastructure increasingly relies on matching materials to EPDs within Building Information Modeling (BIM) workflows. The achievement of sustainability objectives in road infrastructure projects requires reliable and comprehensive environmental data to enable informed decision-making and life cycle-based sustainability assessments, particularly regarding construction materials ~\cite{Kaus.2025}. However, the infrastructure domain faces compounding data challenges: (i) Industry Foundation Classes (IFC) property set structures for road models lack standardization, with inconsistent material data ~\cite{Wastiels.2019,PotrcObrecht.2020} ; (ii) infrastructure-specific EPDs in public databases such as ÖKOBAUDAT remain scarce ~\cite{Kaus.2025}; and (iii) IFC road models suitable for research are rarely available.
+
+Recent work has applied Natural Language Processing-based matching ~\cite{Forth.2023}, BIM-integrated pipelines ~\cite{Hermann.2024}, bill-of-quantities approaches linked to predefined LCA profiles ~\cite{J.HofmeyerK.ForthS.EsserA.Borrmann.}, and LLM-driven tools ~\cite{Petrosa.2025} to building-focused EPD matching. In parallel, the revised Construction Products Regulation adopted by the Council of the European Union in 2024 promotes the future implementation of digital product passports and new requirements for digital sustainability data management across the construction sector ~\cite{CounciloftheEU.2024}. It is anticipated that these developments will result in a significant increase in the number of EPDs available in public databases, thereby expanding the pool of environmental information available for automated sustainability assessments ~\cite{Construction Products Regulation (EU) 2024/3110}. As the size of EPD databases continues to increase, the importance of efficient candidate selection and pre-filtering mechanisms is also gaining importance, in order to ensure that scalable matching workflows can be maintained ~\cite{Petrosa.2025}. This challenge is especially evident in the field of road infrastructure, where only a limited number of available EPDs can be applied due to the standardisation of material specifications and the recurrence of pavement layer compositions ~\cite{ Kaus.2025; Petrosa.2025}. 
+
+This paper presents a configurable, multi-stage matching pipeline for the semi-automated integration and matching of EPD data in BIM-based sustainability assessment workflows. Although the proposed framework is designed as a transferable solution applicable to various construction fields, road infrastructure is used as a representative case study for its systematic evaluation through controlled ablation testing.
+
+\subsection{Objectives and research question}
+
+The objective is to provide a reproducible evaluation framework for LLM-assisted EPD matching, offering actionable guidance under data constraints. The study is guided by the following research questions:
+
+\begin{enumerate}[label=\textbf{RQ\arabic*:}, leftmargin=*, labelsep=0.5em,
+                  itemsep=2pt, topsep=3pt]
+  \item How do different LLMs affect the accuracy and cost of EPD matching?
+  \item How do domain-specific pre-filtering and input representations improve
+        matching over the baseline?
+  \item What accuracy--cost trade-offs arise, and what do they imply as EPD
+        databases grow?
+\end{enumerate}
+
+The following section reviews related work on automated approaches for matching sustainability information, with a particular focus on methodological differences and the integration of LLM-based methods for EPD matching. In the methodological section, the research design for developing the EPD matching workflow is presented, along with an example IFC model, the system architecture, data exchange formats, and the analysis methods used during ablation testing to validate the proposed tool. The next section focuses on the presentation of the results, which include the matching accuracy of the analyzed LLM models, various configuration settings, and cost-efficiency considerations. After, the following section discusses the findings in relation to the research questions, interprets the results, and highlights the technical benefits of the proposed EPD matching tool, particularly for improving sustainability awareness. Finally, the last section of the paper concludes with a discussion, including the limited availability of IFC models and EPD data for infrastructure projects. It also outlines directions for future research to further validate and improve the practical applicability and industry adoption of the proposed approach.
+
+
+% ============================================================
+\section{Related Work}
+% ============================================================
+
+This chapter outlines and compares semi-automated and fully automated approaches for matching sustainability information from related work. It particularly focuses on their methodological differences and on how recent studies integrate LLM–based methods to support or enhance automation in EPD matching. 
+More recent research has investigated LLM-supported approaches that extend semi-automated BIM-based LCA workflows for EPD matching. These approaches aim to reduce the remaining manual effort and uncertainty associated with semi-automated workflows.  
+In addition to tool-based automation efforts, several conceptual frameworks adopt a more structural perspective on EPD matching in BIM-based LCA. Studies by Wastiels and Decuypere and Horn et al. emphasize that the feasability of EPD matching is fundamentally constrained by data availability, level of detail, interoperability, and the intended use case. Rather than prioritizing semantic automation at the tool level, approaches such as BIM2LCA focus on establishing standardized IFC-based data exchange across planning phases, linking early-stage benchmark data with detailed, product-specific LCA and EPD information in later design stages. ~\cite{Wastiels.2019, Horn.2020} 
+
+A rule-based approach to EPD assignment is presented by Hofmeyer et al., who link quantities extracted from parametric BIM models to predefined LCA profiles using Dynamo and external databases. This approach automates the assessment of design alternatives through predefined mappings between bill-of-quantities data and environmental datasets. While this strategy enables efficient sustainability assessments during early infrastructure planning, its applicability depends on the availability of predefined mappings and therefore remains limited when material descriptions deviate from expected standards. ~\cite{J.HofmeyerK.ForthS.EsserA.Borrmann.}
+
+Alternatively, other approaches explore the potential of artificial intelligence (AI) to facilitate the interpretation of incomplete, inconsistent, or ambiguous material information that frequently occurs in BIM-based sustainability assessments. In that context, Forth et al. propose a conceptually oriented approach based on Natural Language Processing (NLP), in which IFC-based BIM elements are linked to LCA datasets using semantic similarity rather than exact string matching. This approach enables the generation of emission ranges instead of single deterministic values, thereby explicitly acknowledging uncertainty as an inherent characteristic of early-stage LCA ~\cite{Forth.2023}. Similarly, Chen et al. (2024) leverage LLMs as a "cognitive solver" to interpret heterogeneous material information originating from multiple software environments and disciplines. Their workflow combines the semantic reasoning capabilities of GPT-4 with the COMPAS framework for precise geometric calculations, thereby enabling the automated processing of material descriptions stored in object names, layers, or other non-standardized data structures ~\cite{LiChenHeidiSilvennoinenCatherineDeWolfDanielHallTomVanMelePhilippeBlock.}.
+
+In contrast, Hermann et al. and Petrosa et al. investigate how AI-supported EPD matching can be implemented in practical workflows. Hermann et al. emphasize a practice-oriented implementation with the BIMetrix method, which combines semantic and geometric IFC processing with AI-supported EPD mapping within an automated ETL (Exchange, Transform, Load) workflow. While this approach demonstrates feasibility in large-scale infrastructure projects, manual verification of AI-assigned EPDs remains necessary, reflecting ongoing limitations in fully automated, reliable assignment under real-world conditions ~\cite{Hermann.2024}. Beyond the matching process itself, the BIMetrix approach addresses challenges specific to infrastructure projects by integrating GIS-based analysis and dividing project corridors into spatial reference grids to visualize environmental hotspots across large numbers of distributed models. Correspondingly, Petrosa et al. present an open-access, AI-driven matching tool implemented in Python that supports both semi-automatic and automatic assignment of ÖKOBAUDAT datasets. Despite the documented significant time savings, the fully automated mode is explicitly described as experimental, with validation results indicating moderate matching accuracy for the fully automated approach. As a result, expert oversight remains necessary, and concerns are raised regarding transparency and computational efficiency when using general-purpose LLMs ~\cite{Petrosa.2025}.
+
+The reviewed literature indicates that, despite increased interest in LLM-supported BIM-based EPD matching, several challenges persist. Across the reviewed studies, the most significant shared challenge is the lack of standardization and the presence of incomplete, inconsistent, or vague data in BIM models, particularly during early design stages. Material information is often missing, stored in non-standardized property sets, or embedded in object names and layer descriptions, making automated assignment difficult ~\cite{Forth.2023,Hermann.2024,J.HofmeyerK.ForthS.EsserA.Borrmann.,Petrosa.2025}. Consequently, the insufficient standardization of IFC-based data structures, including property sets (PSETs), further complicates automated assignment processes ~\cite{Wastiels.2019, PotrcObrecht.2020}.
+
+These challenges are particularly pronounced in road infrastructure projects, where the integration of EPDs into BIM workflows remains a key barrier for LCA. A notable discrepancy exists in the German road construction between the terminology employed in practice, as outlined in the technical specifications of TL Asphalt-StB, and the designated material categories present within the EPD datasets found in databases such as ÖKOBAUDAT ~\cite{Kaus.2025}. Consequently, even when automated matching approaches are available, systematic and reliable EPD assignment remains difficult due to the lack of direct correspondence between domain-specific material nomenclatures and available environmental datasets. 
+
+Moreover, cost and computational efficiency have been identified as significant challenges in the process of LLM-assisted EPD matching. The utilization of LLMs imposes token-based costs that scale with the size and redundancy of the input dataset and are further constrained by token limits per request ~\cite{Petrosa.2025}. Without adequate pre-selection mechanisms, large and heterogeneous EPD databases can therefore lead to excessive computational effort and increased Application Programming Interface (API) costs  ~\cite{Petrosa.2025}. Further highlighting the importance of pre-filtering strategies in LLM applications, Niu et al. (2026) demonstrated that implementing a pre-filtering stage can significantly reduce token consumption by narrowing the search space prior to detailed LLM analysis. Rather than submitting all available information to the model, their framework first identifies the most relevant candidates using condensed metadata and subsequently performs deeper analysis only on the selected subset. The authors reported a more than threefold improvement in token-detection efficiency, defined as the number of successful detections per thousand processed tokens. In addition, their findings indicate that targeted candidate selection can improve LLM reasoning by reducing irrelevant context. However, the role of pre-filtering strategies for EPD databases has received little attention in existing BIM- and LLM-based matching approaches, particularly in the context of infrastructure projects. ~\cite{ Niu et al (2026)}.  
+
+To address these limitations, this paper proposes a configurable multi-stage matching pipeline specifically designed for road infrastructure applications. The proposed workflow combines domain-specific preprocessing of road construction materials, including Asphalt-Nomenklaturen according to TL Asphalt-StB, with a staged optimization pipeline consisting of context extraction, EPD pre-filtering, and batched LLM evaluation.
+
+
+% ============================================================
+\section{Methodology}
+% ============================================================
+
+\subsection{Research design}
+
+A robust evaluation of an EPD-matching pipeline requires test inputs that vary in
+their material composition while keeping the structural layer context constant.
+Layered road models with material-level property data are, however, scarce: of
+five IFC road models obtained from industry partners, only one contained a
+pavement structure with property sets sufficient for EPD matching. This scarcity
+reflects a documented structural challenge in infrastructure BIM \cite{Kaus.2025}. 
+To obtain a controlled yet diverse evaluation basis, we
+derive three input scenarios (A, B, C) from the layer structure of this model.
+All three share the identical five-layer structure and layer designations
+(Table~\ref{tab:layers}); the designation in the \texttt{NAME} field follows RStO
+nomenclature and is identical across all inputs. The inputs differ only in the
+engineer-written \texttt{MATERIAL} specification assigned to each layer:
+
+\begin{itemize}[leftmargin=*, itemsep=2pt, topsep=2pt]
+  \item \textbf{Input~A:} an RStO-conformant pavement with standard
+        asphalt and granular materials, replicating the original model.
+  \item \textbf{Input~B:} industry model, alternative asphalt mixtures to test robustness against non-standard designations.
+  \item \textbf{Input~C:} non-bituminous and aggregate materials that stress the
+        pre-filter outside the asphalt domain.
+\end{itemize}
+
+% TODO: optionally add a per-input MATERIAL table once all 15 values are confirmed
+% from TestInput/ablation_{a,b,c}/input/input.json.
+
+The matching pipeline operates in five sequential processing stages. Three of
+these expose a binary configuration switch that is systematically evaluated in
+the ablation study; the remaining two (material code parsing, result aggregation)
+are held constant across all configurations.
+
+\begin{enumerate}[leftmargin=*, itemsep=3pt, topsep=3pt, label=\arabic*.]
+
+\item \textit{Context extraction.} Stage~1 resolves each input layer into a
+(layer term, material string) pair consumed by the downstream stages. The
+\texttt{EPD\_PREFER\_NAME\_FIELD} (NamePref) switch governs the primary layer
+source. When enabled, the structured \texttt{NAME} field is treated as the
+authoritative layer term, because its values map directly onto the
+\"OKOBAUDAT classification hierarchy and the EPD areas of application; the
+derived layer term then propagates to the pre-filter (Stage~3) and the
+confidence validation (Stage~5). When disabled, the free-text \texttt{MATERIAL}
+field serves as the primary source and the Stage-5 layer cap is inactive.
+Preferring \texttt{NAME} reduces erroneous layer assignments when an engineer's
+\texttt{MATERIAL} wording deviates from standard nomenclature.
+
+\item \textit{Material code parsing.} German asphalt designations follow the
+nomenclature defined in TL Asphalt-StB 07/13; a typical designation such as
+``AC 11 D S'' encodes several material properties. Stage~2 parses the
+\texttt{MATERIAL} string against this nomenclature---via regular-expression
+matching of the mixture code or a fuzzy match against known designations---and
+derives structured facts (in particular whether the material is bituminous) used
+by Stages~3 and~5. Domain-specific terminology is supplied through
+\texttt{EPD\_USE\_GLOSSAR}. Because \"OKOBAUDAT does not yet provide sufficiently
+granular infrastructure EPDs, the contribution of this stage is bounded by
+catalogue granularity, and the switch is held constant (excluded from the
+ablation analysis).
+
+\item \textit{EPD pre-filtering.} When \texttt{EPD\_USE\_GLOSSAR\_FILTER} (Filter)
+is enabled, a hierarchical, rule-based chain reduces the EPD search space before
+LLM processing. When disabled, the complete catalogue is passed to the LLM,
+increasing token consumption but potentially improving recall for edge cases. The
+construction and population of this filter are detailed in
+Section~\ref{sec:filter}.
+
+\item \textit{Semantic matching via LLM.} The filtered (or complete) EPD set is
+transferred to the LLM together with the material description. The prompt comprises
+the material designation and layer context, the candidate EPD entries (fields:
+name, technical description, notes), domain-specific matching rules, and an
+output-format specification (JSON with confidence scores). When
+\texttt{EPD\_USE\_BATCH\_MODE} (Batch) is enabled, all layers of an input are
+matched in a single API call, transmitting the candidate set and prompt only once;
+when disabled, one request is issued per layer. Batching is expected to reduce
+token consumption substantially, at a higher risk of malformed structured output
+when several layers are produced simultaneously.
+
+\item \textit{Result aggregation and confidence validation.} The LLM response is
+parsed and enriched with metadata from the EPD database. A post-processing step
+validates the reported confidence: when NamePref is enabled and the matched EPD
+contains no corresponding layer term, confidence is capped at 60; when a bituminous
+layer is matched to an EPD with no asphalt relation, confidence is capped at 35. In
+the Filter-disabled configurations, where no pre-LLM reduction occurs, this step is
+the final safeguard against cross-domain mismatches. Results are sorted by validated
+confidence, and the five highest-ranked suggestions per layer are exported to enable
+manual verification.
+
+\end{enumerate}
+
+\begin{table}[htbp]
+  \caption{Layer structure shared by all three input scenarios; only the
+           \texttt{MATERIAL} specification varies between inputs.}
+  \label{tab:layers}
+  \centering
+  \small
+  \begin{tabular}{cll}
+    \toprule
+    \textbf{Layer} & \textbf{NAME} & \textbf{Translation} \\
+    \midrule
+    1 & Deckschicht         & Surface course        \\
+    2 & Binderschicht       & Binder course         \\
+    3 & Tragschicht         & Asphalt base course   \\
+    4 & Schottertragschicht & Unbound sub-base      \\
+    5 & Frostschutzschicht  & Frost-protection layer\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+% ============================================================
+\subsection{EPD pre-filter: construction and population}
+\label{sec:filter}
+% ============================================================
+
+When enabled, the pre-filter applies a three-tier chain. \emph{(i)~A civil-engineering
+scope whitelist} admits only EPDs whose classification path begins with one of three
+permitted prefixes---\texttt{Mineralische Baustoffe / Asphalt},
+\texttt{.../ Zuschl\"age}, and \texttt{.../ M\"ortel und Beton / Beton}---structurally
+excluding all building-construction, building-services, insulation, metal and plastic
+EPDs and thereby preventing cross-domain matches (e.g.\ a floor covering proposed for
+an asphalt layer). \emph{(ii)~A three-case rule} then selects candidates by parsed
+material type: for detected asphalt, a two-tier match in which primary candidates
+contain both the layer term (e.g.\ ``Binder'' for a binder course) in the EPD name
+and an asphalt term in name or classification, while secondary candidates contain only
+the asphalt term; for non-asphalt but categorisable materials (granular base, frost
+protection, sealing), category-specific inclusion terms against the name and exclusion
+terms against name and classification; and for unrecognised materials, a tokenised
+keyword search as a safety-net fallback. \emph{(iii)~Global exclusion and mismatch
+lists} act in all cases, rejecting out-of-scope terms (e.g.\ \emph{M\"ortel},
+\emph{Ziegel}) and product-type mismatches (e.g.\ bitumen sheeting, which is not
+accepted as an asphalt match). Throughout the chain, inclusion is evaluated
+asymmetrically against the EPD name only---preventing matches on broad superordinate
+terms that appear in the classification path---whereas exclusion is evaluated against
+name and classification, since the classification path is a reliable signal for
+negative statements.
+
+The filter constants were derived empirically rather than assumed a~priori. The scope
+whitelist was obtained by enumerating all top-level classification paths under
+\texttt{Mineralische Baustoffe} in the local \"OKOBAUDAT snapshot and sample-validating
+the contained EPD names. The three retained prefixes cover the test layers: Asphalt
+(6~EPDs) covers the surface, binder and bituminous base courses; Zuschl\"age
+(35~EPDs) covers the granular sub-base and frost-protection layers; and
+M\"ortel und Beton\,/\,Beton (278~EPDs) is retained as reserve scope for future
+concrete-pavement inputs. The whitelist admits 319 of 2779 catalogue EPDs
+($\approx$11.5\,\%), which the per-material rule narrows further to 3--10 candidates.
+The category keyword lists were derived from RStO nomenclature and validated against
+every \texttt{MATERIAL} value across the three inputs, ensuring that each test material
+is matched by its intended case.
+
+The lists were refined after a pilot run on the local catalogue exposed two defects.
+A \emph{precision} defect caused flooring products with a bituminous backing to be
+returned as asphalt candidates, because the substring ``bitumen'' was treated as an
+asphalt signal; this was corrected both structurally, through the whitelist, and at the
+source, through a negative-context rule. A \emph{recall} defect caused an unbound-base
+designation to fall through to the keyword fallback, where a short negation token
+matched unrelated sheet-metal EPD names; this was corrected by extending the
+granular-material keywords and the fallback stop-word list. An LLM-free recall test over
+the nine input materials, run before and after the corrections, confirmed the effect:
+asphalt candidate sets were reduced to consistently relevant entries, and the previously
+missing granular candidates for the unbound sub-base were recovered.
+
+% ============================================================
+\subsection{Analysis methods}
+% ============================================================
+
+To isolate the contribution of individual optimisations, a full-factorial ablation
+study with three binary configuration switches ($2\times2\times2$) is conducted. This
+experimental design follows established best practices for machine-learning ablation
+studies, which emphasise systematic evaluation over single-configuration comparisons \cite{Fostiropoulos.2023}\cite{Meyes.2019}. The factorial design exposes
+interaction effects between configuration parameters and avoids the misleading
+conclusions that can arise from isolated component evaluations. This yields the eight
+configurations in Table~\ref{tab:ablation}. P1~(Baseline) disables all three switches,
+representing maximum token usage without preprocessing; it serves both as the upper
+accuracy reference and as the cost baseline against which the remaining configurations
+are compared.
+
+\begin{table}[htbp]
+  \caption{Ablation configurations.}
+  \label{tab:ablation}
+  \centering
+  \small
+  \begin{tabular}{llccc}
+    \toprule
+    \textbf{ID} & \textbf{Name} & \textbf{Batch} & \textbf{Filter} & \textbf{NamePref} \\
+    \midrule
+    P1 & Baseline    & --  & --  & --  \\
+    P2 & Batch       & x   & --  & --  \\
+    P3 & Filter      & --  & x   & --  \\
+    P4 & NamePref    & --  & --  & x   \\
+    P5 & BatchName   & x   & --  & x   \\
+    P6 & FilterName  & --  & x   & x   \\
+    P7 & BatchFilter & x   & x   & --  \\
+    P8 & All         & x   & x   & x   \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Each configuration is evaluated for four LLM deployments and the three input scenarios,
+and repeated five times, because identical inputs can produce varying outputs under the
+inherent stochasticity of LLM-based matching \cite{Fostiropoulos.2023}. Repetition
+increases the statistical power of the analysis and enables a reliable estimation of
+performance variance across configurations. The design therefore comprises
+8~configurations $\times$ 4~LLMs $\times$ 3~inputs $\times$ 5~repetitions $=$
+480~pipeline runs, providing 15~observations per configuration--LLM pair. The four LLM deployments are listed in Table~\ref{tab:acc}; 
+model-specific token prices are recorded as of 05.06.2026\@.
+Costs are computed from the input and output token counts per run.
+
+For each evaluated layer, a reference EPD was determined by manual lookup in
+\"OKOBAUDAT, based on semantic correspondence between the layer specification and the
+EPD description. We acknowledge that more than one EPD may constitute an acceptable
+match for a given layer; ground truth is therefore treated as a best-effort reference,
+and the resulting label uncertainty is reported as a limitation
+(Section~\ref{sec:limitations}). % TODO: ensure limitations label exists
+Layers for which the snapshot contains no adequate EPD are assigned a null reference and
+excluded from the accuracy computation; the number of evaluated layers per input is
+reported together with the results.
+
+% ============================================================
+\section{Results}
+% ============================================================
+
+All 480 pipeline runs completed without execution failures. Results are reported per
+configuration and LLM deployment, aggregated over the five repetitions and the three
+input scenarios. Table~\ref{tab:acc} reports the primary metric (mean Top-1 accuracy)
+and Table~\ref{tab:cost} the corresponding token consumption and cost per run.
+
+\begin{table}[htbp]
+  \caption{Mean Top-1 accuracy [\%] per configuration and model, aggregated over five
+           repetitions and three inputs (14~evaluated layers).}
+  \label{tab:acc}
+  \centering
+  \small
+  \begin{tabular}{llcccc}
+    \toprule
+    \textbf{ID} & \textbf{Config} & \textbf{4o-mini} & \textbf{5-chat} & \textbf{5-nano} & \textbf{5.2-chat} \\
+    \midrule
+    P1 & Baseline    & 29.3 & 67.3 & 85.3 & 98.7 \\
+    P2 & Batch       & 47.3 & 79.7 & 31.7 & 93.7 \\
+    P3 & Filter      & 77.0 & 85.0 & 82.7 & 78.3 \\
+    P4 & NamePref    & 18.7 & 73.3 & 55.7 & 75.7 \\
+    P5 & BatchName   & 18.0 & 67.7 & 22.3 & 78.7 \\
+    P6 & FilterName  & 70.3 & 63.3 & 63.7 & 65.7 \\
+    P7 & BatchFilter & 77.0 & 90.3 & 74.0 & 91.7 \\
+    P8 & All         & 60.7 & 71.7 & 52.7 & 70.0 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \caption{Mean input tokens (per run, model-independent) and mean cost per run [USD]
+           per configuration and model.}
+  \label{tab:cost}
+  \centering
+  \small
+  \begin{tabular}{llrcccc}
+    \toprule
+    \textbf{ID}  & \textbf{Tokens} & \textbf{4o-mini} & \textbf{5-chat} & \textbf{5-nano} & \textbf{5.2-chat} \\
+    \midrule
+    P1     & 480\,764 & 0.0728 & 0.6191 & 0.0338 & 0.8681 \\
+    P2        &  96\,724 & 0.0149 & 0.1360 & 0.0098 & 0.1804 \\
+    P3       &   2\,928 & 0.0008 & 0.0162 & 0.0072 & 0.0310 \\
+    P4     & 480\,764 & 0.0727 & 0.6191 & 0.0335 & 0.8672 \\
+    P5    &  96\,724 & 0.0149 & 0.1362 & 0.0106 & 0.1803 \\
+    P6   &   2\,928 & 0.0008 & 0.0163 & 0.0068 & 0.0290 \\
+    P7  &   1\,378 & 0.0004 & 0.0141 & 0.0036 & 0.0149 \\
+    P8          &   1\,378 & 0.0004 & 0.0128 & 0.0039 & 0.0149 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Cost reflects input and output tokens; only input tokens are shown as they are model-independent.
+
+\subsection{Matching accuracy}
+
+The filter is the strongest single optimisation for the weaker models: enabling it alone
+(P3) raises gpt-4o-mini from 29.3\,\% to 77.0\,\% and gpt-5-chat from 67.3\,\% to
+85.0\,\%, while it leaves the stronger models slightly lower (gpt-5-nano
+$85.3\rightarrow82.7$\,\%, gpt-5.2-chat $98.7\rightarrow78.3$\,\%). Batching alone~(P2)
+is inconsistent: it improves gpt-4o-mini and gpt-5-chat but sharply degrades gpt-5-nano
+($85.3\rightarrow31.7$\,\%), indicating that this model is sensitive to producing
+structured output for all layers in a single response. The combination of batching and
+filtering~(P7) yields the most balanced accuracy across models (74.0--91.7\,\%) and the
+highest accuracy for the two chat models (gpt-5-chat 90.3\,\%, gpt-5.2-chat 91.7\,\%),
+second overall only to the unfiltered gpt-5.2-chat baseline (98.7\,\%).
+
+Name preference is a consistently negative factor. Across all twelve pairwise
+comparisons in which NamePref is added to an otherwise identical configuration, accuracy
+decreases in eleven cases---for example $P3\rightarrow P6$ ($-6.7$ to $-21.7$\,pp) and
+$P7\rightarrow P8$ ($-16.3$ to $-21.7$\,pp)---with a single small improvement
+(gpt-5-chat, $P1\rightarrow P4$, $+6.0$\,pp). Prioritising the structured \texttt{NAME}
+field over the engineer-written \texttt{MATERIAL} description thus reduces rather than
+improves matching quality in this study; we discuss likely causes in
+Section~\ref{sec:discussion}. % TODO: discussion label
+
+\subsection{Token consumption and cost}
+
+The filter reduces the mean input token count from approximately 480{,}800 to 2{,}928
+per run, a factor of about 164; combining it with batching reduces consumption further
+to 1{,}378 tokens, a factor of about 349. Because batching alone only transmits the
+unfiltered catalogue once (a factor of about five), the filter accounts for the dominant
+share of the token reduction.
+
+Under the cost-at-threshold metric, the optimisations are most valuable for the cheaper,
+weaker models. For gpt-4o-mini, P7~(BatchFilter) simultaneously raises accuracy from
+29.3\,\% to 77.0\,\% and reduces cost per run by 99.4\,\% (from \$0.0728 to \$0.0004);
+for gpt-5-chat it raises accuracy from 67.3\,\% to 90.3\,\% at a 97.7\,\% cost reduction
+(from \$0.6191 to \$0.0141). For the two stronger models, no configuration exceeds the
+baseline accuracy, so the trade-off is one of cost against a minor accuracy reduction:
+for gpt-5.2-chat, P7 retains 91.7\,\% accuracy (versus 98.7\,\% at baseline) while
+reducing cost by 98.3\,\%. The lowest-cost configuration overall is P8 with gpt-4o-mini
+at \$0.00043 per run, though at a lower accuracy (60.7\,\%) than P7 (77.0\,\%) on the
+same model, which makes P7 the preferable operating point.
+
+\subsection{Per-input behaviour}
+
+% TODO: optional -- tighten or move to discussion
+Accuracy varies across the three inputs but does not invert the configuration ranking.
+Input~C (non-bituminous and aggregate materials) is generally matched most reliably,
+whereas inputs~A and~B---both dominated by asphalt designations---show larger
+variance, reflecting the finer distinctions required between asphalt subtypes. The
+non-bituminous base course of input~B is excluded from the accuracy computation, as no
+adequate EPD exists in the catalogue snapshot (Section~\ref{sec:methodology}). % TODO: label
+
+
+
+% ============================================================
+\section{Discussion}
+% ============================================================
+
+\subsection{Answering the research question}
+
+The ablation results indicate that cost and accuracy are shaped primarily by the
+choice of optimisation strategy and model, rather than by model class alone.
+Overall, the proposed multi-stage workflow can reduce operational cost
+substantially, although not necessarily while preserving the peak accuracy
+observed in the baseline.
+
+\textit{RQ1 (effect of model choice).} Model selection affected both accuracy and
+cost, but within a given model the optimisation strategy dominated the
+cost--quality trade-off. Among all perfect-accuracy runs, gpt-4o-mini achieved
+100\,\% accuracy at the lowest cost (Table~\ref{tab:costeff}), and it consistently
+occupied the most favourable positions in the cost-efficiency ranking.
+
+\textit{RQ2 (domain-specific pre-filtering).} The Filter configuration (P3)
+combined with gpt-4o-mini achieved 100\,\% accuracy at the lowest cost among
+perfect-accuracy runs. This supports the assumption that reducing the candidate
+set before LLM inference can lower token consumption while maintaining sufficient
+recall for the correct EPD. Preliminary, non-systematic observations on additional
+pavement structures pointed in the same direction, with accuracy increasing under
+the Filter configuration, likely because irrelevant EPDs were excluded and the
+model was presented with a more focused candidate set.
+
+\textit{RQ3 (accuracy--cost trade-offs).} Pre-filtering and batching shift the
+cost--quality trade-off in different ways. Configurations that bundle multiple
+layers into a single call (Batch) reduce repeated transmission of database context
+and therefore cut token usage per layer, but may increase failure risk when the
+model must track multiple queries and return structured outputs for each. This is
+consistent with the observed tendency of batch-based variants to deliver
+competitive cost-efficiency while occasionally degrading accuracy. As EPD databases
+for infrastructure grow, candidate pre-filtering is therefore likely to become
+increasingly important to contain token cost without sacrificing recall.
+
+While the baseline configuration (P1) achieved 100\,\% accuracy across all models,
+this should be interpreted cautiously. The benchmark comprises a single pavement
+structure with three evaluated layers; under such conditions, ground-truth EPD
+candidates may be comparatively easy to identify even when several EPD entries are
+semantically close. Perfect accuracy in P1 may therefore reflect the specificity of
+the test case rather than general robustness, and a broader benchmark is required to
+confirm whether P1 remains consistently superior when material descriptions, naming
+conventions, and data quality vary.
+
+\subsection{Contribution and implications}
+
+In a small number of cases, the model exhibited hallucination-like behaviour and
+returned clearly implausible assignments, for example selecting a parquet EPD for
+an asphalt base layer. To keep such failures controllable in practice, the matching
+tool exports the five highest-ranked suggestions per layer, allowing the user to
+select between options directly in the LCA interface; for this study, only the
+highest-ranked suggestion was evaluated. This human-in-the-loop design echoes the
+finding of Petrosa et al.~\cite{Petrosa.2025} that fully automated EPD assignment
+still requires expert oversight.
+
+Beyond the matching accuracy itself, the main contribution of this work is a
+configurable, IFC-based EPD-matching pipeline tailored to road infrastructure,
+where domain-specific nomenclature (TL~Asphalt-StB) and sparse EPD coverage have so
+far limited automated, BIM-integrated LCA. For the ECPPM community, the approach
+connects two recurring concerns in product and process modelling: interoperable,
+IFC-based information management across early planning phases, and the integration
+of digital sustainability data into AEC/FM workflows. By making candidate
+pre-filtering, batching, and field prioritisation explicit and configurable, the
+workflow also provides a reproducible basis for cost-aware deployment as
+infrastructure EPD databases mature.
+
+% ============================================================
+\section{Conclusion}
+% ============================================================
+
+\subsection{Limitations}
+
+Several limitations constrain the interpretability of the findings. The
+evaluation relies on a single IFC model and three benchmark layers, and the
+ground truth is derived from manual expert selection, which introduces potential
+subjectivity---especially where multiple EPDs could be considered acceptable
+matches. The coverage limitations for infrastructure materials in ÖKOBAUDAT lead
+to cases where only generic datasets can be matched, rendering material code
+parsing (Stage~2) obsolete in most instances. Finally, model prices and behaviour
+can change over time; the cost-efficiency results should therefore be treated as
+conditional on the recorded pricing date and the specific model versions used.
+
+\subsection{Concluding remarks and future work}
+
+This study contributes a configurable matching pipeline and a reproducible
+evaluation framework for LLM-based EPD matching in road infrastructure. By
+isolating components through factorial ablation, it provides evidence-based
+configuration guidance: domain-specific pre-filtering reduces inference cost by up
+to 90\,\% while maintaining accuracy for structured inputs; smaller, cost-efficient
+models achieve competitive accuracy, suggesting that frontier-scale LLMs may not be
+required; and the factorial design reveals interaction effects between components
+that would remain invisible in single-configuration comparisons.
+
+The work addresses the data scarcity in infrastructure BIM and positions the
+proposed approach as a scalable methodology that leverages growing EPD databases
+and increasing BIM adoption. Future work should expand the evaluation to a larger
+and more diverse set of IFC models, investigate more rigorous ground-truth
+definitions (e.g., multiple acceptable EPD labels established through expert
+consensus), and explore database-agnostic extensions that incorporate additional
+LCA datasets where licensing permits.
+
+Furthermore, given the current absence of detailed and standardized IFC models in the early design and planning stages~\cite{RWTHAachenUniversity.2025}, future research should assess whether requiring more comprehensive and standardized material-related information during the procurement and tendering phases would be economically, ecologically, and socially beneficial.  This could enable the earlier application of functionalities such as the semi-automated sustainability assessment workflow presented in this paper. 
+
+% ============================================================
+% Acknowledgements — remove for blind review
+% ============================================================
+\section*{Acknowledgments}
+
+For blind review, remove acknowledgments and funding information if these
+identify the authors. Add them back in the final version if permitted.
+
+% ============================================================
+% References
+% ============================================================
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{EPD_Matcher}
+
+
+\end{document}
+
+
+\section{Introduction}
+
+\end{document}

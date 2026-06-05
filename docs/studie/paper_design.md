@@ -368,20 +368,76 @@ signalisiert.
    NAME/MATERIAL-Konflikten — NamePref=false-Configs (P1/P2/P3/P7) sollten hier
    systematisch besser abschneiden als NamePref=true-Configs (P4/P5/P6/P8).
 
-**Vorläufige Entscheidung:** Option 1 (`null`), bis Experten-Validierung des
-Ground-Truth-Dokuments erfolgt ist. Im Paper als methodische Annahme dokumentieren —
+**Entscheidung (durch Experten-Review am 2026-06-03 bestätigt):** Option 1 (`null`).
+Die Schicht wird aus der Accuracy-Berechnung von ablation_b ausgeschlossen
+(4 von 5 Schichten bewertet). Im Paper als methodische Annahme dokumentieren —
 die Robustheit gegen Input-Inkonsistenzen wird in der Diskussion erwähnt.
 
-**Andere ablation_b-Schichten:** Deckschicht (`d24a85e3`/SMA), Binderschicht
-(`85e76e87`/Asphaltbinder), Bituminöse Tragschicht (`9795c91c`/Asphalttragschicht) und
-Frostschutzschicht (`cff84492`/Natürliche Gesteinskörnungen) sind unproblematisch — die
-Modell-Konsens-Vorlagen passen semantisch zur Schicht. Sie werden vom Experten-Review
-nur final bestätigt.
+**Andere ablation_b-Schichten — Experten-Review:** Deckschicht (`d24a85e3`/SMA),
+Binderschicht (`85e76e87`/Asphaltbinder) und Bituminöse Tragschicht
+(`9795c91c`/Asphalttragschicht) wurden vom Experten unverändert vom Modell-Konsens
+übernommen. **Frostschutzschicht wurde korrigiert**: Template-Vorlage war
+`cff84492` (Natürliche Gesteinskörnungen, breitester Konsens-Vorschlag), Experte hat
+auf `d35a5f2a` (Kies 2/32) korrigiert. Begründung: Der MATERIAL-Wert
+„Kies-Sand-Gemisch frostsicher, natürlich gewonnen, bis 32mm" verlangt einen
+spezifischeren Match als die generische Oberkategorie „Natürliche Gesteinskörnungen".
+
+**Paper-Implikation der Korrektur:** Diese Schicht ist ein dokumentiertes Beispiel
+dafür, dass der Modell-Konsens nicht automatisch die Ground Truth ist — das Modell
+neigt dort, wo mehrere semantisch verwandte EPDs existieren, zum breiteren
+Oberbegriff. Im Paper als Argument für die Notwendigkeit des Experten-Reviews der
+GT-Templates verwendbar (gegen Reviewer 1's „multiple acceptable labels"-Kritik).
 
 **Konstante Faktoren** (nicht abladiert, Begründung im Paper notwendig):
 - Stage 2 (Glossar-Parsing): bleibt aktiv, aber sein Beitrag ist gering da ÖKOBAUDAT kaum
   produktspezifische Infrastruktur-EPDs hat → „Stage-2-Vorbehalt" im Paper dokumentieren
 - Stage 5 (Confidence-Cap): bleibt aktiv als post-processing Konstante
+
+#### 1.2.6 Headline-Ergebnisse v2 (480 Runs, validierte Ground Truth)
+
+Auswertung des 480-Run-Datensatzes (`ablation_20260602_145931`) gegen die experten-
+validierte Ground Truth (Stand 2026-06-03). Bewertet werden 14 Schichten pro Input
+× Modell-Kombination (5 + 4 + 5 — ablation_b/Nicht-bituminös ausgeschlossen, siehe §1.2.5).
+
+**Top-1-Accuracy pro Config × Modell** (Mittel über 5 Repetitionen × 3 Inputs):
+
+| Config | ⌀ | gpt-4o-mini | gpt-5-nano | gpt-5-chat | gpt-5.2-chat | $ total | $/run |
+|--------|--:|-----:|-----:|-----:|-----:|-----:|-----:|
+| **P7_BatchFilter** | **83,9 %** | 77,1 % | 74,3 % | 91,4 % | 92,9 % | **0,49** | 0,008 |
+| P3_Filter | 81,1 % | 77,1 % | 82,9 % | 85,7 % | 78,6 % | 0,83 | 0,014 |
+| P1_Baseline | 70,4 % | 30,0 % | 85,7 % | 67,1 % | 98,6 % | 23,91 | 0,398 |
+| P6_FilterName | 66,1 % | 70,0 % | 64,3 % | 64,3 % | 65,7 % | 0,79 | 0,013 |
+| P8_All | 64,6 % | 61,4 % | 52,9 % | 72,9 % | 71,4 % | 0,48 | 0,008 |
+| P2_Batch | 63,2 % | 47,1 % | 32,9 % | 78,6 % | 94,3 % | 5,12 | 0,085 |
+| P4_NamePref | 56,8 % | 20,0 % | 57,1 % | 74,3 % | 75,7 % | 23,89 | 0,398 |
+| P5_BatchName | 46,4 % | 17,1 % | 21,4 % | 68,6 % | 78,6 % | 5,13 | 0,085 |
+
+**Paper-relevante Befunde:**
+
+1. **P7_BatchFilter ist die beste Config**: 83,9 % Accuracy bei 0,49 USD Gesamtkosten
+   — +13,5 %-Punkte gegenüber P1_Baseline und ≈ 49× günstiger. Die Filter+Batch-
+   Kombination bestätigt den v1-Befund, dass Stage-3-Vorfilterung der zentrale
+   Cost-Efficiency-Hebel ist, und erweitert ihn: Batch-Mode ohne Filter (P2) schadet
+   leicht (-7,2 PP vs. P1), Filter+Batch zusammen ist besser als jede Einzelkomponente.
+
+2. **NamePref-Effekt kehrt sich gegenüber v1 um**: Alle vier NamePref=ON-Configs
+   (P4, P5, P6, P8) sind schlechter als ihre NamePref=OFF-Counterparts (P1, P2, P3, P7).
+   Mittlerer Effekt: −12,8 PP. Hauptursache: ablation_b mit NAME/MATERIAL-Konflikt
+   (vgl. §1.2.5). Im Paper als Wechselwirkung zwischen Schicht-Cap (Stage 5) und
+   uneinheitlicher Input-Qualität diskutieren — Reviewer-2-Punkt „Kombinationsauswahl
+   begründen" wird genau hier paper-wirksam.
+
+3. **Modell-Heterogenität ist groß**: gpt-4o-mini bei P1 nur 30 %, bei P3 aber 77,1 %.
+   Das stützt die Cost-at-Threshold-Argumentation (§3.2): günstige Modelle erreichen
+   nur mit Vorfilterung wettbewerbsfähige Accuracy.
+
+4. **Cost-at-Threshold-Bezugsgröße**: P1-Baseline-Accuracy = 70,4 %. P3, P7
+   überschreiten diese Schwelle bei 1/29 bzw. 1/49 der Kosten. P7 ist im Paper-Hauptbefund
+   als „beste Konfiguration unterhalb Baseline-Cost und oberhalb Baseline-Accuracy"
+   einsetzbar.
+
+**Artefakte**: `benchmark_output/ablation_20260602_145931/ablation_analysis.html`
+(interaktive Charts) und `ablation_analysis.xlsx` (Detail-Tabellen).
 
 ### 1.3 Modelle
 
@@ -454,6 +510,37 @@ trifft. Berechnet über bewertete Schichten (Ground Truth ≠ null), aggregiert 
 und 3 Inputs.
 
 **Begründung**: Direkte Messung der Matching-Qualität. Einfach zu verstehen und zu kommunizieren.
+
+### 3.1.1 Zusatzmetrik: Top-3 Accuracy (Human-in-the-Loop)
+
+**Entscheidung**: Tab. 3 (`tab:acc`) wird um eine **Top-3-Spalte neben Top-1** erweitert
+(gleiche Tabelle, additiv). **Nachträglich aus dem bestehenden 480-Run-Datensatz berechenbar
+— kein neuer Lauf.** Die Rohdaten speichern pro Schicht die komplette gerankte Liste
+(`top_matches` / `id`-Array, absteigend nach validierter Confidence, bis zu 5 bei Asphalt,
+bis zu 10 bei Körnung). Code-Eingriff: `ablation_analysis.py` `run_accuracy` (Z. 107) und
+`layer_accuracy` (Z. 224) — `gt_uuid in layer["top_matches"][:3]` statt `== top_matches[0]`,
+plus je eine Spalte in Overview-Tabelle und Excel-Sheet 1/2. ~15 Zeilen.
+
+**Definition (präzise, paper-relevant)**: Anteil der bewerteten Schichten, in denen die GT-UUID
+unter den **drei höchstgerankten exportierten Vorschlägen** liegt. **Nicht** Recall@3 über den
+Katalog: das Tool gibt pro Schicht nur seine fünf höchstgerankten Vorschläge zurück (bei
+Filter=ON Asphalt sind das die ~5 gefilterten Kandidaten). Top-3 ist damit die
+**Human-in-the-Loop-Metrik**: „Findet der Bearbeiter die richtige EPD unter den Top-3 der
+Oberfläche?" — und schließt genau die Lücke, die das Paper (Discussion, „five highest-ranked
+suggestions per layer … only the highest-ranked was evaluated") offenlässt.
+
+**Begründung / adressierte Kritik**:
+- **Reviewer 1 „multiple acceptable labels"**: Liegt die GT oft auf Platz 2–3, quantifiziert
+  Top-3 den Near-Miss-Abstand bzw. die Label-Mehrdeutigkeit, die strenge Top-1 unterzählt.
+- **Human-in-the-Loop-Design** (Paper-Discussion) wird erstmals *gemessen* statt nur behauptet.
+
+**Guardrails (gegen Reviewer-2-„Metrik unbegründet"-Risiko)**:
+- Additiv zu Top-1, **nicht** ersetzend.
+- **Raus aus Cost-at-Threshold** (§3.2): die Kostenmetrik bleibt auf Top-1 verankert; Top-3 ist
+  kein Optimierungs-Zielwert.
+- Paper-Wording: „GT among the top-3 *exported suggestions*", explizit **nicht** „recall@3";
+  Caveat nennen, dass der Kandidatensatz bei Filter=ON klein ist (~5) — Top-3 ist dann ein
+  „3 von 5"-Maß, das aber exakt die Nutzersicht abbildet.
 
 ### 3.2 Sekundärmetrik: Cost-at-Threshold
 
@@ -554,11 +641,62 @@ Reviewer 2 fragte: „How were the combinations decided? What does baseline mean
 
 ## 5. Zusatzexperiment: Custom Entries
 
-**Entscheidung**: Kleines Zusatzexperiment (~20 Runs) mit modifizierter lokaler DB, um zu
-zeigen, dass Accuracy mit besserer ÖKOBAUDAT-Abdeckung steigt.
+**Entscheidung**: Kleines Zusatzexperiment mit modifizierter lokaler DB, das zeigt, wie der
+Matcher reagiert, wenn produktspezifische EPDs verfügbar werden. Adressiert Reviewer 1
+(Sparse-EPD) und trägt die Intro-These (CPR/DPP → mehr produktspezifische EPDs).
 
-**Methode**: Beste Konfiguration (gpt-4o-mini + P3_Filter) × alle 3 Inputs × 3 Reps, einmal
-mit Standard-DB (Vorher) und einmal mit verbesserten custom-Einträgen (Nachher).
+**Claim (bewusst eng gefasst)**: *Sensitivität gegenüber Datenbankabdeckung* — **kein
+„Beweis"** der Zukunftstauglichkeit. Begründung: Würden wir einen custom-Eintrag als
+offensichtlich besten Treffer konstruieren *und* ihn als Ground Truth setzen, wäre die
+Aussage zirkulär (Kandidat und Antwort selbst gelegt). Stattdessen messen wir einen
+*Mechanismus*, nicht eine selbstgelegte Lücke.
+
+**Mechanismus = Discrimination/Quality, nicht Coverage.** Befund aus den v2-Inputs: dieselbe
+generische EPD matcht materiell verschiedene Schichten (Deckschicht `SMA 11 S` / `SMA 8 S PmB`
+/ `Splittmastix lärmreduzierend` → alle `d24a85e3`; bit. Tragschicht `AC 22 T S` / `AC 32 T S`
+/ `grobe Asphalttragschicht` → alle `9795c91c`). Das ist der **Stage-2-Vorbehalt live in den
+Daten**: Stage 2 parst die Codes sauber, aber wirkungslos, weil kein produktspezifisches EPD
+existiert. Eine *Coverage*-Story („füllt eine leere Schicht") hat **kein ehrliches Ziel** in
+den aktuellen Inputs — die einzige `null`-Schicht (ablation_b/Nicht-bituminös) ist ein
+Praxis-Dateneingabefehler (falsches Material), kein Abdeckungsloch.
+
+**Headline-Metrik = Migrationsrate** (zirkularitäts-robust): Anteil der Runs, in denen der
+Top-1 vom generischen Alt-EPD auf den produktspezifischen custom-Eintrag wechselt. Aussage:
+„das Modell upgradet auf bessere Daten", **nicht** „X ist die einzige Wahrheit". Accuracy gegen
+eine neu-bestimmte GT nur sekundär und mit Caveat.
+
+**Scope = alle 5 Schichten, gesplittete Berichterstattung nach Mechanismus:**
+- **Asphalt-Schichten (Deck/Binder/bit. Trag)** — *generic-collapse → discrimination*
+  (Hauptbefund). Je ein custom-Eintrag für A's und B's Bezeichnung.
+- **Körnungs-Schichten (Nicht-bit. Trag, Frostschutz)** — *approximate-grading → exact match*
+  (Stützbefund). Heutige GT trifft die Körnung nur näherungsweise (GT `Schotter 16/32` vs.
+  Input `STSuB 0/45`); ein exaktes „0/45"-EPD ist eine berechtigte Präzisionsverbesserung.
+- **Wrinkle**: ablation_b/Nicht-bituminös ist der `null`-Fehler-Layer → dort nur A's Eintrag,
+  B ausgenommen.
+
+**Drei Input-Arme:**
+- **A (Norm-Code)** — sauberstes Migrationssignal.
+- **B (Praxis-Code)** — Migration mit real abweichenden Bezeichnungen.
+- **C (Freitext, keine Norm-Codes)** — eigenständiger **Freitext-Robustheitsarm**: Reicht das
+  NL-Verständnis, um auch ohne Norm-Code auf den spezifischen Eintrag zu migrieren, oder fällt
+  C auf generisch zurück? Beide Ausgänge publizierbar (Stärke bzw. ehrliche Limitation
+  „Spezifität braucht Norm-Codes"). C bekommt **keine** eigenen custom-Einträge — es wird gegen
+  die für A/B eingefügten getestet.
+
+**Anti-Fabrikations-Guardrail**: Jeder custom-Eintrag wird auf ein *real existierendes*
+Produkt-EPD modelliert (IBU, EPD Norge, Hersteller-EPD) und die Quelle dokumentiert — nicht
+erfunden, um trivial auffindbar zu sein.
+
+**Harte technische Anforderung**: Jeder custom-Eintrag muss eine **whitelist-konforme
+`klassifizierung`** tragen (`matching_rules.py:22-24`): Asphalt-EPDs unter
+`Mineralische Baustoffe / Asphalt / …`, Körnungen unter `Mineralische Baustoffe / Zuschläge / …`.
+Sonst wird der Eintrag in den Filter=ON-Configs (P3/P7) von der Tiefbau-Scope-Whitelist
+herausgefiltert, erreicht das LLM nie → Migration per Konstruktion unmöglich. **Das aktuelle
+`custom_entries_config_template.json` ist hier falsch** (INSERT-Beispiel nutzt
+`… / Ungebundene Tragschichten / …`, nicht whitelisted).
+
+**Methode**: Vorher (Standard-DB) vs. Nachher (+ custom-Einträge), je über die 3 Inputs.
+Run-Matrix (Configs/Modelle/Reps) — siehe §6 offene Frage.
 
 **Skript**: `benchmark/custom_entries_experiment.py`
 
@@ -582,13 +720,18 @@ und setzt `LOCAL_DB_PATH` per ENV nur für die Nachher-Subprocess-Läufe.
 Vorher-Nachher-Accuracy pro Schicht und Input, Änderungs-Tabelle, Paper-Summary-Entwurf.
 
 **Paper-Positionierung**: Abschnitt nach Hauptablation, „Sensitivity to Database Coverage"
-oder Diskussion/Future Work. Kernaussage: Die Methode skaliert mit der Datenbankqualität —
-bessere EPD-Beschreibungen verbessern Accuracy direkt.
+oder Diskussion/Future Work. Kernaussage: Sobald produktspezifische EPDs vorliegen, **migriert
+der Matcher von generischen auf spezifische Treffer** (und reaktiviert damit Stage 2) — gemessen
+als Migrationsrate, gesplittet nach Asphalt (collapse→discrimination) und Körnung
+(approximate→exact). Der Freitext-Arm C zeigt, wie weit dieser Effekt ohne Norm-Codes trägt.
 
 **Adressierte Reviewer-Kritik**: Reviewer 1, Punkt 1: „Sparse EPD data not addressed."
 
-**Vorbedingung**: Vor Ausführung müssen Ground-Truth-UUIDs für alle 3 Inputs bestimmt sein.
-Ohne `ground_truth.json` läuft das Skript durch, gibt aber keine Accuracy aus.
+**Hinweis Migrationsmetrik vs. Skript**: `custom_entries_experiment.py` berichtet aktuell
+Vorher/Nachher-*Accuracy* gegen `ground_truth.json`. Die Migrationsmetrik (Top-1
+generisch→spezifisch) ist daraus ableitbar, muss aber als eigene Auswertung ergänzt werden
+(Top-1-UUID vorher = generische GT, nachher = custom-Eintrag). Vor Ausführung müssen die
+generischen GT-UUIDs je Schicht/Input feststehen (liegen vor, §1.2.5/§1.2.6).
 
 ---
 
@@ -600,7 +743,8 @@ Ohne `ground_truth.json` läuft das Skript durch, gibt aber keine Accuracy aus.
 - [ ] Prompt-Beispiel dokumentieren (Abschnitt 4.2)
 - [ ] Snapshot-Datum der lokalen ÖKOBAUDAT-DB dokumentieren
 - [x] Benchmark-Rerun für P3/P6/P7/P8 mit Filter-Quality-Fixes (durchgeführt 2026-06-02, Commit `a159897`)
-- [ ] Experten-Validierung der `ground_truth.json` für ablation_a/b/c (insbesondere ablation_b/„Nicht bituminöse Tragschicht" — vorläufig `null`, siehe §1.2.5)
+- [x] Experten-Validierung der `ground_truth.json` für ablation_a/b/c abgeschlossen (2026-06-03) — ablation_b/Nicht-bituminös = null bestätigt, ablation_b/Frostschutz von `cff84492` auf `d35a5f2a` korrigiert, siehe §1.2.5
+- [x] Headline-Accuracy-Auswertung gegen validierte GT durchgeführt — P7_BatchFilter 83,9 %, siehe §1.2.6
 - [ ] Post-Review-Fixes adressieren (siehe `.scratch/v2-post-review-fixes/PRD.md`) — nach Paper-Einreichung
 - [ ] Preisdatum der 4 Azure-Modelle für v2 dokumentieren (neue Benchmark-Läufe)
 - [ ] Caching-Hinweis aus §3.4 in Methodik-Abschnitt des Papers einbauen + Limitation-Satz
