@@ -542,6 +542,68 @@ suggestions per layer … only the highest-ranked was evaluated") offenlässt.
   Caveat nennen, dass der Kandidatensatz bei Filter=ON klein ist (~5) — Top-3 ist dann ein
   „3 von 5"-Maß, das aber exakt die Nutzersicht abbildet.
 
+#### 3.1.2 Top-3 Ergebnisse v2 (480 Runs, nachträglich berechnet)
+
+Implementiert in `ablation_analysis.py` (Commit nach `a159897`). Vollständige Tabelle
+(Mittelwert über 5 Reps × 3 Inputs, 14 bewertete Schichten):
+
+| Config | gpt-4o-mini | gpt-5-chat | gpt-5-nano | gpt-5.2-chat |
+|--------|------------:|-----------:|-----------:|-------------:|
+| **Top-1** | | | | |
+| P1 Baseline    | 29,3 | 67,3 | 85,3 |  98,7 |
+| P2 Batch       | 47,3 | 79,7 | 31,7 |  93,7 |
+| P3 Filter      | 77,0 | 85,0 | 82,7 |  78,3 |
+| P4 NamePref    | 18,7 | 73,3 | 55,7 |  75,7 |
+| P5 BatchName   | 18,0 | 67,7 | 22,3 |  78,7 |
+| P6 FilterName  | 70,3 | 63,3 | 63,7 |  65,7 |
+| P7 BatchFilter | 77,0 | 90,3 | 74,0 |  91,7 |
+| P8 All         | 60,7 | 71,7 | 52,7 |  70,0 |
+| **Top-3** | | | | |
+| P1 Baseline    | 32,0 |  90,7 |  95,7 | 100,0 |
+| P2 Batch       | 60,7 |  82,7 |  38,7 |  97,0 |
+| P3 Filter      | 85,0 |  85,0 |  90,3 |  93,3 |
+| P4 NamePref    | 25,3 |  98,7 |  69,7 | 100,0 |
+| P5 BatchName   | 19,7 |  78,7 |  25,3 | 100,0 |
+| P6 FilterName  | 85,0 |  86,7 |  89,0 |  93,3 |
+| P7 BatchFilter | 95,7 |  96,7 |  83,0 |  96,7 |
+| P8 All         | 93,3 | 100,0 |  84,3 |  98,3 |
+
+**Paper-relevante Befunde:**
+
+1. **Human-in-the-Loop-Gewinn quantifiziert**: P1 gpt-5-chat Top-1 67,3 % → Top-3 **90,7 %**
+   (+23,4 PP). P7 gpt-4o-mini: 77,0 % → **95,7 %** (+18,7 PP). Bei empfohlener Config (P7)
+   findet der Bearbeiter die richtige EPD in >95 % der Fälle unter den ersten drei Vorschlägen.
+   Das ist die direkte Quantifizierung des Human-in-the-Loop-Designs, das bisher nur behauptet
+   wurde.
+
+2. **Filter-Configs: Top-3-Plateau durch kleinen Kandidatensatz** — P3/P6 gpt-5-chat:
+   Top-1 = Top-3 = **85,0 %** (exakt gleich). Bei ~5 Asphalt-Kandidaten gibt es keinen
+   Rank-2/3-Spielraum; GT entweder Rang 1 oder gar nicht im Kandidatensatz. Das erklärt, warum
+   Filter=ON den Top-3-Gewinn *dämpft* — und ist genau das Paper-Caveat „3 von 5"-Maß.
+
+3. **Schwache Modelle profitieren stärker von Top-3**: gpt-4o-mini P1: +2,7 PP (29,3→32,0),
+   gpt-5-chat P1: +23,4 PP (67,3→90,7). Das schwächere Modell platziert die GT seltener in
+   den Top-3 überhaupt — Near-Miss-Gain ist dort kleiner. Stärkere Modelle (5-chat, 5.2-chat)
+   haben schon gute Ranking-Qualität und profitieren bei Top-3 enorm.
+
+4. **NamePref-Effekt bei Top-3 teils umgekehrt**: P4 gpt-5-chat Top-3 **98,7 %** (vs. Top-1
+   73,3 %) — NamePref platziert die GT zuverlässig in den Top-3, schafft sie aber seltener auf
+   Rang 1. Interpretierbar als: NamePref-Stage-5-Cap deckelt die Confidence der GT-EPD auf 60,
+   wenn Schicht-Term fehlt — das drängt sie auf Rang 2/3 statt sie rauszuwerfen. Unterstützt
+   die Diskussion über NamePref als Ranking-Störer, nicht als Recall-Störer.
+
+5. **P8 All gpt-5-chat/5.2-chat: Top-3 = 100 %** trotz Top-1 71,7 %/70,0 %. Die GT ist
+   *immer* im Kandidatensatz vorhanden, das Ranking scheitert. Filter+Batch+NamePref gemeinsam
+   schaffen einen fokussierten Kandidatensatz, aber NamePref stört das Ranking (Befund 4).
+
+**Discussion-Formulierungsvorschlag**: „While Top-1 accuracy reflects the fully automated
+assignment quality, Top-3 accuracy approximates the practical outcome when an expert reviews
+the exported suggestions. Under the recommended P7 configuration, the correct EPD appears
+among the top-3 suggestions in over 95\,\% of cases across all models, supporting the
+human-in-the-loop design. The smaller gap between Top-1 and Top-3 under Filter=ON configurations
+reflects the reduced candidate set size ($\approx$5 EPDs), which limits the number of
+available rank positions."
+
 ### 3.2 Sekundärmetrik: Cost-at-Threshold
 
 **Definition**: Unter allen Konfigurationen, die mindestens die P1-Accuracy (Baseline) erreichen,
@@ -611,11 +673,13 @@ the discount depends on the configuration's prompt-reuse pattern."
 |--------|---------|--------|
 | `benchmark/ablation_benchmark.py` | 480 Runs ausführen, Rohdaten sammeln | `benchmark_runs.json`, GT-Vorlagen, Rohdaten-HTML/Excel |
 | `benchmark/ablation_analysis.py` | Accuracy berechnen, Paper-Charts | `ablation_analysis.html`, `ablation_analysis.xlsx` |
-| `benchmark/custom_entries_experiment.py` | Sparse-EPD-Sensitivität messen | `custom_entries_report.html` |
+| `build_custom_db.py` | `local`-DB → `local-custom`-DB bauen (validieren + custom-Einträge einfügen) | `data/oekobaudat_custom.db` |
+| `benchmark/custom_entries_experiment.py` | Sparse-EPD-Migration messen (Vorher=`local` / Nachher=`local-custom`) | `custom_entries_report.html` |
 
 **Begründung für das Paper**: Trennung von Messung und Auswertung ermöglicht nachträgliche
-Ground-Truth-Korrekturen ohne erneute LLM-Runs. Das Custom-Entries-Skript läuft gegen eine
-DB-Kopie — die Original-DB bleibt unverändert und alle Läufe bleiben reproduzierbar.
+Ground-Truth-Korrekturen ohne erneute LLM-Runs. Das Custom-Entries-Experiment läuft gegen die
+separate `local-custom`-DB — die Original-`local`-DB bleibt unverändert und alle 480
+Hauptablations-Läufe bleiben reproduzierbar (siehe `docs/adr/0002-local-custom-datenquelle.md`).
 
 ### 4.2 Prompt-Design (offen — für Reviewer 2 dokumentieren)
 
@@ -636,6 +700,23 @@ Reviewer 2 fragte: „How were the combinations decided? What does baseline mean
   da Interaktionseffekte (z.B. Batch+Filter zusammen) nur so sichtbar werden.
 - P1 = Baseline: alle drei Optimierungen deaktiviert. Maximale Token-Nutzung, keine
   Vorverarbeitung. Dient als obere Accuracy-Schranke und Kosten-Referenz.
+
+### 4.4 Cross-Layer-Recall im Batch-Modus
+
+**Beobachtung (empirisch, 2026-06-05)**: Im Batch-Modus (`filter_for_materials`) teilen sich
+alle Schichten eines Inputs **einen gemeinsamen Kandidaten-Pool**. Eine Schicht kann daher ein
+EPD matchen, das der Glossar-Filter über eine **Nachbarschicht** beigesteuert hat — selbst wenn
+der schicht-eigene Filter es nicht erfasst hätte. Konkret: für `ablation_a` erfasst der Filter
+die generische „Kies 2/32" (Frostschutz-GT) bei isolierter Frostschutz-Eingabe (`FSS 0/32`)
+lexikalisch **nicht**, wohl aber über die Schotter-Schicht (`STSuB 0/45`); im geteilten
+Batch-Prompt steht sie damit auch der Frostschutzschicht zur Wahl. Der kombinierte Pool enthält
+so alle fünf Ground-Truth-EPDs (Pool-Größe 15, weit unter `MAX_EPD_IN_PROMPT`).
+
+**Paper-Relevanz**: erklärt, warum die Batch-Configs (P2/P6/P7) trotz schmaler Per-Schicht-Filter
+robust matchen, und ist ein nicht-offensichtlicher Vorteil von Batch gegenüber Einzel-Calls
+(P3 isoliert pro Schicht und hat diesen Recall-Effekt nicht). Methodischer Hinweis für die
+Reproduktion: Per-Schicht-Reachability-Tests unterschätzen die Batch-Recall; die maßgebliche
+Prüfung ist der kombinierte Pool.
 
 ---
 
@@ -665,6 +746,88 @@ Top-1 vom generischen Alt-EPD auf den produktspezifischen custom-Eintrag wechsel
 „das Modell upgradet auf bessere Daten", **nicht** „X ist die einzige Wahrheit". Accuracy gegen
 eine neu-bestimmte GT nur sekundär und mit Caveat.
 
+**Ergebnisse — Lauf `custom_entries_20260605_133038`** (P7, 4 Modelle × 3 Inputs × 5 Reps =
+120 Läufe, alle OK, $1,03; 9 custom-Einträge):
+
+| Aggregat | Migrationsrate | n |
+|---|---|---|
+| **Gesamt** | **95,7 %** | 268/280 |
+| Mechanismus: Asphalt | 93,3 % | 168/180 |
+| Mechanismus: Körnung | 100 % | 100/100 |
+| Arm A (Norm-Code) | 100 % | 100/100 |
+| Arm B (Praxis-Code) | 100 % | 80/80 |
+| Arm C (Freitext) | 88,0 % | 88/100 |
+
+Nenner-Hinweis: B = 80 (4 Schichten; `ablation_b`/Nicht-bituminös null-Layer ausgenommen).
+
+**Befund (publizierbar):** A und B migrieren **vollständig** (100 %) — Norm-/Praxis-Codes tragen
+die Migration lexikalisch + strukturell. Die einzige Lücke liegt in **C/Asphalt (80 %, 12/60)**;
+C/Körnung migriert zu 100 %. Die 12 Nicht-Migrationen sind **vollständig** den zwei schwächeren
+Modellen zuzuordnen (gpt-4o-mini: 10, gpt-5-nano: 2); **gpt-5-chat und gpt-5.2-chat migrieren auch
+bei Freitext zu 100 %**. → Die Spezifitäts-Lücke bei Freitext ist eine **Modell-Kapazitäts-Frage**,
+kein Methodenversagen. Migrationsrate je Modell (gesamt / Arm C): gpt-4o-mini **85,7 % / 60 %**,
+gpt-5-nano **97,1 % / 92 %**, gpt-5-chat **100 % / 100 %**, gpt-5.2-chat **100 % / 100 %** (A & B
+je Modell durchweg 100 %). Zwei Muster:
+- *Bituminöse Tragschicht (C)*: `stayed_generic` — schwaches Modell bleibt beim generischen
+  „Asphalttragschicht" (Freitext „grobe Asphalttragschicht…" lexikalisch näher als custom „… AC 22 T S").
+- *Deckschicht (C)*: `other`, aber **keine Regression** — Wechsel von generischer *Tragdeckschicht*
+  (`c6f77799`) auf korrekte generische *SMA* (`d24a85e3`), nur nicht bis zum custom-Eintrag.
+
+Rohdaten: `benchmark_output/custom_entries_20260605_133038/` (`migration_report.json`,
+`custom_entries_runs.json`).
+
+**Drift-Quercheck der Vorher-Baseline (Validität)**: Die frische P7/`local`-Vorher-Generik
+(60 Läufe) wurde gegen die 60 P7-Läufe des Hauptdatensatzes `ablation_20260602_145931`
+verglichen (modaler Top-1 je Zelle model×input×layer). **59/60 Zellen identisch (98,3 %)** →
+die Vorher-Baseline ist driftfrei, die gemessene Migration ist nicht durch Modell-/Prompt-Drift
+zwischen 02.06. und 05.06. konfundiert. Die **einzige** Abweichung (ablation_b / gpt-5.2-chat /
+Frostschutzschicht, Material „Gesteinskörnungsgemisch 0/32") ist ein Wechsel zwischen zwei
+**generischen** Zuschlag-EPDs — alt `f4461491` (Schotter 16/32) → neu `cff84492` (Natürliche
+Gesteinskörnungen, Näppi T&N Oy) — bei einem mehrdeutigen Körnungs-Material; reine LLM-Stochastik,
+**kein** systematischer Drift. Wirkung auf die Migrationsmessung: **null** — dieselbe Zelle
+migriert im Nachher-Lauf 5/5 auf den custom-Eintrag (`custom-gk-frost-b`), unabhängig von der
+Baseline. Beleg: `benchmark_output/custom_entries_20260605_133038/drift_check.json`.
+
+### 5.0 Datenvariabilität als Motivation (NORSUS — Petrovic & Raadal 2025)
+
+**Referenz**: Petrovic, B. & Raadal, H. L. (2025): *Analyzing data variability in EPDs of
+crushed stone and asphalt.* NORSUS (Norwegian Institute for Sustainability Research), Report
+AR 11.25, 12.09.2025. (Begleit-Referenz: Konradsen et al. 2024, „Same product, different
+score", *Int. J. LCA* 29:291–307.) PDF: `docs/studie/2025_NORSUS_EPD_Datavariability_CrushedStone_Asphalt.pdf`.
+
+**Warum zentral**: liefert die Zahl, die das „so what?" des Custom-Entries-Experiments trägt.
+NORSUS misst die GWP-Streuung (A1–A3, fossil) realer EPD-Norway-Datensätze für **genau unsere
+zwei Materialfamilien**:
+- **Asphalt: 11,3 bis 83,1 kg CO₂e/t** (~7-facher Spread). Gruppe 1 (virgin, 5–6 % Bitumen):
+  17,9–83,1; Gruppe 2 (Skanska, ~40 % RAP): 11,3–21,9 — Spread getrieben von Zusammensetzung/
+  RAP-Anteil.
+- **Schotter**: 30 EPDs, Emissionen pro Brechstufe (Stage 0–3) stark streuend, Reporting
+  **nicht harmonisiert** (Stufen kombiniert/weggelassen/zusätzlich „vaskeverk"; teils later
+  stage < earlier stage = physikalisch unmöglich).
+
+**Direkter Anknüpfungspunkt**: Der NORSUS-Datensatz enthält wörtlich unsere Vorlagen-Hersteller
+— **NEPD-4200-3429-NO (Velde Pukk)** = Vorlage für `custom-fss-frost-a`, sowie Franzefoss Pukk
+(Schotter-Vorlage). Unsere custom-Einträge sind also aus genau der EPD-Familie modelliert, deren
+Variabilität NORSUS quantifiziert.
+
+**Platzierung im Paper (beschlossen)**:
+1. **Intro/Motivation** — die 11,3–83,1 kg CO₂e/t-Spanne begründet, *warum produktspezifisches
+   Matching zählt*: welche EPD gematcht wird, ändert die Bilanz um das ~7-Fache. Macht die
+   Migration generisch→spezifisch zur LCA-relevanten Größe, nicht zur Matching-Kosmetik.
+2. **Diskussion (Sensitivity-Section nach der Hauptablation)** — die Auszahlung **plus ehrlicher
+   Vorbehalt**: Wenn EPDs laut NORSUS untereinander inkonsistent/schwer vergleichbar sind, gibt
+   es eine **Decke** für die Downstream-Genauigkeit jedes Matchers. Das **stärkt** das
+   Top-3/Human-in-the-Loop-Argument (§3.1.1) — menschliches Urteil statt Vollautomatik —, statt
+   es zu schwächen.
+
+**Altitude-Disziplin (wichtig)**: NORSUS ist **Motivations-/Datenqualitäts-Evidenz, kein
+Methoden- oder Matching-Beweis**. Nicht als „Beleg, dass das Tool funktioniert" einbringen. Es
+begründet die Problemrelevanz und liefert einen Limitation-/HITL-Vorbehalt — mehr nicht.
+
+**Reviewer-Nutzen**: zusätzliche, aktuelle Datenqualitäts-Referenz (eigenständig neben dem
+bereits referenzierten Petrosa et al. 2025 — nicht damit zu verwechseln). Stützt die
+Problemrelevanz und liefert den Harmonisierungs-Vorbehalt.
+
 **Scope = alle 5 Schichten, gesplittete Berichterstattung nach Mechanismus:**
 - **Asphalt-Schichten (Deck/Binder/bit. Trag)** — *generic-collapse → discrimination*
   (Hauptbefund). Je ein custom-Eintrag für A's und B's Bezeichnung.
@@ -687,37 +850,50 @@ eine neu-bestimmte GT nur sekundär und mit Caveat.
 Produkt-EPD modelliert (IBU, EPD Norge, Hersteller-EPD) und die Quelle dokumentiert — nicht
 erfunden, um trivial auffindbar zu sein.
 
-**Harte technische Anforderung**: Jeder custom-Eintrag muss eine **whitelist-konforme
-`klassifizierung`** tragen (`matching_rules.py:22-24`): Asphalt-EPDs unter
-`Mineralische Baustoffe / Asphalt / …`, Körnungen unter `Mineralische Baustoffe / Zuschläge / …`.
-Sonst wird der Eintrag in den Filter=ON-Configs (P3/P7) von der Tiefbau-Scope-Whitelist
-herausgefiltert, erreicht das LLM nie → Migration per Konstruktion unmöglich. **Das aktuelle
-`custom_entries_config_template.json` ist hier falsch** (INSERT-Beispiel nutzt
-`… / Ungebundene Tragschichten / …`, nicht whitelisted).
+**Harte technische Anforderung (jetzt maschinell erzwungen)**: Jeder custom-Eintrag muss eine
+**whitelist-konforme `klassifizierung`** tragen (`matching_rules.py` → `TIEFBAU_KLASSIFIKATION_PREFIXES`):
+Asphalt-EPDs unter `Mineralische Baustoffe / Asphalt / …`, Körnungen unter
+`Mineralische Baustoffe / Zuschläge / …`. Sonst filtert die Tiefbau-Scope-Whitelist den Eintrag in
+Filter=ON-Configs (P3/P7) heraus, er erreicht das LLM nie → Migration per Konstruktion unmöglich.
+**Seit 2026-06-05 baut `build_custom_db.py` (via `datasources/custom_entries.py`) jeden Eintrag
+fail-fast**: (1) Whitelist-Präfix-Prüfung, (2) Glossar-Filter-Reachability-Dry-Run gegen
+`(ziel_material, ziel_schicht)` — fängt auch „whitelist-OK, aber name trifft den Filter nicht" ab,
+bevor LLM-Kosten anfallen. Template und Config sind entsprechend korrigiert (siehe
+`docs/adr/0002-local-custom-datenquelle.md`).
 
 **Methode**: Vorher (Standard-DB) vs. Nachher (+ custom-Einträge), je über die 3 Inputs.
 Run-Matrix (Configs/Modelle/Reps) — siehe §6 offene Frage.
 
-**Skript**: `benchmark/custom_entries_experiment.py`
+**DB-Aufbau (neu seit 2026-06-05)**: `build_custom_db.py` kopiert `data/oekobaudat.db` →
+`data/oekobaudat_custom.db`, validiert fail-fast und fügt `source='custom'` ein. Wahl im Lauf
+über `EPD_DATA_SOURCE=local-custom` (4. Quellwert). Config ist Quelle der Wahrheit, die DB ein
+abgeleitetes, neu-baubares Artefakt — Original `local`-DB bleibt unberührt (Isolierung erfüllt,
+alle 480 Hauptablations-Runs reproduzierbar). Ersetzt die frühere Temp-Kopie-/`LOCAL_DB_PATH`-
+Override-Mechanik. Siehe `docs/adr/0002-local-custom-datenquelle.md`.
 
 Aufruf:
 ```
-python benchmark/custom_entries_experiment.py \
-    --config benchmark/custom_entries_config.json \
-    --baseline-runs benchmark_output/ablation_<ts>/benchmark_runs.json
+python build_custom_db.py --config benchmark/custom_entries_config.json
+# Vorher-Arm: EPD_DATA_SOURCE=local   |   Nachher-Arm: EPD_DATA_SOURCE=local-custom
 ```
 
-**Config-Format** (`custom_entries_config.json`, basierend auf Template):
-- `action: "update"` — überschreibt Felder eines bestehenden Eintrags in DB-Kopie
-- `action: "insert"` — fügt neuen custom-Eintrag ein (source='custom')
-- Felder: `id`, `name`, `klassifizierung`, `technischeBeschreibung`, `anmerkungen` u.a.
-- Die originale DB wird nicht verändert — Experiment läuft gegen isolierte Kopie
+**Config-Format** (`custom_entries_config.json`, 9 Einträge, erstellt 2026-06-05):
+- `action: "insert"` — neuer custom-Eintrag (source='custom'). Pflichtfelder: `id`, `name`,
+  `klassifizierung` (whitelist-konform, deutsch), `ziel_schicht` (echter Input-NAME, treibt
+  Reachability), `ziel_material` (repräsentatives Input-Material), `quelle` (reales Vorlage-EPD).
+- `action: "update"` — überschreibt Felder eines bestehenden Eintrags (Pflichtfeld `quelle`).
+- Vorlagen: Asphalt-Schichten auf EPD-Norge/Global-NEPDs (Peab/Colas: SMA, AB, GAB),
+  Körnungs-Schichten auf pukk-NEPDs (Franzefoss/Velde). Befund: deutsche produktspezifische
+  Asphalt- **und** Zuschlag-EPDs existieren kaum → stützt die Sparse-These (vgl. §5.0 NORSUS).
 
-**Isolierung**: Das Skript kopiert `data/oekobaudat.db` → `custom_entries_<ts>/oekobaudat_modified.db`
-und setzt `LOCAL_DB_PATH` per ENV nur für die Nachher-Subprocess-Läufe.
+**Skript Vorher/Nachher** (Migration, umgebaut 2026-06-05): `benchmark/custom_entries_experiment.py`
+baut via `build_custom_db` die `local-custom`-DB und fährt **Vorher = `EPD_DATA_SOURCE=local`** /
+**Nachher = `EPD_DATA_SOURCE=local-custom`** über 4 Modelle × 3 Inputs × 5 Reps am Betriebspunkt
+**P7**. Migrations-Auswertung in `benchmark/migration.py` (reine, getestete Funktionen — Modul C).
 
-**Output**: `benchmark_output/custom_entries_<ts>/custom_entries_report.html` mit
-Vorher-Nachher-Accuracy pro Schicht und Input, Änderungs-Tabelle, Paper-Summary-Entwurf.
+**Output**: `benchmark_output/custom_entries_<ts>/migration_report.json` mit Aggregaten
+(gesamt / nach Mechanismus / nach Arm / Arm×Mechanismus) + Outcome-Records je
+(model, input, layer, rep); Rohläufe in `custom_entries_runs.json`.
 
 **Paper-Positionierung**: Abschnitt nach Hauptablation, „Sensitivity to Database Coverage"
 oder Diskussion/Future Work. Kernaussage: Sobald produktspezifische EPDs vorliegen, **migriert
@@ -727,11 +903,12 @@ als Migrationsrate, gesplittet nach Asphalt (collapse→discrimination) und Kör
 
 **Adressierte Reviewer-Kritik**: Reviewer 1, Punkt 1: „Sparse EPD data not addressed."
 
-**Hinweis Migrationsmetrik vs. Skript**: `custom_entries_experiment.py` berichtet aktuell
-Vorher/Nachher-*Accuracy* gegen `ground_truth.json`. Die Migrationsmetrik (Top-1
-generisch→spezifisch) ist daraus ableitbar, muss aber als eigene Auswertung ergänzt werden
-(Top-1-UUID vorher = generische GT, nachher = custom-Eintrag). Vor Ausführung müssen die
-generischen GT-UUIDs je Schicht/Input feststehen (liegen vor, §1.2.5/§1.2.6).
+**Migrationsmetrik-Definition** (umgesetzt in `benchmark/migration.py`): Vorher-Baseline je Zelle
+(model, input, layer) = **modaler** generischer Top-1 über die Reps (kein rep-zu-rep-Pairing, da
+Reps stochastisch). Jeder Nachher-Layer-Run → `migrated` (Top-1 ∈ custom-IDs) / `stayed_generic`
+(Top-1 == Baseline, ∉ custom) / `other` (sonst). Migrationsrate = Anteil `migrated`. Die
+`ablation_b`/Nicht-bituminös-Zelle (null-Fehler-Layer, kein custom-Eintrag) ist aus dem Nenner
+ausgenommen. Arm C zählt mit (migriert, wenn Freitext auf einen A/B-custom landet).
 
 ---
 
@@ -739,7 +916,12 @@ generischen GT-UUIDs je Schicht/Input feststehen (liegen vor, §1.2.5/§1.2.6).
 
 - [x] Material-Werte für Input A, B, C festgelegt (`TestInput/ablation_a/b/c/input/input.json`)
 - [ ] Ground-Truth-UUIDs manuell bestimmen (nach Benchmark-Lauf + Template-Review)
-- [ ] `custom_entries_config.json` erstellen (aus Template, UUIDs nach ÖKOBAUDAT-Lookup)
+- [x] `custom_entries_config.json` erstellt (2026-06-05, 9 Einträge auf reale NEPD-Vorlagen, alle validiert) — `quelle`-Felder (v.a. pukk-NEPDs) noch gegenzulesen
+- [x] local-custom-Mechanik + `build_custom_db.py` gebaut (ADR-0002), Whitelist+Reachability fail-fast
+- [x] `custom_entries_experiment.py` auf `local`/`local-custom`-Naht umgestellt + Migrationsmetrik (`benchmark/migration.py`, getestet) ergänzt (2026-06-05) — bereit für bezahlten Lauf
+- [x] Bezahlten Migrations-Lauf gefahren (2026-06-05, `custom_entries_20260605_133038`, $1,03, 120/120 OK) — Gesamt-Migrationsrate 95,7 %, Ergebnisse in §5 eingetragen
+- [x] Drift-Quercheck: frische P7/local-Vorher-Generik vs. 60 P7-Runs aus `ablation_20260602_145931` — 98,3 % identisch (59/60), einzige Abweichung benign (generisch↔generisch, keine Migrations-Wirkung); siehe §5 + `drift_check.json`
+- [x] NORSUS-PDF (Petrovic & Raadal 2025) nach `docs/studie/` kopiert + in §5.0 dokumentiert; noch in Intro/Refs des Papers ausformulieren
 - [ ] Prompt-Beispiel dokumentieren (Abschnitt 4.2)
 - [ ] Snapshot-Datum der lokalen ÖKOBAUDAT-DB dokumentieren
 - [x] Benchmark-Rerun für P3/P6/P7/P8 mit Filter-Quality-Fixes (durchgeführt 2026-06-02, Commit `a159897`)

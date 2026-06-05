@@ -1,0 +1,19 @@
+{
+  "old_p7_runs": 60,
+  "new_before_runs": 60,
+  "cells": 60,
+  "agree": 59,
+  "disagree": 1,
+  "only_old": 0,
+  "only_new": 0,
+  "agreement_pct": 98.3,
+  "diffs": [
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "old_modal": "f4461491-586a-4770-9a04-716565e58c24",
+      "new_modal": "cff84492-d5c8-4da9-a79b-aea5a8507d9d"
+    }
+  ]
+}

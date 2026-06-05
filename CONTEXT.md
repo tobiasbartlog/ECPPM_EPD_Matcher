@@ -9,7 +9,8 @@ zu — über eine 5-stufige Pipeline aus Glossar-Vorfilterung und LLM-Matching.
 
 **EPD-Datenquelle**:
 Die austauschbare Herkunft der EPD-Datensätze, gewählt über `EPD_DATA_SOURCE`. Es gibt
-genau drei: `online`, `oekobaudat`, `local`.
+genau vier: `online`, `oekobaudat`, `local`, `local-custom`. `local` und `local-custom`
+teilen denselben Code-Pfad (`LocalEPDStore`) und unterscheiden sich nur in der DB-Datei.
 _Avoid_: API, Backend, Provider
 
 **online**:
@@ -23,9 +24,17 @@ pro Lauf frisch; für wiederholte Versuche ist `local` vorzuziehen.
 _Avoid_: soda4LCA, Live-API, ÖBD
 
 **local**:
-Eine heruntergeladene Kopie der Ökobaudat als SQLite-DB. Empfohlener Modus für Experimente;
-enthält neben heruntergeladenen Datensätzen auch eigene `custom`-Einträge.
+Die **reine** heruntergeladene Kopie der Ökobaudat als SQLite-DB (`data/oekobaudat.db`),
+ausschließlich `source='oekobaudat'`. Empfohlener Modus für reproduzierbare Experimente; die
+unveränderte Datengrundlage der Hauptablation.
 _Avoid_: Cache, Offline-DB, Snapshot
+
+**local-custom**:
+Eine **angereicherte Kopie** der `local`-DB (`data/oekobaudat_custom.db`), die zusätzlich die
+[[custom-Eintrag]]e aus dem `custom_entries_config.json` enthält. Per `EPD_DATA_SOURCE=local-custom`
+gewählt; macht im Run-Provenance explizit, dass gegen den angereicherten Korpus gematcht wurde. Die
+`local`-DB bleibt davon unberührt.
+_Avoid_: Custom-DB, modifizierte DB, enriched-DB
 
 ### Datensätze
 
@@ -42,8 +51,10 @@ Grundlage des Glossar-Filters — muss daher deutsche Begriffe enthalten.
 _Avoid_: Kategorie, classific, classification_path, Pfad
 
 **custom-Eintrag**:
-Ein selbst angelegter EPD-Datensatz in der lokalen DB mit `source='custom'`. Wird direkt
-per SQL eingefügt und ohne Sonderbehandlung mitgelesen.
+Ein selbst angelegter EPD-Datensatz mit `source='custom'`, der **nur** in der
+[[local-custom]]-DB lebt (nie in `local`). Erfüllt denselben [[EPD-Vertrag]], wird ohne
+Sonderbehandlung mitgelesen. Quelle der Wahrheit ist das `custom_entries_config.json`; die DB ist
+ein daraus abgeleitetes, neu-baubares Artefakt.
 _Avoid_: eigener Datensatz, Testdatensatz, manueller Eintrag
 
 **Listen-Ebene / Detail-Ebene**:

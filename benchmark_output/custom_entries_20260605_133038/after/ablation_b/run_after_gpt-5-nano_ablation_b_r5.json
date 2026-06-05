@@ -1,0 +1,189 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 8 S mit Polymodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid1",
+        "guid2",
+        "guid3"
+      ],
+      "Volumen": 42.38,
+      "id": [
+        "custom-sma8pmb-deck-b",
+        "custom-sma11-deck-a",
+        "d24a85e3-f395-4124-9874-c01f977a893f"
+      ],
+      "id_confidence": {
+        "custom-sma8pmb-deck-b": 92,
+        "custom-sma11-deck-a": 78,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 70
+      },
+      "id_name": {
+        "custom-sma8pmb-deck-b": "Splittmastixasphalt SMA 8 S mit polymermodifiziertem Bindemittel 10/40-65A",
+        "custom-sma11-deck-a": "Splittmastixasphalt SMA 11 S",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)"
+      },
+      "id_gueltigkeit": {
+        "custom-sma8pmb-deck-b": "2029",
+        "custom-sma11-deck-a": "2029",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S SG mit Polymermodifiziertem Bindemittel 10/40-65A",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "custom-ac16bpmb-binder-b",
+        "custom-ac16b-binder-a",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "custom-ac22t-trag-a",
+        "custom-ac32t-trag-b",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "custom-sma11-deck-a"
+      ],
+      "id_confidence": {
+        "custom-ac16bpmb-binder-b": 95,
+        "custom-ac16b-binder-a": 85,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 70,
+        "custom-ac22t-trag-a": 65,
+        "custom-ac32t-trag-b": 60,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 55,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 50,
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": 45,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 40,
+        "custom-sma11-deck-a": 40
+      },
+      "id_name": {
+        "custom-ac16bpmb-binder-b": "Asphaltbinder AC 16 B S mit polymermodifiziertem Bindemittel 10/40-65A",
+        "custom-ac16b-binder-a": "Asphaltbinder AC 16 B S",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "custom-ac22t-trag-a": "Asphalttragschicht AC 22 T S",
+        "custom-ac32t-trag-b": "Asphalttragschicht AC 32 T S mit Straßenbaubitumen 30/45",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "Gussasphalt",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "custom-sma11-deck-a": "Splittmastixasphalt SMA 11 S"
+      },
+      "id_gueltigkeit": {
+        "custom-ac16bpmb-binder-b": "2029",
+        "custom-ac16b-binder-a": "2029",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "custom-ac22t-trag-a": "2029",
+        "custom-ac32t-trag-b": "2029",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "b29d88ed-8621-4ece-9e2f-78af05cb3f0f": "2026",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "custom-sma11-deck-a": "2029"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "custom-ac32t-trag-b",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "custom-ac22t-trag-a",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca"
+      ],
+      "id_confidence": {
+        "custom-ac32t-trag-b": 95,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 75,
+        "custom-ac22t-trag-a": 65,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 60
+      },
+      "id_name": {
+        "custom-ac32t-trag-b": "Asphalttragschicht AC 32 T S mit Straßenbaubitumen 30/45",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "custom-ac22t-trag-a": "Asphalttragschicht AC 22 T S",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht"
+      },
+      "id_gueltigkeit": {
+        "custom-ac32t-trag-b": "2029",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "custom-ac22t-trag-a": "2029",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "AC 32 T S mit Straßenbaubitumen 30/45",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "custom-ac32t-trag-b",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "custom-ac22t-trag-a",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca"
+      ],
+      "id_confidence": {
+        "custom-ac32t-trag-b": 92,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 70,
+        "custom-ac22t-trag-a": 60,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 55
+      },
+      "id_name": {
+        "custom-ac32t-trag-b": "Asphalttragschicht AC 32 T S mit Straßenbaubitumen 30/45",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "custom-ac22t-trag-a": "Asphalttragschicht AC 22 T S",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht"
+      },
+      "id_gueltigkeit": {
+        "custom-ac32t-trag-b": "2029",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "custom-ac22t-trag-a": "2029",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Gesteinskörnungsgemisch 0/32",
+      "GUID": [
+        "guid4",
+        "guid5"
+      ],
+      "Volumen": 57.42,
+      "id": [
+        "custom-gk-frost-b",
+        "custom-fss-frost-a"
+      ],
+      "id_confidence": {
+        "custom-gk-frost-b": 92,
+        "custom-fss-frost-a": 70
+      },
+      "id_name": {
+        "custom-gk-frost-b": "Frostschutzschicht Gesteinskörnungsgemisch 0/32 Kies-Sand",
+        "custom-fss-frost-a": "Frostschutzschicht Kies-Sand-Gemisch 0/32"
+      },
+      "id_gueltigkeit": {
+        "custom-gk-frost-b": "2029",
+        "custom-fss-frost-a": "2029"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "IFC",
+    "scenario": "B_Praxis",
+    "description": "Reales IFC-Praxismodell: spezifische PMB-Materialien, abweichende Schichtnamen, generische Frostschutzbezeichnung",
+    "generated_at": "2025-09-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

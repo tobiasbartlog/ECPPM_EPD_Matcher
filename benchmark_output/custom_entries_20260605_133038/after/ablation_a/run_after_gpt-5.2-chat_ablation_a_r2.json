@@ -1,0 +1,171 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "SMA 11 S",
+      "GUID": [
+        "guid-a-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "custom-sma11-deck-a",
+        "custom-sma8pmb-deck-b",
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca"
+      ],
+      "id_confidence": {
+        "custom-sma11-deck-a": 98,
+        "custom-sma8pmb-deck-b": 90,
+        "d24a85e3-f395-4124-9874-c01f977a893f": 85,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 60
+      },
+      "id_name": {
+        "custom-sma11-deck-a": "Splittmastixasphalt SMA 11 S",
+        "custom-sma8pmb-deck-b": "Splittmastixasphalt SMA 8 S mit polymermodifiziertem Bindemittel 10/40-65A",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht"
+      },
+      "id_gueltigkeit": {
+        "custom-sma11-deck-a": "2029",
+        "custom-sma8pmb-deck-b": "2029",
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "AC 16 B S",
+      "GUID": [
+        "guid-a-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "custom-ac16b-binder-a",
+        "custom-ac16bpmb-binder-b",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca"
+      ],
+      "id_confidence": {
+        "custom-ac16b-binder-a": 98,
+        "custom-ac16bpmb-binder-b": 92,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 85,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 55
+      },
+      "id_name": {
+        "custom-ac16b-binder-a": "Asphaltbinder AC 16 B S",
+        "custom-ac16bpmb-binder-b": "Asphaltbinder AC 16 B S mit polymermodifiziertem Bindemittel 10/40-65A",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht"
+      },
+      "id_gueltigkeit": {
+        "custom-ac16b-binder-a": "2029",
+        "custom-ac16bpmb-binder-b": "2029",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "AC 22 T S",
+      "GUID": [
+        "guid-a-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "custom-ac22t-trag-a",
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "custom-ac32t-trag-b",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca"
+      ],
+      "id_confidence": {
+        "custom-ac22t-trag-a": 98,
+        "9795c91c-0918-46fa-8a51-47deb180c271": 88,
+        "custom-ac32t-trag-b": 80,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 55
+      },
+      "id_name": {
+        "custom-ac22t-trag-a": "Asphalttragschicht AC 22 T S",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "custom-ac32t-trag-b": "Asphalttragschicht AC 32 T S mit Straßenbaubitumen 30/45",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht"
+      },
+      "id_gueltigkeit": {
+        "custom-ac22t-trag-a": "2029",
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "custom-ac32t-trag-b": "2029",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "STSuB 0/45",
+      "GUID": [
+        "guid-a-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "custom-stsub-schotter-a",
+        "f4461491-586a-4770-9a04-716565e58c24",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1"
+      ],
+      "id_confidence": {
+        "custom-stsub-schotter-a": 95,
+        "f4461491-586a-4770-9a04-716565e58c24": 75,
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": 70,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 60
+      },
+      "id_name": {
+        "custom-stsub-schotter-a": "Schotter ungebunden 0/45 für Schottertragschicht",
+        "f4461491-586a-4770-9a04-716565e58c24": "Schotter 16/32",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "Schotter 16/32 (getrocknet)",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)"
+      },
+      "id_gueltigkeit": {
+        "custom-stsub-schotter-a": "2029",
+        "f4461491-586a-4770-9a04-716565e58c24": "2026",
+        "321a3ced-7d27-4bc0-bb6e-eb1cca5e3ccb": "2026",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "FSS 0/32",
+      "GUID": [
+        "guid-a-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "custom-fss-frost-a",
+        "custom-gk-frost-b",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187"
+      ],
+      "id_confidence": {
+        "custom-fss-frost-a": 98,
+        "custom-gk-frost-b": 95,
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": 65,
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": 50
+      },
+      "id_name": {
+        "custom-fss-frost-a": "Frostschutzschicht Kies-Sand-Gemisch 0/32",
+        "custom-gk-frost-b": "Frostschutzschicht Gesteinskörnungsgemisch 0/32 Kies-Sand",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "Kies (Korngröße 2/32)",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "Brechsand 0/2"
+      },
+      "id_gueltigkeit": {
+        "custom-fss-frost-a": "2029",
+        "custom-gk-frost-b": "2029",
+        "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1": "2026",
+        "0d61ff01-935e-4934-befe-cb0b2ea18187": "2026"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "A_Norm",
+    "description": "Normgerechter BK-III-Aufbau, exakte TL-Asphalt-StB-Bezeichnungen, keine Zusätze",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}

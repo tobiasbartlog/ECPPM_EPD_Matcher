@@ -1,0 +1,152 @@
+ 
+1 
+ Analyzing data variability in EPDs of crushed stone and asphalt  
+Dat e: 12. september 2025  
+Report number : AR 11.25 
+Authors : Bojana Petrovic, Hanne Lerche  Raadal  
+ 
+ 
+Introduction  
+Demand  for EPDs is relatively high nowadays in the construction sector (Konradsen, et al. 
+2024) . The growing trend of EPD comparisons emphasizes the need for construction material 
+stakeholders to adopt a more harmonized  methodology to ensure consistent and reliable 
+assessments across different materials (AzariJafari, et al. 2021) , (Bribián, Capilla og Usón 
+2011) . It is important to note that EPDs are developed in accordance with product category 
+rules (PCRs) (Konradsen, et al. 2024) . However, there is a risk of inconsistency and possible 
+rule  conflicts that could influence the compatibility of EPDs since different programme 
+operators  publish PCRs . Thus, using an EPD of a specific product can present significantly 
+different impact results when following one or another guideline . It is stated that the EPDs are 
+not highly accurate and comparable, highlighting the issue with the harmonization of the EPD 
+system (Konradsen, et al. 2024) .  
+
+ 
+Norwegian Institute for Sustaina bility Research   Page 2 of 5 The main objective of this report is to analyze various EPDs for crushed stone and asphalt by 
+comparing their GWP (fossil emissions ) for the production phase (A1 -A3). The analysis focuses 
+on how emissions are reported across various crushing stages, highlighting any variations in 
+the way these emissions are declared for different product types and producers. By comparing 
+these emissions, the report aims to discover  potential d eviations  and inconsistencies in the 
+reporting process, which are essential for making accurate, informed decisions regarding the 
+declared  emissions  of these products . 
+Analysis of EPDs for crushed stone  
+In an EPD for crushed stone, different crushing stages are directly linked to the type of crushed 
+stone product being produced, as the number of crushing stages influences both the physical 
+properties of the final product (e.g., size and quality) and its e nvironmental impact. The EPD 
+ensures transparency by detailing how these stages vary for each product type, enabling 
+stakeholders to make informed decisions about the environmental footprint of each product . 
+The complexity of emissions declared in EPDs for crushed stone underscores the need for 
+careful interpretation.  
+The assessment include s comparison s between different crushing stages across 30 EPDs of 
+crushed stone from the Norwegian market. All the EPDs are published by EPD -Norway , a 
+program operator for Environmental Product Declaration (EPD) type III according to ISO 14025.  
+The EPD data were taken from:  
+• Viken Miljøpark AS  (NEPD-7328-6713-NO;  NEPD-3904-2863-NO) 
+• Ottar Skjold Maskin AS  (NEPD-7290-6689-NO) 
+• Veidekke Industri AS  (NEPD-7197-6598-NO; NEPD-7196-6601-NO; NEPD-6283-5545-
+NO; NEPD-6282-5543-NO; NEPD-6167-5431-NO; NEPD-4543-3807-NO; NEPD-4364-
+3593-NO; NEPD-4347-3579-NO; NEPD-4345-3578-NO; NEPD-4346-3577-NO; NEPD-
+4344-3576-NO;  
+• DC Eikefet Aggregates AS  (NEPD-7052-6450-NO) 
+• Skolt Pukkverk AS  (NEPD-6906-6299-NO; NEPD-3856-2810-NO) 
+• Oddmund Groven AS  (NEPD-6877-6259-NO) 
+• Feiring Bruk AS  (NEPD-6392-5650-NO; NEPD-6391-5651-NO; NEPD-4741-3993-NO) 
+• Franzefoss Pukk AS  (NEPD-5907-5181-NO; NEPD-5920-5189-NO; NEPD-5189-4495-
+NO; NEPD-5187-4497-NO; NEPD-5186-4498-NO; NEPD-5184-4493-NO;  
+• Bjelland AS ( NEPD-4219-3444-NO) 
+• Hamar Pukk og Gruss AS  (NEPD-3914-2873-NO) 
+• Rudshøgda Pukkverk AS  (NEPD-3905-2864-NO) 
+ 
+Norwegian Institute for Sustaina bility Research   Page 3 of 5 During the production of different types of crushed stone products, emissions are categorized 
+into specific crushing stages, commonly referred to as Stage 0, 1, 2, 3, and , in some cases 
+Stage 4. These crushing stages are not necessarily harmonized across all EPDs. Different EPDs 
+may group , combine , define , and include stages differently. Therefore, when analyzing EPDs 
+for crushed stone, it is essential to interpret how each crushing stage is reported carefully  and 
+for which products the stages are representative to ensure alignment with the intended 
+application or comparison criteria.   
+Variability in declared emissions across stages involves differences in the number of crushing 
+steps required for various product types. Products requiring additional refinement or finer 
+granularity naturally  have higher emissions. Differences in emissions may also stem from 
+variations in product -specific requirements (e.g., size, application).  
+The variations in declared fossil GWP for modules A1-A3 for the included  crushing stages  in the  
+30 EPDs are presented below :  
+• Stage 0, which represents the initial phase of raw material extraction, has the lowest 
+variation in emissions, with a minimum of 0.4 kg CO 2e/ton and a maximum of 3.4 kg 
+CO2e/ton, and an average of 1.5 kg CO 2e/ton.  
+• Stage 1 presents emissions, ranging from 0.7 to 4.5 kg CO 2e/ton, with an average of 2.3 
+kg CO 2e/ton.  
+• Stage 2 has the highest emissions variability, with values spanning from 1.7 to 5.9 kg 
+CO2e/ton and an average of 3.1 kg CO 2e/ton.  
+• Similarly, Stage 3 emissions range from 1.8 to 4.6 kg CO 2e/ton, with an average of 2.9 kg 
+CO2e/ton, suggesting a consistent energy demand for the processes in this stage, 
+despite some differences between producers.  
+In addition, approximately 9 EPDs  were found to have larger deviations , which need to be 
+further investigated . For example, t he EPD ( NEPD -4273 -3505 -NO) shows lower emissions in 
+crushing stages 3 -4 compared to crushing stages 1 -2, which should not be possible  since 
+emissions from previous steps shall be added to the next  stage . This seems to be the current 
+practice, even though it is not explicitly described in either the PCR or the EPDs . Further more , 
+the EPDs ( NEPD -4189 -3413 -NO, NEPD -5770 -5054 -NO) combine two crushing stages and 
+declare a  one value . The following  EPDs have added an additional stage that usually  describe s 
+washing (“vaskeverk ”), but also combined  crushing stages  (NEPD -5188 -4496 -NO; NEPD -
+5919 -5190 -NO; NEPD -4189 -3413 -NO). The EPDs ( NEPD -5898 -5170 -NO; NEPD -5185 -4499 -
+NO and  NEPD -4200 -3429 -NO include descriptions of declared stages that differ from standard 
+practices, and certain stages are declared without explicitly referring to the corresponding 
+stages.  
+ 
+Norwegian Institute for Sustaina bility Research   Page 4 of 5 The data were directly extracted from the EPDs and classified into an Excel file for analysis. 
+Additionally, some EPDs were tested using the LCA software One Click LCA as part of a quality 
+check . It was observed that the majority of EPDs include declared emissions separated into 
+the different crushing stages. It is, however, hard to compare the different products /qualities  
+because they do not necessarily  require  the same number of crushing stages  across the 
+producers.  
+Analysis of EPDs for asphalt  
+When comparing asphalt products with similar characteristics, it is essential to account for 
+variations in material composition. For example:  
+• Group 1: 9 EPDs from Nord Vei & Asfalt AS, Brani AS and Velde Produksjon AS, with 
+similar characteristics (containing 5 –6% bitumen and 94 –95% aggregate), the GWP (A1 –
+A3) fossil emissions range from 17.9 to 83.1 kg CO₂e/ton.  
+• Group 2: 7 EPDs from Skanska Industrial Solutions AB for hot mix asphalt used in road 
+construction  with around 40% reclaimed asphalt included, fossil emissions are in the 
+range from 11.3 to 21.9 kg CO₂e/ton.  
+These findings present the significant variability in emissions associated with asphalt 
+production, ranging from as low as 11.3 kg CO₂e/ton to as high as 83.1 kg CO₂e/ton, depending 
+on the material composition and production processes.  The first group relies on virgin 
+materials and conventional processes, leading to a higher CO₂e impact, while the second 
+group includes more reclaimed asphalt, resulting in a much lower GWP.  
+Conclusions and recommendations  
+The emissions from the production of crushed stone vary significantly across the different 
+crushing stages (Stages 0 –3). Emissions report ed in EPDs are not harmonized, as some EPDs 
+combine emissions from multiple stages, exclude certain stages, or introduce additional 
+stages for specific processes like washing (e.g., vaskeverk).  Furthermore, deviations in 
+reporting have been observed, such as cases where later stages show lower emissions than 
+earlier ones . These inconsistencies, along with insufficient detail in some EPDs, make it 
+challenging to compare products accurately . For both exp erts and non -experts, interpreting 
+the data presented in EPDs can be challenging, particularly when emissions are expressed 
+across multiple stages,  referring to many  different product types  that  vary significantly 
+between different producers.  
+ 
+Norwegian Institute for Sustaina bility Research   Page 5 of 5 To address these issues, it is essential to standardize reporting practices by introducing clearer 
+Product Category Rules (PCRs) for crushed stone EPDs. The PCRs should introduce  the 
+accumulation of emissions across stages, ensuring that later stages include emissions from 
+earlier ones . This should be clearly described in the EPD . The PCRs  should  also require  a clear 
+separation and detailed description of each crushing stage to prevent emissions from being 
+combined/aggregated into a single value. Additional processes, such as washing, should be 
+transparently and clearly reported as separate stages.  Finally, a harmonized categorization of 
+product types should be defined and used across all EPDs to enable the comparison of 
+environmental performance betwee n products. Stricter standardized rules and requirements 
+for performing EPDs will help to differentiate between variations due to methodological 
+disparities and those due to real differences in performance of the products. In the EPDs for 
+asphalt , a high  potential for emission reductions is found through higher reclaimed content.  
+  
+ 
+References  
+AzariJafari, Hessam, Geoffrey Guest, Randolph Kirchain, Jeremy Gregory, og Ben Amor. 2021. «Towards 
+comparable environmental product declarations of construction materials: Insights from a 
+probabilistic comparative LCA approach.» Building and Environment  190: 107542.  
+Bribián, Ignacio Zabalza, Antonio Valero Capilla, og Alfonso Aranda Usón. 2011. «Life cycle assessment 
+of building materials: Comparative analysis of energy and environmental impacts and 
+evaluation of the eco -efficiency improvement potential.» Building and Environment  46: 1133 -
+1140.  
+Konradsen, Freja, Kristine Sofe Holse Hansen, Agneta Ghose, og Massimo Pizzol. 2024. «Same product, 
+different score: how methodological differences affect EPD results.» The International Journal 
+of Life Cycle Assessment  29: 291 -307.  
+ 
+ 

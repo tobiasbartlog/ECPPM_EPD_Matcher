@@ -1,0 +1,2811 @@
+{
+  "config": "P7_BatchFilter",
+  "custom_ids": [
+    "custom-ac16b-binder-a",
+    "custom-ac16bpmb-binder-b",
+    "custom-ac22t-trag-a",
+    "custom-ac32t-trag-b",
+    "custom-fss-frost-a",
+    "custom-gk-frost-b",
+    "custom-sma11-deck-a",
+    "custom-sma8pmb-deck-b",
+    "custom-stsub-schotter-a"
+  ],
+  "n_before": 60,
+  "n_after": 60,
+  "cost_usd": 1.027665,
+  "aggregate_overall": {
+    "gesamt": {
+      "migrated": 268,
+      "stayed_generic": 6,
+      "other": 6,
+      "n": 280,
+      "migration_rate": 95.7
+    }
+  },
+  "aggregate_by_mechanism": {
+    "asphalt": {
+      "migrated": 168,
+      "stayed_generic": 6,
+      "other": 6,
+      "n": 180,
+      "migration_rate": 93.3
+    },
+    "körnung": {
+      "migrated": 100,
+      "stayed_generic": 0,
+      "other": 0,
+      "n": 100,
+      "migration_rate": 100.0
+    }
+  },
+  "aggregate_by_arm": {
+    "A": {
+      "migrated": 100,
+      "stayed_generic": 0,
+      "other": 0,
+      "n": 100,
+      "migration_rate": 100.0
+    },
+    "B": {
+      "migrated": 80,
+      "stayed_generic": 0,
+      "other": 0,
+      "n": 80,
+      "migration_rate": 100.0
+    },
+    "C": {
+      "migrated": 88,
+      "stayed_generic": 6,
+      "other": 6,
+      "n": 100,
+      "migration_rate": 88.0
+    }
+  },
+  "aggregate_by_arm_mechanism": {
+    "A/asphalt": {
+      "migrated": 60,
+      "stayed_generic": 0,
+      "other": 0,
+      "n": 60,
+      "migration_rate": 100.0
+    },
+    "A/körnung": {
+      "migrated": 40,
+      "stayed_generic": 0,
+      "other": 0,
+      "n": 40,
+      "migration_rate": 100.0
+    },
+    "B/asphalt": {
+      "migrated": 60,
+      "stayed_generic": 0,
+      "other": 0,
+      "n": 60,
+      "migration_rate": 100.0
+    },
+    "B/körnung": {
+      "migrated": 20,
+      "stayed_generic": 0,
+      "other": 0,
+      "n": 20,
+      "migration_rate": 100.0
+    },
+    "C/asphalt": {
+      "migrated": 48,
+      "stayed_generic": 6,
+      "other": 6,
+      "n": 60,
+      "migration_rate": 80.0
+    },
+    "C/körnung": {
+      "migrated": 40,
+      "stayed_generic": 0,
+      "other": 0,
+      "n": 40,
+      "migration_rate": 100.0
+    }
+  },
+  "outcomes": [
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 1,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 1,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 1,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 2,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 2,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 2,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 3,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 3,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 3,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 4,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 4,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 4,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 5,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 5,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 5,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 1,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 1,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 1,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 2,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 2,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 2,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 3,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 3,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 3,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 4,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 4,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 4,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 5,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 5,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 5,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 1,
+      "before_baseline": "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+      "after_top1": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "outcome": "other"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 1,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "outcome": "stayed_generic"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 1,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 2,
+      "before_baseline": "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+      "after_top1": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "outcome": "other"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 2,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "outcome": "stayed_generic"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 2,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 3,
+      "before_baseline": "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+      "after_top1": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "outcome": "other"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 3,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "outcome": "stayed_generic"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 3,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 4,
+      "before_baseline": "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+      "after_top1": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "outcome": "other"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 4,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "outcome": "stayed_generic"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 4,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 5,
+      "before_baseline": "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+      "after_top1": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "outcome": "other"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 5,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "outcome": "stayed_generic"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-4o-mini",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 5,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 1,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 1,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 1,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 2,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 2,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 2,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 3,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 3,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 3,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 4,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 4,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 4,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 5,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 5,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 5,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 1,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 1,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 1,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 2,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 2,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 2,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 3,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 3,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 3,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 4,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 4,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 4,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 5,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 5,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 5,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 1,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "c6f77799-ed43-4ec4-bfc3-0759e41b60ca",
+      "outcome": "other"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 1,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 1,
+      "before_baseline": "a7bad3b6-2123-483b-99b5-2ec481254be7",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 2,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 2,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 2,
+      "before_baseline": "a7bad3b6-2123-483b-99b5-2ec481254be7",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 3,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 3,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 3,
+      "before_baseline": "a7bad3b6-2123-483b-99b5-2ec481254be7",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 4,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 4,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 4,
+      "before_baseline": "a7bad3b6-2123-483b-99b5-2ec481254be7",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 5,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 5,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "outcome": "stayed_generic"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-nano",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 5,
+      "before_baseline": "a7bad3b6-2123-483b-99b5-2ec481254be7",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 1,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 1,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 1,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 2,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 2,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 2,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 3,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 3,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 3,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 4,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 4,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 4,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 5,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 5,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 5,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 1,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 1,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 1,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 2,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 2,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 2,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 3,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 3,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 3,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 4,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 4,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 4,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 5,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 5,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 5,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 1,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 1,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 1,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 2,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 2,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 2,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 3,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 3,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 3,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 4,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 4,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 4,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 5,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 5,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5-chat",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 5,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 1,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 1,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 1,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 2,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 2,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 2,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 3,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 3,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 3,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 4,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 4,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 4,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Deckschicht",
+      "repetition": 5,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma11-deck-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Binderschicht",
+      "repetition": 5,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16b-binder-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac22t-trag-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_a",
+      "layer": "Frostschutzschicht",
+      "repetition": 5,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 1,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 1,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 1,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 2,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 2,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 2,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 3,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 3,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 3,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 4,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 4,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 4,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Deckschicht",
+      "repetition": 5,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Binderschicht",
+      "repetition": 5,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_b",
+      "layer": "Frostschutzschicht",
+      "repetition": 5,
+      "before_baseline": "cff84492-d5c8-4da9-a79b-aea5a8507d9d",
+      "after_top1": "custom-gk-frost-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 1,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 1,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 1,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 1,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 2,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 2,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 2,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 2,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 3,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 3,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 3,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 3,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 4,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 4,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 4,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 4,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Deckschicht",
+      "repetition": 5,
+      "before_baseline": "d24a85e3-f395-4124-9874-c01f977a893f",
+      "after_top1": "custom-sma8pmb-deck-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Binderschicht",
+      "repetition": 5,
+      "before_baseline": "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+      "after_top1": "custom-ac16bpmb-binder-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "9795c91c-0918-46fa-8a51-47deb180c271",
+      "after_top1": "custom-ac32t-trag-b",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Nicht bituminöse Tragschicht",
+      "repetition": 5,
+      "before_baseline": "f4461491-586a-4770-9a04-716565e58c24",
+      "after_top1": "custom-stsub-schotter-a",
+      "outcome": "migrated"
+    },
+    {
+      "model": "gpt-5.2-chat",
+      "input": "ablation_c",
+      "layer": "Frostschutzschicht",
+      "repetition": 5,
+      "before_baseline": "d35a5f2a-d72c-41a3-9f64-ea1b1ec066d1",
+      "after_top1": "custom-fss-frost-a",
+      "outcome": "migrated"
+    }
+  ]
+}

@@ -158,7 +158,7 @@ class ValidationConfig:
 class DataSourceConfig:
     """Konfiguration der EPD-Datenquelle (Stage 1)."""
 
-    # Aktive Datenquelle: online | oekobaudat | local
+    # Aktive Datenquelle: online | oekobaudat | local | local-custom
     SOURCE = os.getenv("EPD_DATA_SOURCE", "online").strip()
 
     # Ökobaudat soda4LCA-REST-API
@@ -182,8 +182,14 @@ class DataSourceConfig:
     OEKOBAUDAT_CLASSIFICATION = os.getenv("OEKOBAUDAT_CLASSIFICATION", "").strip()
     OEKOBAUDAT_CLASS_SYSTEM = os.getenv("OEKOBAUDAT_CLASS_SYSTEM", "oekobau.dat").strip()
 
-    # Lokale SQLite-DB
+    # Lokale SQLite-DB (reine Ökobaudat-Kopie, source='oekobaudat')
     LOCAL_DB_PATH = os.getenv("LOCAL_DB_PATH", "data/oekobaudat.db").strip()
+
+    # Angereicherte Kopie mit custom-Einträgen (gewählt über EPD_DATA_SOURCE=local-custom).
+    # Abgeleitetes Artefakt — neu baubar via build_custom_db.py aus custom_entries_config.json.
+    LOCAL_CUSTOM_DB_PATH = os.getenv(
+        "LOCAL_CUSTOM_DB_PATH", "data/oekobaudat_custom.db"
+    ).strip()
 
 
 # =============================================================================
@@ -242,6 +248,8 @@ def print_config_debug():
         print(f"  ClassFilter:{DataSourceConfig.OEKOBAUDAT_CLASSIFICATION or '(alle)'}")
     elif DataSourceConfig.SOURCE == "local":
         print(f"  DB-Pfad:    {DataSourceConfig.LOCAL_DB_PATH}")
+    elif DataSourceConfig.SOURCE == "local-custom":
+        print(f"  DB-Pfad:    {DataSourceConfig.LOCAL_CUSTOM_DB_PATH} (custom-angereichert)")
     else:
         print(f"  API URL:    {APIConfig.BASE_URL}")
         print(f"  Username:   {APIConfig.USERNAME}")

@@ -1,0 +1,143 @@
+{
+  "Gruppen": [
+    {
+      "NAME": "Deckschicht",
+      "MATERIAL": "Splittmastixasphalt, lärmreduzierend, feine Körnung",
+      "GUID": [
+        "guid-c-deck-1"
+      ],
+      "Volumen": 38.5,
+      "id": [
+        "d24a85e3-f395-4124-9874-c01f977a893f",
+        "custom-sma11-deck-a",
+        "custom-sma8pmb-deck-b",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca"
+      ],
+      "id_confidence": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": 85,
+        "custom-sma11-deck-a": 70,
+        "custom-sma8pmb-deck-b": 60,
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": 40
+      },
+      "id_name": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "Splittmastixasphalt (SMA)",
+        "custom-sma11-deck-a": "Splittmastixasphalt SMA 11 S",
+        "custom-sma8pmb-deck-b": "Splittmastixasphalt SMA 8 S mit polymermodifiziertem Bindemittel 10/40-65A",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "Tragdeckschicht"
+      },
+      "id_gueltigkeit": {
+        "d24a85e3-f395-4124-9874-c01f977a893f": "2026",
+        "custom-sma11-deck-a": "2029",
+        "custom-sma8pmb-deck-b": "2029",
+        "c6f77799-ed43-4ec4-bfc3-0759e41b60ca": "2026"
+      }
+    },
+    {
+      "NAME": "Binderschicht",
+      "MATERIAL": "Asphaltzwischenschicht mit polymermodifiziertem Bitumen, Körnung 16mm",
+      "GUID": [
+        "guid-c-binder-1"
+      ],
+      "Volumen": 52.0,
+      "id": [
+        "custom-ac16bpmb-binder-b",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56",
+        "custom-ac16b-binder-a"
+      ],
+      "id_confidence": {
+        "custom-ac16bpmb-binder-b": 85,
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": 70,
+        "custom-ac16b-binder-a": 60
+      },
+      "id_name": {
+        "custom-ac16bpmb-binder-b": "Asphaltbinder AC 16 B S mit polymermodifiziertem Bindemittel 10/40-65A",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "Asphaltbinder",
+        "custom-ac16b-binder-a": "Asphaltbinder AC 16 B S"
+      },
+      "id_gueltigkeit": {
+        "custom-ac16bpmb-binder-b": "2029",
+        "85e76e87-fc16-4fd5-80ed-a07fa5767f56": "2026",
+        "custom-ac16b-binder-a": "2029"
+      }
+    },
+    {
+      "NAME": "Bituminöse Tragschicht",
+      "MATERIAL": "grobe Asphalttragschicht mit Normalbitumen, hohe Tragfähigkeit",
+      "GUID": [
+        "guid-c-trag-1"
+      ],
+      "Volumen": 78.0,
+      "id": [
+        "9795c91c-0918-46fa-8a51-47deb180c271",
+        "custom-ac22t-trag-a",
+        "custom-ac32t-trag-b"
+      ],
+      "id_confidence": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": 85,
+        "custom-ac22t-trag-a": 70,
+        "custom-ac32t-trag-b": 60
+      },
+      "id_name": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "Asphalttragschicht",
+        "custom-ac22t-trag-a": "Asphalttragschicht AC 22 T S",
+        "custom-ac32t-trag-b": "Asphalttragschicht AC 32 T S mit Straßenbaubitumen 30/45"
+      },
+      "id_gueltigkeit": {
+        "9795c91c-0918-46fa-8a51-47deb180c271": "2026",
+        "custom-ac22t-trag-a": "2029",
+        "custom-ac32t-trag-b": "2029"
+      }
+    },
+    {
+      "NAME": "Nicht bituminöse Tragschicht",
+      "MATERIAL": "Schotter ungebunden, gebrochenes Korn 0-45",
+      "GUID": [
+        "guid-c-schotter-1"
+      ],
+      "Volumen": 120.0,
+      "id": [
+        "custom-stsub-schotter-a"
+      ],
+      "id_confidence": {
+        "custom-stsub-schotter-a": 85
+      },
+      "id_name": {
+        "custom-stsub-schotter-a": "Schotter ungebunden 0/45 für Schottertragschicht"
+      },
+      "id_gueltigkeit": {
+        "custom-stsub-schotter-a": "2029"
+      }
+    },
+    {
+      "NAME": "Frostschutzschicht",
+      "MATERIAL": "Kies-Sand-Gemisch frostsicher, natürlich gewonnen, bis 32mm",
+      "GUID": [
+        "guid-c-frost-1"
+      ],
+      "Volumen": 160.0,
+      "id": [
+        "custom-fss-frost-a",
+        "custom-gk-frost-b"
+      ],
+      "id_confidence": {
+        "custom-fss-frost-a": 85,
+        "custom-gk-frost-b": 70
+      },
+      "id_name": {
+        "custom-fss-frost-a": "Frostschutzschicht Kies-Sand-Gemisch 0/32",
+        "custom-gk-frost-b": "Frostschutzschicht Gesteinskörnungsgemisch 0/32 Kies-Sand"
+      },
+      "id_gueltigkeit": {
+        "custom-fss-frost-a": "2029",
+        "custom-gk-frost-b": "2029"
+      }
+    }
+  ],
+  "export_info": {
+    "source": "synthetic",
+    "scenario": "C_Informell",
+    "description": "Informelle Mitarbeitereingabe: Freitext statt Norm-Codes, beschreibende Materialbezeichnungen ohne TL-Asphalt-StB-Referenz",
+    "generated_at": "2026-06-01T00:00:00Z",
+    "volume_unit": "m3"
+  }
+}
