@@ -1,10 +1,10 @@
-# Review-Report — `main(2).tex` (ECPPM/EC³ 2026 Full Paper)
+# Review-Report — `main(3).tex` (ECPPM/EC³ 2026 Full Paper)
 
-**Erstellt:** 2026-06-05
-**Basis:** Vollständige Durchsicht von `main(2).tex` + `EPD_Matcher(1).bib`, gegengeprüft gegen `docs/studie/paper_design.md` (Stand 2026-06-05) und die Projekt-Notizen.
-**Zeilenangaben** beziehen sich auf `main(2).tex` in der Fassung, die mir vorlag. Da nach Abschnitt-A-Fixes Zeilen verrutschen können, ist jeweils ein wörtliches Kurzzitat angegeben.
+**Erstellt:** 2026-06-05 · **Aktualisiert:** 2026-06-06 (auf `main(3).tex` umgestellt)
+**Basis:** Vollständige Durchsicht von `main(3).tex` + `EPD_Matcher(1).bib`, gegengeprüft gegen `docs/studie/paper_design.md` (Stand 2026-06-05) und die Projekt-Notizen.
+**Zeilenangaben** unten nutzen das Kürzel `main.tex:NNN` und beziehen sich auf **`main(3).tex`**. Die A-Fixes dieser Fassung waren reine In-Place-Ersetzungen bzw. Löschungen *nach* `\end{document}` — die Zeilen 1–720 sind gegenüber der Vorversion unverändert; alle Verweise sind gegen `main(3).tex` verifiziert.
 
-**Scope-Hinweis:** Abschnitt **A** (kaputte `\cite`-Keys, doppelter `Chen.2024`-Bib-Eintrag, `llrcccc`-Tabellenspalte, Müll nach `\end{document}`) ist laut Absprache **bereits erledigt** und hier weggelassen.
+**Scope-Hinweis Abschnitt A:** In `main(3).tex` sind **4 von 8** A-Punkten erledigt: `Milic2024`→`Milic.2024` (Z. 148), CPR-Key korrigiert (Z. 163), Tabellenspalte `llrcccc`→`lrcccc` (Z. 509) und der Müll nach `\end{document}` entfernt. **4 A-Punkte sind aber noch offen** — siehe Abschnitt **A\*** unten. Sie erzeugen sonst `[?]` in der Bibliografie bzw. eine BibTeX-Fehlermeldung.
 
 **Vorab — was gut ist und nicht angefasst werden sollte:** Sämtliche Kernzahlen sind konsistent mit `paper_design.md`: Tab. 3 (Top-1/Top-3), Tab. 4 (Tokens/Kosten), die Token-Faktoren (164×, 349×, ~5×), die Kostenreduktionen (99,4 % / 97,7 % / 98,3 %), die Whitelist-Arithmetik (6+35+278 = 319 ≈ 11,5 % von 2779) und die Migrationstabelle (268/280, 168/180, 100/100, 88/100). Diese Stellen sind belastbar.
 
@@ -12,12 +12,62 @@
 
 ## Inhaltsübersicht
 
+- **A\* — Rest aus Abschnitt A, noch offen in `main(3).tex`** (A\*1–A\*4) — Bibliografie
 - **B — Sachliche Fehler / falsche oder inkonsistente Zahlen** (B1–B4)
 - **C — Fehlende Inhalte / offene Reviewer-Punkte** (C1–C10)
 - **D — Argumentation härten** (D1–D6)
 - **E — Sprache / Stil / Typos** (kompakt)
 - **F — Zu verifizieren** (kein Defekt, nur Gegencheck)
 - **Priorisierte Checkliste**
+
+---
+
+## A\* — Rest aus Abschnitt A (noch offen in `main(3).tex`)
+
+> Du hast A als erledigt gemeldet; vier Punkte sind in `main(3).tex` / `EPD_Matcher(1).bib` aber **noch nicht** gefixt. Alle vier erzeugen ein `[?]` im PDF bzw. eine BibTeX-Warnung — daher hier explizit, damit die Bibliografie sauber baut. (Verifiziert am 2026-06-06.)
+
+### A\*1 — `\cite{UN report}` zeigt ins Leere
+
+**Zitat** (`main.tex:146`): „around 21 \% of global greenhouse gas emissions `\cite{UN report}`."
+
+**Warum problematisch:** Es gibt keinen Bib-Eintrag `UN report` (zusätzlich Leerzeichen im Key). → `[?]` im PDF; die 34/37/21-%-Zahlen bleiben unbelegt.
+
+**Vorschlag:** Echte Quelle anlegen (UNEP 2022 *Global Status Report for Buildings and Construction*) und mit sauberem Key zitieren, z. B. `\cite{UNEP.2022}`. Bib-Skelett am Ende dieses Abschnitts.
+
+### A\*2 — `\cite{ Niu et al (2026)}` falscher Key
+
+**Zitat** (`main.tex:201`): „…particularly in the context of infrastructure projects. `~\cite{ Niu et al (2026)}`."
+
+**Warum problematisch:** Der Key existiert nicht (Leerzeichen, Klammern); der vorhandene Bib-Eintrag heißt `Niu.2026` (`bib:64`). → `[?]`.
+
+**Vorschlag:** `~\cite{Niu.2026}`.
+
+### A\*3 — Case-Mismatch `Petrovic.2025` vs. `petrovic.2025`
+
+**Zitat** (`main.tex:159`): „`~\cite{Petrovic.2025}`"; der Bib-Key ist `petrovic.2025` (klein, `bib:40`).
+
+**Warum problematisch:** BibTeX behandelt Keys je nach Backend case-sensitiv → riskantes `[?]`, auch wenn es bei manchen Toolchains zufällig durchgeht.
+
+**Vorschlag:** Eine Schreibweise wählen und beide angleichen — empfohlen: Bib-Key auf `Petrovic.2025` heben (passt zum Text und zur Großschreibung des Autorennamens). **Nicht** mit `Petrosa.2025` verwechseln — das ist ein anderer, ebenfalls genutzter Eintrag.
+
+### A\*4 — Doppelter Bib-Eintrag `Chen.2024`
+
+**Befund:** `EPD_Matcher.bib:51` **und** `:387` definieren beide `@article{Chen.2024,…}` (der zweite mit Semikolon-getrennten Autoren in einem einzigen `author`-Feld).
+
+**Warum problematisch:** BibTeX-Warnung „repeated entry" und willkürliche Auswahl eines der beiden Datensätze.
+
+**Vorschlag:** Den zweiten Eintrag (`:387`) löschen; der erste (`:51`) ist vollständiger und korrekt formatiert.
+
+**Bib-Skelett für A\*1** (Werte/Seiten prüfen):
+```bibtex
+@techreport{UNEP.2022,
+  author      = {{United Nations Environment Programme}},
+  title       = {2022 Global Status Report for Buildings and Construction},
+  institution = {UNEP},
+  year        = {2022},
+  address     = {Nairobi}
+}
+```
 
 ---
 
@@ -58,8 +108,12 @@ Und Diskussion: „… isolated by the **fifteen-of-sixteen** accuracy decreases
 
 **Warum problematisch:** Für gpt-5-nano ist −2,6 pp tatsächlich „slightly". Für gpt-5.2-chat sind es **−20,4 pp** — das ist der größte negative Filtereffekt im ganzen Datensatz und wird hier verbal kleingeredet. Ein Reviewer liest die Zahl, sieht „slightly" und wertet das als selektive Darstellung. Du erklärst den Effekt in der Diskussion (`:599–602`) ohnehin sauber („aggressive candidate reduction can remove a borderline-correct EPD") — dann sollte der Results-Teil ihn nicht verharmlosen, sondern neutral benennen.
 
-**Vorschlag:**
-> „… while it leaves gpt-5-nano essentially unchanged ($85.3\rightarrow82.7$\,\%) and **lowers the strongest model, gpt-5.2-chat, more markedly** ($98.7\rightarrow78.3$\,\%, $-20.4$\,pp)---a trade-off we examine in the discussion."
+**Aber nicht in die Gegenrichtung kippen:** Eine Reformulierung, die nur den −20,4-pp-Fall heraushebt („lowers the strongest model more markedly"), redet umgekehrt den Filter klein — sie macht den größten Ausreißer zur Headline und blendet aus, dass derselbe Schalter gpt-4o-mini um **+47,7 pp** und gpt-5-chat um **+17,7 pp** hebt. Die saubere Lösung ist **symmetrisch**: wenn Einzelzahlen genannt werden, dann die großen positiven Effekte explizit mit pp **daneben**, und der eine negative Fall neutral und *in Proportion* — ein Modell von vier, das stärkste, das auch ohne Filter schon bei 98,7 % liegt. Der Filter ist erklärtermaßen das Werkzeug für die schwachen/günstigen Modelle (so steht es auch im einleitenden Satz „strongest single optimisation for the weaker models" und in RQ2, `:596–602`); die Darstellung sollte genau diese Asymmetrie tragen, statt sie in beide Richtungen zu glätten.
+
+**Vorschlag** (ersetzt den ganzen Satz `:464–467`, paste-ready):
+> „The filter is the strongest single optimisation for the weaker models: enabling it alone (P3) raises gpt-4o-mini from 29.3\,\% to 77.0\,\% ($+47.7$\,pp) and gpt-5-chat from 67.3\,\% to 85.0\,\% ($+17.7$\,pp). It leaves gpt-5-nano essentially unchanged ($85.3\rightarrow82.7$\,\%, $-2.6$\,pp) and lowers only the strongest model, gpt-5.2-chat, which already matches near-perfectly without it ($98.7\rightarrow78.3$\,\%, $-20.4$\,pp)---a trade-off we examine in the discussion."
+
+So bleibt der große Nutzen die Aussage des Satzes, der −20,4-pp-Fall steht ehrlich und neutral daneben (nicht verkleinert, aber auch nicht zur Schlagzeile aufgeblasen), und die positiven Effekte sind erstmals mit pp beziffert — was den Satz zusätzlich härtet.
 
 ---
 
@@ -354,6 +408,12 @@ Formulierungszusatz in §Analysis methods: „Across repetitions we report the m
 ---
 
 ## Priorisierte Checkliste
+
+**Zuerst — Bibliografie reparieren (sonst `[?]` im PDF):**
+- [ ] A\*1 — `\cite{UN report}` → echte UNEP-2022-Quelle anlegen + zitieren
+- [ ] A\*2 — `\cite{ Niu et al (2026)}` → `\cite{Niu.2026}`
+- [ ] A\*3 — `Petrovic.2025` / `petrovic.2025` Case angleichen
+- [ ] A\*4 — doppelten `Chen.2024`-Bib-Eintrag (`bib:387`) löschen
 
 **Muss vor Einreichung (Glaubwürdigkeit/Reviewer-Killer):**
 - [ ] B1 — „twelve/eleven" → „sixteen/fifteen" (2 Stellen)
